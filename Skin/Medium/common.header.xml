@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+    <control Style="headerStyle">
+      <id>0</id>
+      <type>image</type>
+      <description>Background</description>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>119</height>
+      <texture>header_background.png</texture>
+      <visible>string.equals(system.currentwindow,35)</visible>
+    </control>
+
+    <control Style="headerStyle">
+      <id>0</id>
+      <type>image</type>
+      <description>Background</description>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>190</height>
+      <texture>header_background.png</texture>
+      <visible>window.IsActivce(35)</visible>
+    </control>
+
+    <control Style="headerStyle">
+      <id>0</id>
+      <type>label</type>
+      <description>Header label</description>
+      <posX>40</posX>
+      <posY>10</posY>
+      <label>#header.label</label>
+    </control>
+
+    <control Style="headerTimeStyle">
+      <id>0</id>
+      <type>label</type>
+      <description>Time label</description>
+      <posX>1520</posX>
+      <posY>10</posY>
+      <label>#time</label>
+    </control>
+
+    <control Style="headerDateStyle">
+      <id>0</id>
+      <type>textbox</type>
+      <description>Date box</description>
+      <posX>1730</posX>
+      <posY>31</posY>
+      <height>200</height>
+      <lineSpacing>0.9</lineSpacing>
+      <label>#date</label>
+    </control>
+
+    <control Style="headerDateStyle">
+      <id>0</id>
+      <type>image</type>
+      <description>Wheather Icon</description>
+      <posX>1444</posX>
+      <posY>28</posY>
+      <height>64</height>
+      <width>64</width>
+      <texture>weather\64x64\#WorldWeather.TodayIconNumber.png</texture>
+      <visible>[plugin.isenabled(World Weather Lite) | plugin.isenabled(World Weather)]</visible>
+    </control>
+
+    <control Style="headerDateStyle">
+      <id>0</id>
+      <type>label</type>
+      <description>Temprature</description>
+      <posX>1504</posX>
+      <posY>76</posY>
+      <width>130</width>
+      <align>right</align>
+      <height>200</height>
+      <label>#WorldWeather.TodayTemperature</label>
+      <visible>[plugin.isenabled(World Weather Lite) | plugin.isenabled(World Weather)]</visible>
+    </control>
+
+  </controls>
+</window>

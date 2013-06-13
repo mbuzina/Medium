@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>3004</id>
+<defaultcontrol>4</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+<disabletopbar>no</disabletopbar>
+
+<rememberLastFocusedControl>yes</rememberLastFocusedControl>
+
+
+<controls>	
+
+
+</controls>
+</window>

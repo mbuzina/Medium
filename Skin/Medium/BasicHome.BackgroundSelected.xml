@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  
+<controls>
+  <control Style="backdropStyle">
+		<description>Basic Background</description>
+		<type>image</type>
+		<id>1</id>
+    <texture>#(switch(
+      eq(#BasicHome.B0.Backdrop,'WORLDWEATHER'),string.format('weather/backgrounds/{0}.jpg',#WorldWeather.TodayIconNumber),
+      eq(1,1),#BasicHome.B0.Backdrop
+    ))</texture>
+    <visible>string.equals(#BasicHome.Current.ID,0)</visible>
+	</control>
+  <control Style="backdropStyle">
+    <description>Basic Background</description>
+    <type>image</type>
+    <id>1</id>
+    <texture>#(switch(
+      eq(#BasicHome.B1.Backdrop,'WORLDWEATHER'),string.format('weather/backgrounds/{0}.jpg',#WorldWeather.TodayIconNumber),
+      eq(1,1),#BasicHome.B1.Backdrop
+      ))</texture>
+    <visible>string.equals(#BasicHome.Current.ID,1)</visible>
+  </control>
+  <control Style="backdropStyle">
+		<description>Basic Background</description>
+		<type>image</type>
+		<id>1</id>
+		<texture>#(switch(
+            eq(#BasicHome.B2.Backdrop,'WORLDWEATHER'),string.format('weather/backgrounds/{0}.jpg',#WorldWeather.TodayIconNumber),
+            eq(1,1),#BasicHome.B2.Backdrop
+            ))</texture>
+		<visible>string.equals(#BasicHome.Current.ID,2)</visible>
+	</control>
+	<control Style="backdropStyle">
+		<description>Basic Background</description>
+		<type>image</type>
+		<id>1</id>
+        <texture>#(switch(
+            eq(#BasicHome.B3.Backdrop,'WORLDWEATHER'),string.format('weather/backgrounds/{0}.jpg',#WorldWeather.TodayIconNumber),
+            eq(1,1),#BasicHome.B3.Backdrop
+            ))</texture>
+        <visible>string.equals(#BasicHome.Current.ID,3)</visible>
+	</control>
+	<control Style="backdropStyle">
+		<description>Basic Background</description>
+		<type>image</type>
+		<id>1</id>
+        <texture>#(switch(
+            eq(#BasicHome.B4.Backdrop,'WORLDWEATHER'),string.format('weather/backgrounds/{0}.jpg',#WorldWeather.TodayIconNumber),
+            eq(1,1),#BasicHome.B4.Backdrop
+            ))</texture>
+        <visible>string.equals(#BasicHome.Current.ID,4)</visible>
+	</control>
+	<control Style="backdropStyle">
+		<description>Basic Background</description>
+		<type>image</type>
+		<id>1</id>
+        <texture>#(switch(
+            eq(#BasicHome.B5.Backdrop,'WORLDWEATHER'),string.format('weather/backgrounds/{0}.jpg',#WorldWeather.TodayIconNumber),
+            eq(1,1),#BasicHome.B5.Backdrop
+            ))</texture>
+        <visible>string.equals(#BasicHome.Current.ID,5)</visible>
+	</control>
+	<control Style="backdropStyle">
+		<description>Basic Background</description>
+		<type>image</type>
+		<id>1</id>
+        <texture>#(switch(
+            eq(#BasicHome.B6.Backdrop,'WORLDWEATHER'),string.format('weather/backgrounds/{0}.jpg',#WorldWeather.TodayIconNumber),
+            eq(1,1),#BasicHome.B6.Backdrop
+            ))</texture>
+        <visible>string.equals(#BasicHome.Current.ID,6)</visible>
+	</control>
+	<control Style="backdropStyle">
+		<description>Basic Background</description>
+		<type>image</type>
+		<id>1</id>
+        <texture>#(switch(
+            eq(#BasicHome.B7.Backdrop,'WORLDWEATHER'),string.format('weather/backgrounds/{0}.jpg',#WorldWeather.TodayIconNumber),
+            eq(1,1),#BasicHome.B7.Backdrop
+            ))</texture>
+        <visible>string.equals(#BasicHome.Current.ID,7)</visible>
+	</control>
+	<control Style="backdropStyle">
+		<description>Basic Background</description>
+		<type>image</type>
+		<id>1</id>
+        <texture>#(switch(
+            eq(#BasicHome.B8.Backdrop,'WORLDWEATHER'),string.format('weather/backgrounds/{0}.jpg',#WorldWeather.TodayIconNumber),
+            eq(1,1),#BasicHome.B8.Backdrop
+            ))</texture>
+        <visible>string.equals(#BasicHome.Current.ID,8)</visible>
+	</control>
+  <control Style="backdropStyle">
+    <description>Basic Background</description>
+    <type>image</type>
+    <id>1</id>
+      <texture>#(switch(
+          eq(#BasicHome.B9.Backdrop,'WORLDWEATHER'),string.format('weather/backgrounds/{0}.jpg',#WorldWeather.TodayIconNumber),
+          eq(1,1),#BasicHome.B9.Backdrop
+          ))</texture>
+      <visible>string.equals(#BasicHome.Current.ID,9)</visible>
+  </control>
+    <control Style="backdropStyle">
+        <description>Basic Background</description>
+        <type>image</type>
+        <id>1</id>
+        <texture>exit.jpg</texture>
+        <visible>string.equals(#BasicHome.Current.ID,10)</visible>
+    </control>
+    <control Style="backdropStyle">
+        <description>Basic Background</description>
+        <type>image</type>
+        <id>1</id>
+        <texture>shutdown.jpg</texture>
+        <visible>string.equals(#BasicHome.Current.ID,11)</visible>
+    </control>
+    <control Style="backdropStyle">
+        <description>Basic Background</description>
+        <type>image</type>
+        <id>1</id>
+        <texture>restart.jpg</texture>
+        <visible>string.equals(#BasicHome.Current.ID,12)</visible>
+    </control>
+</controls>
+</window>

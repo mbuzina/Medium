@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <controls>
+        <!-- Positional Controls -->
+        <control Style="hiddenStyle">
+            <id>10000</id>
+            <type>label</type>
+            <visible>[control.isvisible(1100)+skin.hassetting(#BasicHome.B0.Overlay.Submenu)]|[control.isvisible(1101)+skin.hassetting(#BasicHome.B1.Overlay.Submenu)]|[control.isvisible(1102)+skin.hassetting(#BasicHome.B2.Overlay.Submenu)]|[control.isvisible(1103)+skin.hassetting(#BasicHome.B3.Overlay.Submenu)]|[control.isvisible(1104)+skin.hassetting(#BasicHome.B4.Overlay.Submenu)]|[control.isvisible(1105)+skin.hassetting(#BasicHome.B5.Overlay.Submenu)]|[control.isvisible(1106)+skin.hassetting(#BasicHome.B6.Overlay.Submenu)]|[control.isvisible(1107+skin.hassetting(#BasicHome.B7.Overlay.Submenu)]|[control.isvisible(1108)+skin.hassetting(#BasicHome.B8.Overlay.Submenu)]|[control.isvisible(1109)+skin.hassetting(#BasicHome.B9.Overlay.Submenu)]+!control.isvisible(1110)+!control.isvisible(1111)+!control.isvisible(1112)</visible>
+        </control>
+        <control Style="hiddenStyle">
+            <id>10001</id>
+            <type>label</type>
+            <visible>false</visible>
+        </control>
+        <control>
+            <type>group</type>
+            <dimColor>FFFFFFFF</dimColor>
+            <animation effect="fade" time="200" delay="20" easing="inout" condition="true">Visible</animation>
+            <animation effect="fade" time="200" easing="inout" condition="true">Hidden</animation>
+            <visible>control.isvisible(10000)</visible>
+           <control Style="overlayStyle">
+                <description>Viewport</description>
+                <type>image</type>
+                <posX>0</posX>
+                <posY>230</posY>
+                <width>800</width>
+                <height>770</height>
+                <texture>header_background.png</texture>
+            </control>
+            <control>
+                <type>group</type>
+                <layout>StackLayout(Vertical,2,false)</layout>
+                <posX>10</posX>
+                <posY>250</posY>
+                <width>780</width>
+                <height>750</height>
+                <control Style="subMenuStyle">
+                    <type>button</type>
+                    <label>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.0.Label,#BasicHome.B1.0.Label,#BasicHome.B2.0.Label,#BasicHome.B3.0.Label,#BasicHome.B4.0.Label,#BasicHome.B5.0.Label,#BasicHome.B6.0.Label,#BasicHome.7.0.Label,#BasicHome.B8.0.Label,#BasicHome.B9.0.Label))</label>
+                <!--    <hyperlink>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.0.Hyperlink,#BasicHome.B1.0.Hyperlink,#BasicHome.B2.0.Hyperlink,#BasicHome.B3.0.Hyperlink,#BasicHome.B4.0.Hyperlink,#BasicHome.B5.0.Hyperlink,#BasicHome.B6.0.Hyperlink,#BasicHome.7.0.Hyperlink,#BasicHome.B8.0.Hyperlink,#BasicHome.B9.0.Hyperlink))</hyperlink>
+                    <hyperlinkParameter>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.0.HyperlinkParameter,#BasicHome.B1.0.HyperlinkParameter,#BasicHome.B2.0.HyperlinkParameter,#BasicHome.B3.0.HyperlinkParameter,#BasicHome.B4.0.HyperlinkParameter,#BasicHome.B5.0.HyperlinkParameter,#BasicHome.B6.0.HyperlinkParameter,#BasicHome.7.0.HyperlinkParameter,#BasicHome.B8.0.HyperlinkParameter,#BasicHome.B9.0.HyperlinkParameter))</hyperlinkParameter>
+                -->
+                </control>
+            </control>
+        </control>
+
+        <control Style="debugGroupStyle">
+            <visible>false</visible>
+            <description>Debug Controls</description>
+            <type>group</type>
+            <posY>600</posY>
+            <control Style="debugControlStyle">
+                <type>button</type>
+
+                <label>#(control.isvisible(1101))</label>
+
+            </control>
+        </control>
+    </controls>
+</window>

@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>35</id>
+    <defaultcontrol>1000</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
+    <disabletopbar>yes</disabletopbar>
+
+    <rememberLastFocusedControl>yes</rememberLastFocusedControl>
+
+    <define>#header.label:#(L(2143))</define>
+    <define>#BasicHome.MainMenu:#(add(cint(1000),cint(#BasicHome.Current.ID)))</define>
+     
+    <controls>
+
+        <include>common.background.default.xml</include>
+        <include>BasicHome.BackgroundSelected.xml</include>
+       
+
+        <control Style="hiddenStyle">
+            <id>0</id>
+            <type>group</type>
+            <layout>StackLayout(Vertical,2,false)</layout>
+            <control Style="hiddenStyle">
+                <id>1100</id>
+                <type>button</type>
+                <visible>string.equals(#BasicHome.Current.ID,0)</visible>
+                <label>H0 (1100)</label>
+            </control>
+            <control Style="hiddenStyle">
+                <id>1101</id>
+                <type>button</type>
+                <visible>string.equals(#BasicHome.Current.ID,1)</visible>
+                <label>H1 (1101)</label>
+            </control>
+            <control Style="hiddenStyle">
+                <id>1102</id>
+                <type>button</type>
+                <visible>string.equals(#BasicHome.Current.ID,2)</visible>
+                <label>H2 (1102)</label>
+            </control>
+            <control Style="hiddenStyle">
+                <id>1103</id>
+                <type>button</type>
+                <visible>string.equals(#BasicHome.Current.ID,3)</visible>
+                <label>H3 (1103)</label>
+            </control>
+            <control Style="hiddenStyle">
+                <id>1104</id>
+                <type>button</type>
+                <visible>string.equals(#BasicHome.Current.ID,4)</visible>
+                <label>H4 (1104)</label>
+            </control>
+            <control Style="hiddenStyle">
+                <id>1105</id>
+                <type>button</type>
+                <visible>string.equals(#BasicHome.Current.ID,5)</visible>
+                <label>H5 (1105)</label>
+            </control>
+            <control Style="hiddenStyle">
+                <id>1106</id>
+                <type>button</type>
+                <visible>string.equals(#BasicHome.Current.ID,6)</visible>
+                <label>H6 (1106)</label>
+            </control>
+            <control Style="hiddenStyle">
+                <id>1107</id>
+                <type>button</type>
+                <visible>string.equals(#BasicHome.Current.ID,7)</visible>
+                <label>H7 (1107)</label>
+            </control>
+            <control Style="hiddenStyle">
+                <id>1108</id>
+                <type>button</type>
+                <visible>string.equals(#BasicHome.Current.ID,8)</visible>
+                <label>H8 (1108)</label>
+            </control>
+            <control Style="hiddenStyle">
+                <id>1109</id>
+                <type>button</type>
+                <visible>string.equals(#BasicHome.Current.ID,9)</visible>
+                <label>H9 (1109)</label>
+            </control>
+            <control Style="hiddenStyle">
+                <id>1110</id>
+                <type>button</type>
+                <visible>string.equals(#BasicHome.Current.ID,10)</visible>
+                <label>H10 (1110)</label>
+            </control>
+            <control Style="hiddenStyle">
+                <id>1111</id>
+                <type>button</type>
+                <visible>string.equals(#BasicHome.Current.ID,11)</visible>
+                <label>H11 (1111)</label>
+            </control>
+            <control Style="hiddenStyle">
+                <id>1112</id>
+                <type>button</type>
+                <visible>string.equals(#BasicHome.Current.ID,12)</visible>
+                <label>H12 (1112)</label>
+            </control>
+        </control>
+        
+        <control Style="shadowTextStyle">
+            <description>Selected Item</description>
+            <id>951201</id>
+            <type>button</type>
+            <label>#BasicHome.Current.Label</label>
+        </control>
+        
+        <control Style="scrollStyle">
+            <description>Scrolling Background Left</description>
+            <type>image</type>
+            <texture>ScrollOverlayL.png</texture>
+            <visible>false</visible>
+            <animation effect="slide" time="300" end="0,0" easing="inout" condition="control.isvisible(1100)">conditional</animation>
+            <animation effect="slide" time="300" end="-200,0" easing="inout" condition="control.isvisible(1101)">conditional</animation>
+            <animation effect="slide" time="300" end="-400,0" easing="inout" condition="control.isvisible(1102)">conditional</animation>
+            <animation effect="slide" time="300" end="-600,0" easing="inout" condition="control.isvisible(1103)">conditional</animation>
+            <animation effect="slide" time="300" end="-800,0" easing="inout" condition="control.isvisible(1104)">conditional</animation>
+            <animation effect="slide" time="300" end="-1000,0" easing="inout" condition="control.isvisible(1105)">conditional</animation>
+            <animation effect="slide" time="300" end="-1200,0" easing="inout" condition="control.isvisible(1106)">conditional</animation>
+            <animation effect="slide" time="300" end="-1400,0" easing="inout" condition="control.isvisible(1107)">conditional</animation>
+            <animation effect="slide" time="300" end="-1600,0" easing="inout" condition="control.isvisible(1108)">conditional</animation>
+            <animation effect="slide" time="300" end="-1800,0" easing="inout" condition="control.isvisible(1109)">conditional</animation>
+            <animation effect="slide" time="300" end="-2000,0" easing="inout" condition="control.isvisible(1110)|control.isivisble(1111)|control.isvisible(1112)">conditional</animation>
+        </control>
+        
+        <control Style="scrollStyle">
+            <description>Scrolling Background Right</description>
+            <type>image</type>
+            <texture>ScrollOverlayR.png</texture>
+            <visible>false</visible>
+            <animation effect="slide" time="300" end="1920,0" easing="inout" condition="control.isvisible(1100)">conditional</animation>
+            <animation effect="slide" time="300" end="1720,0" easing="inout" condition="control.isvisible(1101)">conditional</animation>
+            <animation effect="slide" time="300" end="1520,0" easing="inout" condition="control.isvisible(1102)">conditional</animation>
+            <animation effect="slide" time="300" end="1320,0" easing="inout" condition="control.isvisible(1103)">conditional</animation>
+            <animation effect="slide" time="300" end="1120,0" easing="inout" condition="control.isvisible(1104)">conditional</animation>
+            <animation effect="slide" time="300" end="920,0" easing="inout" condition="control.isvisible(1105)">conditional</animation>
+            <animation effect="slide" time="300" end="720,0" easing="inout" condition="control.isvisible(1106)">conditional</animation>
+            <animation effect="slide" time="300" end="520,0" easing="inout" condition="control.isvisible(1107)">conditional</animation>
+            <animation effect="slide" time="300" end="320,0" easing="inout" condition="control.isvisible(1108)">conditional</animation>
+            <animation effect="slide" time="300" end="120,0" easing="inout" condition="control.isvisible(1109)">conditional</animation>
+            <animation effect="slide" time="300" end="-80,0" easing="inout" condition="control.isvisible(1110)|control.isivisble(1111)|control.isvisible(1112)">conditional</animation>
+        </control>
+
+        <include>common.header.xml</include>
+
+        <control>
+            <description>Focus Mover Button (customize)</description>
+            <id>951100</id>
+            <type>button</type>
+            <posX>300</posX>
+            <posY>300</posY>
+            <label>Focus Mover Button</label>
+                <textcolor>FFB75700</textcolor>
+                <textcolorNoFocus>AAAAAAAA</textcolorNoFocus>
+            <font>subHeaderFont</font>
+            <visible>false</visible>
+            <onfocus>#(skin.setfocus(35,add(cint(1001),cint(#BasicHome.Current.ID))))</onfocus>
+        </control>
+
+        <control Style="homeButtonStyle">
+            <id>1000</id>
+            <type>button</type>
+            <label>#BasicHome.B0.Label</label>
+            <onright>1001</onright>
+            <onleft>1012</onleft>
+            <visible>!string.equals(#BasicHome.B0.Label,X)+!string.equals(#BasicHome.B0.Label,)</visible>
+            <onfocus>#(skin.setstring('#BasicHome.Current.Label',#BasicHome.B0.Label))|#(skin.setstring('#BasicHome.Previous.ID',#BasicHome.Current.ID))|#(skin.setstring('#BasicHome.Current.ID',0))</onfocus>
+            <animation effect="slide" time="300" end="0,0" easing="inout" condition="control.isvisible(1100)">conditional</animation>
+            <animation effect="slide" time="300" end="-800,0" easing="inout" condition="control.isvisible(1101)">conditional</animation>
+            <animation effect="slide" time="300" end="-1600,0" easing="inout" condition="control.isvisible(1102)">conditional</animation>
+            <animation effect="slide" time="300" end="-2400,0" easing="inout" condition="control.isvisible(1103)">conditional</animation>
+            <animation effect="slide" time="300" end="-3200,0" easing="inout" condition="control.isvisible(1104)">conditional</animation>
+            <animation effect="slide" time="300" end="-4000,0" easing="inout" condition="control.isvisible(1105)">conditional</animation>
+            <animation effect="slide" time="300" end="-4800,0" easing="inout" condition="control.isvisible(1106)">conditional</animation>
+            <animation effect="slide" time="300" end="-5600,0" easing="inout" condition="control.isvisible(1107)">conditional</animation>
+            <animation effect="slide" time="300" end="-6400,0" easing="inout" condition="control.isvisible(1108)">conditional</animation>
+            <animation effect="slide" time="300" end="-7200,0" easing="inout" condition="control.isvisible(1109)">conditional</animation>
+            <animation effect="slide" time="300" end="-8000,0" easing="inout" condition="control.isvisible(1110)|control.isvisible(1111)|control.isvisible(1112)">conditional</animation>
+            <animation effect="slide" time="200" start="0,-40" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
+            <animation effect="slide" time="200" end="0,-40" easing="inout">WindowClose</animation>
+            <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+        </control>
+        <control Style="homeButtonStyle">
+            <id>1001</id>
+            <type>button</type>
+            <label>#BasicHome.B1.Label</label>
+            <!--<hyperlink>#BasicHome.B1.Hyperlink</hyperlink>
+            <hyperlinkParameter>#BasicHome.B1.HyperlinkParameter</hyperlinkParameter>-->
+            <onright>1002</onright>
+            <onleft>1000</onleft>
+            <visible>!string.equals(#BasicHome.B9.Label,1)+!string.equals(#BasicHome.B1.Label,)</visible>
+            <onfocus>#(skin.setstring('#BasicHome.Current.Label',#BasicHome.B1.Label))|#(skin.setstring('#BasicHome.Previous.ID',#BasicHome.Current.ID))|#(skin.setstring('#BasicHome.Current.ID',1))</onfocus>
+            <animation effect="slide" time="300" end="800,0" easing="inout" condition="control.isvisible(1100)">conditional</animation>
+            <animation effect="slide" time="300" end="0,0" easing="inout" condition="control.isvisible(1101)">conditional</animation>
+            <animation effect="slide" time="300" end="-800,0" easing="inout" condition="control.isvisible(1102)">conditional</animation>
+            <animation effect="slide" time="300" end="-1600,0" easing="inout" condition="control.isvisible(1103)">conditional</animation>
+            <animation effect="slide" time="300" end="-2400,0" easing="inout" condition="control.isvisible(1104)">conditional</animation>
+            <animation effect="slide" time="300" end="-3200,0" easing="inout" condition="control.isvisible(1105)">conditional</animation>
+            <animation effect="slide" time="300" end="-4000,0" easing="inout" condition="control.isvisible(1106)">conditional</animation>
+            <animation effect="slide" time="300" end="-4800,0" easing="inout" condition="control.isvisible(1107)">conditional</animation>
+            <animation effect="slide" time="300" end="-5600,0" easing="inout" condition="control.isvisible(1108)">conditional</animation>
+            <animation effect="slide" time="300" end="-6400,0" easing="inout" condition="control.isvisible(1109)">conditional</animation>
+            <animation effect="slide" time="300" end="-7200,0" easing="inout" condition="control.isvisible(1110)|control.isvisible(1111)|control.isvisible(1112)">conditional</animation>
+            <animation effect="slide" time="200" start="0,-40" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
+            <animation effect="slide" time="200" end="0,-40" easing="inout">WindowClose</animation>
+            <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+        </control>
+        <control Style="homeButtonStyle">
+            <id>1002</id>
+            <type>button</type>
+            <label>#BasicHome.B2.Label</label>
+            <!--<hyperlink>#BasicHome.B2.Hyperlink</hyperlink>
+            <hyperlinkParameter>#BasicHome.B2.HyperlinkParameter</hyperlinkParameter>-->
+            <onright>1003</onright>
+            <onleft>1001</onleft>
+            <visible>!string.equals(#BasicHome.B2.Label,X)+!string.equals(#BasicHome.B2.Label,)</visible>
+            <onfocus>#(skin.setstring('#BasicHome.Current.Label',#BasicHome.B2.Label))|#(skin.setstring('#BasicHome.Previous.ID',#BasicHome.Current.ID))|#(skin.setstring('#BasicHome.Current.ID',2))</onfocus>
+            <animation effect="slide" time="300" end="1600,0" easing="inout" condition="control.isvisible(1100)">conditional</animation>
+            <animation effect="slide" time="300" end="800,0" easing="inout" condition="control.isvisible(1101)">conditional</animation>
+            <animation effect="slide" time="300" end="0,0" easing="inout" condition="control.isvisible(1102)">conditional</animation>
+            <animation effect="slide" time="300" end="-800,0" easing="inout" condition="control.isvisible(1103)">conditional</animation>
+            <animation effect="slide" time="300" end="-1600,0" easing="inout" condition="control.isvisible(1104)">conditional</animation>
+            <animation effect="slide" time="300" end="-2400,0" easing="inout" condition="control.isvisible(1105)">conditional</animation>
+            <animation effect="slide" time="300" end="-3200,0" easing="inout" condition="control.isvisible(1106)">conditional</animation>
+            <animation effect="slide" time="300" end="-4000,0" easing="inout" condition="control.isvisible(1107)">conditional</animation>
+            <animation effect="slide" time="300" end="-4800,0" easing="inout" condition="control.isvisible(1108)">conditional</animation>
+            <animation effect="slide" time="300" end="-5600,0" easing="inout" condition="control.isvisible(1109)">conditional</animation>
+            <animation effect="slide" time="300" end="-6400,0" easing="inout" condition="control.isvisible(1110)|control.isvisible(1111)|control.isvisible(1112)">conditional</animation>
+            <animation effect="slide" time="200" start="0,-40" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
+            <animation effect="slide" time="200" end="0,-40" easing="inout">WindowClose</animation>
+            <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+        </control>
+        <control Style="homeButtonStyle">
+            <id>1003</id>
+            <type>button</type>
+            <label>#BasicHome.B3.Label</label>
+            <!--<hyperlink>#BasicHome.B3.Hyperlink</hyperlink>
+            <hyperlinkParameter>#BasicHome.B3.HyperlinkParameter</hyperlinkParameter>-->
+            <onright>1004</onright>
+            <onleft>1002</onleft>
+            <visible>!string.equals(#BasicHome.B3.Label,X)+!string.equals(#BasicHome.B3.Label,)</visible>
+            <onfocus>#(skin.setstring('#BasicHome.Current.Label',#BasicHome.B3.Label))|#(skin.setstring('#BasicHome.Previous.ID',#BasicHome.Current.ID))|#(skin.setstring('#BasicHome.Current.ID',3))</onfocus>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1100)">conditional</animation>
+            <animation effect="slide" time="300" end="1600,0" easing="inout" condition="control.isvisible(1101)">conditional</animation>
+            <animation effect="slide" time="300" end="800,0" easing="inout" condition="control.isvisible(1102)">conditional</animation>
+            <animation effect="slide" time="300" end="0,0" easing="inout" condition="control.isvisible(1103)">conditional</animation>
+            <animation effect="slide" time="300" end="-800,0" easing="inout" condition="control.isvisible(1104)">conditional</animation>
+            <animation effect="slide" time="300" end="-1600,0" easing="inout" condition="control.isvisible(1105)">conditional</animation>
+            <animation effect="slide" time="300" end="-2400,0" easing="inout" condition="control.isvisible(1106)">conditional</animation>
+            <animation effect="slide" time="300" end="-3200,0" easing="inout" condition="control.isvisible(1107)">conditional</animation>
+            <animation effect="slide" time="300" end="-4000,0" easing="inout" condition="control.isvisible(1108)">conditional</animation>
+            <animation effect="slide" time="300" end="-4800,0" easing="inout" condition="control.isvisible(1109)">conditional</animation>
+            <animation effect="slide" time="300" end="-5600,0" easing="inout" condition="control.isvisible(1110)|control.isvisible(1111)|control.isvisible(1112)">conditional</animation>
+            <animation effect="slide" time="200" start="0,-40" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
+            <animation effect="slide" time="200" end="0,-40" easing="inout">WindowClose</animation>
+            <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+        </control>
+        <control Style="homeButtonStyle">
+            <id>1004</id>
+            <type>button</type>
+            <label>#BasicHome.B4.Label</label>
+            <!--<hyperlink>#BasicHome.B4.Hyperlink</hyperlink>
+            <hyperlinkParameter>#BasicHome.B4.HyperlinkParameter</hyperlinkParameter>-->
+            <onright>1005</onright>
+            <onleft>1003</onleft>
+            <visible>!string.equals(#BasicHome.B4.Label,X)+!string.equals(#BasicHome.B4.Label,)</visible>
+            <onfocus>#(skin.setstring('#BasicHome.Current.Label',#BasicHome.B4.Label))|#(skin.setstring('#BasicHome.Previous.ID',#BasicHome.Current.ID))|#(skin.setstring('#BasicHome.Current.ID',4))</onfocus>
+            <animation effect="slide" time="300" end="3200,0" easing="inout" condition="control.isvisible(1100)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1101)">conditional</animation>
+            <animation effect="slide" time="300" end="1600,0" easing="inout" condition="control.isvisible(1102)">conditional</animation>
+            <animation effect="slide" time="300" end="800,0" easing="inout" condition="control.isvisible(1103)">conditional</animation>
+            <animation effect="slide" time="300" end="0,0" easing="inout" condition="control.isvisible(1104)">conditional</animation>
+            <animation effect="slide" time="300" end="-800,0" easing="inout" condition="control.isvisible(1105)">conditional</animation>
+            <animation effect="slide" time="300" end="-1600,0" easing="inout" condition="control.isvisible(1106)">conditional</animation>
+            <animation effect="slide" time="300" end="-2400,0" easing="inout" condition="control.isvisible(1107)">conditional</animation>
+            <animation effect="slide" time="300" end="-3200,0" easing="inout" condition="control.isvisible(1108)">conditional</animation>
+            <animation effect="slide" time="300" end="-4000,0" easing="inout" condition="control.isvisible(1109)">conditional</animation>
+            <animation effect="slide" time="300" end="-4800,0" easing="inout" condition="control.isvisible(1110)|control.isvisible(1111)|control.isvisible(1112)">conditional</animation>
+            <animation effect="slide" time="200" start="0,-40" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
+            <animation effect="slide" time="200" end="0,-40" easing="inout">WindowClose</animation>
+            <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+        </control>
+        <control Style="homeButtonStyle">
+            <id>1005</id>
+            <type>button</type>
+            <label>#BasicHome.B5.Label</label>
+            <!--<hyperlink>#BasicHome.B5.Hyperlink</hyperlink>
+            <hyperlinkParameter>#BasicHome.B5.HyperlinkParameter</hyperlinkParameter>-->
+            <onright>1006</onright>
+            <onleft>1004</onleft>
+            <visible>!string.equals(#BasicHome.B5.Label,X)+!string.equals(#BasicHome.B5.Label,)</visible>
+            <onfocus>#(skin.setstring('#BasicHome.Current.Label',#BasicHome.B5.Label))|#(skin.setstring('#BasicHome.Previous.ID',#BasicHome.Current.ID))|#(skin.setstring('#BasicHome.Current.ID',5))</onfocus>
+            <animation effect="slide" time="300" end="4000,0" easing="inout" condition="control.isvisible(1100)">conditional</animation>
+            <animation effect="slide" time="300" end="3200,0" easing="inout" condition="control.isvisible(1101)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1102)">conditional</animation>
+            <animation effect="slide" time="300" end="1600,0" easing="inout" condition="control.isvisible(1103)">conditional</animation>
+            <animation effect="slide" time="300" end="800,0" easing="inout" condition="control.isvisible(1104)">conditional</animation>
+            <animation effect="slide" time="300" end="0,0" easing="inout" condition="control.isvisible(1105)">conditional</animation>
+            <animation effect="slide" time="300" end="-800,0" easing="inout" condition="control.isvisible(1106)">conditional</animation>
+            <animation effect="slide" time="300" end="-1600,0" easing="inout" condition="control.isvisible(1107)">conditional</animation>
+            <animation effect="slide" time="300" end="-2400,0" easing="inout" condition="control.isvisible(1108)">conditional</animation>
+            <animation effect="slide" time="300" end="-3200,0" easing="inout" condition="control.isvisible(1109)">conditional</animation>
+            <animation effect="slide" time="300" end="-4000,0" easing="inout" condition="control.isvisible(1110)|control.isvisible(1111)|control.isvisible(1112)">conditional</animation>
+            <animation effect="slide" time="200" start="0,-40" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
+            <animation effect="slide" time="200" end="0,-40" easing="inout">WindowClose</animation>
+            <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+        </control>
+        <control Style="homeButtonStyle">
+            <id>1006</id>
+            <type>button</type>
+            <label>#BasicHome.B6.Label</label>
+            <!--<hyperlink>#BasicHome.B6.Hyperlink</hyperlink>
+            <hyperlinkParameter>#BasicHome.B6.HyperlinkParameter</hyperlinkParameter>-->
+            <onright>1007</onright>
+            <onleft>1005</onleft>
+            <visible>!string.equals(#BasicHome.B6.Label,X)+!string.equals(#BasicHome.B6.Label,)</visible>
+            <onfocus>#(skin.setstring('#BasicHome.Current.Label',#BasicHome.B6.Label))|#(skin.setstring('#BasicHome.Previous.ID',#BasicHome.Current.ID))|#(skin.setstring('#BasicHome.Current.ID',6))</onfocus>
+            <animation effect="slide" time="300" end="4800,0" easing="inout" condition="control.isvisible(1100)">conditional</animation>
+            <animation effect="slide" time="300" end="4000,0" easing="inout" condition="control.isvisible(1101)">conditional</animation>
+            <animation effect="slide" time="300" end="3200,0" easing="inout" condition="control.isvisible(1102)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1103)">conditional</animation>
+            <animation effect="slide" time="300" end="1600,0" easing="inout" condition="control.isvisible(1104)">conditional</animation>
+            <animation effect="slide" time="300" end="800,0" easing="inout" condition="control.isvisible(1105)">conditional</animation>
+            <animation effect="slide" time="300" end="0,0" easing="inout" condition="control.isvisible(1106)">conditional</animation>
+            <animation effect="slide" time="300" end="-800,0" easing="inout" condition="control.isvisible(1107)">conditional</animation>
+            <animation effect="slide" time="300" end="-1600,0" easing="inout" condition="control.isvisible(1108)">conditional</animation>
+            <animation effect="slide" time="300" end="-2400,0" easing="inout" condition="control.isvisible(1109)">conditional</animation>
+            <animation effect="slide" time="300" end="-3200,0" easing="inout" condition="control.isvisible(1110)|control.isvisible(1111)|control.isvisible(1112)">conditional</animation>
+            <animation effect="slide" time="200" start="0,-40" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
+            <animation effect="slide" time="200" end="0,-40" easing="inout">WindowClose</animation>
+            <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+        </control>
+        <control Style="homeButtonStyle">
+            <id>1007</id>
+            <type>button</type>
+            <label>#BasicHome.B7.Label</label>
+            <!--<hyperlink>#BasicHome.B7.Hyperlink</hyperlink>
+            <hyperlinkParameter>#BasicHome.B7.HyperlinkParameter</hyperlinkParameter>-->
+            <onright>1008</onright>
+            <onleft>1006</onleft>
+            <visible>!string.equals(#BasicHome.B7.Label,X)+!string.equals(#BasicHome.B7.Label,)</visible>
+            <onfocus>#(skin.setstring('#BasicHome.Current.Label',#BasicHome.B7.Label))|#(skin.setstring('#BasicHome.Previous.ID',#BasicHome.Current.ID))|#(skin.setstring('#BasicHome.Current.ID',7))</onfocus>
+            <animation effect="slide" time="300" end="5600,0" easing="inout" condition="control.isvisible(1100)">conditional</animation>
+            <animation effect="slide" time="300" end="4800,0" easing="inout" condition="control.isvisible(1101)">conditional</animation>
+            <animation effect="slide" time="300" end="4000,0" easing="inout" condition="control.isvisible(1102)">conditional</animation>
+            <animation effect="slide" time="300" end="3200,0" easing="inout" condition="control.isvisible(1103)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1104)">conditional</animation>
+            <animation effect="slide" time="300" end="1600,0" easing="inout" condition="control.isvisible(1105)">conditional</animation>
+            <animation effect="slide" time="300" end="800,0" easing="inout" condition="control.isvisible(1106)">conditional</animation>
+            <animation effect="slide" time="300" end="0,0" easing="inout" condition="control.isvisible(1107)">conditional</animation>
+            <animation effect="slide" time="300" end="-800,0" easing="inout" condition="control.isvisible(1108)">conditional</animation>
+            <animation effect="slide" time="300" end="-1600,0" easing="inout" condition="control.isvisible(1109)">conditional</animation>
+            <animation effect="slide" time="300" end="-2400,0" easing="inout" condition="control.isvisible(1110)|control.isvisible(1111)|control.isvisible(1112)">conditional</animation>
+            <animation effect="slide" time="200" start="0,-40" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
+            <animation effect="slide" time="200" end="0,-40" easing="inout">WindowClose</animation>
+            <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+        </control>
+        <control Style="homeButtonStyle">
+            <id>1008</id>
+            <type>button</type>
+            <label>#BasicHome.B8.Label</label>
+            <!--<hyperlink>#BasicHome.B8.Hyperlink</hyperlink>
+            <hyperlinkParameter>#BasicHome.B8.HyperlinkParameter</hyperlinkParameter>-->
+            <onright>1009</onright>
+            <onleft>1007</onleft>
+            <visible>!string.equals(#BasicHome.B8.Label,X)+!string.equals(#BasicHome.B8.Label,)</visible>
+            <onfocus>#(skin.setstring('#BasicHome.Current.Label',#BasicHome.B8.Label))|#(skin.setstring('#BasicHome.Previous.ID',#BasicHome.Current.ID))|#(skin.setstring('#BasicHome.Current.ID',8))</onfocus>
+            <animation effect="slide" time="300" end="6400,0" easing="inout" condition="control.isvisible(1100)">conditional</animation>
+            <animation effect="slide" time="300" end="5600,0" easing="inout" condition="control.isvisible(1101)">conditional</animation>
+            <animation effect="slide" time="300" end="4800,0" easing="inout" condition="control.isvisible(1102)">conditional</animation>
+            <animation effect="slide" time="300" end="4000,0" easing="inout" condition="control.isvisible(1103)">conditional</animation>
+            <animation effect="slide" time="300" end="3200,0" easing="inout" condition="control.isvisible(1104)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1105)">conditional</animation>
+            <animation effect="slide" time="300" end="1600,0" easing="inout" condition="control.isvisible(1106)">conditional</animation>
+            <animation effect="slide" time="300" end="800,0" easing="inout" condition="control.isvisible(1107)">conditional</animation>
+            <animation effect="slide" time="300" end="0,0" easing="inout" condition="control.isvisible(1108)">conditional</animation>
+            <animation effect="slide" time="300" end="-800,0" easing="inout" condition="control.isvisible(1109)">conditional</animation>
+            <animation effect="slide" time="300" end="-1600,0" easing="inout" condition="control.isvisible(1110)|control.isvisible(1111)|control.isvisible(1112)">conditional</animation>
+            <animation effect="slide" time="200" start="0,-40" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
+            <animation effect="slide" time="200" end="0,-40" easing="inout">WindowClose</animation>
+            <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+        </control>
+        <control Style="homeButtonStyle">
+            <id>1009</id>
+            <type>button</type>
+            <label>#BasicHome.B9.Label</label>
+            <!--<hyperlink>#BasicHome.B9.Hyperlink</hyperlink>
+            <hyperlinkParameter>#BasicHome.B9.HyperlinkParameter</hyperlinkParameter>-->
+            <onright>1010</onright>
+            <onleft>1008</onleft>
+            <visible>!string.equals(#BasicHome.B9.Label,X)+!string.equals(#BasicHome.B9.Label,)</visible>
+            <onfocus>#(skin.setstring('#BasicHome.Current.Label',#BasicHome.B9.Label))|#(skin.setstring('#BasicHome.Previous.ID',#BasicHome.Current.ID))|#(skin.setstring('#BasicHome.Current.ID',9))</onfocus>
+            <animation effect="slide" time="300" end="7200,0" easing="inout" condition="control.isvisible(1100)">conditional</animation>
+            <animation effect="slide" time="300" end="6400,0" easing="inout" condition="control.isvisible(1101)">conditional</animation>
+            <animation effect="slide" time="300" end="5600,0" easing="inout" condition="control.isvisible(1102)">conditional</animation>
+            <animation effect="slide" time="300" end="4800,0" easing="inout" condition="control.isvisible(1103)">conditional</animation>
+            <animation effect="slide" time="300" end="4000,0" easing="inout" condition="control.isvisible(1104)">conditional</animation>
+            <animation effect="slide" time="300" end="3200,0" easing="inout" condition="control.isvisible(1105)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1106)">conditional</animation>
+            <animation effect="slide" time="300" end="1600,0" easing="inout" condition="control.isvisible(1107)">conditional</animation>
+            <animation effect="slide" time="300" end="800,0" easing="inout" condition="control.isvisible(1108)">conditional</animation>
+            <animation effect="slide" time="300" end="0,0" easing="inout" condition="control.isvisible(1109)">conditional</animation>
+            <animation effect="slide" time="300" end="-800,0" easing="inout" condition="control.isvisible(1110)|control.isvisible(1111)|control.isvisible(1112)">conditional</animation>
+            <animation effect="slide" time="200" start="0,-40" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
+            <animation effect="slide" time="200" end="0,-40" easing="inout">WindowClose</animation>
+            <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+        </control>
+        <control Style="homeButtonStyle">
+            <description>Exit Button</description>
+            <id>1010</id>
+            <type>button</type>
+            <label>#(L(1057))</label>
+            <onright>1011</onright>
+            <onleft>1009</onleft>
+            <visible>#BasicHome.ShowExit</visible>
+            <action>97</action>
+            <onfocus>#(skin.setstring('#BasicHome.Current.Label',L(1057)))|#(skin.setstring('#BasicHome.Previous.ID',#BasicHome.Current.ID))|#(skin.setstring('#BasicHome.Current.ID',10))</onfocus>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1100)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1101)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1102)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1103)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1104)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1105)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1106)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1107)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1108)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1109)">conditional</animation>
+            <animation effect="slide" time="300" end="0,0" easing="inout" condition="control.isvisible(1110)">conditional</animation>
+            <animation effect="slide" time="300" end="-800,0" easing="inout" condition="control.isvisible(1111)">conditional</animation>
+            <animation effect="slide" time="300" end="-800,0" easing="inout" condition="control.isvisible(1112)">conditional</animation>
+            <animation effect="slide" time="200" start="0,-40" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
+            <animation effect="slide" time="200" end="0,-40" easing="inout">WindowClose</animation>
+            <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+        </control>
+        <control Style="homeButtonStyle">
+            <description>Shutdown Button</description>
+            <id>1011</id>
+            <type>button</type>
+            <label>#(L(1030))</label>
+            <onright>1012</onright>
+            <onleft>1010</onleft>
+            <visible>#BasicHome.ShowShutdown</visible>
+            <!--<action>#BasicHome.Shutdown.Action</action>-->
+            <onfocus>#(skin.setstring('#BasicHome.Current.Label',L(1030)))|#(skin.setstring('#BasicHome.Previous.ID',#BasicHome.Current.ID))|#(skin.setstring('#BasicHome.Current.ID',11))</onfocus>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1100)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1101)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1102)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1103)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1104)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1105)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1106)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1107)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1108)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1109)">conditional</animation>
+            <animation effect="slide" time="300" end="800,0" easing="inout" condition="control.isvisible(1110)">conditional</animation>
+            <animation effect="slide" time="300" end="0,0" easing="inout" condition="control.isvisible(1111)">conditional</animation>
+            <animation effect="slide" time="300" end="-800,0" easing="inout" condition="control.isvisible(1112)">conditional</animation>
+            <animation effect="slide" time="200" start="0,-40" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
+            <animation effect="slide" time="200" end="0,-40" easing="inout">WindowClose</animation>
+            <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+        </control>
+        <control Style="homeButtonStyle">
+            <description>Restart Button</description>
+            <id>1012</id>
+            <type>button</type>
+            <label>#(L(1031))</label>
+            <onright>1000</onright>
+            <onleft>1011</onleft>
+            <visible>#BasicHome.ShowRestart</visible>
+            <action>98</action>
+            <onfocus>#(skin.setstring('#BasicHome.Current.Label',L(1031)))|#(skin.setstring('#BasicHome.Previous.ID',#BasicHome.Current.ID))|#(skin.setstring('#BasicHome.Current.ID',12))</onfocus>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1100)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1101)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1102)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1103)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1104)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1105)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1106)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1107)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1108)">conditional</animation>
+            <animation effect="slide" time="300" end="2400,0" easing="inout" condition="control.isvisible(1109)">conditional</animation>
+            <animation effect="slide" time="300" end="1600,0" easing="inout" condition="control.isvisible(1110)+control.isvisible(1011)">conditional</animation>
+            <animation effect="slide" time="300" end="800,0" easing="inout" condition="control.isvisible(1111)|[!control.isvisible(1011)+!control.isvisible(1112)]">conditional</animation>
+            <animation effect="slide" time="300" end="0,0" easing="inout" condition="control.isvisible(1112)">conditional</animation>
+            <animation effect="slide" time="200" start="0,-40" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
+            <animation effect="slide" time="200" end="0,-40" easing="inout">WindowClose</animation>
+            <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+        </control>
+
+        <include>BasicHome.SubMenu.xml</include>
+
+        <control Style="debugGroupStyle">
+            <visible>true</visible>
+            <description>Debug Controls</description>
+            <type>group</type>
+            <control Style="debugControlStyle">
+                <type>label</type>
+                <label>#test</label>
+                <textcolor>FFB75700</textcolor>
+                <textcolorNoFocus>AAAAAAAA</textcolorNoFocus>
+            </control>
+            <control Style="debugControlStyle">
+                <type>label</type>
+                <label>#BasicHome.MainMenu</label>
+            </control>
+            <control Style="debugControlStyle">
+                <type>label</type>
+                <label>One</label>
+                <visible>control.hasfocus(1001)</visible>
+            </control>
+        </control>
+
+        <control>
+            <description>Focus Catcher</description>
+            <type>image</type>
+            <posX>0</posX>
+            <posY>1</posY>
+            <width>1920</width>
+            <height>139</height>
+            <texture></texture>
+            <onfocus></onfocus>
+        </control>
+        <control Style="touchControlStyle">
+            <description>Touch Left</description>
+            <type>button</type>
+            <textureFocus>touch_nav_left.png</textureFocus>
+            <textureNoFocus>touch_nav_left.png</textureNoFocus>
+            <posX>10</posX>
+            <posY>118</posY>
+            <onclick>#(skin.setfocus(35,#(add(cint(999),cint(#BasicHome.Current.ID)))))</onclick>
+        </control>
+        <control Style="touchControlStyle">
+            <description>Touch Right</description>
+            <type>button</type>
+            <textureFocus>touch_nav_right.png</textureFocus>
+            <textureNoFocus>touch_nav_right.png</textureNoFocus>
+            <posX>1890</posX>
+            <posY>118</posY>
+            <onclick>#(skin.setfocus(35,#(add(cint(1001),cint(#BasicHome.Current.ID)))))</onclick>
+        </control>
+        
+        <include>BasicHome.Overlay.WorldWeather.3.xml</include>
+        <include>common.hiddenMenu.xml</include>
+        <include>common.footer.xml</include>
+        <control Style="footerStyle">
+            <description>Infoservice Feed</description>
+            <type>fadelabel</type>
+            <posX>30</posX>
+            <width>1919</width>
+            <label>#infoservice.feed.titles</label>
+            <visible>plugin.isenabled(InfoService)+string.equals(#infoservice.feed.enabled, true)+skin.hassetting(#BasicHome.ShowInfoService)+!player.hasmedia</visible>
+            <animation effect="slide" time="20" end="-29,0" condition="true">conditional</animation>
+        </control>
+        <control Style="footerStyle">
+            <description>Infoservice Feed</description>
+            <type>fadelabel</type>
+            <posX>450</posX>
+            <width>1470</width>
+            <label>#infoservice.feed.titles</label>
+            <visible>plugin.isenabled(InfoService)+string.equals(#infoservice.feed.enabled, true)+skin.hassetting(#BasicHome.ShowInfoService)+player.hasmedia</visible>
+            
+        </control>
+
+    </controls>
+</window>

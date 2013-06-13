@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <controls>
+
+        <!-- Positional Controls -->
+        <control Style="hiddenStyle">
+            <description>Top Row (1)</description>
+            <id>11001</id>
+            <type>label</type>
+            <visible>[control.isvisible(1100)+skin.hassetting(#BasicHome.B0.Overlay.r1.WW)]|[control.isvisible(1101)+skin.hassetting(#BasicHome.B1.Overlay.r1.WW)]|[control.isvisible(1102)+skin.hassetting(#BasicHome.B2.Overlay.r1.WW)]|[control.isvisible(1103)+skin.hassetting(#BasicHome.B3.Overlay.r1.WW)]|[control.isvisible(1104)+skin.hassetting(#BasicHome.B4.Overlay.r1.WW)]|[control.isvisible(1105)+skin.hassetting(#BasicHome.B5.Overlay.r1.WW)]|[control.isvisible(1106)+skin.hassetting(#BasicHome.B6.Overlay.r1.WW)]|[control.isvisible(1107+skin.hassetting(#BasicHome.B7.Overlay.r1.WW)]|[control.isvisible(1108)+skin.hassetting(#BasicHome.B8.Overlay.r1.WW)]|[control.isvisible(1109)+skin.hassetting(#BasicHome.B9.Overlay.r1.WW)]</visible>
+        </control>
+        <control Style="hiddenStyle">
+            <description>Middle Row (2)</description>
+            <id>11002</id>
+            <type>label</type>
+            <visible>[control.isvisible(1100)+skin.hassetting(#BasicHome.B0.Overlay.r2.WW)]|[control.isvisible(1101)+skin.hassetting(#BasicHome.B1.Overlay.r2.WW)]|[control.isvisible(1102)+skin.hassetting(#BasicHome.B2.Overlay.r2.WW)]|[control.isvisible(1103)+skin.hassetting(#BasicHome.B3.Overlay.r2.WW)]|[control.isvisible(1104)+skin.hassetting(#BasicHome.B4.Overlay.r2.WW)]|[control.isvisible(1105)+skin.hassetting(#BasicHome.B5.Overlay.r2.WW)]|[control.isvisible(1106)+skin.hassetting(#BasicHome.B6.Overlay.r2.WW)]|[control.isvisible(1107+skin.hassetting(#BasicHome.B7.Overlay.r2.WW)]|[control.isvisible(1108)+skin.hassetting(#BasicHome.B8.Overlay.r2.WW)]|[control.isvisible(1109)+skin.hassetting(#BasicHome.B9.Overlay.r2.WW)]</visible>
+        </control>
+        <control Style="hiddenStyle">
+            <description>Bottom Row (3)</description>
+            <id>11003</id>
+            <type>label</type>
+            <visible>[control.isvisible(1100)+skin.hassetting(#BasicHome.B0.Overlay.r3.WW)]|[control.isvisible(1101)+skin.hassetting(#BasicHome.B1.Overlay.r3.WW)]|[control.isvisible(1102)+skin.hassetting(#BasicHome.B2.Overlay.r3.WW)]|[control.isvisible(1103)+skin.hassetting(#BasicHome.B3.Overlay.r3.WW)]|[control.isvisible(1104)+skin.hassetting(#BasicHome.B4.Overlay.r3.WW)]|[control.isvisible(1105)+skin.hassetting(#BasicHome.B5.Overlay.r3.WW)]|[control.isvisible(1106)+skin.hassetting(#BasicHome.B6.Overlay.r3.WW)]|[control.isvisible(1107+skin.hassetting(#BasicHome.B7.Overlay.r3.WW)]|[control.isvisible(1108)+skin.hassetting(#BasicHome.B8.Overlay.r3.WW)]|[control.isvisible(1109)+skin.hassetting(#BasicHome.B9.Overlay.r3.WW)]</visible>
+        </control>
+        
+        <control>
+            <type>group</type>
+            <id>11000</id>
+            <dimColor>FFFFFFFF</dimColor>
+            <animation effect="slide" time="20" start="0,0" end="420,0" condition="control.isvisible(10000)+control.isvisible(11001)">conditional</animation>
+            <animation effect="slide" time="20" start="0,0" end="0,0" condition="!control.isvisible(10000)+control.isvisible(11001)">conditional</animation>
+            <animation effect="slide" time="20" start="0,0" end="420,135" condition="control.isvisible(10000)+control.isvisible(11002)">conditional</animation>
+            <animation effect="slide" time="20" start="0,0" end="0,135" condition="!control.isvisible(10000)+control.isvisible(11002)">conditional</animation>
+            <animation effect="slide" time="20" start="0,0" end="420,270" condition="control.isvisible(10000)+control.isvisible(11003)">conditional</animation>
+            <animation effect="slide" time="20" start="0,0" end="0,270" condition="!control.isvisible(10000)+control.isvisible(11003)">conditional</animation>
+            <animation effect="fade" time="200" delay="20" easing="inout" condition="true">Visible</animation>
+            <animation effect="fade" time="200" easing="inout" condition="true">Hidden</animation>
+            <posX>0</posX>
+            <posY>0</posY>
+            <visible>!control.isvisible(1110)+!control.isvisible(1111)+!control.isvisible(1112)+[control.isvisible(11001)|control.isvisible(11002)|control.isvisible(11003)]</visible>
+            <control Style="overlayStyle">
+                <description>Viewport</description>
+                <type>image</type>
+                <posX>0</posX>
+                <posY>230</posY>
+                <width>800</width>
+                <height>250</height>
+                <texture>header_background.png</texture>
+            </control>
+            <control Style="subHeaderStyle">
+                <description>#WorldWeather.Location</description>
+                <type>label</type>
+                <id>0</id>
+                <posX>10</posX>
+                <posY>220</posY>
+                <label>#WorldWeather.LocationStation</label>
+            </control>
+            <!-- Current Conditions -->
+            <control Style="overlayStyle">
+                <description>Current Condition Box</description>
+                <type>image</type>
+                <posX>5</posX>
+                <posY>278</posY>
+                <width>190</width>
+                <height>195</height>
+                <texture>white.png</texture>
+
+                <colordiffuse>60B75700</colordiffuse>
+            </control>
+            <control Style="weatherLabelStyle">
+                <description>Icon Today</description>
+                <type>image</type>
+                <posY>265</posY>
+                <posX>30</posX>
+                <width>128</width>
+                <height>128</height>
+                <texture>#WorldWeather.TodayIconImage</texture>
+            </control>
+            <control Style="weatherBoldLabelStyle">
+                <description>Temp Today</description>
+                <type>label</type>
+                <width>200</width>
+                <posX>0</posX>
+                <posY>400</posY>
+                <font>largeFont</font>
+                <label>#WorldWeather.TodayTemperature</label>
+            </control>
+            <control Style="weatherBoldLabelStyle">
+                <description>Today Condition</description>
+                <type>fadelabel</type>
+                <posX>20</posX>
+                <width>190</width>
+                <posY>440</posY>
+                <font>labelFont</font>
+                <label>#WorldWeather.TodayCondition</label>
+                <animation effect="slide" time="10" end="-15,0" condition="true">conditional</animation>
+            </control>
+
+
+            <!-- 4 day forecast -->
+            <control Style="weatherLabelStyle">
+                <description>Day 1</description>
+                <type>label</type>
+                <posX>200</posX>
+                <label>#WorldWeather.ForecastDay1Day</label>
+            </control>
+            <control Style="weatherLabelStyle">
+                <description>Day 2</description>
+                <type>label</type>
+                <posX>350</posX>
+                <label>#WorldWeather.ForecastDay2Day</label>
+            </control>
+            <control Style="weatherLabelStyle">
+                <description>Day 3</description>
+                <type>label</type>
+                <posX>500</posX>
+                <label>#WorldWeather.ForecastDay3Day</label>
+            </control>
+            <control Style="weatherLabelStyle">
+                <description>Day 4</description>
+                <type>label</type>
+                <posX>650</posX>
+                <label>#WorldWeather.ForecastDay4Day</label>
+            </control>
+            <control Style="weatherLabelStyle">
+                <description>Icon Day 1</description>
+                <type>image</type>
+                <posY>265</posY>
+                <posX>230</posX>
+                <width>80</width>
+                <height>80</height>
+                <texture>#WorldWeather.ForecastDay1IconImage</texture>
+            </control>
+            <control Style="weatherLabelStyle">
+                <description>Icon Day 2</description>
+                <type>image</type>
+                <posY>265</posY>
+                <posX>380</posX>
+                <width>80</width>
+                <height>80</height>
+                <texture>#WorldWeather.ForecastDay2IconImage</texture>
+            </control>
+            <control Style="weatherLabelStyle">
+                <description>Icon Day 3</description>
+                <type>image</type>
+                <posY>265</posY>
+                <posX>530</posX>
+                <width>80</width>
+                <height>80</height>
+                <texture>#WorldWeather.ForecastDay3IconImage</texture>
+            </control>
+            <control Style="weatherLabelStyle">
+                <description>Icon Day 4</description>
+                <type>image</type>
+                <posY>265</posY>
+                <posX>680</posX>
+                <width>80</width>
+                <height>80</height>
+                <texture>#WorldWeather.ForecastDay4IconImage</texture>
+            </control>
+            <control Style="weatherBoldLabelStyle">
+                <description>Day High 1</description>
+                <type>label</type>
+                <posX>200</posX>
+                <label>#WorldWeather.ForecastDay1High</label>
+            </control>
+            <control Style="weatherBoldLabelStyle">
+                <description>Day High 2</description>
+                <type>label</type>
+                <posX>350</posX>
+                <label>#WorldWeather.ForecastDay2High</label>
+            </control>
+            <control Style="weatherBoldLabelStyle">
+                <description>Day High 3</description>
+                <type>label</type>
+                <posX>500</posX>
+                <label>#WorldWeather.ForecastDay3High</label>
+            </control>
+            <control Style="weatherBoldLabelStyle">
+                <description>Day High 4</description>
+                <type>label</type>
+                <posX>650</posX>
+                <label>#WorldWeather.ForecastDay4High</label>
+            </control>
+            <control Style="weatherBoldLabelStyle">
+                <description>Day Low 1</description>
+                <type>label</type>
+                <posX>200</posX>
+                <posY>375</posY>
+                <textcolor>FFB75700</textcolor>
+                <font>smallFont</font>
+                <label>#WorldWeather.ForecastDay1Low</label>
+            </control>
+            <control Style="weatherBoldLabelStyle">
+                <description>Day Low 2</description>
+                <type>label</type>
+                <posX>350</posX>
+                <posY>375</posY>
+                <textcolor>FFB75700</textcolor>
+                <font>smallFont</font>
+                <label>#WorldWeather.ForecastDay2Low</label>
+            </control>
+            <control Style="weatherBoldLabelStyle">
+                <description>Day Low 3</description>
+                <type>label</type>
+                <posX>500</posX>
+                <posY>375</posY>
+                <textcolor>FFB75700</textcolor>
+                <font>smallFont</font>
+                <label>#WorldWeather.ForecastDay3Low</label>
+            </control>
+            <control Style="weatherBoldLabelStyle">
+                <description>Day Low 4</description>
+                <type>label</type>
+                <posX>650</posX>
+                <posY>375</posY>
+                <textcolor>FFB75700</textcolor>
+                <font>smallFont</font>
+                <label>#WorldWeather.ForecastDay4Low</label>
+            </control>
+            <control Style="weatherBoldLabelStyle">
+                <description>Day Condition 1</description>
+                <type>fadelabel</type>
+                <posX>205</posX>
+                <width>140</width>
+                <posY>410</posY>
+                <font>smallFont</font>
+                <label>#WorldWeather.ForecastDay1Condition</label>
+            </control>
+            <control Style="weatherBoldLabelStyle">
+                <description>Day Condition 2</description>
+                <type>fadelabel</type>
+                <posX>355</posX>
+                <width>140</width>
+                <posY>410</posY>
+                <font>smallFont</font>
+                <label>#WorldWeather.ForecastDay2Condition</label>
+            </control>
+            <control Style="weatherBoldLabelStyle">
+                <description>Day Condition 3</description>
+                <type>fadelabel</type>
+                <posX>505</posX>
+                <width>140</width>
+                <posY>410</posY>
+                <font>smallFont</font>
+                <label>#WorldWeather.ForecastDay3Condition</label>
+            </control>
+            <control Style="weatherBoldLabelStyle">
+                <description>Day Condition 4</description>
+                <type>fadelabel</type>
+                <posX>655</posX>
+                <width>140</width>
+                <posY>410</posY>
+                <font>smallFont</font>
+                <label>#WorldWeather.ForecastDay4Condition</label>
+            </control>
+        </control>
+        <control Style="debugGroupStyle">
+            <visible>false</visible>
+            <description>Debug Controls</description>
+            <type>group</type>
+            <control Style="debugControlStyle">
+                <type>button</type>
+
+                <label>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.Overlay.WW,#BasicHome.B1.Overlay.WW,#BasicHome.B2.Overlay.WW,#BasicHome.B3.Overlay.WW,#BasicHome.B4.Overlay.WW,#BasicHome.B5.Overlay.WW,#BasicHome.B6.Overlay.WW,#BasicHome.B7.Overlay.WW,#BasicHome.B8.Overlay.WW,#BasicHome.B9.Overlay.WW,'r0','r0','r0'))</label>
+
+            </control>
+            <control Style="debugControlStyle">
+                <type>button</type>
+                <id>95</id>
+                <label>#(neq('r0',choose(cint(#BasicHome.Current.ID),#BasicHome.B0.Overlay.WW,#BasicHome.B1.Overlay.WW,#BasicHome.B2.Overlay.WW,#BasicHome.B3.Overlay.WW,#BasicHome.B4.Overlay.WW,#BasicHome.B5.Overlay.WW,#BasicHome.B6.Overlay.WW,#BasicHome.B7.Overlay.WW,#BasicHome.B8.Overlay.WW,#BasicHome.B9.Overlay.WW,'r0','r0','r0')))</label>
+            </control>
+            <control Style="debugControlStyle">
+                <type>button</type>
+                <label>#(control.hastext(95))</label>
+                <visible>neq('r0',choose(cint(#BasicHome.Current.ID),#BasicHome.B0.Overlay.WW,#BasicHome.B1.Overlay.WW,#BasicHome.B2.Overlay.WW,#BasicHome.B3.Overlay.WW,#BasicHome.B4.Overlay.WW,#BasicHome.B5.Overlay.WW,#BasicHome.B6.Overlay.WW,#BasicHome.B7.Overlay.WW,#BasicHome.B8.Overlay.WW,#BasicHome.B9.Overlay.WW,'r0','r0','r0'))</visible>
+            </control>
+        </control>
+    </controls>
+</window>
