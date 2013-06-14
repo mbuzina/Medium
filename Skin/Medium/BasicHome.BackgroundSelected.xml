@@ -1,127 +1,203 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
+    <define>#useRandomGamesUserFanart:Yes</define>
+    <define>#useRandomMoviesUserFanart:Yes</define>
+    <define>#useRandomMoviesScraperFanart:Yes</define>
+    <define>#useRandomMovingPicturesFanart:Yes</define>
+    <define>#useRandomMusicUserFanart:Yes</define>
+    <define>#useRandomMusicScraperFanart:Yes</define>
+    <define>#useRandomPicturesUserFanart:Yes</define>
+    <define>#useRandomPluginsUserFanart:Yes</define>
+    <define>#useRandomScoreCenterUserFanart:Yes</define>
+    <define>#useRandomTVUserFanart:Yes</define>
+    <define>#useRandomTVSeriesFanart:Yes</define>
   
-<controls>
-  <control Style="backdropStyle">
-		<description>Basic Background</description>
-		<type>image</type>
-		<id>1</id>
-    <texture>#(switch(
-      eq(#BasicHome.B0.Backdrop,'WORLDWEATHER'),string.format('weather/backgrounds/{0}.jpg',#WorldWeather.TodayIconNumber),
-      eq(1,1),#BasicHome.B0.Backdrop
-    ))</texture>
-    <visible>string.equals(#BasicHome.Current.ID,0)</visible>
-	</control>
-  <control Style="backdropStyle">
-    <description>Basic Background</description>
-    <type>image</type>
-    <id>1</id>
-    <texture>#(switch(
-      eq(#BasicHome.B1.Backdrop,'WORLDWEATHER'),string.format('weather/backgrounds/{0}.jpg',#WorldWeather.TodayIconNumber),
-      eq(1,1),#BasicHome.B1.Backdrop
-      ))</texture>
-    <visible>string.equals(#BasicHome.Current.ID,1)</visible>
-  </control>
-  <control Style="backdropStyle">
-		<description>Basic Background</description>
-		<type>image</type>
-		<id>1</id>
-		<texture>#(switch(
-            eq(#BasicHome.B2.Backdrop,'WORLDWEATHER'),string.format('weather/backgrounds/{0}.jpg',#WorldWeather.TodayIconNumber),
-            eq(1,1),#BasicHome.B2.Backdrop
+    <define>#useSelectedFanart:Yes</define>
+    
+    <controls> 
+        <control Style="hiddenGroupStyle">
+            <type>group</type>    
+            <control Style="hiddenStyle">
+                <description>DUMMY CONTROL FOR RANDOM FANART 1 VISIBILITY CONDITION</description>
+                <type>label</type>
+                <id>91919297</id>
+                <width>1</width>
+            </control>
+            <control Style="hiddenStyle">
+                <description>DUMMY CONTROL FOR RANDOM FANART 2 VISIBILITY CONDITION</description>
+                <type>label</type>
+                <id>91919298</id>
+                <width>1</width>
+            </control>
+            <control>
+                <description>DUMMY CONTROL FOR SELECTED FANART 1 VISIBILITY CONDITION</description>
+                <type>label</type>
+                <id>91919291</id>
+                <width>1</width>
+            </control>
+            <control>
+                <description>DUMMY CONTROL FOR SELECTED FANART 2 VISIBILITY CONDITION</description>
+                <type>label</type>
+                <id>91919292</id>
+                <width>1</width>
+            </control>
+            <control>
+                <description>DUMMY CONTROL FOR SELECTED FANART AVAILABILITY CONDITION</description>
+                <type>label</type>
+                <id>91919293</id>
+                <width>1</width>
+            </control>
+        </control>
+        
+        <control Style="backdropStyle">
+            <description>Current Background 1</description>
+            <type>image</type>
+            <texture>#(switch(
+                eq(#BasicHome.Current.Background,'WORLDWEATHER'),string.format('weather/backgrounds/{0}.jpg',#WorldWeather.TodayIconNumber),
+                eq(#BasicHome.Current.Background,'FA_MUSIC'),iif(eq(#fanarthandler.music.scraper.backdrop1.any,''),'hover_my music.png',#fanarthandler.music.scraper.backdrop1.any),
+                eq('1','1'),#BasicHome.Current.Background
             ))</texture>
-		<visible>string.equals(#BasicHome.Current.ID,2)</visible>
-	</control>
-	<control Style="backdropStyle">
-		<description>Basic Background</description>
-		<type>image</type>
-		<id>1</id>
-        <texture>#(switch(
-            eq(#BasicHome.B3.Backdrop,'WORLDWEATHER'),string.format('weather/backgrounds/{0}.jpg',#WorldWeather.TodayIconNumber),
-            eq(1,1),#BasicHome.B3.Backdrop
+            <visible>control.isvisible(91919297)|!string.starts(#BasicHome.Current.Background,'FA_')</visible>    
+        </control>
+        <control Style="backdropStyle">
+            <description>Current Background 2</description>
+            <type>image</type>
+            <texture>#(switch(
+                eq(#BasicHome.Current.Background,'WORLDWEATHER'),string.format('weather/backgrounds/{0}.jpg',#WorldWeather.TodayIconNumber),
+                eq(#BasicHome.Current.Background,'FA_MUSIC'),iif(eq(#fanarthandler.music.scraper.backdrop2.any,''),'hover_my music.png',#fanarthandler.music.scraper.backdrop2.any),
+                eq('1','1'),#BasicHome.Current.Background
             ))</texture>
-        <visible>string.equals(#BasicHome.Current.ID,3)</visible>
-	</control>
-	<control Style="backdropStyle">
-		<description>Basic Background</description>
-		<type>image</type>
-		<id>1</id>
-        <texture>#(switch(
-            eq(#BasicHome.B4.Backdrop,'WORLDWEATHER'),string.format('weather/backgrounds/{0}.jpg',#WorldWeather.TodayIconNumber),
-            eq(1,1),#BasicHome.B4.Backdrop
+            <visible>control.isvisible(91919298)+string.starts(#BasicHome.Current.Background,'FA_')</visible>    
+        </control>
+        <control Style="backdropStyle">
+            <description>Selected Background 1</description>
+            <type>image</type>
+            <texture>#(switch(
+                eq(#BasicHome.Current.Background,'FA_MUSIC'),#fanarthandler.music.backdrop1.selected,
             ))</texture>
-        <visible>string.equals(#BasicHome.Current.ID,4)</visible>
-	</control>
-	<control Style="backdropStyle">
-		<description>Basic Background</description>
-		<type>image</type>
-		<id>1</id>
-        <texture>#(switch(
-            eq(#BasicHome.B5.Backdrop,'WORLDWEATHER'),string.format('weather/backgrounds/{0}.jpg',#WorldWeather.TodayIconNumber),
-            eq(1,1),#BasicHome.B5.Backdrop
+            <visible>control.isvisible(91919291)+control.isvisible(91919293)+string.starts(#BasicHome.Current.Background,'FA_')</visible>    
+        </control>
+        <control Style="backdropStyle">
+            <description>Selected Background 2</description>
+            <type>image</type>
+            <texture>#(switch(
+                eq(#BasicHome.Current.Background,'FA_MUSIC'),#fanarthandler.music.backdrop2.selected,
             ))</texture>
-        <visible>string.equals(#BasicHome.Current.ID,5)</visible>
-	</control>
-	<control Style="backdropStyle">
-		<description>Basic Background</description>
-		<type>image</type>
-		<id>1</id>
-        <texture>#(switch(
-            eq(#BasicHome.B6.Backdrop,'WORLDWEATHER'),string.format('weather/backgrounds/{0}.jpg',#WorldWeather.TodayIconNumber),
-            eq(1,1),#BasicHome.B6.Backdrop
+            <visible>control.isvisible(91919292)+control.isvisible(91919293)+string.starts(#BasicHome.Current.Background,'FA_')</visible>    
+        </control>
+
+        <!--
+        <control Style="backdropStyle">
+            <description>Previous Background 1</description>
+            <type>image</type>
+            <texture>#(switch(
+                eq(#BasicHome.Previous.Background,'WORLDWEATHER'),string.format('weather/backgrounds/{0}.jpg',#WorldWeather.TodayIconNumber),
+                eq(#BasicHome.Previous.Background,'FA_MUSIC'),iif(eq(#fanarthandler.music.scraper.backdrop1.any,''),'hover_my music.png',#fanarthandler.music.scraper.backdrop1.any),
+                eq('1','1'),#BasicHome.Previous.Background
             ))</texture>
-        <visible>string.equals(#BasicHome.Current.ID,6)</visible>
-	</control>
-	<control Style="backdropStyle">
-		<description>Basic Background</description>
-		<type>image</type>
-		<id>1</id>
-        <texture>#(switch(
-            eq(#BasicHome.B7.Backdrop,'WORLDWEATHER'),string.format('weather/backgrounds/{0}.jpg',#WorldWeather.TodayIconNumber),
-            eq(1,1),#BasicHome.B7.Backdrop
+            <visible>control.isvisible(91919297)|!string.starts(#BasicHome.Previous.Background,'FA_')</visible>
+        </control>
+       <control Style="backdropStyle">
+            <description>Previous Background 1</description>
+            <type>image</type>
+            <texture>#(switch(
+                eq(#BasicHome.Previous.Background,'WORLDWEATHER'),string.format('weather/backgrounds/{0}.jpg',#WorldWeather.TodayIconNumber),
+                eq(#BasicHome.Previous.Background,'FA_MUSIC'),#fanarthandler.music.scraper.backdrop2.any,
+                eq('1','1'),#BasicHome.Previous.Background
             ))</texture>
-        <visible>string.equals(#BasicHome.Current.ID,7)</visible>
-	</control>
-	<control Style="backdropStyle">
-		<description>Basic Background</description>
-		<type>image</type>
-		<id>1</id>
-        <texture>#(switch(
-            eq(#BasicHome.B8.Backdrop,'WORLDWEATHER'),string.format('weather/backgrounds/{0}.jpg',#WorldWeather.TodayIconNumber),
-            eq(1,1),#BasicHome.B8.Backdrop
+           <visible>control.isvisible(91919298)+string.starts(#BasicHome.Previous.Background,'FA_')</visible>
+        </control>
+        <control Style="backdropStyle">
+            <description>Current Background 1</description>
+            <type>image</type>
+            <texture>#(switch(
+                eq(#BasicHome.Current.Background,'WORLDWEATHER'),string.format('weather/backgrounds/{0}.jpg',#WorldWeather.TodayIconNumber),
+                eq(#BasicHome.Current.Background,'FA_MUSIC'),iif(eq(#fanarthandler.music.scraper.backdrop1.any,''),'hover_my music.png',#fanarthandler.music.scraper.backdrop1.any),
+                eq('1','1'),#BasicHome.Current.Background
             ))</texture>
-        <visible>string.equals(#BasicHome.Current.ID,8)</visible>
-	</control>
-  <control Style="backdropStyle">
-    <description>Basic Background</description>
-    <type>image</type>
-    <id>1</id>
-      <texture>#(switch(
-          eq(#BasicHome.B9.Backdrop,'WORLDWEATHER'),string.format('weather/backgrounds/{0}.jpg',#WorldWeather.TodayIconNumber),
-          eq(1,1),#BasicHome.B9.Backdrop
-          ))</texture>
-      <visible>string.equals(#BasicHome.Current.ID,9)</visible>
-  </control>
-    <control Style="backdropStyle">
-        <description>Basic Background</description>
-        <type>image</type>
-        <id>1</id>
-        <texture>exit.jpg</texture>
-        <visible>string.equals(#BasicHome.Current.ID,10)</visible>
-    </control>
-    <control Style="backdropStyle">
-        <description>Basic Background</description>
-        <type>image</type>
-        <id>1</id>
-        <texture>shutdown.jpg</texture>
-        <visible>string.equals(#BasicHome.Current.ID,11)</visible>
-    </control>
-    <control Style="backdropStyle">
-        <description>Basic Background</description>
-        <type>image</type>
-        <id>1</id>
-        <texture>restart.jpg</texture>
-        <visible>string.equals(#BasicHome.Current.ID,12)</visible>
-    </control>
-</controls>
+            <width>1820</width>
+            
+            <visible>control.isvisible(91919297)|!string.starts(#BasicHome.Current.Background,'FA_')</visible>
+        </control>
+       <control Style="backdropStyle">
+            <description>Current Background 2</description>
+            <type>image</type>
+            <texture>#(switch(
+                eq(#BasicHome.Current.Background,'WORLDWEATHER'),string.format('weather/backgrounds/{0}.jpg',#WorldWeather.TodayIconNumber),
+                eq(#BasicHome.Current.Background,'FA_MUSIC'),#fanarthandler.music.scraper.backdrop2.any,
+                eq('1','1'),#BasicHome.Current.Background
+            ))</texture>
+           <visible>control.isvisible(91919298)+string.starts(#BasicHome.Current.Background,'FA_')</visible>
+        </control>
+        <control Style="backdropStyle">
+            <description>Previous Background 1</description>
+            <type>image</type>
+            <texture>#(switch(
+                eq(#BasicHome.Previous.Background,'WORLDWEATHER'),string.format('weather/backgrounds/{0}.jpg',#WorldWeather.TodayIconNumber),
+                eq(#BasicHome.Previous.Background,'FA_MUSIC'),iif(eq(#fanarthandler.music.scraper.backdrop1.any,''),'hover_my music.png',#fanarthandler.music.scraper.backdrop1.any),
+                eq('1','1'),#BasicHome.Previous.Background
+            ))</texture>
+            <width>1820</width>
+            <posX>100</posX>
+            <animation effect="fade" time="300" start="100" end="0" easing="out" tween="back" condition="control.isvisible(1100)">conditional</animation>
+            <animation effect="fade" time="300" start="100" end="0" easing="out" tween="cubic" condition="control.isvisible(1101)">conditional</animation>
+            <animation effect="fade" time="300" start="100" end="0" easing="out" tween="sine" condition="control.isvisible(1102)">conditional</animation>
+            <animation effect="fade" time="300" start="100" end="0" easing="out" condition="control.isvisible(1103)">conditional</animation>
+            <animation effect="fade" time="300" start="100" end="0" easing="out" condition="control.isvisible(1104)">conditional</animation>
+            <animation effect="fade" time="300" start="100" end="0" easing="out" condition="control.isvisible(1105)">conditional</animation>
+            <animation effect="fade" time="300" start="100" end="0" easing="out" condition="control.isvisible(1106)">conditional</animation>
+            <animation effect="fade" time="300" start="100" end="0" easing="out" condition="control.isvisible(1107)">conditional</animation>
+            <animation effect="fade" time="300" start="100" end="0" easing="out" condition="control.isvisible(1108)">conditional</animation>
+            <animation effect="fade" time="300" start="100" end="0" easing="out" condition="control.isvisible(1109)">conditional</animation>
+            <animation effect="fade" time="300" start="100" end="0" easing="out" condition="control.isvisible(1110)">conditional</animation>
+            <animation effect="fade" time="300" start="100" end="0" easing="out" condition="control.isvisible(1111)">conditional</animation>
+            <animation effect="fade" time="300" start="100" end="0" easing="out" condition="control.isvisible(1112)">conditional</animation>
+            <visible>[control.isvisible(91919297)|!string.starts(#BasicHome.Previous.Background,'FA_')]+[true|control.isvisible(1100)|control.isvisible(1102)|control.isvisible(1104)|control.isvisible(1106)|control.isvisible(1108)|control.isvisible(1110)|control.isvisible(1112)]</visible>
+        </control>
+      <control Style="backdropStyle">
+            <description>Previous Background 1</description>
+            <type>image</type>
+            <texture>#(switch(
+                eq(#BasicHome.Previous.Background,'WORLDWEATHER'),string.format('weather/backgrounds/{0}.jpg',#WorldWeather.TodayIconNumber),
+                eq(#BasicHome.Previous.Background,'FA_MUSIC'),#fanarthandler.music.scraper.backdrop2.any,
+                eq('1','1'),#BasicHome.Previous.Background
+            ))</texture>
+           <visible>control.isvisible(91919298)+string.starts(#BasicHome.Previous.Background,'FA_')</visible>
+        </control> 
+        <control Style="debugGroupStyle">
+            <description>Debug Controls</description>
+            <visible>false</visible>
+            <posX>800</posX>
+            <posY>500</posY>
+            <width>500</width>
+            <height>600</height>
+            <type>group</type>
+            <control Style="debugControlStyle">
+                <type>button</type>
+                <label>#(switch(
+                    eq(#BasicHome.Current.Background,'WORLDWEATHER'),string.format('weather/backgrounds/{0}.jpg',#WorldWeather.TodayIconNumber),
+                    eq(#BasicHome.Current.Background,'FA_MUSIC'),iif(eq(#fanarthandler.music.scraper.backdrop1.any,''),'hover_my music.png',#fanarthandler.music.scraper.backdrop1.any),
+                    eq('1','1'),#BasicHome.Current.Background
+                ))</label>
+                <ondown>11</ondown>
+                <visible>string.equals(#BasicHome.Current.ID,#BasicHome.Previous.ID)</visible>
+            </control>
+            <control Style="debugControlStyle">
+                <type>button</type>
+                <label>x #fanarthandler.music.scraper.backdrop1.any x</label>
+                <align>right</align>
+                <ondown>11</ondown>
+            </control>
+            <control Style="debugControlStyle">
+                <type>button</type>
+                <label>#(switch(
+                    eq(#BasicHome.Previous.Background,'WORLDWEATHER'),string.format('weather/backgrounds/{0}.jpg',#WorldWeather.TodayIconNumber),
+                    eq(#BasicHome.Previous.Background,'FA_MUSIC'),iif(eq(#fanarthandler.music.scraper.backdrop1.any,''),'hover_my music.png',#fanarthandler.music.scraper.backdrop1.any),
+                    eq('1','1'),#BasicHome.Previous.Background
+                ))</label>
+                <ondown>11</ondown>
+            </control>
+        </control>
+       -->
+    </controls>
 </window>

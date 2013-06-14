@@ -46,6 +46,15 @@
     </font>
     
     <font>
+        <name>largeBoldFont</name>
+        <filename>Segoe UI</filename>
+        <height>14</height>
+        <start>0</start>
+        <end>1536</end>
+        <bold>yes</bold>
+    </font>    
+    
+    <font>
         <name>labelFont</name>
         <filename>Segoe UI Light</filename>
         <height>12</height>

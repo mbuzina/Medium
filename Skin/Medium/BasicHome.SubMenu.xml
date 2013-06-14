@@ -3,44 +3,140 @@
     <controls>
         <!-- Positional Controls -->
         <control Style="hiddenStyle">
-            <id>10000</id>
-            <type>label</type>
-            <visible>[control.isvisible(1100)+skin.hassetting(#BasicHome.B0.Overlay.Submenu)]|[control.isvisible(1101)+skin.hassetting(#BasicHome.B1.Overlay.Submenu)]|[control.isvisible(1102)+skin.hassetting(#BasicHome.B2.Overlay.Submenu)]|[control.isvisible(1103)+skin.hassetting(#BasicHome.B3.Overlay.Submenu)]|[control.isvisible(1104)+skin.hassetting(#BasicHome.B4.Overlay.Submenu)]|[control.isvisible(1105)+skin.hassetting(#BasicHome.B5.Overlay.Submenu)]|[control.isvisible(1106)+skin.hassetting(#BasicHome.B6.Overlay.Submenu)]|[control.isvisible(1107+skin.hassetting(#BasicHome.B7.Overlay.Submenu)]|[control.isvisible(1108)+skin.hassetting(#BasicHome.B8.Overlay.Submenu)]|[control.isvisible(1109)+skin.hassetting(#BasicHome.B9.Overlay.Submenu)]+!control.isvisible(1110)+!control.isvisible(1111)+!control.isvisible(1112)</visible>
-        </control>
-        <control Style="hiddenStyle">
+            <description>Pos 0,0</description>
             <id>10001</id>
             <type>label</type>
-            <visible>false</visible>
+            <visible>string.equals(#BasicHome.Current.c0r0,SUB)</visible>
         </control>
+
+        <control Style="overlayStyle">
+            <description>Viewport</description>
+            <type>image</type>
+            <posX>0</posX>
+            <posY>200</posY>
+            <width>800</width>
+            <height>542</height>
+            <visible>control.isvisible(10001)</visible>
+            <texture>header_background.png</texture>
+        </control>
+
         <control>
             <type>group</type>
-            <dimColor>FFFFFFFF</dimColor>
-            <animation effect="fade" time="200" delay="20" easing="inout" condition="true">Visible</animation>
-            <animation effect="fade" time="200" easing="inout" condition="true">Hidden</animation>
-            <visible>control.isvisible(10000)</visible>
-           <control Style="overlayStyle">
-                <description>Viewport</description>
-                <type>image</type>
-                <posX>0</posX>
-                <posY>230</posY>
-                <width>800</width>
-                <height>770</height>
-                <texture>header_background.png</texture>
-            </control>
-            <control>
-                <type>group</type>
-                <layout>StackLayout(Vertical,2,false)</layout>
-                <posX>10</posX>
-                <posY>250</posY>
-                <width>780</width>
-                <height>750</height>
-                <control Style="subMenuStyle">
-                    <type>button</type>
-                    <label>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.0.Label,#BasicHome.B1.0.Label,#BasicHome.B2.0.Label,#BasicHome.B3.0.Label,#BasicHome.B4.0.Label,#BasicHome.B5.0.Label,#BasicHome.B6.0.Label,#BasicHome.7.0.Label,#BasicHome.B8.0.Label,#BasicHome.B9.0.Label))</label>
+            <layout>StackLayout(Vertical,10,false)</layout>
+            <posX>10</posX>
+            <posY>185</posY>
+            <width>780</width>
+            <height>530</height>
+            <visible>control.isvisible(10001)</visible>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10100</id>
+                <label>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.0.Label,#BasicHome.B1.0.Label,#BasicHome.B2.0.Label,#BasicHome.B3.0.Label,#BasicHome.B4.0.Label,#BasicHome.B5.0.Label,#BasicHome.B6.0.Label,#BasicHome.7.0.Label,#BasicHome.B8.0.Label,#BasicHome.B9.0.Label))</label>
                 <!--    <hyperlink>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.0.Hyperlink,#BasicHome.B1.0.Hyperlink,#BasicHome.B2.0.Hyperlink,#BasicHome.B3.0.Hyperlink,#BasicHome.B4.0.Hyperlink,#BasicHome.B5.0.Hyperlink,#BasicHome.B6.0.Hyperlink,#BasicHome.7.0.Hyperlink,#BasicHome.B8.0.Hyperlink,#BasicHome.B9.0.Hyperlink))</hyperlink>
                     <hyperlinkParameter>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.0.HyperlinkParameter,#BasicHome.B1.0.HyperlinkParameter,#BasicHome.B2.0.HyperlinkParameter,#BasicHome.B3.0.HyperlinkParameter,#BasicHome.B4.0.HyperlinkParameter,#BasicHome.B5.0.HyperlinkParameter,#BasicHome.B6.0.HyperlinkParameter,#BasicHome.7.0.HyperlinkParameter,#BasicHome.B8.0.HyperlinkParameter,#BasicHome.B9.0.HyperlinkParameter))</hyperlinkParameter>
                 -->
-                </control>
+                <visible>control.isvisible(10001)+[[control.isvisible(1100)+!string.equals(#BasicHome.B0.0.Label,)]|[control.isvisible(1101)+!string.equals(#BasicHome.B1.0.Label,)]|[control.isvisible(1102)+!string.equals(#BasicHome.B2.0.Label,)]|[control.isvisible(1103)+!string.equals(#BasicHome.B3.0.Label,)]|[control.isvisible(1104)+!string.equals(#BasicHome.B4.0.Label,)]|[control.isvisible(1105)+!string.equals(#BasicHome.B5.0.Label,)]|[control.isvisible(1106)+!string.equals(#BasicHome.B6.0.Label,)]|[control.isvisible(1107)+!string.equals(#BasicHome.B7.0.Label,)]|[control.isvisible(1108)+!string.equals(#BasicHome.B8.0.Label,)]|[control.isvisible(1109)+!string.equals(#BasicHome.B9.0.Label,)]]</visible>
+                <onup>951100</onup>
+                <ondown>10101</ondown>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10101</id>
+                <label>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.1.Label,#BasicHome.B1.1.Label,#BasicHome.B2.1.Label,#BasicHome.B3.1.Label,#BasicHome.B4.1.Label,#BasicHome.B5.1.Label,#BasicHome.B6.1.Label,#BasicHome.7.1.Label,#BasicHome.B8.1.Label,#BasicHome.B9.1.Label))</label>
+                <!--    <hyperlink>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.1.Hyperlink,#BasicHome.B1.1.Hyperlink,#BasicHome.B2.1.Hyperlink,#BasicHome.B3.1.Hyperlink,#BasicHome.B4.1.Hyperlink,#BasicHome.B5.1.Hyperlink,#BasicHome.B6.1.Hyperlink,#BasicHome.7.1.Hyperlink,#BasicHome.B8.1.Hyperlink,#BasicHome.B9.1.Hyperlink))</hyperlink>
+                    <hyperlinkParameter>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.1.HyperlinkParameter,#BasicHome.B1.1.HyperlinkParameter,#BasicHome.B2.1.HyperlinkParameter,#BasicHome.B3.1.HyperlinkParameter,#BasicHome.B4.1.HyperlinkParameter,#BasicHome.B5.1.HyperlinkParameter,#BasicHome.B6.1.HyperlinkParameter,#BasicHome.7.1.HyperlinkParameter,#BasicHome.B8.1.HyperlinkParameter,#BasicHome.B9.1.HyperlinkParameter))</hyperlinkParameter>
+                -->
+                <visible>control.isvisible(10001)+[[control.isvisible(1100)+!string.equals(#BasicHome.B0.1.Label,)]|[control.isvisible(1101)+!string.equals(#BasicHome.B1.1.Label,)]|[control.isvisible(1102)+!string.equals(#BasicHome.B2.1.Label,)]|[control.isvisible(1103)+!string.equals(#BasicHome.B3.1.Label,)]|[control.isvisible(1104)+!string.equals(#BasicHome.B4.1.Label,)]|[control.isvisible(1105)+!string.equals(#BasicHome.B5.1.Label,)]|[control.isvisible(1106)+!string.equals(#BasicHome.B6.1.Label,)]|[control.isvisible(1107)+!string.equals(#BasicHome.B7.1.Label,)]|[control.isvisible(1108)+!string.equals(#BasicHome.B8.1.Label,)]|[control.isvisible(1109)+!string.equals(#BasicHome.B9.1.Label,)]]</visible>
+                <onup>10100</onup>
+                <ondown>10102</ondown>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10102</id>
+                <label>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.2.Label,#BasicHome.B1.2.Label,#BasicHome.B2.2.Label,#BasicHome.B3.2.Label,#BasicHome.B4.2.Label,#BasicHome.B5.2.Label,#BasicHome.B6.2.Label,#BasicHome.7.2.Label,#BasicHome.B8.2.Label,#BasicHome.B9.2.Label))</label>
+                <!--    <hyperlink>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.2.Hyperlink,#BasicHome.B1.2.Hyperlink,#BasicHome.B2.2.Hyperlink,#BasicHome.B3.2.Hyperlink,#BasicHome.B4.2.Hyperlink,#BasicHome.B5.2.Hyperlink,#BasicHome.B6.2.Hyperlink,#BasicHome.7.2.Hyperlink,#BasicHome.B8.2.Hyperlink,#BasicHome.B9.2.Hyperlink))</hyperlink>
+                    <hyperlinkParameter>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.2.HyperlinkParameter,#BasicHome.B1.2.HyperlinkParameter,#BasicHome.B2.2.HyperlinkParameter,#BasicHome.B3.2.HyperlinkParameter,#BasicHome.B4.2.HyperlinkParameter,#BasicHome.B5.2.HyperlinkParameter,#BasicHome.B6.2.HyperlinkParameter,#BasicHome.7.2.HyperlinkParameter,#BasicHome.B8.2.HyperlinkParameter,#BasicHome.B9.2.HyperlinkParameter))</hyperlinkParameter>
+                -->
+                <visible>control.isvisible(10001)+[[control.isvisible(1100)+!string.equals(#BasicHome.B0.2.Label,)]|[control.isvisible(1101)+!string.equals(#BasicHome.B1.2.Label,)]|[control.isvisible(1102)+!string.equals(#BasicHome.B2.2.Label,)]|[control.isvisible(1103)+!string.equals(#BasicHome.B3.2.Label,)]|[control.isvisible(1104)+!string.equals(#BasicHome.B4.2.Label,)]|[control.isvisible(1105)+!string.equals(#BasicHome.B5.2.Label,)]|[control.isvisible(1106)+!string.equals(#BasicHome.B6.2.Label,)]|[control.isvisible(1107)+!string.equals(#BasicHome.B7.2.Label,)]|[control.isvisible(1108)+!string.equals(#BasicHome.B8.2.Label,)]|[control.isvisible(1109)+!string.equals(#BasicHome.B9.2.Label,)]]</visible>
+                <onup>10101</onup>
+                <ondown>10103</ondown>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10103</id>
+                <label>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.3.Label,#BasicHome.B1.3.Label,#BasicHome.B2.3.Label,#BasicHome.B3.3.Label,#BasicHome.B4.3.Label,#BasicHome.B5.3.Label,#BasicHome.B6.3.Label,#BasicHome.7.3.Label,#BasicHome.B8.3.Label,#BasicHome.B9.3.Label))</label>
+                <!--    <hyperlink>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.3.Hyperlink,#BasicHome.B1.3.Hyperlink,#BasicHome.B2.3.Hyperlink,#BasicHome.B3.3.Hyperlink,#BasicHome.B4.3.Hyperlink,#BasicHome.B5.3.Hyperlink,#BasicHome.B6.3.Hyperlink,#BasicHome.7.3.Hyperlink,#BasicHome.B8.3.Hyperlink,#BasicHome.B9.3.Hyperlink))</hyperlink>
+                    <hyperlinkParameter>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.3.HyperlinkParameter,#BasicHome.B1.3.HyperlinkParameter,#BasicHome.B2.3.HyperlinkParameter,#BasicHome.B3.3.HyperlinkParameter,#BasicHome.B4.3.HyperlinkParameter,#BasicHome.B5.3.HyperlinkParameter,#BasicHome.B6.3.HyperlinkParameter,#BasicHome.7.3.HyperlinkParameter,#BasicHome.B8.3.HyperlinkParameter,#BasicHome.B9.3.HyperlinkParameter))</hyperlinkParameter>
+                -->
+                <visible>control.isvisible(10001)+[[control.isvisible(1100)+!string.equals(#BasicHome.B0.3.Label,)]|[control.isvisible(1101)+!string.equals(#BasicHome.B1.3.Label,)]|[control.isvisible(1102)+!string.equals(#BasicHome.B2.3.Label,)]|[control.isvisible(1103)+!string.equals(#BasicHome.B3.3.Label,)]|[control.isvisible(1104)+!string.equals(#BasicHome.B4.3.Label,)]|[control.isvisible(1105)+!string.equals(#BasicHome.B5.3.Label,)]|[control.isvisible(1106)+!string.equals(#BasicHome.B6.3.Label,)]|[control.isvisible(1107)+!string.equals(#BasicHome.B7.3.Label,)]|[control.isvisible(1108)+!string.equals(#BasicHome.B8.3.Label,)]|[control.isvisible(1109)+!string.equals(#BasicHome.B9.3.Label,)]]</visible>
+                <onup>10102</onup>
+                <ondown>10104</ondown>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10104</id>
+                <label>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.4.Label,#BasicHome.B1.4.Label,#BasicHome.B2.4.Label,#BasicHome.B3.4.Label,#BasicHome.B4.4.Label,#BasicHome.B5.4.Label,#BasicHome.B6.4.Label,#BasicHome.7.4.Label,#BasicHome.B8.4.Label,#BasicHome.B9.4.Label))</label>
+                <!--    <hyperlink>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.4.Hyperlink,#BasicHome.B1.4.Hyperlink,#BasicHome.B2.4.Hyperlink,#BasicHome.B3.4.Hyperlink,#BasicHome.B4.4.Hyperlink,#BasicHome.B5.4.Hyperlink,#BasicHome.B6.4.Hyperlink,#BasicHome.7.4.Hyperlink,#BasicHome.B8.4.Hyperlink,#BasicHome.B9.4.Hyperlink))</hyperlink>
+                    <hyperlinkParameter>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.4.HyperlinkParameter,#BasicHome.B1.4.HyperlinkParameter,#BasicHome.B2.4.HyperlinkParameter,#BasicHome.B3.4.HyperlinkParameter,#BasicHome.B4.4.HyperlinkParameter,#BasicHome.B5.4.HyperlinkParameter,#BasicHome.B6.4.HyperlinkParameter,#BasicHome.7.4.HyperlinkParameter,#BasicHome.B8.4.HyperlinkParameter,#BasicHome.B9.4.HyperlinkParameter))</hyperlinkParameter>
+                -->
+                <visible>control.isvisible(10001)+[[control.isvisible(1100)+!string.equals(#BasicHome.B0.4.Label,)]|[control.isvisible(1101)+!string.equals(#BasicHome.B1.4.Label,)]|[control.isvisible(1102)+!string.equals(#BasicHome.B2.4.Label,)]|[control.isvisible(1103)+!string.equals(#BasicHome.B3.4.Label,)]|[control.isvisible(1104)+!string.equals(#BasicHome.B4.4.Label,)]|[control.isvisible(1105)+!string.equals(#BasicHome.B5.4.Label,)]|[control.isvisible(1106)+!string.equals(#BasicHome.B6.4.Label,)]|[control.isvisible(1107)+!string.equals(#BasicHome.B7.4.Label,)]|[control.isvisible(1108)+!string.equals(#BasicHome.B8.4.Label,)]|[control.isvisible(1109)+!string.equals(#BasicHome.B9.4.Label,)]]</visible>
+                <onup>10103</onup>
+                <ondown>10105</ondown>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10105</id>
+                <label>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.5.Label,#BasicHome.B1.5.Label,#BasicHome.B2.5.Label,#BasicHome.B3.5.Label,#BasicHome.B4.5.Label,#BasicHome.B5.5.Label,#BasicHome.B6.5.Label,#BasicHome.7.5.Label,#BasicHome.B8.5.Label,#BasicHome.B9.5.Label))</label>
+                <!--    <hyperlink>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.5.Hyperlink,#BasicHome.B1.5.Hyperlink,#BasicHome.B2.5.Hyperlink,#BasicHome.B3.5.Hyperlink,#BasicHome.B4.5.Hyperlink,#BasicHome.B5.5.Hyperlink,#BasicHome.B6.5.Hyperlink,#BasicHome.7.5.Hyperlink,#BasicHome.B8.5.Hyperlink,#BasicHome.B9.5.Hyperlink))</hyperlink>
+                    <hyperlinkParameter>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.5.HyperlinkParameter,#BasicHome.B1.5.HyperlinkParameter,#BasicHome.B2.5.HyperlinkParameter,#BasicHome.B3.5.HyperlinkParameter,#BasicHome.B4.5.HyperlinkParameter,#BasicHome.B5.5.HyperlinkParameter,#BasicHome.B6.5.HyperlinkParameter,#BasicHome.7.5.HyperlinkParameter,#BasicHome.B8.5.HyperlinkParameter,#BasicHome.B9.5.HyperlinkParameter))</hyperlinkParameter>
+                -->
+                <visible>control.isvisible(10001)+[[control.isvisible(1100)+!string.equals(#BasicHome.B0.5.Label,)]|[control.isvisible(1101)+!string.equals(#BasicHome.B1.5.Label,)]|[control.isvisible(1102)+!string.equals(#BasicHome.B2.5.Label,)]|[control.isvisible(1103)+!string.equals(#BasicHome.B3.5.Label,)]|[control.isvisible(1104)+!string.equals(#BasicHome.B4.5.Label,)]|[control.isvisible(1105)+!string.equals(#BasicHome.B5.5.Label,)]|[control.isvisible(1106)+!string.equals(#BasicHome.B6.5.Label,)]|[control.isvisible(1107)+!string.equals(#BasicHome.B7.5.Label,)]|[control.isvisible(1108)+!string.equals(#BasicHome.B8.5.Label,)]|[control.isvisible(1109)+!string.equals(#BasicHome.B9.5.Label,)]]</visible>
+                <onup>10104</onup>
+                <ondown>10106</ondown>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10106</id>
+                <label>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.6.Label,#BasicHome.B1.6.Label,#BasicHome.B2.6.Label,#BasicHome.B3.6.Label,#BasicHome.B4.6.Label,#BasicHome.B5.6.Label,#BasicHome.B6.6.Label,#BasicHome.7.6.Label,#BasicHome.B8.6.Label,#BasicHome.B9.6.Label))</label>
+                <!--    <hyperlink>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.6.Hyperlink,#BasicHome.B1.6.Hyperlink,#BasicHome.B2.6.Hyperlink,#BasicHome.B3.6.Hyperlink,#BasicHome.B4.6.Hyperlink,#BasicHome.B5.6.Hyperlink,#BasicHome.B6.6.Hyperlink,#BasicHome.7.6.Hyperlink,#BasicHome.B8.6.Hyperlink,#BasicHome.B9.6.Hyperlink))</hyperlink>
+                    <hyperlinkParameter>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.6.HyperlinkParameter,#BasicHome.B1.6.HyperlinkParameter,#BasicHome.B2.6.HyperlinkParameter,#BasicHome.B3.6.HyperlinkParameter,#BasicHome.B4.6.HyperlinkParameter,#BasicHome.B5.6.HyperlinkParameter,#BasicHome.B6.6.HyperlinkParameter,#BasicHome.7.6.HyperlinkParameter,#BasicHome.B8.6.HyperlinkParameter,#BasicHome.B9.6.HyperlinkParameter))</hyperlinkParameter>
+                -->
+                <visible>control.isvisible(10001)+[[control.isvisible(1100)+!string.equals(#BasicHome.B0.6.Label,)]|[control.isvisible(1101)+!string.equals(#BasicHome.B1.6.Label,)]|[control.isvisible(1102)+!string.equals(#BasicHome.B2.6.Label,)]|[control.isvisible(1103)+!string.equals(#BasicHome.B3.6.Label,)]|[control.isvisible(1104)+!string.equals(#BasicHome.B4.6.Label,)]|[control.isvisible(1105)+!string.equals(#BasicHome.B5.6.Label,)]|[control.isvisible(1106)+!string.equals(#BasicHome.B6.6.Label,)]|[control.isvisible(1107)+!string.equals(#BasicHome.B7.6.Label,)]|[control.isvisible(1108)+!string.equals(#BasicHome.B8.6.Label,)]|[control.isvisible(1109)+!string.equals(#BasicHome.B9.6.Label,)]]</visible>
+                <onup>10105</onup>
+                <ondown>10107</ondown>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10107</id>
+                <label>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.7.Label,#BasicHome.B1.7.Label,#BasicHome.B2.7.Label,#BasicHome.B3.7.Label,#BasicHome.B4.7.Label,#BasicHome.B5.7.Label,#BasicHome.B6.7.Label,#BasicHome.7.7.Label,#BasicHome.B8.7.Label,#BasicHome.B9.7.Label))</label>
+                <!--    <hyperlink>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.7.Hyperlink,#BasicHome.B1.7.Hyperlink,#BasicHome.B2.7.Hyperlink,#BasicHome.B3.7.Hyperlink,#BasicHome.B4.7.Hyperlink,#BasicHome.B5.7.Hyperlink,#BasicHome.B6.7.Hyperlink,#BasicHome.7.7.Hyperlink,#BasicHome.B8.7.Hyperlink,#BasicHome.B9.7.Hyperlink))</hyperlink>
+                    <hyperlinkParameter>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.7.HyperlinkParameter,#BasicHome.B1.7.HyperlinkParameter,#BasicHome.B2.7.HyperlinkParameter,#BasicHome.B3.7.HyperlinkParameter,#BasicHome.B4.7.HyperlinkParameter,#BasicHome.B5.7.HyperlinkParameter,#BasicHome.B6.7.HyperlinkParameter,#BasicHome.7.7.HyperlinkParameter,#BasicHome.B8.7.HyperlinkParameter,#BasicHome.B9.7.HyperlinkParameter))</hyperlinkParameter>
+                -->
+                <visible>control.isvisible(10001)+[[control.isvisible(1100)+!string.equals(#BasicHome.B0.7.Label,)]|[control.isvisible(1101)+!string.equals(#BasicHome.B1.7.Label,)]|[control.isvisible(1102)+!string.equals(#BasicHome.B2.7.Label,)]|[control.isvisible(1103)+!string.equals(#BasicHome.B3.7.Label,)]|[control.isvisible(1104)+!string.equals(#BasicHome.B4.7.Label,)]|[control.isvisible(1105)+!string.equals(#BasicHome.B5.7.Label,)]|[control.isvisible(1106)+!string.equals(#BasicHome.B6.7.Label,)]|[control.isvisible(1107)+!string.equals(#BasicHome.B7.7.Label,)]|[control.isvisible(1108)+!string.equals(#BasicHome.B8.7.Label,)]|[control.isvisible(1109)+!string.equals(#BasicHome.B9.7.Label,)]]</visible>
+                <onup>10106</onup>
+                <ondown>10108</ondown>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10108</id>
+                <label>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.8.Label,#BasicHome.B1.8.Label,#BasicHome.B2.8.Label,#BasicHome.B3.8.Label,#BasicHome.B4.8.Label,#BasicHome.B5.8.Label,#BasicHome.B6.8.Label,#BasicHome.7.8.Label,#BasicHome.B8.8.Label,#BasicHome.B9.8.Label))</label>
+                <!--    <hyperlink>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.8.Hyperlink,#BasicHome.B1.8.Hyperlink,#BasicHome.B2.8.Hyperlink,#BasicHome.B3.8.Hyperlink,#BasicHome.B4.8.Hyperlink,#BasicHome.B5.8.Hyperlink,#BasicHome.B6.8.Hyperlink,#BasicHome.7.8.Hyperlink,#BasicHome.B8.8.Hyperlink,#BasicHome.B9.8.Hyperlink))</hyperlink>
+                    <hyperlinkParameter>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.8.HyperlinkParameter,#BasicHome.B1.8.HyperlinkParameter,#BasicHome.B2.8.HyperlinkParameter,#BasicHome.B3.8.HyperlinkParameter,#BasicHome.B4.8.HyperlinkParameter,#BasicHome.B5.8.HyperlinkParameter,#BasicHome.B6.8.HyperlinkParameter,#BasicHome.7.8.HyperlinkParameter,#BasicHome.B8.8.HyperlinkParameter,#BasicHome.B9.8.HyperlinkParameter))</hyperlinkParameter>
+                -->
+                <visible>control.isvisible(10001)+[[control.isvisible(1100)+!string.equals(#BasicHome.B0.8.Label,)]|[control.isvisible(1101)+!string.equals(#BasicHome.B1.8.Label,)]|[control.isvisible(1102)+!string.equals(#BasicHome.B2.8.Label,)]|[control.isvisible(1103)+!string.equals(#BasicHome.B3.8.Label,)]|[control.isvisible(1104)+!string.equals(#BasicHome.B4.8.Label,)]|[control.isvisible(1105)+!string.equals(#BasicHome.B5.8.Label,)]|[control.isvisible(1106)+!string.equals(#BasicHome.B6.8.Label,)]|[control.isvisible(1107)+!string.equals(#BasicHome.B7.8.Label,)]|[control.isvisible(1108)+!string.equals(#BasicHome.B8.8.Label,)]|[control.isvisible(1109)+!string.equals(#BasicHome.B9.8.Label,)]]</visible>
+                <onup>10107</onup>
+                <ondown>10109</ondown>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10109</id>
+                <label>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.9.Label,#BasicHome.B1.9.Label,#BasicHome.B2.9.Label,#BasicHome.B3.9.Label,#BasicHome.B4.9.Label,#BasicHome.B5.9.Label,#BasicHome.B6.9.Label,#BasicHome.7.9.Label,#BasicHome.B8.9.Label,#BasicHome.B9.9.Label))</label>
+                <!--    <hyperlink>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.9.Hyperlink,#BasicHome.B1.9.Hyperlink,#BasicHome.B2.9.Hyperlink,#BasicHome.B3.9.Hyperlink,#BasicHome.B4.9.Hyperlink,#BasicHome.B5.9.Hyperlink,#BasicHome.B6.9.Hyperlink,#BasicHome.7.9.Hyperlink,#BasicHome.B8.9.Hyperlink,#BasicHome.B9.9.Hyperlink))</hyperlink>
+                    <hyperlinkParameter>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.9.HyperlinkParameter,#BasicHome.B1.9.HyperlinkParameter,#BasicHome.B2.9.HyperlinkParameter,#BasicHome.B3.9.HyperlinkParameter,#BasicHome.B4.9.HyperlinkParameter,#BasicHome.B5.9.HyperlinkParameter,#BasicHome.B6.9.HyperlinkParameter,#BasicHome.7.9.HyperlinkParameter,#BasicHome.B8.9.HyperlinkParameter,#BasicHome.B9.9.HyperlinkParameter))</hyperlinkParameter>
+                -->
+                <visible>control.isvisible(10001)+[[control.isvisible(1100)+!string.equals(#BasicHome.B0.9.Label,)]|[control.isvisible(1101)+!string.equals(#BasicHome.B1.9.Label,)]|[control.isvisible(1102)+!string.equals(#BasicHome.B2.9.Label,)]|[control.isvisible(1103)+!string.equals(#BasicHome.B3.9.Label,)]|[control.isvisible(1104)+!string.equals(#BasicHome.B4.9.Label,)]|[control.isvisible(1105)+!string.equals(#BasicHome.B5.9.Label,)]|[control.isvisible(1106)+!string.equals(#BasicHome.B6.9.Label,)]|[control.isvisible(1107)+!string.equals(#BasicHome.B7.9.Label,)]|[control.isvisible(1108)+!string.equals(#BasicHome.B8.9.Label,)]|[control.isvisible(1109)+!string.equals(#BasicHome.B9.9.Label,)]]</visible>
+                <onup>10108</onup>
+
             </control>
         </control>
 
