@@ -8,10 +8,10 @@
             <posX>0</posX>
             <posY>0</posY>
             <width>1920</width>
-            <height>119</height>
+            <height>190</height>
             <texture>header_background.png</texture>
         </control>
-
+        
         <control Style="headerStyle">
             <id>0</id>
             <type>label</type>

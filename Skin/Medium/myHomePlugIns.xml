@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-    <id>0</id>
-    <defaultcontrol>50</defaultcontrol>
+    <id>34</id>
+    <defaultcontrol>4</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <disabletopbar>no</disabletopbar>
 
     <rememberLastFocusedControl>yes</rememberLastFocusedControl>
-    <define>#header.label:#(L(2143))</define>
+    <define>#header.label:#(L(913))</define>
     <define>#header.size:L</define>
 
     <controls>
@@ -60,7 +60,7 @@
         <include>BasicHome.header.xml</include>
 
         <include>common.footer.xml</include>
-        
+
         <control Style="footerStyle">
             <description>Infoservice Feed</description>
             <type>fadelabel</type>
@@ -70,6 +70,8 @@
             <visible>plugin.isenabled(InfoService)+string.equals(#infoservice.feed.enabled, true)+skin.hassetting(#BasicHome.ShowInfoService)</visible>
             <animation effect="slide" time="20" end="-29,0" condition="true">conditional</animation>
         </control>
+
+
 
     </controls>
 </window>

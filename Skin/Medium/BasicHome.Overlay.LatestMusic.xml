@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <controls>
+
+        <!-- Positional Controls  -->
+        <control Style="hiddenStyle">
+            <description>Pos 0,0</description>
+            <id>12001</id>
+            <type>label</type>
+            <visible>string.equals(#BasicHome.Current.c0r0,LMUSIC)</visible>
+        </control>
+        <control Style="hiddenStyle">
+            <description>Pos 0,1</description>
+            <id>12002</id>
+            <type>label</type>
+            <visible>string.equals(#BasicHome.Current.c0r1,LMUSIC)</visible>
+        </control>
+        <control Style="hiddenStyle">
+            <description>Pos 0,2</description>
+            <id>12003</id>
+            <type>label</type>
+            <visible>string.equals(#BasicHome.Current.c0r2,LMUSIC)</visible>
+        </control>
+        <control Style="hiddenStyle">
+            <description>Pos 1,0</description>
+            <id>12004</id>
+            <type>label</type>
+            <visible>string.equals(#BasicHome.Current.c1r0,LMUSIC)</visible>
+        </control>
+        <control Style="hiddenStyle">
+            <description>Pos 1,1</description>
+            <id>12005</id>
+            <type>label</type>
+            <visible>string.equals(#BasicHome.Current.c1r1,LMUSIC)</visible>
+        </control>
+        <control Style="hiddenStyle">
+            <description>Pos 1,2</description>
+            <id>12006</id>
+            <type>label</type>
+            <visible>string.equals(#BasicHome.Current.c1r2,LMUSIC)</visible>
+        </control>
+        <control Style="hiddenStyle">
+            <description>Pos 2,0</description>
+            <id>12007</id>
+            <type>label</type>
+            <visible>string.equals(#BasicHome.Current.c2r0,LMUSIC)</visible>
+        </control>
+        <control Style="hiddenStyle">
+            <description>Pos 2,1</description>
+            <id>12008</id>
+            <type>label</type>
+            <visible>string.equals(#BasicHome.Current.c2r1,LMUSIC)</visible>
+        </control>
+        <control Style="hiddenStyle">
+            <description>Pos 2,2</description>
+            <id>12009</id>
+            <type>label</type>
+            <visible>string.equals(#BasicHome.Current.c2r2,LMUSIC)</visible>
+        </control>
+        
+        <control>
+            <type>group</type>
+            <id>12000</id>
+            <dimColor>FFFFFFFF</dimColor>
+            <animation effect="slide" time="1" delay="11" start="0,0" end="0,0" condition="control.isvisible(12001)">conditional</animation>
+            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(12001)">conditional</animation>
+            <animation effect="slide" time="1" delay="11" start="0,0" end="0,142" condition="control.isvisible(12002)">conditional</animation>
+            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(12002)">conditional</animation>
+            <animation effect="slide" time="1" delay="11" start="0,0" end="0,285" condition="control.isvisible(12003)">conditional</animation>
+            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(12003)">conditional</animation>
+
+            <animation effect="slide" time="1" delay="11" start="0,0" end="420,0" condition="control.isvisible(12004)">conditional</animation>
+            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(12004)">conditional</animation>
+            <animation effect="slide" time="1" delay="11" start="0,0" end="420,142" condition="control.isvisible(12005)">conditional</animation>
+            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(12005)">conditional</animation>
+            <animation effect="slide" time="1" delay="11" start="0,0" end="420,285" condition="control.isvisible(12006)">conditional</animation>
+            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(12006)">conditional</animation>
+
+            <animation effect="slide" time="1" delay="11" start="0,0" end="840,0" condition="control.isvisible(12007)">conditional</animation>
+            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(12007)">conditional</animation>
+            <animation effect="slide" time="1" delay="11" start="0,0" end="840,142" condition="control.isvisible(12008)">conditional</animation>
+            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(12008)">conditional</animation>
+            <animation effect="slide" time="1" delay="11" start="0,0" end="840,285" condition="control.isvisible(12009)">conditional</animation>
+            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(12009)">conditional</animation>
+            
+            <animation effect="fade" time="200" delay="20" easing="inout" condition="true">Visible</animation>
+            <animation effect="fade" time="200" easing="inout" condition="true">Hidden</animation>
+            <posX>0</posX>
+            <posY>0</posY>
+            <visible>control.isvisible(12001)|control.isvisible(12002)|control.isvisible(12003)|control.isvisible(12004)|control.isvisible(12005)|control.isvisible(12006)</visible>
+            <control Style="overlayStyle">
+                <description>Viewport</description>
+                <type>image</type>
+                <posX>0</posX>
+                <posY>200</posY>
+                <width>800</width>
+                <height>260</height>
+                <texture>header_background.png</texture>
+            </control>
+            <control Style="subHeaderStyle">
+                <description>Latest Music</description>
+                <type>label</type>
+                <id>0</id>
+                <posX>10</posX>
+                <posY>190</posY>
+                <label>Latest Music</label>
+            </control>
+            <!-- Filmstrip -->
+		    <control Style="overlayStyle">
+			    <animation effect="fade" start="100" end="0" time="200" reversible="true">Hidden</animation>
+			    <animation effect="fade" start="0" end="100" delay="150" time="400" reversible="true">Visible</animation>
+			    <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			    <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+			    <type>facadeview</type>
+			    <id>919199970</id>		
+			    <control>
+				    <description>Filmstrip view</description>
+				    <type>filmstrip</type>
+				    <dimColor>90ffffff</dimColor>
+				    <id>919199970</id>
+				    <scrollOffset>3</scrollOffset>
+				    <folderPrefix/>
+				    <folderSuffix/>
+				    <posX>5</posX>
+				    <posY>260</posY>
+				    <width>630</width>
+				    <height>400</height>
+				    <onup>919199970</onup>
+				    <ondown>919199970</ondown>
+				    <onleft>919199970</onleft>
+				    <onright>919199970</onright>				
+				    <thumbWidth>175</thumbWidth>
+				    <thumbHeight>175</thumbHeight>
+				    <thumbPosX>20</thumbPosX>
+				    <thumbPosY>20</thumbPosY>
+				    <itemWidth>207</itemWidth>
+				    <itemHeight>215</itemHeight>
+				    <textureWidth>214</textureWidth>
+				    <textureHeight>215</textureHeight>
+				    <textYOff>-2000</textYOff>
+				    <imageFolderFocus>-</imageFolderFocus>
+				    <frame>basichome_music_frame1.png</frame> 
+				    <frameFocus>basichome_music_frame1_focus.png</frameFocus> 
+				    <background>-</background>
+				    <scrollOffset>2</scrollOffset>
+				    <thumbs flipY="true" diffuse="Thumb_Mask.png" mask="basichome_music_mask.png"/>
+				    <showFrame>yes</showFrame>
+				    <showFolder>no</showFolder>
+				    <showBackGround>no</showBackGround>
+				    <showInfoImage>no</showInfoImage>
+				    <scrollbarBackground>-</scrollbarBackground>				
+				    <scrollbarLeft>scrollbar_left_hor.png</scrollbarLeft>
+				    <scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
+				    <scrollbarWidth>630</scrollbarWidth>
+				    <scrollbarHeight>5</scrollbarHeight>
+				    <scrollbarYOff>458</scrollbarYOff>
+				    <spinPosY>755</spinPosY>				
+				    <thumbAnimation effect="zoom" start="100,100" reversible="false" end="115,115" center="0,460" time="200">focus</thumbAnimation>
+				    <thumbAnimation effect="zoom" start="115,115"  reversible="false" end="100,100" center="0,460" time="100">unfocus</thumbAnimation>		  
+                    <visible>true</visible>
+			    </control>
+		    </control>
+        </control>
+    </controls>
+</window>

@@ -9,7 +9,19 @@
 
 
     <define>#header.label:#(L(2143))</define>
+    <define>#header.size:L</define>
     <define>#BasicHome.MainMenu:#(add(cint(1000),cint(#BasicHome.Current.ID)))</define>
+    <define property="true" evaluateNow="true">#ref_ShutdownAction:#(cint(#BasicHome.Shutdown.Action))</define>
+    <define property="true" evaluateNow="true">#ref_B0.Hyperlink:#(cint(#BasicHome.B0.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B1.Hyperlink:#(cint(#BasicHome.B1.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B2.Hyperlink:#(cint(#BasicHome.B2.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B3.Hyperlink:#(cint(#BasicHome.B3.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B4.Hyperlink:#(cint(#BasicHome.B4.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B5.Hyperlink:#(cint(#BasicHome.B5.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B6.Hyperlink:#(cint(#BasicHome.B6.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B7.Hyperlink:#(cint(#BasicHome.B7.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B8.Hyperlink:#(cint(#BasicHome.B8.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B9.Hyperlink:#(cint(#BasicHome.B9.Hyperlink))</define>
      
     <controls>
 
@@ -145,7 +157,7 @@
             <animation effect="slide" time="300" end="0,0" easing="inout" condition="control.isvisible(1112)">conditional</animation>
         </control>
 
-        <include>common.header.xml</include>
+        <include>BasicHome.header.xml</include>
 
         <control>
             <description>Focus Mover Button (customize)</description>
@@ -166,6 +178,8 @@
             <id>1000</id>
             <type>button</type>
             <label>#BasicHome.B0.Label</label>
+            <hyperlink>#ref_B0.Hyperlink</hyperlink>
+            <hyperlinkParameter>#BasicHome.B1.HyperlinkParameter</hyperlinkParameter>
             <onright>1001</onright>
             <onleft>1012</onleft>
             <visible>!string.equals(#BasicHome.B0.Label,X)+!string.equals(#BasicHome.B0.Label,)</visible>
@@ -203,8 +217,8 @@
             <id>1001</id>
             <type>button</type>
             <label>#BasicHome.B1.Label</label>
-            <!--<hyperlink>#BasicHome.B1.Hyperlink</hyperlink>
-            <hyperlinkParameter>#BasicHome.B1.HyperlinkParameter</hyperlinkParameter>-->
+            <hyperlink>#ref_B1.Hyperlink</hyperlink>
+            <hyperlinkParameter>#BasicHome.B1.HyperlinkParameter</hyperlinkParameter>
             <onright>1002</onright>
             <onleft>1000</onleft>
             <visible>!string.equals(#BasicHome.B1.Label,x)+!string.equals(#BasicHome.B1.Label,)</visible>
@@ -242,8 +256,8 @@
             <id>1002</id>
             <type>button</type>
             <label>#BasicHome.B2.Label</label>
-            <!--<hyperlink>#BasicHome.B2.Hyperlink</hyperlink>
-            <hyperlinkParameter>#BasicHome.B2.HyperlinkParameter</hyperlinkParameter>-->
+            <hyperlink>#ref_B2.Hyperlink</hyperlink>
+            <hyperlinkParameter>#BasicHome.B2.HyperlinkParameter</hyperlinkParameter>
             <onright>1003</onright>
             <onleft>1001</onleft>
             <visible>!string.equals(#BasicHome.B2.Label,X)+!string.equals(#BasicHome.B2.Label,)</visible>
@@ -281,8 +295,8 @@
             <id>1003</id>
             <type>button</type>
             <label>#BasicHome.B3.Label</label>
-            <!--<hyperlink>#BasicHome.B3.Hyperlink</hyperlink>
-            <hyperlinkParameter>#BasicHome.B3.HyperlinkParameter</hyperlinkParameter>-->
+            <hyperlink>#ref_B3.Hyperlink</hyperlink>
+            <hyperlinkParameter>#BasicHome.B3.HyperlinkParameter</hyperlinkParameter>
             <onright>1004</onright>
             <onleft>1002</onleft>
             <visible>!string.equals(#BasicHome.B3.Label,X)+!string.equals(#BasicHome.B3.Label,)</visible>
@@ -320,8 +334,8 @@
             <id>1004</id>
             <type>button</type>
             <label>#BasicHome.B4.Label</label>
-            <!--<hyperlink>#BasicHome.B4.Hyperlink</hyperlink>
-            <hyperlinkParameter>#BasicHome.B4.HyperlinkParameter</hyperlinkParameter>-->
+            <hyperlink>#ref_B4.Hyperlink</hyperlink>
+            <hyperlinkParameter>#BasicHome.B4.HyperlinkParameter</hyperlinkParameter>
             <onright>1005</onright>
             <onleft>1003</onleft>
             <visible>!string.equals(#BasicHome.B4.Label,X)+!string.equals(#BasicHome.B4.Label,)</visible>
@@ -359,8 +373,8 @@
             <id>1005</id>
             <type>button</type>
             <label>#BasicHome.B5.Label</label>
-            <!--<hyperlink>#BasicHome.B5.Hyperlink</hyperlink>
-            <hyperlinkParameter>#BasicHome.B5.HyperlinkParameter</hyperlinkParameter>-->
+            <hyperlink>#ref_B5.Hyperlink</hyperlink>
+            <hyperlinkParameter>#BasicHome.B5.HyperlinkParameter</hyperlinkParameter>
             <onright>1006</onright>
             <onleft>1004</onleft>
             <visible>!string.equals(#BasicHome.B5.Label,X)+!string.equals(#BasicHome.B5.Label,)</visible>
@@ -398,8 +412,8 @@
             <id>1006</id>
             <type>button</type>
             <label>#BasicHome.B6.Label</label>
-            <!--<hyperlink>#BasicHome.B6.Hyperlink</hyperlink>
-            <hyperlinkParameter>#BasicHome.B6.HyperlinkParameter</hyperlinkParameter>-->
+            <hyperlink>#ref_B6.Hyperlink</hyperlink>
+            <hyperlinkParameter>#BasicHome.B6.HyperlinkParameter</hyperlinkParameter>
             <onright>1007</onright>
             <onleft>1005</onleft>
             <visible>!string.equals(#BasicHome.B6.Label,X)+!string.equals(#BasicHome.B6.Label,)</visible>
@@ -437,8 +451,8 @@
             <id>1007</id>
             <type>button</type>
             <label>#BasicHome.B7.Label</label>
-            <!--<hyperlink>#BasicHome.B7.Hyperlink</hyperlink>
-            <hyperlinkParameter>#BasicHome.B7.HyperlinkParameter</hyperlinkParameter>-->
+            <hyperlink>#ref_B7.Hyperlink</hyperlink>
+            <hyperlinkParameter>#BasicHome.B7.HyperlinkParameter</hyperlinkParameter>
             <onright>1008</onright>
             <onleft>1006</onleft>
             <visible>!string.equals(#BasicHome.B7.Label,X)+!string.equals(#BasicHome.B7.Label,)</visible>
@@ -476,8 +490,8 @@
             <id>1008</id>
             <type>button</type>
             <label>#BasicHome.B8.Label</label>
-            <!--<hyperlink>#BasicHome.B8.Hyperlink</hyperlink>
-            <hyperlinkParameter>#BasicHome.B8.HyperlinkParameter</hyperlinkParameter>-->
+            <hyperlink>#ref_B8.Hyperlink</hyperlink>
+            <hyperlinkParameter>#BasicHome.B8.HyperlinkParameter</hyperlinkParameter>
             <onright>1009</onright>
             <onleft>1007</onleft>
             <visible>!string.equals(#BasicHome.B8.Label,X)+!string.equals(#BasicHome.B8.Label,)</visible>
@@ -515,8 +529,8 @@
             <id>1009</id>
             <type>button</type>
             <label>#BasicHome.B9.Label</label>
-            <!--<hyperlink>#BasicHome.B9.Hyperlink</hyperlink>
-            <hyperlinkParameter>#BasicHome.B9.HyperlinkParameter</hyperlinkParameter>-->
+            <hyperlink>#ref_B9.Hyperlink</hyperlink>
+            <hyperlinkParameter>#BasicHome.B9.HyperlinkParameter</hyperlinkParameter>
             <onright>1010</onright>
             <onleft>1008</onleft>
             <visible>!string.equals(#BasicHome.B9.Label,X)+!string.equals(#BasicHome.B9.Label,)</visible>
@@ -599,7 +613,7 @@
             <onright>1012</onright>
             <onleft>1010</onleft>
             <visible>#BasicHome.ShowShutdown</visible>
-            <!--<action>#BasicHome.Shutdown.Action</action>-->
+            <action>#ref_ShutdownAction</action>
             <onfocus>#(skin.setstring('#BasicHome.Current.Label',L(1030)))|
                      #(skin.setstring('#BasicHome.Previous.ID',#BasicHome.Current.ID))|
                      #(skin.setstring('#BasicHome.Previous.Background',#BasicHome.Current.Background))|
@@ -677,6 +691,7 @@
         <include>BasicHome.SubMenu.xml</include>
 
         <include>BasicHome.Overlay.WorldWeather.5.xml</include>
+        <include>BasicHome.Overlay.LatestMusic.xml</include>
         <include>common.footer.xml</include>
         
         <control Style="footerStyle">
@@ -685,19 +700,9 @@
             <posX>30</posX>
             <width>1919</width>
             <label>#infoservice.feed.titles</label>
-            <visible>plugin.isenabled(InfoService)+string.equals(#infoservice.feed.enabled, true)+skin.hassetting(#BasicHome.ShowInfoService)+!player.hasmedia</visible>
+            <visible>plugin.isenabled(InfoService)+string.equals(#infoservice.feed.enabled, true)+skin.hassetting(#BasicHome.ShowInfoService)</visible>
             <animation effect="slide" time="20" end="-29,0" condition="true">conditional</animation>
         </control>
-        <control Style="footerStyle">
-            <description>Infoservice Feed</description>
-            <type>fadelabel</type>
-            <posX>450</posX>
-            <width>1470</width>
-            <label>#infoservice.feed.titles</label>
-            <visible>plugin.isenabled(InfoService)+string.equals(#infoservice.feed.enabled, true)+skin.hassetting(#BasicHome.ShowInfoService)+player.hasmedia</visible>
-            
-        </control>
-        
 
         <control>
             <description>Focus Catcher</description>
