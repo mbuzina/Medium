@@ -165,12 +165,21 @@
         <animation effect="slide" time="200" start="0,-40" easing="inout">WindowOpen</animation>
         <animation effect="fade" time="200" easing="inout">WindowClose</animation>
     </style>
+    <style Name="topBarStyle">
+        <width>40</width>
+        <height>40</height>
+        <dimColor>FFFFFFFF</dimColor>
+        <animation effect="slide" time="200" start="0,-40" easing="inout">WindowOpen</animation>
+        <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
+        <animation effect="slide" time="200" end="0,-40" easing="inout">WindowClose</animation>
+        <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+        <animation effect="slide" time="200" start="0,-40" easing="inout">VisibleChange</animation>
+        <animation effect="fade" time="200" easing="inout">VisibleChange</animation>
+    </style>
     <style Name="touchControlStyle">
         <description>Touch Left</description>
         <id>1</id>
         <type>button</type>
-        <textureFocus>touch_nav_left.png</textureFocus>
-        <textureNoFocus>touch_nav_left.png</textureNoFocus>
         <width>20</width>
         <height>70</height>
         <visible>skin.hassetting(#skin.ShowTouchControls)</visible>

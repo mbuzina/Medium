@@ -13,7 +13,6 @@
     <controls>
 
         <include>common.background.default.xml</include>
-        <include>BasicHome.BackgroundSelected.xml</include>
         
         <control Style="shadowTextStyle">
             <description>Selected Item</description>

@@ -3,7 +3,7 @@
     <id>35</id>
     <defaultcontrol>1000</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
-    <disabletopbar>yes</disabletopbar>
+    <disabletopbar>no</disabletopbar>
 
     <rememberLastFocusedControl>yes</rememberLastFocusedControl>
 

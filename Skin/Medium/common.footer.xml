@@ -24,5 +24,14 @@
             <visible>player.hasmedia</visible>
         </control>
         
+        <control Style="footerStyle">
+            <type>label</type>
+            <posX>10</posX>
+            <posY>950</posY>
+            <width>400</width>
+            <height>50</height>
+            <label>#currentmodulefullscreenstate</label>
+        </control>
+        
     </controls>
 </window>

@@ -417,9 +417,9 @@
     </entry>
     <entry name="#BasicHome.B9.9.Label">
     </entry>
-    <entry name="#BasicHome.Current.Label">TV</entry>
-    <entry name="#BasicHome.Previous.ID">0</entry>
-    <entry name="#BasicHome.Current.Background">hover_my tv.png</entry>
-    <entry name="#BasicHome.Previous.Background">hover_play disc.png</entry>
+    <entry name="#BasicHome.Current.Label">Play CD</entry>
+    <entry name="#BasicHome.Previous.ID">1</entry>
+    <entry name="#BasicHome.Current.Background">hover_play disc.png</entry>
+    <entry name="#BasicHome.Previous.Background">hover_my tv.png</entry>
   </section>
 </profile>

@@ -71,8 +71,9 @@
             <type>button</type>
             <id>700</id>
             <visible>skin.hassetting(#skin.ShowTouchControls)+!window.IsActive(35)</visible>
-            <textureFocus>touch_nav_back.png</textureFocus>
-            <textureNoFocus>touch_nav_back.png</textureNoFocus>
+            <textureFocus>topbar_back_focus.png</textureFocus>
+            <textureNoFocus>topbar_back.png</textureNoFocus>
+            <dimColor>AAAAAAAA</dimColor>
             <posX>0</posX>
             <posY>53</posY>
             <width>41</width>
@@ -82,6 +83,25 @@
             <onup>50</onup>
             <ondown>50</ondown>
             <action>10</action>
+        </control>
+        <control Style="headerDateStyle">
+            <description>Show Topbar on click</description>
+            <type>button</type>
+            <id>210</id>
+            <posX>840</posX>
+            <posY>0</posY>
+            <width>240</width>
+            <height>31</height>
+            <font>largeFont</font>
+            <textalign>center</textalign>
+            <textvalign>top</textvalign>
+            <visible>skin.hassetting(#skin.ShowTouchControls)</visible>
+            <label>Topbar</label>
+            <textcolor>FFFFFFFF</textcolor>
+            <textcolorNoFocus>AAAAAAAA</textcolorNoFocus>   
+            <onclick>#(skin.setfocus(3005,21))</onclick>
+            <dimColor>FFFFFFFF</dimColor>
+            <ondown>1000</ondown>
         </control>
 
     </controls>

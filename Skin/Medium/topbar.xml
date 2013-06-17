@@ -1,15 +1,163 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 <id>3005</id>
-<defaultcontrol>4</defaultcontrol>
+<defaultcontrol>21</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
-<disabletopbar>no</disabletopbar>
+<autohidetopbar>yes</autohidetopbar>
+
 
 <rememberLastFocusedControl>yes</rememberLastFocusedControl>
 
+        <define property="true" evaluateNow="true">#ref_ShutdownAction:#(cint(#BasicHome.Shutdown.Action))</define>
 
 <controls>	
-
-     
+        <control>
+            <type>image</type> 
+            <id>0</id>
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1920</width>
+            <height>50</height>
+            <texture>header_background.png</texture>        
+            
+            <animation effect="slide" time="200" start="0,-40" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
+            <animation effect="slide" time="200" end="0,-40" easing="inout">WindowClose</animation>
+            <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+            <animation effect="slide" time="200" start="0,-40" easing="inout">VisibleChange</animation>
+            <animation effect="fade" time="200" easing="inout">VisibleChange</animation>
+        </control>
+        <control>
+            <id>0</id>
+            <type>group</type>
+            <posX>600</posX>
+            <posY>5</posY>
+            <width>1920</width>
+            <height>50</height>
+            
+            <layout>TableLayout(920,13,10,10)</layout>
+            
+            <control Style="topBarStyle">
+                <description>TopBar Back</description>
+                <type>button</type>
+                <id>21</id>
+                <action>10</action>
+                <onleft>45</onleft>
+                <onright>26</onright>
+                <textureNoFocus>topbar_back.png</textureNoFocus>
+                <textureFocus>topbar_back_focus.png</textureFocus>
+            </control>
+            <control Style="topBarStyle">
+                <description>TopBar Home</description>
+                <type>button</type>
+                <id>26</id>
+                <action>115</action>
+                <onleft>21</onleft>
+                <onright>22</onright>
+                <textureNoFocus>topbar_home.png</textureNoFocus>
+                <textureFocus>topbar_home_focus.png</textureFocus>
+            </control>
+            <control>
+                <description>placeholder</description>
+                <type>image</type>
+                <width>10</width>
+            </control>
+            <control Style="topBarStyle">
+                <description>TopBar Previous</description>
+                <type>button</type>
+                <id>22</id>
+                <action>15</action>
+                <onleft>26</onleft>
+                <onright>23</onright>
+                <textureNoFocus>topbar_prev.png</textureNoFocus>
+                <textureFocus>topbar_prev_focus.png</textureFocus>
+            </control>
+            <control Style="topBarStyle">
+                <description>TopBar REW</description>
+                <type>button</type>
+                <id>23</id>
+                <action>78</action>
+                <onleft>22</onleft>
+                <onright>24</onright>
+                <textureNoFocus>topbar_rew.png</textureNoFocus>
+                <textureFocus>topbar_rew_focus.png</textureFocus>
+            </control>
+            <control Style="topBarStyle">
+                <description>TopBar Play</description>
+                <type>button</type>
+                <id>24</id>
+                <action>12</action>
+                <onleft>23</onleft>
+                <onright>27</onright>
+                <textureNoFocus>#(iif(eq(#Play.Current.Title,''),'topbar_play.png','topbar_pause.png'))</textureNoFocus>
+                <textureFocus>#(iif(eq(#Play.Current.Title,''),'topbar_play_focus.png','topbar_pause_focus.png'))</textureFocus>
+            </control>
+            <control Style="topBarStyle">
+                <description>TopBar Stop</description>
+                <type>button</type>
+                <id>27</id>
+                <action>13</action>
+                <onleft>24</onleft>
+                <onright>28</onright>
+                <textureNoFocus>topbar_stop.png</textureNoFocus>
+                <textureFocus>topbar_stop_focus.png</textureFocus>
+            </control>
+            <control Style="topBarStyle">
+                <description>TopBar FFWD</description>
+                <type>button</type>
+                <id>28</id>
+                <action>77</action>
+                <onleft>27</onleft>
+                <onright>29</onright>
+                <textureNoFocus>topbar_ffwd.png</textureNoFocus>
+                <textureFocus>topbar_ffwd_focus.png</textureFocus>
+            </control>
+            <control Style="topBarStyle">
+                <description>TopBar Next</description>
+                <type>button</type>
+                <id>29</id>
+                <action>14</action>
+                <onleft>28</onleft>
+                <onright>30</onright>
+                <textureNoFocus>topbar_next.png</textureNoFocus>
+                <textureFocus>topbar_next_focus.png</textureFocus>
+            </control>
+            <control>
+                <description>placeholder</description>
+                <type>image</type>
+                <width>10</width>
+            </control>
+            <control Style="topBarStyle">
+                <description>TopBar Minimize</description>
+                <type>button</type>
+                <id>30</id>
+                <action>18</action>
+                <onleft>29</onleft>
+                <onright>31</onright>
+                <textureNoFocus>#(iif(eq(#currentmodulefullscreenstate,''),'topbar_fullscreen.png','topbar_nofullscreen.png'))</textureNoFocus>
+                <textureFocus>#(iif(eq(#currentmodulefullscreenstate,''),'topbar_fullscreen_focus.png','topbar_nofullscreen_focus.png'))</textureFocus>
+            </control>
+            <control Style="topBarStyle">
+                <description>TopBar Exit</description>
+                <type>button</type>
+                <id>31</id>
+                <action>97</action>
+                <onleft>30</onleft>
+                <onright>45</onright>
+                <textureNoFocus>topbar_close.png</textureNoFocus>
+                <textureFocus>topbar_close_focus.png</textureFocus>
+            </control>
+            <control Style="topBarStyle">
+                <description>TopBar Shutdown</description>
+                <type>button</type>
+                <id>31</id>
+                <action>#ref_ShutdownAction</action>
+                <onleft>31</onleft>
+                <onright>21</onright>
+                <textureNoFocus>topbar_shutdown.png</textureNoFocus>
+                <textureFocus>topbar_shutdown_focus.png</textureFocus>
+            </control>
+        </control>
+ 
 </controls>
 </window>
