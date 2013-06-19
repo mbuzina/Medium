@@ -13,6 +13,8 @@
     <entry name="#BasicHome.ShowShutdown">True</entry>
     <entry name="#BasicHome.ShowInfoService">True</entry>
     <entry name="#skin.ShowTouchControls">True</entry>
+    <entry name="#HideOverlay">False</entry>
+    <entry name="#skin.ShowCDArt">False</entry>
   </section>
   <section name="tvguidecolors">
     <entry name="guidecolorchannelbutton">FF122F3F</entry>
@@ -417,9 +419,9 @@
     </entry>
     <entry name="#BasicHome.B9.9.Label">
     </entry>
-    <entry name="#BasicHome.Current.Label">Play CD</entry>
-    <entry name="#BasicHome.Previous.ID">1</entry>
-    <entry name="#BasicHome.Current.Background">hover_play disc.png</entry>
-    <entry name="#BasicHome.Previous.Background">hover_my tv.png</entry>
+    <entry name="#BasicHome.Current.Label">Music</entry>
+    <entry name="#BasicHome.Previous.ID">3</entry>
+    <entry name="#BasicHome.Current.Background">FA_MUSIC</entry>
+    <entry name="#BasicHome.Previous.Background">hover_tvseries.png</entry>
   </section>
 </profile>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <controls>
+        <control>
+            <description>group element</description>
+            <type>group</type>
+            <animtation effect="slide" time="200" start="-40,0" end="0,0" easing="inout">WindowOpen</animtation>
+            <animation effect="fade" time="200">WindowOpen</animation>
+            <animtation effect="slide" time="200" start="0,0" end="-40,0" easing="inout">WindowClose</animtation>
+            <animation effect="fade" time="200">WindowClose</animation>
+            <control>
+                <description>composite control consisting of a list control and a thumbnail panel</description>
+                <type>facadeview</type>
+                <id>50</id>
+                <control>
+                    <description>listcontrol</description>
+                    <type>listcontrol</type>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

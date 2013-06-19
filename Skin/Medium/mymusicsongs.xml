@@ -3,23 +3,166 @@
     <id>501</id>
     <defaultcontrol>1000</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
-    <disabletopbar>yes</disabletopbar>
+    <disabletopbar>no</disabletopbar>
 
     <rememberLastFocusedControl>yes</rememberLastFocusedControl>
 
 
     <define>#header.label:#currentmodule</define>
-     
+
     <controls>
 
         <include>common.background.default.xml</include>
-        
+        <include>mymusic.background.xml</include>
+        <include>mymusic.common.hiddenMenu.xml</include>
+
         <control Style="shadowTextStyle">
             <description>Selected Item</description>
             <type>textbox</type>
-            <label>#BasicHome.Current.Label</label>
+            <label>#(iif(eq(#selecteditem,''),#currentmodule,#selecteditem))</label>
             <lineSpacing>0.6</lineSpacing>
         </control>
+        <include>common.header.xml</include>
+
+        <control Style="overlayStyle">
+            <type>image</type>
+            <posX>0</posX>
+            <posY>130</posY>
+            <width>1240</width>
+            <height>614</height>
+        </control>
+
+        <control Style="overlayStyle">
+            <type>image</type>
+            <posX>1280</posX>
+            <posY>130</posY>
+            <width>614</width>
+            <height>614</height>
+        </control>
+
+        <control Style="thumbStyle">
+            <type>image</type>
+            <id>30012</id>
+            <zoom>true</zoom>
+            
+            <texture>..\..\..\Thumbs\CDArt\Music\#music.artist - #music.album.png</texture>
+            <keepaspectratio>yes</keepaspectratio>
+            <centered>yes</centered>
+            <visible>!string.equals(#music.title,)</visible>
+            <animation effect="slide" delay="10" start="0,0" end="0,280" time="300">VisibleChange</animation>
+            <animation effect="fade" delay="10" start="0" end="100" time="200">VisibleChange</animation>
+            <animation effect="rotate" delay="300" end="-360" time="8000" loop="true" condition="True">Conditional</animation>
+        </control>
+        
+        <control Style="thumbStyle">
+            <type>image</type>
+            <id>30013</id>
+            <posX>1387</posX>
+            <posY>885</posY>
+            <width>400</width>
+            <height>155</height>
+            <texture>..\..\..\Thumbs\ClearArt\Music\#music.artist.png</texture>
+        </control>
+
+        <control Style="thumbStyle">
+            <type>image</type>
+            <zoom>true</zoom>
+            <animation effect="slide" delay="20" start="0,0" end="0,300" time="500" condition="container.listitem(3).isselected">Conditional</animation>
+            <visible>!string.equals(#selectedthumb,)</visible>
+        </control>
+        <!-- Thumb/Details View for Music Files -->
+        <control Style="overlayStyle">
+            <type>image</type>
+            <posX>1280</posX>
+            <posY>569</posY>
+            <width>614</width>
+            <height>175</height>
+            <visible>!string.equals(#selectedthumb,)+!string.equals(#music.title,)</visible>
+        </control>
+        <control Style="subHeaderStyle">
+            <description>Song Title</description>
+            <type>fadelabel</type>
+            <posX>1285</posX>
+            <posY>565</posY>
+            <width>614</width>
+            <label>#music.title</label>
+            <visible>!string.equals(#music.title,)</visible>
+        </control>
+        <control Style="labelStyle">
+            <description>Artist</description>
+            <type>fadelabel</type>
+            <posX>1285</posX>
+            <posY>620</posY>
+            <label>#music.artist</label>
+            <visible>!string.equals(#music.title,)</visible>
+        </control>
+        <control Style="labelStyle">
+            <description>Album</description>
+            <type>fadelabel</type>
+            <posX>1285</posX>
+            <posY>660</posY>
+            <width>450</width>
+            <textcolor>FFB75700</textcolor>
+            <label>#(iif(or(eq(#music.albumartist,''),eq(#music.albumartist,'Various Artists'),eq(#music.albumartist,#music.artist)),#music.album,string.format('{0} ({1})',#music.album,#music.albumartist)))</label>
+            <visible>!string.equals(#music.title,)</visible>
+        </control>
+        <control Style="labelStyle">
+            <description>Year</description>
+            <type>label</type>
+            <posX>1735</posX>
+            <posY>660</posY>
+            <width>150</width>
+            <textcolor>FF007ACC</textcolor>
+            <label>#music.year</label>
+            <visible>!string.equals(#music.title,)</visible>
+        </control>
+        <control Style="labelStyle">
+            <description>Genre</description>
+            <type>fadelabel</type>
+            <posX>1285</posX>
+            <posY>700</posY>
+            <width>300</width>
+            <textcolor>FF007ACC</textcolor>
+            <label>#music.genre</label>
+            <visible>!string.equals(#music.title,)</visible>
+        </control>
+        <control Style="labelStyle">
+            <description>Rating</description>
+            <type>fadelabel</type>
+            <posX>1585</posX>
+            <posY>700</posY>
+            <width>300</width>
+            <textcolor>FF007ACC</textcolor>
+            <label>#music.rating</label>
+            <visible>!string.equals(#music.title,)</visible>
+        </control>
+        <!-- Thumb/Details View for Folders -->
+        <control Style="overlayStyle">
+            <type>image</type>
+            <posX>1280</posX>
+            <posY>674</posY>
+            <width>614</width>
+            <height>70</height>
+            <visible>!string.equals(#selectedthumb,)+string.equals(#music.title,)</visible>
+        </control>
+        <control Style="subHeaderStyle">
+            <type>fadelabel</type>
+            <posX>1285</posX>
+            <posY>675</posY>
+            <width>614</width>
+            <label>#selecteditem</label>
+            <visible>string.equals(#music.title,)</visible>
+        </control>
+
+        <control Style="overlayStyle">
+            <type>image</type>
+            <posX>0</posX>
+            <posY>770</posY>
+            <width>800</width>
+            <height>260</height>
+        </control>
+
+        <include>mymusic.common.facade.xml</include>
         <include>common.footer.xml</include>
     </controls>
 </window>

@@ -6,7 +6,7 @@
         <version>1.4.0.0</version>
     </skin>
 
-     <style Name="backdropStyle">
+    <style Name="backdropStyle">
         <posX>0</posX>
         <posY>0</posY>
         <width>1920</width>
@@ -79,6 +79,46 @@
         <animation effect="slide" time="200" end="0,-40" easing="inout">WindowClose</animation>
         <animation effect="fade" time="200" easing="inout">WindowClose</animation>
     </style>
+    <style Name="hiddenMenuGroupStyle">
+        <defaultcontrol>2</defaultcontrol>
+        <onexit>0</onexit>
+        <allowoverlay>True</allowoverlay>
+        <buttonX>1880</buttonX>
+        <buttonY>0</buttonY>
+        <buttonwidth>40</buttonwidth>
+        <buttonheight>1080</buttonheight>
+        <width>600</width>
+        <height>1080</height>
+        <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+        <animation effect="slide" end="40,0" time="200" easing="inout">WindowClose</animation>
+        <visible>!control.hasfocus(50)</visible>
+    </style>
+    <style Name="hiddenMenuHeaderStyle">
+        <width>610</width>
+        <height>60</height>
+        <textXOff>20</textXOff>
+        <textYOff>-4</textYOff>
+        <font>subHeaderFont</font>
+        <textcolorNoFocus>FFFFFFFF</textcolorNoFocus>
+        <textcolor>AAAAAAAA</textcolor>
+        <dimColor>FFFFFFFF</dimColor>
+        <textureFocus>hiddenMenu_background.png</textureFocus>
+        <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+        <animation effect="slide" end="40,0" time="200" easing="inout">WindowClose</animation>
+    </style>
+    <style Name="hiddenMenuItemStyle">
+        <width>610</width>
+        <height>50</height>
+        <textXOff>20</textXOff>
+        <textYOff>1</textYOff>
+        <font>largeFont</font>
+        <textcolorNoFocus>FFFFFFFF</textcolorNoFocus>
+        <textcolor>FFB75700</textcolor>
+        <dimColor>FFFFFFFF</dimColor>
+        <textureFocus>hiddenMenu_background.png</textureFocus>
+        <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+        <animation effect="slide" end="40,0" time="200" easing="inout">WindowClose</animation>
+    </style>
     <style Name="hiddenStyle">
         <posX>20000</posX>
         <posY>20000</posY>
@@ -111,12 +151,23 @@
         <texture></texture>
         <textureFocus></textureFocus>
     </style>
+    <style Name="labelStyle">
+        <posX>1285</posX>
+        <posY>550</posY>
+        <width>614</width>
+        <font>largeFont</font>
+        <textcolor>FFFFFFFF</textcolor>
+        <dimColor>FFFFFFFF</dimColor>
+        <animation effect="slide" time="200" start="0,-40" easing="inout">WindowOpen</animation>
+        <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+    </style>
     <style Name="overlayStyle">
         <id>1</id>
         <posX>0</posX>
         <posY>0</posY>
         <width>800</width>
         <height>250</height>
+        <texture>header_background.png</texture>
         <animation effect="slide" time="200" start="0,-40" easing="inout">WindowOpen</animation>
         <animation effect="fade" time="200" easing="inout">WindowClose</animation>
     </style>
@@ -141,6 +192,9 @@
         <textureDown></textureDown>
         <textureUpFocus></textureUpFocus>
         <textureDownFocus></textureDownFocus>
+        <spinX>2000</spinX>
+        <spinY>2000</spinY>
+        <spinColor>00000000</spinColor>
         <dimColor>FFFFFFFF</dimColor>
         <shadowAngle>5</shadowAngle>
         <shadowDistance>3</shadowDistance>
@@ -165,10 +219,24 @@
         <animation effect="slide" time="200" start="0,-40" easing="inout">WindowOpen</animation>
         <animation effect="fade" time="200" easing="inout">WindowClose</animation>
     </style>
+    <style Name="thumbStyle">
+        <posX>1280</posX>
+        <posY>130</posY>
+        <width>614</width>
+        <height>614</height>
+        <texture>#selectedthumb</texture>
+        <keepaspectratio>true</keepaspectratio>
+        <visible>!string.equals(#selectedthumb,)</visible>
+        <animation effect="slide" time="200" start="0,-40" easing="inout">WindowOpen</animation>
+        <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+    </style>
     <style Name="topBarStyle">
         <width>40</width>
         <height>40</height>
         <dimColor>FFFFFFFF</dimColor>
+        <font>labelFont</font>
+        <textcolor>FFFFFFFF</textcolor>
+        <textcolorNoFocus>AAAAAAAA</textcolorNoFocus>
         <animation effect="slide" time="200" start="0,-40" easing="inout">WindowOpen</animation>
         <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
         <animation effect="slide" time="200" end="0,-40" easing="inout">WindowClose</animation>
@@ -189,7 +257,7 @@
         <animation effect="fade" time="200" easing="inout">WindowClose</animation>
     </style>
     <style Name="viewportStyle">
-        
+
     </style>
     <style Name="weatherLabelStyle">
         <id>1</id>
@@ -214,7 +282,8 @@
         <animation effect="fade" time="200" easing="inout">WindowClose</animation>
     </style>
 
-    <style Name="debugGroupStyle"> <!-- Stuff set to visible for checking labels & stuff, remove for release -->
+    <style Name="debugGroupStyle">
+        <!-- Stuff set to visible for checking labels & stuff, remove for release -->
         <visible>false</visible>
         <id>1</id>
         <posX>20</posX>
@@ -370,49 +439,79 @@
     <control>
         <description>default listcontrol</description>
         <type>listcontrol</type>
-        <id>10</id>
-        <posX>1168</posX>
-        <posY>325</posY>
-        <height>700</height>
-        <width>698</width>
-        <textureFocus>listcontrol_item_selected.png</textureFocus>
-        <textureNoFocus>-</textureNoFocus>
-        <textureHeight>54</textureHeight>
-        <image>folder_focus.png</image>
-        <font>labelFont</font>
-        <font2>smallFont</font2>
-        <shadedColor>ffffffff</shadedColor>
-        <selectedColor>ffffffff</selectedColor>
-        <textcolor>FFFFFFFF</textcolor>
-        <textcolor2>FFFFFFFF</textcolor2>
-        <textcolor3>FFFFFFFF</textcolor3>
-        <colordiffuse>ffffffff</colordiffuse>
+        <id>0</id>
+        <posX>0</posX>
+        <posY>130</posY>
+        <width>1240</width>
+        <height>672</height>
+
+        <textureFocus>hiddenMenu_overlay.png</textureFocus>
+        <textureNoFocus></textureNoFocus>
+        <textureHeight>52</textureHeight>
+
+        <IconXOff>10</IconXOff>
+        <IconYOff>8</IconYOff>
+        <itemWidth>40</itemWidth>
+        <itemHeight>40</itemHeight>
+
+        <font>largeFont</font>
+        <font2>largeFont</font2>
+        <font3>labelFont</font3>
+        <textcolor>FFB75700</textcolor>
+        <textcolor2>FF297BFD</textcolor2>
+        <textcolor3>FFB75700</textcolor3>
+        <textcolorNoFocus>FFFFFFFF</textcolorNoFocus>
+        <textcolorNoFocus2>FFFFFFFF</textcolorNoFocus2>
+        <textcolorNoFocus3>FFFFFFFF</textcolorNoFocus3>
+        <selectedColor>AAAAAAAA</selectedColor>
+        <selectedColor2>AAAAAAAA</selectedColor2>
+        <selectedColor3>AAAAAAAA</selectedColor3>
+
+        <textXOff>15</textXOff>
+        <textYOff>2</textYOff>
+        <textXOff2>1210</textXOff2>
+        <textYOff2>2</textYOff2>
+        <textXOff3>1240</textXOff3>
+        <textYOff3>2</textYOff3>
+        <textalign>left</textalign>
+        <textalign2>right</textalign2>
+        <textalign3>right</textalign3>
+
+        <textvisible1>True</textvisible1>
+        <textvisible2>True</textvisible2>
+        <textvisible3>False</textvisible3>
+
+        <shadedColor>AAffffff</shadedColor>
         <remoteColor>FFFC7B19</remoteColor>
         <downloadColor>fffc7b19</downloadColor>
         <playedColor>FF00B7FF</playedColor>
+
+        <colordiffuse>ffffffff</colordiffuse>
+
         <spaceBetweenItems>2</spaceBetweenItems>
         <unfocusedAlpha applyToAll="true">255</unfocusedAlpha>
         <scrollOffset>1</scrollOffset>
-        <textXOff>50</textXOff>
-        <textYOff>8</textYOff>
-        <textXOff2>1070</textXOff2>
-        <textYOff2>8</textYOff2>
-        <itemWidth>0</itemWidth>
-        <itemHeight>0</itemHeight>
-        <IconXOff>1000</IconXOff>
-        <IconYOff>1000</IconYOff>
+        <scrollStartDelaySec>2</scrollStartDelaySec>
+        <loopDelay>5</loopDelay>
+
         <suffix>|</suffix>
         <folderPrefix />
         <folderSuffix />
-        <spinCanFocus>no</spinCanFocus>
-        <spinWidth>46</spinWidth>
-        <spinHeight>33</spinHeight>
-        <spinPosX>1828</spinPosX>
-        <spinPosY>1000</spinPosY>
+        <spinCanFocus>False</spinCanFocus>
+        <spinUp>spin_up.png</spinUp>
+        <spinUpFocus>spin_up_focus.png</spinUpFocus>
+        <spinDown>spin_down.png</spinDown>
+        <spinDownFocus>spin_down_focus.png</spinDownFocus>
+        <spinWidth>40</spinWidth>
+        <spinHeight>40</spinHeight>
+        <spinPosX>1050</spinPosX>
+        <spinPosY>740</spinPosY>
         <spinAlign>right</spinAlign>
-        <spinColor>FF000000</spinColor>
+        <spinColor>00000000</spinColor>
         <explicitlyEnableScrollLabel>yes</explicitlyEnableScrollLabel>
         <dimColor>FFFFFFFF</dimColor>
+
+        <onleft>2</onleft>
     </control>
     <control>
         <description>default checklistcontrol</description>

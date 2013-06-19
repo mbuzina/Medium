@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <define>#Color.StandardText:FFFFFFFF</define>
+    <define>#Color.DimText:AAAAAAAA</define>
+    <define>#Color.Highlight:FFB75700</define>
+    <define>#Color.Highlight2:FF007ACC</define>
+</window>

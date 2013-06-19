@@ -80,7 +80,7 @@
             <animation effect="fade" time="10" easing="inout" condition="true">Hidden</animation>
             <posX>0</posX>
             <posY>0</posY>
-            <visible>control.isvisible(11001)|control.isvisible(11002)|control.isvisible(11003)|control.isvisible(11004)|control.isvisible(11005)|control.isvisible(11006)</visible>
+            <visible>[control.isvisible(11001)|control.isvisible(11002)|control.isvisible(11003)|control.isvisible(11004)|control.isvisible(11005)|control.isvisible(11006)]+!string.equals(#WorldWeather.TodayTemperature,)</visible>
             <control Style="overlayStyle">
                 <description>Viewport</description>
                 <type>image</type>
@@ -232,7 +232,7 @@
                 <type>label</type>
                 <posX>200</posX>
                 <posY>345</posY>
-                <textcolor>FFB75700</textcolor>
+                <textcolor>FF007ACC</textcolor>
                 <font>smallFont</font>
                 <label>#WorldWeather.ForecastDay1Low</label>
             </control>
@@ -241,7 +241,7 @@
                 <type>label</type>
                 <posX>350</posX>
                 <posY>345</posY>
-                <textcolor>FFB75700</textcolor>
+                <textcolor>FF007ACC</textcolor>
                 <font>smallFont</font>
                 <label>#WorldWeather.ForecastDay2Low</label>
             </control>
@@ -250,7 +250,7 @@
                 <type>label</type>
                 <posX>500</posX>
                 <posY>345</posY>
-                <textcolor>FFB75700</textcolor>
+                <textcolor>FF007ACC</textcolor>
                 <font>smallFont</font>
                 <label>#WorldWeather.ForecastDay3Low</label>
             </control>
@@ -259,7 +259,7 @@
                 <type>label</type>
                 <posX>650</posX>
                 <posY>345</posY>
-                <textcolor>FFB75700</textcolor>
+                <textcolor>FF007ACC</textcolor>
                 <font>smallFont</font>
                 <label>#WorldWeather.ForecastDay4Low</label>
             </control>
@@ -316,7 +316,7 @@
             <animation effect="fade" time="10" easing="inout" condition="true">Hidden</animation>
             <posX>0</posX>
             <posY>0</posY>
-            <visible>control.isvisible(11007)|control.isvisible(11008)|control.isvisible(11009)</visible>
+            <visible>[control.isvisible(11007)|control.isvisible(11008)|control.isvisible(11009)]+!string.equals(#WorldWeather.TodayTemperature,)</visible>
             <control Style="overlayStyle">
                 <description>Viewport</description>
                 <type>image</type>
