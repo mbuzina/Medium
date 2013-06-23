@@ -14,7 +14,9 @@
 		<type>label</type>
 		<id>2</id>
 		<textsize>26</textsize>
-		<textcolor>#ffffff</textcolor>
+		<textcolor>#AAAAAA</textcolor>
+        <posX>50</posX>
+        <posY>400</posY>
 	</control>
 
 </controls>

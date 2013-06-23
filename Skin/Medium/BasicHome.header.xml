@@ -103,6 +103,5 @@
             <dimColor>FFFFFFFF</dimColor>
             <ondown>1000</ondown>
         </control>
-
     </controls>
 </window>

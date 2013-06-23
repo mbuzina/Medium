@@ -2,11 +2,11 @@
 <window>
     <id>3005</id>
     <defaultcontrol>21</defaultcontrol>
-    <allowoverlay>yes</allowoverlay>
+    <allowoverlay>no</allowoverlay>
     <autohidetopbar>yes</autohidetopbar>
 
 
-    <rememberLastFocusedControl>yes</rememberLastFocusedControl>
+    <rememberLastFocusedControl>false</rememberLastFocusedControl>
 
     <define property="true" evaluateNow="true">#ref_ShutdownAction:#(cint(#BasicHome.Shutdown.Action))</define>
 
@@ -190,7 +190,7 @@
                 <description>TopBar Eject</description>
                 <type>button</type>
                 <id>66754335</id>
-                <action>14</action>
+                <action>100</action>
                 <onleft>29</onleft>
                 <onright>30</onright>
                 <textureNoFocus>topbar_eject.png</textureNoFocus>
@@ -205,7 +205,7 @@
                 <description>TopBar Minimize</description>
                 <type>button</type>
                 <id>30</id>
-                <action>100</action>
+                <action>104</action>
                 <onleft>66754335</onleft>
                 <onright>31</onright>
                 <textureNoFocus>#(iif(eq(#currentmodulefullscreenstate,''),'topbar_fullscreen.png','topbar_nofullscreen.png'))</textureNoFocus>

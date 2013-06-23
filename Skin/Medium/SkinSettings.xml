@@ -11,10 +11,10 @@
     <entry name="#BasicHome.ShowExit">True</entry>
     <entry name="#BasicHome.ShowRestart">True</entry>
     <entry name="#BasicHome.ShowShutdown">True</entry>
-    <entry name="#BasicHome.ShowInfoService">True</entry>
-    <entry name="#skin.ShowTouchControls">True</entry>
+    <entry name="#BasicHome.ShowInfoService">False</entry>
+    <entry name="#skin.ShowTouchControls">False</entry>
     <entry name="#HideOverlay">False</entry>
-    <entry name="#skin.ShowCDArt">False</entry>
+    <entry name="#skin.ShowCDArt">True</entry>
   </section>
   <section name="tvguidecolors">
     <entry name="guidecolorchannelbutton">FF122F3F</entry>
@@ -34,6 +34,10 @@
     <entry name="guidecolorgroupbuttonselected">FFFFFFFF</entry>
   </section>
   <section name="stringsettings">
+    <!-- set name of default CD/vynil image (blank_cd.png or blank_lp.png, leave empty for none) -->
+    <entry name="#skin.DefaultCDArt">blank_cd.png</entry>
+    <!-- playtime for #currentplaytime, remaining for #currentremaining time, other for none -->
+    <entry name="#skin.MainTimeShown">remaining</entry>
     <entry name="#skin.color.highlight">FFB75700</entry>
     <entry name="#BasicHome.Shutdown.Action">99</entry>
     <!-- 99: Dialog, 991: Power Off, 992: Suspend, 993: Hybernate-->
@@ -43,8 +47,7 @@
     </entry>
     <entry name="#BasicHome.B0.Background">hover_play disc.png</entry>
     <entry name="#BasicHome.B0.c0r0">WW</entry>
-    <entry name="#BasicHome.B0.c1r0">
-    </entry>
+    <entry name="#BasicHome.B0.c1r0">NOWPLAY</entry>
     <entry name="#BasicHome.B0.c2r0">
     </entry>
     <entry name="#BasicHome.B0.c0r1">
@@ -85,7 +88,8 @@
     </entry>
     <entry name="#BasicHome.B1.Background">hover_my tv.png</entry>
     <entry name="#BasicHome.B1.c0r0">SUB</entry>
-    <entry name="#BasicHome.B1.c1r0">WW</entry>
+    <entry name="#BasicHome.B1.c1r0">
+    </entry>
     <entry name="#BasicHome.B1.c2r0">
     </entry>
     <entry name="#BasicHome.B1.c0r1">
@@ -94,10 +98,8 @@
     </entry>
     <entry name="#BasicHome.B1.c2r1">
     </entry>
-    <entry name="#BasicHome.B1.c0r2">
-    </entry>
-    <entry name="#BasicHome.B1.c1r2">
-    </entry>
+    <entry name="#BasicHome.B1.c0r2">NOWPLAY</entry>
+    <entry name="#BasicHome.B1.c1r2">WW</entry>
     <entry name="#BasicHome.B1.c2r2">
     </entry>
     <entry name="#BasicHome.B1.0.Label">EPG</entry>
@@ -133,8 +135,7 @@
     </entry>
     <entry name="#BasicHome.B2.c0r2">
     </entry>
-    <entry name="#BasicHome.B2.c1r2">
-    </entry>
+    <entry name="#BasicHome.B2.c1r2">NOWPLAY</entry>
     <entry name="#BasicHome.B2.c2r2">
     </entry>
     <entry name="#BasicHome.B2.0.Label">Test 1</entry>
@@ -152,8 +153,7 @@
     <entry name="#BasicHome.B3.HyperlinkParameter">
     </entry>
     <entry name="#BasicHome.B3.Background">hover_tvseries.png</entry>
-    <entry name="#BasicHome.B3.c0r0">
-    </entry>
+    <entry name="#BasicHome.B3.c0r0">NOWPLAY</entry>
     <entry name="#BasicHome.B3.c1r0">
     </entry>
     <entry name="#BasicHome.B3.c2r0">
@@ -420,8 +420,8 @@
     <entry name="#BasicHome.B9.9.Label">
     </entry>
     <entry name="#BasicHome.Current.Label">Music</entry>
-    <entry name="#BasicHome.Previous.ID">3</entry>
+    <entry name="#BasicHome.Previous.ID">0</entry>
     <entry name="#BasicHome.Current.Background">FA_MUSIC</entry>
-    <entry name="#BasicHome.Previous.Background">hover_tvseries.png</entry>
+    <entry name="#BasicHome.Previous.Background">hover_play disc.png</entry>
   </section>
 </profile>

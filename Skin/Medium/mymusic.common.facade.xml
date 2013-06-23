@@ -4,17 +4,70 @@
         <control>
             <description>group element</description>
             <type>group</type>
-            <animtation effect="slide" time="200" start="-40,0" end="0,0" easing="inout">WindowOpen</animtation>
-            <animation effect="fade" time="200">WindowOpen</animation>
-            <animtation effect="slide" time="200" start="0,0" end="-40,0" easing="inout">WindowClose</animtation>
-            <animation effect="fade" time="200">WindowClose</animation>
+
             <control>
                 <description>composite control consisting of a list control and a thumbnail panel</description>
                 <type>facadeview</type>
                 <id>50</id>
+                <animation effect="slide" time="200" end="-40,0" easing="inout">WindowClose</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
                 <control>
                     <description>listcontrol</description>
+		            <id>50</id>
                     <type>listcontrol</type>
+                    <subtype>listcontrol</subtype>
+                    <onright>2</onright>
+                    <onleft>2</onleft>
+                    <onup>2</onup>
+                    <ondown>2</ondown>
+                </control>
+                
+                <control>
+                    <description>album view listcontrol</description>
+                    <id>50</id>
+                    <type>listcontrol</type>
+                   
+                    <substype>album</substype>
+                    <IconYOff>3</IconYOff>
+                    <itemWidth>80</itemWidth>
+                    <itemHeight>80</itemHeight>
+                    <textureHeight>85</textureHeight>
+                    
+                    <onright>2</onright>
+                    <onleft>2</onleft>
+                    <onup>2</onup>
+                    <ondown>2</ondown>
+                </control>
+                
+                <control>
+                    <description>Thumbnail Panel</description>
+                    <type>thumbnailpanel</type>
+                    <id>50</id>
+                    
+                    <onright>2</onright>
+                    <onleft>2</onleft>
+                    <onup>2</onup>
+                    <ondown>2</ondown>
+                </control>
+                
+                <control>
+                    <description>Filmstrip View</description>
+                    <type>filmstrip</type>
+                    <id>50</id>
+                    
+                    <!--<onright>2</onright>
+                    <onleft>2</onleft>-->
+                    <onup>2</onup>
+                    <ondown>2</ondown>
+                </control>
+                
+                <control>
+                    <description>Coverflow View</description>
+                    <type>coverflow</type>
+                    <id>50</id>
+                           
+                    <onup>2</onup>
+                    <ondown>2</ondown>
                 </control>
             </control>
         </control>

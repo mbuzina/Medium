@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-    <id>501</id>
+    <id>504</id>
     <defaultcontrol>1000</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <disabletopbar>no</disabletopbar>
@@ -31,12 +31,6 @@
         </control>
         <include>common.header.xml</include>
 
-        <control>
-            <type>group</type>
-            <dimColor>FFFFFFFF</dimColor>
-            <unfocusedAlpha>255</unfocusedAlpha>
-            <visible>facadeview.list|facadeview.album|facadeview.smallicons|facadeview.largeicons</visible>
-            <colordiffuse>FFFFFFFF</colordiffuse>
             <control Style="overlayStyle">
                 <description>Overlay for List, Album, Small and Large Icon View</description>
                 <type>image</type>
@@ -239,7 +233,6 @@
                 <label>#selecteditem</label>
                 <visible>string.equals(#music.title,)</visible>
             </control>
-        </control>
         
         <include>common.Overlay.NowPlaying.xml</include>
         <include>mymusic.common.facade.xml</include>

@@ -3,84 +3,96 @@
     <controls>
 
         <!-- Positional Controls  -->
-        <control Style="hiddenStyle">
-            <description>Pos 0,0</description>
-            <id>11001</id>
-            <type>label</type>
-            <visible>string.equals(#BasicHome.Current.c0r0,WW)</visible>
-        </control>
-        <control Style="hiddenStyle">
-            <description>Pos 0,1</description>
-            <id>11002</id>
-            <type>label</type>
-            <visible>string.equals(#BasicHome.Current.c0r1,WW)</visible>
-        </control>
-        <control Style="hiddenStyle">
-            <description>Pos 0,2</description>
-            <id>11003</id>
-            <type>label</type>
-            <visible>string.equals(#BasicHome.Current.c0r2,WW)</visible>
-        </control>
-        <control Style="hiddenStyle">
-            <description>Pos 1,0</description>
-            <id>11004</id>
-            <type>label</type>
-            <visible>string.equals(#BasicHome.Current.c1r0,WW)</visible>
-        </control>
-        <control Style="hiddenStyle">
-            <description>Pos 1,1</description>
-            <id>11005</id>
-            <type>label</type>
-            <visible>string.equals(#BasicHome.Current.c1r1,WW)</visible>
-        </control>
-        <control Style="hiddenStyle">
-            <description>Pos 1,2</description>
-            <id>11006</id>
-            <type>label</type>
-            <visible>string.equals(#BasicHome.Current.c1r2,WW)</visible>
-        </control>
-        <control Style="hiddenStyle">
-            <description>Pos 2,0</description>
-            <id>11007</id>
-            <type>label</type>
-            <visible>string.equals(#BasicHome.Current.c2r0,WW)</visible>
-        </control>
-        <control Style="hiddenStyle">
-            <description>Pos 2,1</description>
-            <id>11008</id>
-            <type>label</type>
-            <visible>string.equals(#BasicHome.Current.c2r1,WW)</visible>
-        </control>
-        <control Style="hiddenStyle">
-            <description>Pos 2,2</description>
-            <id>11009</id>
-            <type>label</type>
-            <visible>string.equals(#BasicHome.Current.c2r2,WW)</visible>
+        <control Style="hiddenGroupStyle">
+            <type>group</type>
+            <control Style="hiddenStyle">
+                <description>Pos 0,0</description>
+                <id>15001</id>
+                <type>label</type>
+                <label>#BasicHome.Current.c0r0</label>
+                <visible>string.equals(#BasicHome.Current.c0r0,WW)</visible>
+            </control>
+            <control Style="hiddenStyle">
+                <description>Pos 0,1</description>
+                <id>15002</id>
+                <type>label</type>
+                <label>#BasicHome.Current.c0r1</label>
+                <visible>string.equals(#BasicHome.Current.c0r1,WW)</visible>
+            </control>
+            <control Style="hiddenStyle">
+                <description>Pos 0,2</description>
+                <id>15003</id>
+                <type>label</type>
+                <label>#BasicHome.Current.c0r2</label>
+                <visible>string.equals(#BasicHome.Current.c0r2,WW)</visible>
+            </control>
+            <control Style="hiddenStyle">
+                <description>Pos 1,0</description>
+                <id>15004</id>
+                <type>label</type>
+                <label>#BasicHome.Current.c1r0</label>
+                <visible>string.equals(#BasicHome.Current.c1r0,WW)</visible>
+            </control>
+            <control Style="hiddenStyle">
+                <description>Pos 1,1</description>
+                <id>15005</id>
+                <type>label</type>
+                <label>#BasicHome.Current.c1r1</label>
+                <visible>string.equals(#BasicHome.Current.c1r1,WW)</visible>
+            </control>
+            <control Style="hiddenStyle">
+                <description>Pos 1,2</description>
+                <id>15006</id>
+                <type>label</type>
+                <label>#BasicHome.Current.c1r2</label>
+                <visible>string.equals(#BasicHome.Current.c1r2,WW)</visible>
+            </control>
+            <control Style="hiddenStyle">
+                <description>Pos 2,0</description>
+                <id>15007</id>
+                <type>label</type>
+                <label>#BasicHome.Current.c2r0</label>
+                <visible>string.equals(#BasicHome.Current.c2r0,WW)</visible>
+            </control>
+            <control Style="hiddenStyle">
+                <description>Pos 2,1</description>
+                <id>15008</id>
+                <type>label</type>
+                <label>#BasicHome.Current.c2r1</label>
+                <visible>string.equals(#BasicHome.Current.c2r1,WW)</visible>
+            </control>
+            <control Style="hiddenStyle">
+                <description>Pos 2,2</description>
+                <id>15009</id>
+                <type>label</type>
+                <label>#BasicHome.Current.c2r2</label>
+                <visible>string.equals(#BasicHome.Current.c2r2,WW)</visible>
+            </control>
         </control>
         
         <control>
             <type>group</type>
-            <id>11000</id>
+            <id>15000</id>
             <dimColor>FFFFFFFF</dimColor>
-            <animation effect="slide" time="1" delay="11" start="0,0" end="0,0" condition="control.isvisible(11001)">conditional</animation>
-            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(11001)">conditional</animation>
-            <animation effect="slide" time="1" delay="11" start="0,0" end="0,142" condition="control.isvisible(11002)">conditional</animation>
-            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(11002)">conditional</animation>
-            <animation effect="slide" time="1" delay="11" start="0,0" end="0,285" condition="control.isvisible(11003)">conditional</animation>
-            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(11003)">conditional</animation>
+            <animation effect="slide" time="0" delay="11" start="0,0" end="0,0" condition="control.isvisible(15001)">conditional</animation>
+            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(15001)">conditional</animation>
+            <animation effect="slide" time="0" delay="11" start="0,0" end="0,142" condition="control.isvisible(15002)">conditional</animation>
+            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(15002)">conditional</animation>
+            <animation effect="slide" time="0" delay="11" start="0,0" end="0,285" condition="control.isvisible(15003)">conditional</animation>
+            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(15003)">conditional</animation>
 
-            <animation effect="slide" time="1" delay="11" start="0,0" end="420,0" condition="control.isvisible(11004)">conditional</animation>
-            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(11004)">conditional</animation>
-            <animation effect="slide" time="1" delay="11" start="0,0" end="420,142" condition="control.isvisible(11005)">conditional</animation>
-            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(11005)">conditional</animation>
-            <animation effect="slide" time="1" delay="11" start="0,0" end="420,285" condition="control.isvisible(11006)">conditional</animation>
-            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(11006)">conditional</animation>
+            <animation effect="slide" time="0" delay="11" start="0,0" end="420,0" condition="control.isvisible(15004)">conditional</animation>
+            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(15004)">conditional</animation>
+            <animation effect="slide" time="0" delay="11" start="0,0" end="420,142" condition="control.isvisible(15005)">conditional</animation>
+            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(15005)">conditional</animation>
+            <animation effect="slide" time="0" delay="11" start="0,0" end="420,285" condition="control.isvisible(15006)">conditional</animation>
+            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(15006)">conditional</animation>
 
             <animation effect="fade" time="200" easing="inout" condition="true">Visible</animation>
             <animation effect="fade" time="10" easing="inout" condition="true">Hidden</animation>
             <posX>0</posX>
             <posY>0</posY>
-            <visible>[control.isvisible(11001)|control.isvisible(11002)|control.isvisible(11003)|control.isvisible(11004)|control.isvisible(11005)|control.isvisible(11006)]+!string.equals(#WorldWeather.TodayTemperature,)</visible>
+            <visible>[control.isvisible(15001)|control.isvisible(15002)|control.isvisible(15003)|control.isvisible(15004)|control.isvisible(15005)|control.isvisible(15006)]+!string.equals(#WorldWeather.TodayTemperature,)</visible>
             <control Style="overlayStyle">
                 <description>Viewport</description>
                 <type>image</type>
@@ -305,18 +317,18 @@
             <type>group</type>
             <id>11010</id>
             <dimColor>FFFFFFFF</dimColor>
-            <animation effect="slide" time="1" delay="11" start="0,0" end="840,0" condition="control.isvisible(11007)">conditional</animation>
-            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(11007)">conditional</animation>
-            <animation effect="slide" time="1" delay="11" start="0,0" end="840,142" condition="control.isvisible(11008)">conditional</animation>
-            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(11008)">conditional</animation>
-            <animation effect="slide" time="1" delay="11" start="0,0" end="840,285" condition="control.isvisible(11009)">conditional</animation>
-            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(11009)">conditional</animation>
+            <animation effect="slide" time="0" delay="11" start="0,0" end="840,0" condition="control.isvisible(15007)">conditional</animation>
+            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(15007)">conditional</animation>
+            <animation effect="slide" time="0" delay="11" start="0,0" end="840,142" condition="control.isvisible(15008)">conditional</animation>
+            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(15008)">conditional</animation>
+            <animation effect="slide" time="0" delay="11" start="0,0" end="840,285" condition="control.isvisible(15009)">conditional</animation>
+            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(15009)">conditional</animation>
             
             <animation effect="fade" time="200" easing="inout" condition="true">Visible</animation>
             <animation effect="fade" time="10" easing="inout" condition="true">Hidden</animation>
             <posX>0</posX>
             <posY>0</posY>
-            <visible>[control.isvisible(11007)|control.isvisible(11008)|control.isvisible(11009)]+!string.equals(#WorldWeather.TodayTemperature,)</visible>
+            <visible>[control.isvisible(15007)|control.isvisible(15008)|control.isvisible(15009)]+!string.equals(#WorldWeather.TodayTemperature,)</visible>
             <control Style="overlayStyle">
                 <description>Viewport</description>
                 <type>image</type>

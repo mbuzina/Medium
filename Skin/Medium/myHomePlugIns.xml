@@ -2,7 +2,7 @@
 <window>
     <id>34</id>
     <defaultcontrol>4</defaultcontrol>
-    <allowoverlay>yes</allowoverlay>
+    <allowoverlay>no</allowoverlay>
     <disabletopbar>no</disabletopbar>
 
     <rememberLastFocusedControl>yes</rememberLastFocusedControl>
@@ -59,6 +59,7 @@
 
         <include>BasicHome.header.xml</include>
 
+        <include>common.Overlay.NowPlaying.xml</include>
         <include>common.footer.xml</include>
 
         <control Style="footerStyle">
@@ -68,10 +69,11 @@
             <width>1919</width>
             <label>#infoservice.feed.titles</label>
             <visible>plugin.isenabled(InfoService)+string.equals(#infoservice.feed.enabled, true)+skin.hassetting(#BasicHome.ShowInfoService)</visible>
-            <animation effect="slide" time="20" end="-29,0" condition="true">conditional</animation>
+            <animation effect="slide" time="200" start="0,40" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
+            <animation effect="slide" time="200" end="0,40" easing="inout">WindowClose</animation>
+            <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+            <animation effect="slide" time="0" end="-29,0" condition="true">conditional</animation>
         </control>
-
-
-
     </controls>
 </window>
