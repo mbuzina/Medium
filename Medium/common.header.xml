@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <controls>
+        <control Style="headerStyle">
+            <id>0</id>
+            <type>image</type>
+            <description>Background</description>
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1920</width>
+            <height>119</height>
+            <texture>header_background.png</texture>
+        </control>
+
+        <control Style="headerStyle">
+            <id>0</id>
+            <type>label</type>
+            <description>Header label</description>
+            <posX>40</posX>
+            <posY>10</posY>
+            <label>#header.label</label>
+        </control>
+
+        <control Style="headerTimeStyle">
+            <id>0</id>
+            <type>label</type>
+            <description>Time label</description>
+            <posX>1520</posX>
+            <posY>10</posY>
+            <label>#time</label>
+        </control>
+
+        <control Style="headerDateStyle">
+            <id>0</id>
+            <type>textbox</type>
+            <description>Date box</description>
+            <posX>1730</posX>
+            <posY>31</posY>
+            <height>200</height>
+            <lineSpacing>0.9</lineSpacing>
+            <label>#date</label>
+        </control>
+
+        <control Style="headerDateStyle">
+            <id>0</id>
+            <type>image</type>
+            <description>Wheather Icon</description>
+            <posX>1444</posX>
+            <posY>28</posY>
+            <height>64</height>
+            <width>64</width>
+            <texture>weather\64x64\#WorldWeather.TodayIconNumber.png</texture>
+            <visible>[plugin.isenabled(World Weather Lite) | plugin.isenabled(World Weather)]</visible>
+        </control>
+
+        <control Style="headerDateStyle">
+            <id>0</id>
+            <type>label</type>
+            <description>Temprature</description>
+            <posX>1504</posX>
+            <posY>76</posY>
+            <width>130</width>
+            <align>right</align>
+            <height>200</height>
+            <label>#WorldWeather.TodayTemperature</label>
+            <visible>[plugin.isenabled(World Weather Lite) | plugin.isenabled(World Weather)]</visible>
+        </control>
+        
+        <control Style="touchControlStyle">
+            <description>Touch Back</description>
+            <type>button</type>
+            <id>700</id>
+            <visible>skin.hassetting(#skin.ShowTouchControls)</visible>
+            <textureFocus>topbar_back_focus.png</textureFocus>
+            <textureNoFocus>topbar_back.png</textureNoFocus>
+            <dimColor>AAAAAAAA</dimColor>
+            <posX>0</posX>
+            <posY>53</posY>
+            <width>41</width>
+            <height>41</height>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>50</onup>
+            <ondown>50</ondown>
+            <action>10</action>
+        </control>
+        <control Style="headerDateStyle">
+            <description>Show Topbar on click</description>
+            <type>button</type>
+            <id>210</id>
+            <posX>840</posX>
+            <posY>0</posY>
+            <width>240</width>
+            <height>31</height>
+            <font>labelBoldFont</font>
+            <textalign>center</textalign>
+            <textvalign>top</textvalign>
+            <visible>skin.hassetting(#skin.ShowTouchControls)</visible>
+            <label>topbar</label>
+            <textcolor>FFFFFFFF</textcolor>
+            <textcolorNoFocus>AAAAAAAA</textcolorNoFocus>
+            <onclick>#(skin.setfocus(3005,21))</onclick>
+            <dimColor>FFFFFFFF</dimColor>
+            <ondown>1000</ondown>
+        </control>
+    </controls>
+</window>

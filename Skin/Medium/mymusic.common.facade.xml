@@ -15,19 +15,19 @@
                     <description>listcontrol</description>
 		            <id>50</id>
                     <type>listcontrol</type>
-                    <subtype>listcontrol</subtype>
+                    
                     <onright>2</onright>
                     <onleft>2</onleft>
                     <onup>2</onup>
                     <ondown>2</ondown>
                 </control>
                 
-                <control>
+               <control>
                     <description>album view listcontrol</description>
                     <id>50</id>
                     <type>listcontrol</type>
+                    <subtype>album</subtype>
                    
-                    <substype>album</substype>
                     <IconYOff>3</IconYOff>
                     <itemWidth>80</itemWidth>
                     <itemHeight>80</itemHeight>
@@ -55,8 +55,6 @@
                     <type>filmstrip</type>
                     <id>50</id>
                     
-                    <!--<onright>2</onright>
-                    <onleft>2</onleft>-->
                     <onup>2</onup>
                     <ondown>2</ondown>
                 </control>
@@ -65,10 +63,136 @@
                     <description>Coverflow View</description>
                     <type>coverflow</type>
                     <id>50</id>
-                           
+                    <spinspeed>8</spinspeed>
+                    
+                    <subitems>
+                        <subitem>
+                           <![CDATA[
+                            <controls>
+                                <control>
+                                    <description>Background</description>
+                                    <id>50500</id>
+                                    <type>image</type>
+                                    <posX>0</posX>
+                                    <posY>0</posY>
+                                    <width>400</width>
+                                    <height>400</height>
+                                    <texture>header_background.png</texture>
+                                </control>
+                                <control>
+                                    <description>Backside Image</description>
+                                    <id>50501</id>
+                                    <type>image</type>
+                                    <posX>0</posX>
+                                    <posY>0</posY>
+                                    <width>400</width>
+                                    <height>400</height>
+                                    <texture>..\..\..\Thumbs\Backsides\Music\#(iif(eq(#music.albumartist,''),#music.artist,#music.albumartist)) - #music.album.png</texture>
+                                </control>
+                                <control>
+                                    <description>Background</description>
+                                    <id>50500</id>
+                                    <type>image</type>
+                                    <posX>0</posX>
+                                    <posY>330</posY>
+                                    <width>400</width>
+                                    <height>70</height>
+                                    <texture>header_background.png</texture>
+                                    <visible>string.equals(#music.title,)</visible>
+                                </control>
+                                <control>
+                                    <description>Folder Label</description>
+                                    <type>label</type>
+                                    <posX>1</posX>
+                                    <posY>340</posY>
+                                    <width>398</width>
+                                    <height>30</height>
+                                    <font>subHeaderFont</font>
+                                    <textcolor>FFFFFFFF</textcolor>
+                                    <dimColor>FFFFFFFF</dimColor>
+                                    <label>#selecteditem</label>
+                                    <visible>string.equals(#music.title,)</visible>
+                                </control>
+                                <control>
+                                    <description>Background</description>
+                                    <id>50500</id>
+                                    <type>image</type>
+                                    <posX>0</posX>
+                                    <posY>265</posY>
+                                    <width>400</width>
+                                    <height>135</height>
+                                    <texture>header_background.png</texture>
+                                    <visible>!string.equals(#music.title,)</visible>
+                                </control>
+                                <control>
+                                    <description>Music Title</description>
+                                    <type>label</type>
+                                    <posX>1</posX>
+                                    <posY>255</posY>
+                                    <width>398</width>
+                                    <height>30</height>
+                                    <font>subHeaderFont</font>
+                                    <textcolor>FFFFFFFF</textcolor>
+                                    <dimColor>FFFFFFFF</dimColor>
+                                    <label>#music.track. #music.title</label>
+                                    <visible>!string.equals(#music.title,)</visible>
+                                </control>
+                                <control>
+                                    <description>Music Artist</description>
+                                    <type>label</type>
+                                    <posX>1</posX>
+                                    <posY>302</posY>
+                                    <width>398</width>
+                                    <height>30</height>
+                                    <font>labelFont</font>
+                                    <textcolor>FFFFFFFF</textcolor>
+                                    <dimColor>FFFFFFFF</dimColor>
+                                    <label>#music.artist</label>
+                                    <visible>!string.equals(#music.title,)</visible>
+                                </control>
+                                <control>
+                                    <description>Music Album</description>
+                                    <type>label</type>
+                                    <posX>1</posX>
+                                    <posY>332</posY>
+                                    <width>398</width>
+                                    <height>30</height>
+                                    <font>labelFont</font>
+                                    <textcolor>FFB75700</textcolor>
+                                    <dimColor>FFFFFFFF</dimColor>
+                                    <label>#(iif(or(eq(#music.albumartist,''),eq(#music.albumartist,'Various Artists'),eq(#music.albumartist,#music.artist)),#music.album,string.format('{0} ({1})',#music.album,#music.albumartist)))</label>
+                                    <visible>!string.equals(#music.title,)</visible>
+                                </control>
+                                <control>
+                                    <description>Music Genre/Year</description>
+                                    <type>label</type>
+                                    <posX>1</posX>
+                                    <posY>362</posY>
+                                    <width>398</width>
+                                    <height>30</height>
+                                    <font>labelFont</font>
+                                    <textcolor>FF007ACC</textcolor>
+                                    <dimColor>FFFFFFFF</dimColor>
+                                    <label>#(switch(
+                                        eq(#music.genre,''),#music.year,
+                                        eq(#music.year,''),#music.genre,
+                                        eq(1,1),string.format('{0} / {1}',#music.genre,#music.year)
+                                    ))</label>
+                                    <visible>!string.equals(#music.title,)</visible>
+                                </control>
+                            </controls>]]>
+                        </subitem>
+                    </subitems>       
+                    
                     <onup>2</onup>
                     <ondown>2</ondown>
                 </control>
+            </control>
+            
+            <control>
+                <description>playlist listcontrol</description>
+                <type>playlistcontrol</type>
+                <id>50</id>
             </control>
         </control>
     </controls>

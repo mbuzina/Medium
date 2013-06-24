@@ -167,7 +167,8 @@
     </entry>
     <entry name="#BasicHome.B3.c1r2">
     </entry>
-    <entry name="#BasicHome.B3.c2r2">NPLAY</entry>
+    <entry name="#BasicHome.B3.c2r2">
+    </entry>
     <entry name="#BasicHome.B3.0.Label">
     </entry>
     <entry name="#BasicHome.B3.1.Label">
@@ -193,15 +194,16 @@
     <entry name="#BasicHome.B4.HyperlinkParameter">
     </entry>
     <entry name="#BasicHome.B4.Background">FA_MUSIC</entry>
-    <entry name="#BasicHome.B4.c0r0">
-    </entry>
+    <entry name="#BasicHome.B4.c0r0">NOWPLAY</entry>
     <entry name="#BasicHome.B4.c1r0">
     </entry>
     <entry name="#BasicHome.B4.c2r0">
     </entry>
-    <entry name="#BasicHome.B4.c0r1">LMUSIC</entry>
+    <entry name="#BasicHome.B4.c0r1">
+    </entry>
     <entry name="#BasicHome.B4.c1r1">WW</entry>
-    <entry name="#BasicHome.B4.c2r1">LMOVIE</entry>
+    <entry name="#BasicHome.B4.c2r1">
+    </entry>
     <entry name="#BasicHome.B4.c0r2">
     </entry>
     <entry name="#BasicHome.B4.c1r2">
@@ -419,9 +421,9 @@
     </entry>
     <entry name="#BasicHome.B9.9.Label">
     </entry>
-    <entry name="#BasicHome.Current.Label">Music</entry>
+    <entry name="#BasicHome.Current.Label">TV</entry>
     <entry name="#BasicHome.Previous.ID">0</entry>
-    <entry name="#BasicHome.Current.Background">FA_MUSIC</entry>
+    <entry name="#BasicHome.Current.Background">hover_my tv.png</entry>
     <entry name="#BasicHome.Previous.Background">hover_play disc.png</entry>
   </section>
 </profile>

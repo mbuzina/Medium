@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>0</id>
+    <defaultcontrol>50</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <disabletopbar>no</disabletopbar>
+
+    <rememberLastFocusedControl>yes</rememberLastFocusedControl>
+    <define>#header.label:#(L(2143))</define>
+    <define>#header.size:L</define>
+
+    <controls>
+
+        <control>
+            <description>Menu</description>
+            <type>menu</type>
+            <id>50</id>
+            <posX>-1560</posX>
+            <posY>110</posY>
+            <width>3200</width>
+            <horizontal>yes</horizontal>
+            <textcolor>FFB75700</textcolor>
+            <textColorNoFocus>AAAAAAAA</textColorNoFocus>
+            <textAlign>left</textAlign>
+            <buttonTextXOff>0</buttonTextXOff>
+            <buttonTextYOff>0</buttonTextYOff>
+            <buttonHeight>100</buttonHeight>
+            <buttonWidth>800</buttonWidth>
+            <buttonOffset>0</buttonOffset>
+            <buttonFont>menuFont</buttonFont>
+            <spaceBetweenButtons>0</spaceBetweenButtons>
+            <numberOfButtons>5</numberOfButtons>
+            <textureButtonFocus>-</textureButtonFocus>
+            <textureButtonNoFocus>-</textureButtonNoFocus>
+            <hoverX>0</hoverX>
+            <hoverY>0</hoverY>
+            <hoverWidth>1920</hoverWidth>
+            <hoverHeight>1080</hoverHeight>
+            <hoverKeepAspectratio>no</hoverKeepAspectratio>
+            <scrollTime>150</scrollTime>
+            <scrollTimeMin>150</scrollTimeMin>
+            <mouseScrollTime>900</mouseScrollTime>
+            <mouseScrollTimeMin>450</mouseScrollTimeMin>
+            <textureBackground>-</textureBackground>
+            <onup>12</onup>
+            <ondown>12</ondown>
+            <animation effect="slide" time="200" start="0,-40" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
+            <animation effect="slide" time="200" end="0,-40" easing="inout">WindowClose</animation>
+            <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+        </control>
+
+        <control Style="shadowTextStyle">
+            <description>Selected Item</description>
+            <type>textbox</type>
+            <label>#highlightedbutton</label>
+            <lineSpacing>0.6</lineSpacing>
+        </control>
+
+        <include>BasicHome.header.xml</include>
+
+        <include>common.Overlay.NowPlaying.xml</include>
+        <include>common.footer.xml</include>
+        
+        <control Style="footerStyle">
+            <description>Infoservice Feed</description>
+            <type>fadelabel</type>
+            <posX>30</posX>
+            <width>1919</width>
+            <label>#infoservice.feed.titles</label>
+            <visible>plugin.isenabled(InfoService)+string.equals(#infoservice.feed.enabled, true)+skin.hassetting(#BasicHome.ShowInfoService)</visible>
+            <animation effect="slide" time="200" start="0,40" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
+            <animation effect="slide" time="200" end="0,40" easing="inout">WindowClose</animation>
+            <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+            <animation effect="slide" time="0" end="-29,0" condition="true">conditional</animation>
+        </control>
+
+    </controls>
+</window>

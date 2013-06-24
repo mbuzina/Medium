@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <define>#Color.StandardText:FFFFFFFF</define>
+    <define>#Color.DimText:AAAAAAAA</define>
+    <define>#Color.Highlight:FFB75700</define>
+    <define>#Color.Highlight2:FF007ACC</define>
+
+    <define>#BasicHome.SUBMENU:10000</define>
+    <define>#BasicHome.NOWPLAY_MUSIC:11000</define>
+    <define>#BasicHome.NOWPLAY_VIDEO:12000</define>
+    <define>#BasicHome.NOWPLAY_OTHERS:13000</define>
+    <define>#BasicHome.WW:15000</define>
+    <define>#BasicHome.LMUSIC:20000</define>
+    <define>#BasicHome.LVIDEO:21000</define>
+    <define>#BasicHome.LPICS:22000</define>
+    <define>#BasicHome.LRECORD:23000</define>
+    <define>#BasicHome.LSCHEDULE:24000</define>
+    <define>#BasicHome.LMOVIE:25000</define>
+    <define>#BasicHome.LFILM:26000</define>
+    <define>#BasicHome.LSERIES:27000</define>
+    <define>#BasicHome.CLICKFINDER:30000</define>
+
+</window>

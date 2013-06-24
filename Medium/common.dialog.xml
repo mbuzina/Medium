@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <controls>
+        <control Style="dimScreenStyle">
+            <type>image</type>
+            <id>0</id>
+        </control>
+        <control>
+            <type>group</type>
+            <dimColor>FFFFFFFF</dimColor>
+            <control Style="overlayStyle">
+                <type>image</type>
+                <id>0</id>
+                <posX>1120</posX>
+                <posY>130</posY>
+                <width>800</width>
+                <height>330</height>
+                <texture>hiddenMenu_overlay.png</texture>
+                <animation effect="slide" time="200" delay="0" start="40,0" easing="inout">WindowOpen</animation>
+                <animation effect="fade" time="200" delay="0" end="100">WindowOpen</animation>
+                <animation effect="slide" time="200" delay="0" end="40,0" easing="inout">WindowClose</animation>
+                <animation effect="fade" time="200" delay="0" end="0">WindowClose</animation>
+            </control>
+            <control Style="subHeaderStyle">
+                <description>dialog Heading</description>
+                <type>label</type>
+                <id>1</id>
+                <posX>1170</posX>
+                <posY>130</posY>
+                <width>580</width>
+                <label>0</label>
+                <animation effect="slide" time="200" delay="10" start="40,0" easing="inout">WindowOpen</animation>
+                <animation effect="fade" time="200" delay="10" end="100">WindowOpen</animation>
+                <animation effect="slide" time="200" delay="10" end="40,0" easing="inout">WindowClose</animation>
+                <animation effect="fade" time="200" delay="10" end="0">WindowClose</animation>
+            </control>
+            <control Style="labelStyle">
+                <description>dialog line 1</description>
+                <type>fadelabel</type>
+                <id>2</id>
+                <posX>1130</posX>
+                <posY>190</posY>
+                <width>780</width>
+                <animation effect="slide" time="200" delay="20" start="40,0" easing="inout">WindowOpen</animation>
+                <animation effect="fade" time="200" delay="20" end="100">WindowOpen</animation>
+                <animation effect="slide" time="200" delay="20" end="40,0" easing="inout">WindowClose</animation>
+                <animation effect="fade" time="200" delay="20" end="0">WindowClose</animation>
+            </control>
+            <control Style="labelStyle">
+                <description>dialog line 2</description>
+                <type>label</type>
+                <id>3</id>
+                <posX>1130</posX>
+                <posY>230</posY>
+                <label>0</label>
+                <width>780</width>
+                <animation effect="slide" time="200" delay="30" start="40,0" easing="inout">WindowOpen</animation>
+                <animation effect="fade" time="200" delay="30" end="100">WindowOpen</animation>
+                <animation effect="slide" time="200" delay="30" end="40,0" easing="inout">WindowClose</animation>
+                <animation effect="fade" time="200" delay="30" end="0">WindowClose</animation>
+            </control>
+            <control Style="labelStyle">
+                <description>dialog line 3</description>
+                <type>label</type>
+                <id>4</id>
+                <posX>1130</posX>
+                <posY>270</posY>
+                <label>0</label>
+                <width>780</width>
+                <animation effect="slide" time="200" delay="40" start="40,0" easing="inout">WindowOpen</animation>
+                <animation effect="fade" time="200" delay="40" end="100">WindowOpen</animation>
+                <animation effect="slide" time="200" delay="40" end="40,0" easing="inout">WindowClose</animation>
+                <animation effect="fade" time="200" delay="40" end="0">WindowClose</animation>
+            </control>
+            <control Style="labelStyle">
+                <description>dialog line 4</description>
+                <type>label</type>
+                <id>5</id>
+                <posX>1130</posX>
+                <posY>310</posY>
+                <label>0</label>
+                <width>780</width>
+                <animation effect="slide" time="200" delay="50" start="40,0" easing="inout">WindowOpen</animation>
+                <animation effect="fade" time="200" delay="50" end="100">WindowOpen</animation>
+                <animation effect="slide" time="200" delay="50" end="40,0" easing="inout">WindowClose</animation>
+                <animation effect="fade" time="200" delay="50" end="0">WindowClose</animation>
+            </control>
+        </control>
+    </controls>
+</window>

@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <controls>
+         <!-- For List, Album, Small & Large Icon View, Infos in a box on the right -->
+         <control>
+            <type>group</type>
+            <visible>facadeview.list|facadeview.album|facadeview.smallicons|facadeview.largeicons</visible>
+            <control Style="overlayStyle">
+                <description>Overlay for List, Album, Small and Large Icon View</description>
+                <type>image</type>
+                <posX>0</posX>
+                <posY>130</posY>
+                <width>1240</width>
+                <height>614</height>
+            </control>
+            <control Style="overlayStyle">
+                <description>Small Overlay for spin controls</description>
+                <type>image</type>
+                <posX>1080</posX>
+                <posY>743</posY>
+                <width>160</width>
+                <height>50</height>
+            </control>
+
+            <control Style="overlayStyle">
+                <description>Overlay for Details in List, Album, Small and Large Icon View</description>
+                <type>image</type>
+                <posX>1280</posX>
+                <posY>130</posY>
+                <width>614</width>
+                <height>614</height>
+            </control>
+            
+            <control Style="thumbStyle">
+                <type>image</type>
+                <id>1</id>
+                <posX>1287</posX>
+                <posY>137</posY>
+                <width>600</width>
+                <height>600</height>
+                <texture>#skin.DefaultCDArt</texture>
+                <visible>skin.hassetting(#skin.ShowCDArt)+control.hasthumb(30014)+!control.hasthumb(10011)</visible>
+                <animation effect="slide" delay="500" start="0,0" end="0,290" time="500" easing="out" tween="cubic" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
+                <animation effect="slide" delay="500" start="0,0" end="0,290" time="500" easing="out" tween="cubic" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
+                <animation effect="rotate" end="-360" time="8000" loop="true" condition="True">Conditional</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+            </control>
+        
+            <control Style="thumbStyle">
+                <type>image</type>
+                <id>10012</id>
+                <posX>1287</posX>
+                <posY>137</posY>
+                <width>600</width>
+                <height>600</height>
+                <texture mask="cd_mask.png">#selectedthumb</texture>
+                <visible>skin.hassetting(#skin.ShowCDArt)+control.hasthumb(30014)+!control.hasthumb(10011)</visible>
+                <animation effect="slide" delay="500" start="0,0" end="0,290" time="500" easing="out" tween="cubic" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
+                <animation effect="slide" delay="500" start="0,0" end="0,290" time="500" easing="out" tween="cubic" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
+                <animation effect="rotate" end="-360" time="8000" loop="true" condition="True">Conditional</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+            </control>
+        
+            <control Style="thumbStyle">
+                <type>image</type>
+                <id>10011</id>
+                <posX>1287</posX>
+                <posY>137</posY>
+                <width>600</width>
+                <height>600</height>
+                <texture>..\..\..\Thumbs\CDArt\Music\#(iif(eq(#music.albumartist,''),#music.artist,#music.albumartist)) - #music.album.png</texture>
+                <visible>skin.hassetting(#skin.ShowCDArt)</visible>
+                <animation effect="slide" delay="500" start="0,0" end="0,290" time="500" easing="out" tween="cubic" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
+                <animation effect="slide" delay="500" start="0,0" end="0,290" time="500" easing="out" tween="cubic" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
+                <animation effect="rotate" end="-360" time="8000" loop="true" condition="True">Conditional</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+            </control>
+        
+            <control Style="thumbStyle">
+                <type>image</type>
+                <id>30013</id>
+                <posX>1387</posX>
+                <posY>885</posY>
+                <width>400</width>
+                <height>155</height>
+                <texture>..\..\..\Thumbs\ClearArt\Music\#(iif(eq(#music.artist,''),#music.albumartist,#music.artist)).png</texture>
+                <animation effect="fade" delay="600" time="200" start="0" end="100" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
+                <animation effect="fade" delay="600" time="200" start="0" end="100" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
+            </control>
+
+            <control Style="thumbStyle">
+                <type>image</type>
+                <id>30014</id>
+            </control>
+             <control Style="labelStyle">
+                 <type>label</type>
+                 <posX>1287</posX>
+                 <posY>320</posY>
+                 <width>600</width>
+                 <height>50</height>
+                 <font>backgroundFont</font>
+                 <align>center</align>
+                 <label>..</label>
+                 <visible>string.equals(#selectedindex,)</visible>
+             </control>
+            <!-- Thumb/Details View for Music Files -->
+            <control Style="overlayStyle">
+                <type>image</type>
+                <posX>1280</posX>
+                <posY>569</posY>
+                <width>614</width>
+                <height>175</height>
+                <visible>control.hasthumb(30014)+!string.equals(#music.title,)</visible>
+            </control>
+            <control Style="subHeaderStyle">
+                <description>Song Title</description>
+                <type>fadelabel</type>
+                <posX>1285</posX>
+                <posY>565</posY>
+                <width>614</width>
+                <label>#music.track. #music.title</label>
+                <visible>!string.equals(#music.title,)</visible>
+            </control>
+            <control Style="labelStyle">
+                <description>Artist</description>
+                <type>fadelabel</type>
+                <posX>1285</posX>
+                <posY>620</posY>
+                <label>#music.artist</label>
+                <visible>!string.equals(#music.title,)</visible>
+            </control>
+            <control Style="labelStyle">
+                <description>Album</description>
+                <type>fadelabel</type>
+                <posX>1285</posX>
+                <posY>660</posY>
+                <width>450</width>
+                <textcolor>FFB75700</textcolor>
+                <label>#(iif(or(eq(#music.albumartist,''),eq(#music.albumartist,'Various Artists'),eq(#music.albumartist,#music.artist)),#music.album,string.format('{0} ({1})',#music.album,#music.albumartist)))</label>
+                <visible>!string.equals(#music.title,)</visible>
+            </control>
+            <control Style="labelStyle">
+                <description>Year</description>
+                <type>label</type>
+                <posX>1735</posX>
+                <posY>660</posY>
+                <width>150</width>
+                <textcolor>FF007ACC</textcolor>
+                <label>#music.year</label>
+                <visible>!string.equals(#music.title,)</visible>
+            </control>
+            <control Style="labelStyle">
+                <description>Genre</description>
+                <type>fadelabel</type>
+                <posX>1285</posX>
+                <posY>700</posY>
+                <width>300</width>
+                <textcolor>FF007ACC</textcolor>
+                <label>#music.genre</label>
+                <visible>!string.equals(#music.title,)</visible>
+            </control>
+            <control Style="labelStyle">
+                <description>Duration</description>
+                <type>fadelabel</type>
+                <posX>1740</posX>
+                <posY>700</posY>
+                <width>150</width>
+                <textcolor>FF007ACC</textcolor>
+                <label>#music.duration</label>
+                <visible>!string.equals(#music.title,)</visible>
+            </control>
+            <!--Keep for when MP supports showing ratings for music...
+            <control Style="ratingHighlight2Style">
+                <type>imagelist</type>
+                <id>1</id>
+                <posX>1715</posX>            
+                <posY>710</posY>
+                <percentage>#(mul(cint(iif(eq(#music.rating,''),0,#music.rating)),2))</percentage>
+                <align>left</align>
+                <subitems>
+                    <subitem>star_open_highlight2.png</subitem>
+                    <subitem>star_closed_highlight2.png</subitem>
+                </subitems>
+                <visible>!string.equals(#music.title,)</visible>
+            </control>-->
+             <control>
+                <type>image</type>
+                <posX>1280</posX>
+                <posY>130</posY>
+                <width>40</width>
+                <height>40</height>
+                <texture>isplaying.png</texture>
+                <visible>false</visible>
+            </control>
+             <control>
+                <type>image</type>
+                <posX>1280</posX>
+                <posY>130</posY>
+                <width>40</width>
+                <height>40</height>
+                <texture>ispaused.png</texture>
+                <visible>false</visible>
+            </control>
+
+            <!-- Thumb/Details View for Folders -->
+            <control Style="overlayStyle">
+                <type>image</type>
+                <posX>1280</posX>
+                <posY>674</posY>
+                <width>614</width>
+                <height>70</height>
+                <visible>!string.equals(#selectedthumb,)+string.equals(#music.title,)</visible>
+            </control> 
+            <control Style="subHeaderStyle">
+                <type>fadelabel</type>
+                <posX>1285</posX>
+                <posY>675</posY>
+                <width>614</width>
+                <label>#selecteditem</label>
+                <visible>string.equals(#music.title,)</visible>
+            </control>
+        </control>
+        
+        <!-- For filmstrip view infos are top left, like now playing -->
+         <control>
+            <type>group</type>
+            <visible>facadeview.filmstrip</visible>
+
+            <control Style="overlayStyle">
+                <description>Overlay for Details in filmstrip View</description>
+                <type>image</type>
+                <posX>0</posX>
+                <posY>130</posY>
+                <width>370</width>
+                <height>370</height>
+            </control>
+            
+            <control Style="thumbStyle">
+                <type>image</type>
+                <id>1</id>
+                <posX>10</posX>
+                <posY>140</posY>
+                <width>350</width>
+                <height>350</height>
+                <texture>#skin.DefaultCDArt</texture>
+                <visible>skin.hassetting(#skin.ShowCDArt)+control.hasthumb(30034)+!control.hasthumb(10031)</visible>
+                <animation effect="slide" delay="500" start="0,0" end="175,0" time="500" easing="out" tween="cubic" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
+                <animation effect="slide" delay="500" start="0,0" end="175,0" time="500" easing="out" tween="cubic" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
+                <animation effect="fade" delay="500" start="0" end="100" time="20" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
+                <animation effect="fade" delay="500" start="0" end="100" time="20" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
+                <animation effect="rotate" end="-360" time="8000" loop="true" condition="True">Conditional</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+            </control>
+        
+            <control Style="thumbStyle">
+                <type>image</type>
+                <id>10032</id>
+                <posX>10</posX>
+                <posY>140</posY>
+                <width>350</width>
+                <height>350</height>
+                <texture mask="cd_mask.png">#selectedthumb</texture>
+                <visible>skin.hassetting(#skin.ShowCDArt)+control.hasthumb(30034)+!control.hasthumb(10031)</visible>
+                <animation effect="slide" delay="500" start="0,0" end="175,0" time="500" easing="out" tween="cubic" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
+                <animation effect="slide" delay="500" start="0,0" end="175,0" time="500" easing="out" tween="cubic" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
+                <animation effect="fade" delay="500" start="0" end="100" time="20" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
+                <animation effect="fade" delay="500" start="0" end="100" time="20" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
+                <animation effect="rotate" end="-360" time="8000" loop="true" condition="True">Conditional</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+            </control>
+        
+            <control Style="thumbStyle">
+                <type>image</type>
+                <id>10031</id>
+                <posX>10</posX>
+                <posY>140</posY>
+                <width>350</width>
+                <height>350</height>
+                <texture>..\..\..\Thumbs\CDArt\Music\#(iif(eq(#music.albumartist,''),#music.artist,#music.albumartist)) - #music.album.png</texture>
+                <visible>skin.hassetting(#skin.ShowCDArt)</visible>
+                <animation effect="slide" delay="500" start="0,0" end="175,0" time="500" easing="out" tween="cubic" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
+                <animation effect="slide" delay="500" start="0,0" end="175,0" time="500" easing="out" tween="cubic" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
+                <animation effect="fade" delay="500" start="0" end="100" time="20" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
+                <animation effect="fade" delay="500" start="0" end="100" time="20" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
+                <animation effect="rotate" end="-360" time="8000" loop="true" condition="True">Conditional</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+            </control>
+        
+            <control Style="thumbStyle">
+                <description>ClearArt band logo</description>
+                <type>image</type>
+                <id>30033</id>
+                <posX>760</posX>
+                <posY>355</posY>
+                <width>400</width>
+                <height>155</height>
+                <texture>..\..\..\Thumbs\ClearArt\Music\#(iif(eq(#music.artist,''),#music.albumartist,#music.artist)).png</texture>
+                <animation effect="fade" delay="600" time="200" start="0" end="100" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
+                <animation effect="fade" delay="600" time="200" start="0" end="100" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
+                <animation effect="slide" delay="600" time="200" start="0,40" end="0,0" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
+                <animation effect="slide" delay="600" time="200" start="0,40" end="0,0" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+            </control>
+
+            <control Style="thumbStyle">
+                <description>Frontside Image</description>
+                <type>image</type>
+                <id>30034</id>
+                <posX>0</posX>
+                <posY>130</posY>
+                <width>370</width>
+                <height>370</height>
+                <animation effect="fade" delay="300" time="200" start="0" end="100" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
+                <animation effect="fade" delay="300" time="200" start="0" end="100" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
+                <animation effect="slide" delay="300" time="200" start="-40,0" end="0,0" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
+                <animation effect="slide" delay="300" time="200" start="-40,0" end="0,0" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+            </control>
+             <control Style="thumbStyle">
+                <description>Backside Image</description>
+                <id>50501</id>
+                <type>image</type>
+                <posX>1550</posX>
+                <posY>130</posY>
+                <width>370</width>
+                <height>370</height>
+                <texture>..\..\..\Thumbs\Backsides\Music\#(iif(eq(#music.albumartist,''),#music.artist,#music.albumartist)) - #music.album.png</texture>
+                <animation effect="fade" delay="300" time="200" start="0" end="100" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
+                <animation effect="fade" delay="300" time="200" start="0" end="100" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
+                <animation effect="slide" delay="300" time="200" start="40,0" end="0,0" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
+                <animation effect="slide" delay="300" time="200" start="40,0" end="0,0" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+            </control>
+             <control Style="labelStyle">
+                 <type>label</type>
+                 <posX>0</posX>
+                 <posY>310</posY>
+                 <width>370</width>
+                 <height>50</height>
+                 <font>backgroundFont</font>
+                 <align>center</align>
+                 <label>..</label>
+                 <visible>string.equals(#selectedindex,)</visible>
+             </control>
+             
+             <!-- Thumb/Details View for Music Files -->
+            <control Style="overlayStyle">
+                <type>image</type>
+                <posX>0</posX>
+                <posY>370</posY>
+                <width>370</width>
+                <height>130</height>
+                <visible>control.hasthumb(30034)+!string.equals(#music.title,)</visible>
+            </control>
+            <control Style="subHeaderStyle">
+                <description>Song Title</description>
+                <type>fadelabel</type>
+                <posX>30</posX>
+                <posY>363</posY>
+                <width>370</width>
+                <font>largeFont</font>
+                <label>#music.track. #music.title</label>
+                <visible>!string.equals(#music.title,)</visible>
+                <animation effect="slide" time="0" end="-30,0" condition="true">Conditional</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+            </control>
+            <control Style="labelStyle">
+                <description>Artist</description>
+                <type>fadelabel</type>
+                <posX>30</posX>
+                <posY>395</posY>
+                <width>370</width>
+                <label>#music.artist</label>
+                <visible>!string.equals(#music.title,)</visible>
+                <animation effect="slide" time="0" end="-30,0" condition="true">Conditional</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+            </control>
+            <control Style="labelStyle">
+                <description>Album</description>
+                <type>fadelabel</type>
+                <posX>30</posX>
+                <posY>428</posY>
+                <width>300</width>
+                <textcolor>FFB75700</textcolor>
+                <label>#(iif(or(eq(#music.albumartist,''),eq(#music.albumartist,'Various Artists'),eq(#music.albumartist,#music.artist)),#music.album,string.format('{0} ({1})',#music.album,#music.albumartist)))</label>
+                <visible>!string.equals(#music.title,)</visible>
+                <animation effect="slide" time="0" end="-30,0" condition="true">Conditional</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+            </control>
+            <control Style="labelStyle">
+                <description>Year</description>
+                <type>label</type>
+                <posX>300</posX>
+                <posY>428</posY>
+                <width>70</width>
+                <textcolor>FF007ACC</textcolor>
+                <label>#music.year</label>
+                <visible>!string.equals(#music.title,)</visible>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+            </control>
+            <control Style="labelStyle">
+                <description>Genre</description>
+                <type>fadelabel</type>
+                <posX>30</posX>
+                <posY>462</posY>
+                <width>300</width>
+                <textcolor>FF007ACC</textcolor>
+                <label>#music.genre</label>
+                <visible>!string.equals(#music.title,)</visible>
+                <animation effect="slide" time="0" end="-30,0" condition="true">Conditional</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+            </control>
+            <control Style="labelStyle">
+                <description>Duration</description>
+                <type>fadelabel</type>
+                <posX>300</posX>
+                <posY>462</posY>
+                <width>70</width>
+                <textcolor>FF007ACC</textcolor>
+                <label>#music.duration</label>
+                <visible>!string.equals(#music.title,)</visible>
+            </control>
+            <!--Keep for when MP supports showing ratings for music...
+            <control Style="ratingHighlight2Style">
+                <type>imagelist</type>
+                <id>1</id>
+                <posX>1715</posX>            
+                <posY>710</posY>
+                <percentage>#(mul(cint(iif(eq(#music.rating,''),0,#music.rating)),2))</percentage>
+                <align>left</align>
+                <subitems>
+                    <subitem>star_open_highlight2.png</subitem>
+                    <subitem>star_closed_highlight2.png</subitem>
+                </subitems>
+                <visible>!string.equals(#music.title,)</visible>
+            </control>-->
+             <control>
+                <type>image</type>
+                <posX>0</posX>
+                <posY>130</posY>
+                <width>40</width>
+                <height>40</height>
+                <texture>isplaying.png</texture>
+                <visible>false</visible>
+            </control>
+             <control>
+                <type>image</type>
+                <posX>0</posX>
+                <posY>130</posY>
+                <width>40</width>
+                <height>40</height>
+                <texture>ispaused.png</texture>
+                <visible>false</visible>
+            </control>
+
+            <!-- Thumb/Details View for Folders -->
+            <control Style="overlayStyle">
+                <type>image</type>
+                <posX>0</posX>
+                <posY>430</posY>
+                <width>370</width>
+                <height>70</height>
+                <visible>!string.equals(#selectedthumb,)+string.equals(#music.title,)</visible>
+            </control> 
+            <control Style="subHeaderStyle">
+                <type>fadelabel</type>
+                <posX>30</posX>
+                <posY>430</posY>
+                <width>370</width>
+                
+                <label>#selecteditem</label>
+                <visible>string.equals(#music.title,)</visible>
+                <animation effect="slide" time="0" end="-30,0" condition="true">Conditional</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+            </control>
+        </control>
+        
+        <!-- For coverflow infos are on backside, CD pops out on top -->
+        <control>
+            <type>group</type>
+            <visible>facadeview.coverflow</visible>
+            
+            <control Style="overlayStyle">
+                <type>image</type>
+                <posX>0</posX>
+                <posY>350</posY>
+                <width>1920</width>
+                <height>400</height>
+            </control>
+            
+            <control Style="thumbStyle">
+                <type>image</type>
+                <id>1</id>
+                <posX>770</posX>
+                <posY>350</posY>
+                <width>380</width>
+                <height>380</height>
+                <texture>#skin.DefaultCDArt</texture>
+                <visible>skin.hassetting(#skin.ShowCDArt)+!control.hasthumb(10021)+!string.equals(#selectedindex,)</visible>
+                <animation effect="slide" delay="500" start="0,0" end="0,-180" time="500" easing="out" tween="cubic" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
+                <animation effect="slide" delay="500" start="0,0" end="0,-180" time="500" easing="out" tween="cubic" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
+                <animation effect="fade" delay="600" time="0" start="0" end="100" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
+                <animation effect="fade" delay="600" time="0" start="0" end="100" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
+                
+                <animation effect="rotate" end="-360" time="8000" loop="true" condition="True">Conditional</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+            </control>
+        
+            <control Style="thumbStyle">
+                <type>image</type>
+                <id>10022</id>
+                <posX>770</posX>
+                <posY>350</posY>
+                <width>380</width>
+                <height>380</height>
+                <texture mask="cd_mask.png">#selectedthumb</texture>
+                <visible>skin.hassetting(#skin.ShowCDArt)+!control.hasthumb(10021)+!string.equals(#selectedindex,)</visible>
+                <animation effect="slide" delay="500" start="0,0" end="0,-180" time="500" easing="out" tween="cubic" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
+                <animation effect="slide" delay="500" start="0,0" end="0,-180" time="500" easing="out" tween="cubic" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
+                <animation effect="fade" delay="600" time="0" start="0" end="100" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
+                <animation effect="fade" delay="600" time="0" start="0" end="100" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
+                
+                <animation effect="rotate" end="-360" time="8000" loop="true" condition="True">Conditional</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+            </control>
+        
+            <control Style="thumbStyle">
+                <type>image</type>
+                <id>10021</id>
+                <posX>770</posX>
+                <posY>350</posY>
+                <width>380</width>
+                <height>380</height>
+                <texture>..\..\..\Thumbs\CDArt\Music\#(iif(eq(#music.albumartist,''),#music.artist,#music.albumartist)) - #music.album.png</texture>
+                <visible>!string.equals(#music.title,)+skin.hassetting(#skin.ShowCDArt)</visible>
+                <animation effect="slide" delay="600" start="0,0" end="0,-180" time="500" easing="out" tween="cubic" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
+                <animation effect="slide" delay="600" start="0,0" end="0,-180" time="500" easing="out" tween="cubic" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
+                <animation effect="fade" delay="600" time="0" start="0" end="100" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
+                <animation effect="fade" delay="600" time="0" start="0" end="100" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
+                
+                <animation effect="rotate" end="-360" time="8000" loop="true" condition="True">Conditional</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+            </control>
+            <control Style="thumbStyle">
+                <type>image</type>
+                <id>30013</id>
+                <posX>760</posX>
+                <posY>195</posY>
+                <width>400</width>
+                <height>155</height>
+                <texture>..\..\..\Thumbs\ClearArt\Music\#(iif(eq(#music.artist,''),#music.albumartist,#music.artist)).png</texture>
+                <animation effect="fade" delay="600" time="200" start="0" end="100" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
+                <animation effect="fade" delay="600" time="200" start="0" end="100" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+            </control>
+        </control>
+    </controls>
+</window>

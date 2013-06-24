@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>3005</id>
+    <defaultcontrol>21</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <autohidetopbar>yes</autohidetopbar>
+
+
+    <rememberLastFocusedControl>false</rememberLastFocusedControl>
+
+    <define property="true" evaluateNow="true">#ref_ShutdownAction:#(cint(#BasicHome.Shutdown.Action))</define>
+
+    <controls>
+        <control>
+            <type>image</type>
+            <id>0</id>
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1920</width>
+            <height>50</height>
+            <texture>header_background.png</texture>
+
+            <animation effect="slide" time="200" start="0,-40" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
+            <animation effect="slide" time="200" end="0,-40" easing="inout">WindowClose</animation>
+            <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+            <animation effect="slide" time="200" start="0,-40" easing="inout">VisibleChange</animation>
+            <animation effect="fade" time="200" easing="inout">VisibleChange</animation>
+        </control>
+        <control>
+            <id>0</id>
+            <type>group</type>
+            <posX>10</posX>
+            <posY>5</posY>
+            <width>600</width>
+            <height>50</height>
+            <animation effect="slide" time="200" start="0,-40" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
+            <animation effect="slide" time="200" end="0,-40" easing="inout">WindowClose</animation>
+            <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+            <animation effect="slide" time="200" start="0,-40" easing="inout">VisibleChange</animation>
+            <animation effect="fade" time="200" easing="inout">VisibleChange</animation>
+            <layout>TableLayout(600,10,10,10)</layout>
+
+            <control Style="topBarStyle">
+                <description>TopBar Jump TV</description>
+                <type>button</type>
+                <id>66754321</id>
+                <onleft>66754333</onleft>
+                <onright>66754322</onright>
+                <hyperlink>1</hyperlink>
+                <textureNoFocus>topbar_mytv.png</textureNoFocus>
+                <textureFocus>topbar_mytv_focus.png</textureFocus>
+            </control>
+            <control Style="topBarStyle">
+                <description>TopBar Jump Radio</description>
+                <type>button</type>
+                <id>66754322</id>
+                <onleft>66754321</onleft>
+                <onright>66754323</onright>
+                <hyperlink>30</hyperlink>
+                <textureNoFocus>topbar_myradio.png</textureNoFocus>
+                <textureFocus>topbar_myradio_focus.png</textureFocus>
+            </control>
+            <control Style="topBarStyle">
+                <description>TopBar Jump Music</description>
+                <type>button</type>
+                <id>66754323</id>
+                <onleft>66754322</onleft>
+                <onright>66754324</onright>
+                <hyperlink>501</hyperlink>
+                <textureNoFocus>topbar_mymusic.png</textureNoFocus>
+                <textureFocus>topbar_mymusic_focus.png</textureFocus>
+            </control>
+             <control Style="topBarStyle">
+                <description>TopBar Jump Pictures</description>
+                <type>button</type>
+                <id>66754324</id>
+                <onleft>66754323</onleft>
+                <onright>21</onright>
+                <hyperlink>501</hyperlink>
+                <textureNoFocus>topbar_mypictures.png</textureNoFocus>
+                <textureFocus>topbar_mypictures_focus.png</textureFocus>
+            </control>
+        </control>
+        <control>
+            <id>0</id>
+            <type>group</type>
+            <posX>580</posX>
+            <posY>5</posY>
+            <width>1920</width>
+            <height>50</height>
+            <animation effect="slide" time="200" start="0,-40" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
+            <animation effect="slide" time="200" end="0,-40" easing="inout">WindowClose</animation>
+            <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+            <animation effect="slide" time="200" start="0,-40" easing="inout">VisibleChange</animation>
+            <animation effect="fade" time="200" easing="inout">VisibleChange</animation>
+            <layout>TableLayout(920,14,10,10)</layout>
+
+            <control Style="topBarStyle">
+                <description>TopBar Back</description>
+                <type>button</type>
+                <id>21</id>
+                <action>10</action>
+                <onleft>66754324</onleft>
+                <onright>26</onright>
+                <textureNoFocus>topbar_back.png</textureNoFocus>
+                <textureFocus>topbar_back_focus.png</textureFocus>
+            </control>
+            <control Style="topBarStyle">
+                <description>TopBar Home</description>
+                <type>button</type>
+                <id>26</id>
+                <action>115</action>
+                <onleft>21</onleft>
+                <onright>22</onright>
+                <textureNoFocus>topbar_home.png</textureNoFocus>
+                <textureFocus>topbar_home_focus.png</textureFocus>
+            </control>
+            <control>
+                <description>placeholder</description>
+                <type>image</type>
+                <width>10</width>
+            </control>
+            <control Style="topBarStyle">
+                <description>TopBar Previous</description>
+                <type>button</type>
+                <id>22</id>
+                <action>15</action>
+                <onleft>26</onleft>
+                <onright>23</onright>
+                <textureNoFocus>topbar_prev.png</textureNoFocus>
+                <textureFocus>topbar_prev_focus.png</textureFocus>
+            </control>
+            <control Style="topBarStyle">
+                <description>TopBar REW</description>
+                <type>button</type>
+                <id>23</id>
+                <action>78</action>
+                <onleft>22</onleft>
+                <onright>24</onright>
+                <textureNoFocus>topbar_rew.png</textureNoFocus>
+                <textureFocus>topbar_rew_focus.png</textureFocus>
+                <animation effect="fade" time="400" start="100" end="70" pulse="true" easing="inout" condition="player.rewinding">conditional</animation>
+            </control>
+            <control Style="topBarStyle">
+                <description>TopBar Play</description>
+                <type>button</type>
+                <id>24</id>
+                <action>12</action>
+                <onleft>23</onleft>
+                <onright>27</onright>
+                <textureNoFocus>#(iif(eq(#Play.Current.Title,''),'topbar_play.png','topbar_pause.png'))</textureNoFocus>
+                <textureFocus>#(iif(eq(#Play.Current.Title,''),'topbar_play_focus.png','topbar_pause_focus.png'))</textureFocus>
+                <animation effect="fade" time="400" start="100" end="70" pulse="true" easing="inout" condition="player.paused">conditional</animation>
+            </control>
+            <control Style="topBarStyle">
+                <description>TopBar Stop</description>
+                <type>button</type>
+                <id>27</id>
+                <action>13</action>
+                <onleft>24</onleft>
+                <onright>28</onright>
+                <textureNoFocus>topbar_stop.png</textureNoFocus>
+                <textureFocus>topbar_stop_focus.png</textureFocus>
+            </control>
+            <control Style="topBarStyle">
+                <description>TopBar FFWD</description>
+                <type>button</type>
+                <id>28</id>
+                <action>77</action>
+                <onleft>27</onleft>
+                <onright>29</onright>
+                <textureNoFocus>topbar_ffwd.png</textureNoFocus>
+                <textureFocus>topbar_ffwd_focus.png</textureFocus>
+                <animation effect="fade" time="400" start="100" end="70" pulse="true" easing="inout" condition="player.forwarding">conditional</animation>
+            </control>
+            <control Style="topBarStyle">
+                <description>TopBar Next</description>
+                <type>button</type>
+                <id>29</id>
+                <action>14</action>
+                <onleft>28</onleft>
+                <onright>66754335</onright>
+                <textureNoFocus>topbar_next.png</textureNoFocus>
+                <textureFocus>topbar_next_focus.png</textureFocus>
+            </control>
+            <control Style="topBarStyle">
+                <description>TopBar Eject</description>
+                <type>button</type>
+                <id>66754335</id>
+                <action>100</action>
+                <onleft>29</onleft>
+                <onright>30</onright>
+                <textureNoFocus>topbar_eject.png</textureNoFocus>
+                <textureFocus>topbar_eject_focus.png</textureFocus>
+            </control>
+            <control>
+                <description>placeholder</description>
+                <type>image</type>
+                <width>10</width>
+            </control>
+            <control Style="topBarStyle">
+                <description>TopBar Minimize</description>
+                <type>button</type>
+                <id>30</id>
+                <action>104</action>
+                <onleft>66754335</onleft>
+                <onright>31</onright>
+                <textureNoFocus>#(iif(eq(#currentmodulefullscreenstate,''),'topbar_fullscreen.png','topbar_nofullscreen.png'))</textureNoFocus>
+                <textureFocus>#(iif(eq(#currentmodulefullscreenstate,''),'topbar_fullscreen_focus.png','topbar_nofullscreen_focus.png'))</textureFocus>
+            </control>
+            <control Style="topBarStyle">
+                <description>TopBar Exit</description>
+                <type>button</type>
+                <id>31</id>
+                <action>97</action>
+                <onleft>30</onleft>
+                <onright>45</onright>
+                <textureNoFocus>topbar_close.png</textureNoFocus>
+                <textureFocus>topbar_close_focus.png</textureFocus>
+            </control>
+            <control Style="topBarStyle">
+                <description>TopBar Shutdown</description>
+                <type>button</type>
+                <id>45</id>
+                <action>#ref_ShutdownAction</action>
+                <onleft>31</onleft>
+                <onright>66754331</onright>
+                <textureNoFocus>topbar_shutdown.png</textureNoFocus>
+                <textureFocus>topbar_shutdown_focus.png</textureFocus>
+            </control>
+        </control>
+        <control>
+            <id>0</id>
+            <type>group</type>
+            <posX>1760</posX>
+            <posY>5</posY>
+            <width>200</width>
+            <height>50</height>
+            <animation effect="slide" time="200" start="0,-40" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
+            <animation effect="slide" time="200" end="0,-40" easing="inout">WindowClose</animation>
+            <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+            <animation effect="slide" time="200" start="0,-40" easing="inout">VisibleChange</animation>
+            <animation effect="fade" time="200" easing="inout">VisibleChange</animation>
+            <layout>StackLayout(Vertical,10,True)</layout>
+            <control Style="topBarStyle">
+                <description>TopBar Mute</description>
+                <type>button</type>
+                <id>66754331</id>
+                <onleft>45</onleft>
+                <onright>66754332</onright>
+                <action>9982</action>
+                <textureNoFocus>topbar_mute.png</textureNoFocus>
+                <textureFocus>topbar_mute_focus.png</textureFocus>
+                <visible>!player.muted</visible>
+            </control>
+            <control Style="topBarStyle">
+                <description>TopBar Mute</description>
+                <type>button</type>
+                <id>66754332</id>
+                <onleft>66754331</onleft>
+                <onright>66754333</onright>
+                <action>9982</action>
+                <textureNoFocus>topbar_unmute.png</textureNoFocus>
+                <textureFocus>topbar_unmute_focus.png</textureFocus>
+                <animation effect="fade" time="400" start="100" end="70" pulse="true" easing="inout" condition="player.muted">conditional</animation>
+                <visible>player.muted</visible>
+            </control>
+        </control>
+        <control>
+            <id>0</id>
+            <type>group</type>
+            <posX>1810</posX>
+            <posY>5</posY>
+            <width>100</width>
+            <height>50</height>
+            <animation effect="slide" time="200" start="0,-40" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
+            <animation effect="slide" time="200" end="0,-40" easing="inout">WindowClose</animation>
+            <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+            <animation effect="slide" time="200" start="0,-40" easing="inout">VisibleChange</animation>
+            <animation effect="fade" time="200" easing="inout">VisibleChange</animation>
+            <layout>TableLayout(100,10,10,10)</layout>
+            <control Style="topBarStyle">
+                <description>TopBar Vol Down</description>
+                <type>button</type>
+                <id>66754333</id>
+                <onleft>66754332</onleft>
+                <onright>66754334</onright>
+                <action>102</action>
+                <textureNoFocus>topbar_volumedown.png</textureNoFocus>
+                <textureFocus>topbar_volumedown_focus.png</textureFocus>
+            </control>
+            <control Style="topBarStyle">
+                <description>TopBar Vol Up</description>
+                <type>button</type>
+                <id>66754334</id>
+                <onleft>66754333</onleft>
+                <onright>66754321</onright>
+                <action>103</action>
+                <textureNoFocus>topbar_volumeup.png</textureNoFocus>
+                <textureFocus>topbar_volumeup_focus.png</textureFocus>
+            </control>
+        </control>
+
+        <control Style="topBarStyle">
+            <description>Show Fast Forward Speed</description>
+            <type>label</type>
+            <posX>1440</posX>
+            <posY>4</posY>
+            <width>80</width>
+            <height>40</height>
+            <align>right</align>
+            <textcolor>FFB75700</textcolor>
+            <font>labelBoldFont</font>
+            <label>#playspeed x</label>
+            <visible>player.rewinding</visible>
+        </control>
+        <control Style="topBarStyle">
+            <description>Show Playtime in Top Bar</description>
+            <type>label</type>
+            <posX>1420</posX>
+            <posY>5</posY>
+            <width>200</width>
+            <height>40</height>
+            <label>#currentplaytime/#currentremaining</label>
+            <align>center</align>
+            <visible>player.hasmedia</visible>
+            <animation effect="fade" time="400" start="100" end="70" pulse="true" easing="inout" condition="player.paused">conditional</animation>
+        </control>
+        <control Style="topBarStyle">
+            <description>Show Fast Forward Speed</description>
+            <type>label</type>
+            <posX>1600</posX>
+            <posY>4</posY>
+            <width>80</width>
+            <height>40</height>
+            <align>left</align>
+            <textcolor>FFB75700</textcolor>
+            <font>labelBoldFont</font>
+            <label>#playspeed x</label>
+            <visible>player.forwarding</visible>
+        </control>
+    </controls>
+</window>

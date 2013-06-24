@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <define>#useRandomGamesUserFanart:Yes</define>
+    <define>#useRandomMoviesUserFanart:Yes</define>
+    <define>#useRandomMoviesScraperFanart:Yes</define>
+    <define>#useRandomMovingPicturesFanart:Yes</define>
+    <define>#useRandomMusicUserFanart:Yes</define>
+    <define>#useRandomMusicScraperFanart:Yes</define>
+    <define>#useRandomPicturesUserFanart:Yes</define>
+    <define>#useRandomPluginsUserFanart:Yes</define>
+    <define>#useRandomScoreCenterUserFanart:Yes</define>
+    <define>#useRandomTVUserFanart:Yes</define>
+    <define>#useRandomTVSeriesFanart:Yes</define>
+  
+    <define>#useSelectedFanart:Yes</define>
+    
+    <controls> 
+        <control Style="hiddenGroupStyle">
+            <type>group</type>    
+            <control Style="hiddenStyle">
+                <description>DUMMY CONTROL FOR RANDOM FANART 1 VISIBILITY CONDITION</description>
+                <type>label</type>
+                <id>91919297</id>
+                <width>1</width>
+            </control>
+            <control Style="hiddenStyle">
+                <description>DUMMY CONTROL FOR RANDOM FANART 2 VISIBILITY CONDITION</description>
+                <type>label</type>
+                <id>91919298</id>
+                <width>1</width>
+            </control>
+            <control>
+                <description>DUMMY CONTROL FOR SELECTED FANART 1 VISIBILITY CONDITION</description>
+                <type>label</type>
+                <id>91919291</id>
+                <width>1</width>
+            </control>
+            <control>
+                <description>DUMMY CONTROL FOR SELECTED FANART 2 VISIBILITY CONDITION</description>
+                <type>label</type>
+                <id>91919292</id>
+                <width>1</width>
+            </control>
+            <control>
+                <description>DUMMY CONTROL FOR SELECTED FANART AVAILABILITY CONDITION</description>
+                <type>label</type>
+                <id>91919293</id>
+                <width>1</width>
+            </control>
+        </control>
+        
+        <control Style="backdropStyle">
+            <description>Current Background 1</description>
+            <type>image</type>
+            <texture>#(switch(
+                eq(#BasicHome.Current.Background,'WORLDWEATHER'),string.format('weather/backgrounds/{0}.jpg',#WorldWeather.TodayIconNumber),
+                eq(#BasicHome.Current.Background,'FA_MUSIC'),iif(eq(#fanarthandler.music.scraper.backdrop1.any,''),'hover_my music.png',#fanarthandler.music.scraper.backdrop1.any),
+                eq('1','1'),#BasicHome.Current.Background
+            ))</texture>
+            <visible>control.isvisible(91919297)|!string.starts(#BasicHome.Current.Background,'FA_')</visible>    
+        </control>
+        <control Style="backdropStyle">
+            <description>Current Background 2</description>
+            <type>image</type>
+            <texture>#(switch(
+                eq(#BasicHome.Current.Background,'WORLDWEATHER'),string.format('weather/backgrounds/{0}.jpg',#WorldWeather.TodayIconNumber),
+                eq(#BasicHome.Current.Background,'FA_MUSIC'),iif(eq(#fanarthandler.music.scraper.backdrop2.any,''),'hover_my music.png',#fanarthandler.music.scraper.backdrop2.any),
+                eq('1','1'),#BasicHome.Current.Background
+            ))</texture>
+            <visible>control.isvisible(91919298)+string.starts(#BasicHome.Current.Background,'FA_')</visible>    
+        </control>
+        <control Style="backdropStyle">
+            <description>Selected Background 1</description>
+            <type>image</type>
+            <texture>#(switch(
+                eq(#BasicHome.Current.Background,'FA_MUSIC'),#fanarthandler.music.backdrop1.selected,
+            ))</texture>
+            <visible>control.isvisible(91919291)+control.isvisible(91919293)+string.starts(#BasicHome.Current.Background,'FA_')</visible>    
+        </control>
+        <control Style="backdropStyle">
+            <description>Selected Background 2</description>
+            <type>image</type>
+            <texture>#(switch(
+                eq(#BasicHome.Current.Background,'FA_MUSIC'),#fanarthandler.music.backdrop2.selected,
+            ))</texture>
+            <visible>control.isvisible(91919292)+control.isvisible(91919293)+string.starts(#BasicHome.Current.Background,'FA_')</visible>    
+        </control>
+    </controls>
+</window>

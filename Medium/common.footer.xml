@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <controls>
+        <control Style="footerStyle">
+            <id>0</id>
+            <type>image</type>
+            <description>Background</description>
+            <posX>0</posX>
+            <posY>1040</posY>
+            <width>1920</width>
+            <height>40</height>
+            <texture>header_background.png</texture>
+        </control>        
+    </controls>
+</window>

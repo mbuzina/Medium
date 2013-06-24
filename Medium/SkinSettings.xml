@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<profile>
+  <section name="theme">
+    <entry name="name">Skin default</entry>
+  </section>
+  <section name="booleansettings">
+    <entry name="#skin.tvguide.usecolorsforbuttons">True</entry>
+    <entry name="#skin.tvguide.usecolorsforgenre">True</entry>
+    <entry name="#skin.tvguide.useborderhighlight">False</entry>
+    <entry name="#skin.tvguide.showgenrekey">True</entry>
+    <entry name="#BasicHome.ShowExit">True</entry>
+    <entry name="#BasicHome.ShowRestart">True</entry>
+    <entry name="#BasicHome.ShowShutdown">True</entry>
+    <entry name="#BasicHome.ShowInfoService">False</entry>
+    <entry name="#skin.ShowTouchControls">False</entry>
+    <entry name="#HideOverlay">False</entry>
+    <entry name="#skin.ShowCDArt">True</entry>
+  </section>
+  <section name="tvguidecolors">
+    <entry name="guidecolorchannelbutton">FF122F3F</entry>
+    <entry name="guidecolorchannelbuttonselected">FF00B7FF</entry>
+    <entry name="guidecolorprogramselected">FF00B7FF</entry>
+    <entry name="guidecolorprogramended">FF122F3F</entry>
+    <entry name="guidecolorborderhighlight">99FFFFFF</entry>
+    <entry name="defaultgenre">FF276688,FF122F3F</entry>
+    <entry name="genre0">FF8A8965,FF8A8965</entry>
+    <entry name="genre1">F00A2A2F,FF00A2A2</entry>
+    <entry name="genre2">FF552C84,FF552C84</entry>
+    <entry name="genre3">FFAD004D,FFAD004D</entry>
+    <entry name="genre4">FF747474,FF747474</entry>
+    <entry name="genre5">FFFFAB0F,FFFFAB0F</entry>
+    <entry name="genre6">FF00A313,FF00A313</entry>
+    <entry name="guidecolorgroupbutton">FFFFFFFF</entry>
+    <entry name="guidecolorgroupbuttonselected">FFFFFFFF</entry>
+  </section>
+  <section name="stringsettings">
+    <!-- set name of default CD/vynil image (blank_cd.png or blank_lp.png, leave empty for none) -->
+    <entry name="#skin.DefaultCDArt">blank_cd.png</entry>
+    <!-- playtime for #currentplaytime, remaining for #currentremaining time, other for none -->
+    <entry name="#skin.MainTimeShown">remaining</entry>
+    <entry name="#skin.color.highlight">FFB75700</entry>
+    <entry name="#BasicHome.Shutdown.Action">99</entry>
+    <!-- 99: Dialog, 991: Power Off, 992: Suspend, 993: Hybernate-->
+    <entry name="#BasicHome.B0.Label">Play CD</entry>
+    <entry name="#BasicHome.B0.Hyperlink">0</entry>
+    <entry name="#BasicHome.B0.HyperlinkParameter">
+    </entry>
+    <entry name="#BasicHome.B0.Background">hover_play disc.png</entry>
+    <entry name="#BasicHome.B0.c0r0">WW</entry>
+    <entry name="#BasicHome.B0.c1r0">NOWPLAY</entry>
+    <entry name="#BasicHome.B0.c2r0">
+    </entry>
+    <entry name="#BasicHome.B0.c0r1">
+    </entry>
+    <entry name="#BasicHome.B0.c1r1">
+    </entry>
+    <entry name="#BasicHome.B0.c2r1">
+    </entry>
+    <entry name="#BasicHome.B0.c0r2">
+    </entry>
+    <entry name="#BasicHome.B0.c1r2">
+    </entry>
+    <entry name="#BasicHome.B0.c2r2">
+    </entry>
+    <entry name="#BasicHome.B0.0.Label">
+    </entry>
+    <entry name="#BasicHome.B0.1.Label">
+    </entry>
+    <entry name="#BasicHome.B0.2.Label">
+    </entry>
+    <entry name="#BasicHome.B0.3.Label">
+    </entry>
+    <entry name="#BasicHome.B0.4.Label">
+    </entry>
+    <entry name="#BasicHome.B0.5.Label">
+    </entry>
+    <entry name="#BasicHome.B0.6.Label">
+    </entry>
+    <entry name="#BasicHome.B0.7.Label">
+    </entry>
+    <entry name="#BasicHome.B0.8.Label">
+    </entry>
+    <entry name="#BasicHome.B0.9.Label">
+    </entry>
+    <entry name="#BasicHome.B1.Label">TV</entry>
+    <entry name="#BasicHome.B1.Hyperlink">0</entry>
+    <entry name="#BasicHome.B1.HyperlinkParameter">
+    </entry>
+    <entry name="#BasicHome.B1.Background">hover_my tv.png</entry>
+    <entry name="#BasicHome.B1.c0r0">SUB</entry>
+    <entry name="#BasicHome.B1.c1r0">
+    </entry>
+    <entry name="#BasicHome.B1.c2r0">
+    </entry>
+    <entry name="#BasicHome.B1.c0r1">
+    </entry>
+    <entry name="#BasicHome.B1.c1r1">
+    </entry>
+    <entry name="#BasicHome.B1.c2r1">
+    </entry>
+    <entry name="#BasicHome.B1.c0r2">NOWPLAY</entry>
+    <entry name="#BasicHome.B1.c1r2">WW</entry>
+    <entry name="#BasicHome.B1.c2r2">
+    </entry>
+    <entry name="#BasicHome.B1.0.Label">EPG</entry>
+    <entry name="#BasicHome.B1.1.Label">Clickfinder</entry>
+    <entry name="#BasicHome.B1.2.Label">Recorded Programs</entry>
+    <entry name="#BasicHome.B1.3.Label">Scheduled Recordings</entry>
+    <entry name="#BasicHome.B1.4.Label">
+    </entry>
+    <entry name="#BasicHome.B1.5.Label">
+    </entry>
+    <entry name="#BasicHome.B1.6.Label">
+    </entry>
+    <entry name="#BasicHome.B1.7.Label">
+    </entry>
+    <entry name="#BasicHome.B1.8.Label">
+    </entry>
+    <entry name="#BasicHome.B1.9.Label">
+    </entry>
+    <entry name="#BasicHome.B2.Label">Moving Pictures</entry>
+    <entry name="#BasicHome.B2.Hyperlink">0</entry>
+    <entry name="#BasicHome.B2.HyperlinkParameter">
+    </entry>
+    <entry name="#BasicHome.B2.Background">hover_movingpictures.jpg</entry>
+    <entry name="#BasicHome.B2.c0r0">SUB</entry>
+    <entry name="#BasicHome.B2.c1r0">
+    </entry>
+    <entry name="#BasicHome.B2.c2r0">WW</entry>
+    <entry name="#BasicHome.B2.c0r1">
+    </entry>
+    <entry name="#BasicHome.B2.c1r1">
+    </entry>
+    <entry name="#BasicHome.B2.c2r1">
+    </entry>
+    <entry name="#BasicHome.B2.c0r2">
+    </entry>
+    <entry name="#BasicHome.B2.c1r2">NOWPLAY</entry>
+    <entry name="#BasicHome.B2.c2r2">
+    </entry>
+    <entry name="#BasicHome.B2.0.Label">Test 1</entry>
+    <entry name="#BasicHome.B2.1.Label">Test 2</entry>
+    <entry name="#BasicHome.B2.2.Label">Test 3</entry>
+    <entry name="#BasicHome.B2.3.Label">Test 4</entry>
+    <entry name="#BasicHome.B2.4.Label">Test 5</entry>
+    <entry name="#BasicHome.B2.5.Label">Test 6</entry>
+    <entry name="#BasicHome.B2.6.Label">Test 7</entry>
+    <entry name="#BasicHome.B2.7.Label">Test 8 is a very long test, so we can see what happens here!</entry>
+    <entry name="#BasicHome.B2.8.Label">Test 9</entry>
+    <entry name="#BasicHome.B2.9.Label">And the last test</entry>
+    <entry name="#BasicHome.B3.Label">TV Series</entry>
+    <entry name="#BasicHome.B3.Hyperlink">0</entry>
+    <entry name="#BasicHome.B3.HyperlinkParameter">
+    </entry>
+    <entry name="#BasicHome.B3.Background">hover_tvseries.png</entry>
+    <entry name="#BasicHome.B3.c0r0">NOWPLAY</entry>
+    <entry name="#BasicHome.B3.c1r0">
+    </entry>
+    <entry name="#BasicHome.B3.c2r0">
+    </entry>
+    <entry name="#BasicHome.B3.c0r1">WW</entry>
+    <entry name="#BasicHome.B3.c1r1">
+    </entry>
+    <entry name="#BasicHome.B3.c2r1">
+    </entry>
+    <entry name="#BasicHome.B3.c0r2">
+    </entry>
+    <entry name="#BasicHome.B3.c1r2">
+    </entry>
+    <entry name="#BasicHome.B3.c2r2">NPLAY</entry>
+    <entry name="#BasicHome.B3.0.Label">
+    </entry>
+    <entry name="#BasicHome.B3.1.Label">
+    </entry>
+    <entry name="#BasicHome.B3.2.Label">
+    </entry>
+    <entry name="#BasicHome.B3.3.Label">
+    </entry>
+    <entry name="#BasicHome.B3.4.Label">
+    </entry>
+    <entry name="#BasicHome.B3.5.Label">
+    </entry>
+    <entry name="#BasicHome.B3.6.Label">
+    </entry>
+    <entry name="#BasicHome.B3.7.Label">
+    </entry>
+    <entry name="#BasicHome.B3.8.Label">
+    </entry>
+    <entry name="#BasicHome.B3.9.Label">
+    </entry>
+    <entry name="#BasicHome.B4.Label">Music</entry>
+    <entry name="#BasicHome.B4.Hyperlink">501</entry>
+    <entry name="#BasicHome.B4.HyperlinkParameter">
+    </entry>
+    <entry name="#BasicHome.B4.Background">FA_MUSIC</entry>
+    <entry name="#BasicHome.B4.c0r0">
+    </entry>
+    <entry name="#BasicHome.B4.c1r0">
+    </entry>
+    <entry name="#BasicHome.B4.c2r0">
+    </entry>
+    <entry name="#BasicHome.B4.c0r1">LMUSIC</entry>
+    <entry name="#BasicHome.B4.c1r1">WW</entry>
+    <entry name="#BasicHome.B4.c2r1">LMOVIE</entry>
+    <entry name="#BasicHome.B4.c0r2">
+    </entry>
+    <entry name="#BasicHome.B4.c1r2">
+    </entry>
+    <entry name="#BasicHome.B4.c2r2">
+    </entry>
+    <entry name="#BasicHome.B4.0.Label">
+    </entry>
+    <entry name="#BasicHome.B4.1.Label">
+    </entry>
+    <entry name="#BasicHome.B4.2.Label">
+    </entry>
+    <entry name="#BasicHome.B4.3.Label">
+    </entry>
+    <entry name="#BasicHome.B4.4.Label">
+    </entry>
+    <entry name="#BasicHome.B4.5.Label">
+    </entry>
+    <entry name="#BasicHome.B4.6.Label">
+    </entry>
+    <entry name="#BasicHome.B4.7.Label">
+    </entry>
+    <entry name="#BasicHome.B4.8.Label">
+    </entry>
+    <entry name="#BasicHome.B4.9.Label">
+    </entry>
+    <entry name="#BasicHome.B5.Label">Pictures</entry>
+    <entry name="#BasicHome.B5.Hyperlink">0</entry>
+    <entry name="#BasicHome.B5.HyperlinkParameter">
+    </entry>
+    <entry name="#BasicHome.B5.Background">hover_my pictures.png</entry>
+    <entry name="#BasicHome.B5.c0r0">
+    </entry>
+    <entry name="#BasicHome.B5.c1r0">
+    </entry>
+    <entry name="#BasicHome.B5.c2r0">
+    </entry>
+    <entry name="#BasicHome.B5.c0r1">LMUSIC</entry>
+    <entry name="#BasicHome.B5.c1r1">LMOVIE</entry>
+    <entry name="#BasicHome.B5.c2r1">WW</entry>
+    <entry name="#BasicHome.B5.c0r2">
+    </entry>
+    <entry name="#BasicHome.B5.c1r2">
+    </entry>
+    <entry name="#BasicHome.B5.c2r2">
+    </entry>
+    <entry name="#BasicHome.B5.0.Label">
+    </entry>
+    <entry name="#BasicHome.B5.1.Label">
+    </entry>
+    <entry name="#BasicHome.B5.2.Label">
+    </entry>
+    <entry name="#BasicHome.B5.3.Label">
+    </entry>
+    <entry name="#BasicHome.B5.4.Label">
+    </entry>
+    <entry name="#BasicHome.B5.5.Label">
+    </entry>
+    <entry name="#BasicHome.B5.6.Label">
+    </entry>
+    <entry name="#BasicHome.B5.7.Label">
+    </entry>
+    <entry name="#BasicHome.B5.8.Label">
+    </entry>
+    <entry name="#BasicHome.B5.9.Label">
+    </entry>
+    <entry name="#BasicHome.B6.Label">Weather</entry>
+    <entry name="#BasicHome.B6.Hyperlink">0</entry>
+    <entry name="#BasicHome.B6.HyperlinkParameter">
+    </entry>
+    <entry name="#BasicHome.B6.Background">WORLDWEATHER</entry>
+    <entry name="#BasicHome.B6.c0r0">
+    </entry>
+    <entry name="#BasicHome.B6.c1r0">
+    </entry>
+    <entry name="#BasicHome.B6.c2r0">NPLAY</entry>
+    <entry name="#BasicHome.B6.c0r1">LMUSIC</entry>
+    <entry name="#BasicHome.B6.c1r1">LMOVIE</entry>
+    <entry name="#BasicHome.B6.c2r1">LREC</entry>
+    <entry name="#BasicHome.B6.c0r2">WW</entry>
+    <entry name="#BasicHome.B6.c1r2">
+    </entry>
+    <entry name="#BasicHome.B6.c2r2">
+    </entry>
+    <entry name="#BasicHome.B6.0.Label">
+    </entry>
+    <entry name="#BasicHome.B6.1.Label">
+    </entry>
+    <entry name="#BasicHome.B6.2.Label">
+    </entry>
+    <entry name="#BasicHome.B6.3.Label">
+    </entry>
+    <entry name="#BasicHome.B6.4.Label">
+    </entry>
+    <entry name="#BasicHome.B6.5.Label">
+    </entry>
+    <entry name="#BasicHome.B6.6.Label">
+    </entry>
+    <entry name="#BasicHome.B6.7.Label">
+    </entry>
+    <entry name="#BasicHome.B6.8.Label">
+    </entry>
+    <entry name="#BasicHome.B6.9.Label">
+    </entry>
+    <entry name="#BasicHome.B7.Label">Settings</entry>
+    <entry name="#BasicHome.B7.Hyperlink">0</entry>
+    <entry name="#BasicHome.B7.HyperlinkParameter">
+    </entry>
+    <entry name="#BasicHome.B7.Background">hover_settings.png</entry>
+    <entry name="#BasicHome.B7.c0r0">
+    </entry>
+    <entry name="#BasicHome.B7.c1r0">
+    </entry>
+    <entry name="#BasicHome.B7.c2r0">NPLAY</entry>
+    <entry name="#BasicHome.B7.c0r1">LMUSIC</entry>
+    <entry name="#BasicHome.B7.c1r1">LMOVIE</entry>
+    <entry name="#BasicHome.B7.c2r1">LREC</entry>
+    <entry name="#BasicHome.B7.c0r2">
+    </entry>
+    <entry name="#BasicHome.B7.c1r2">WW</entry>
+    <entry name="#BasicHome.B7.c2r2">
+    </entry>
+    <entry name="#BasicHome.B7.0.Label">
+    </entry>
+    <entry name="#BasicHome.B7.1.Label">
+    </entry>
+    <entry name="#BasicHome.B7.2.Label">
+    </entry>
+    <entry name="#BasicHome.B7.3.Label">
+    </entry>
+    <entry name="#BasicHome.B7.4.Label">
+    </entry>
+    <entry name="#BasicHome.B7.5.Label">
+    </entry>
+    <entry name="#BasicHome.B7.6.Label">
+    </entry>
+    <entry name="#BasicHome.B7.7.Label">
+    </entry>
+    <entry name="#BasicHome.B7.8.Label">
+    </entry>
+    <entry name="#BasicHome.B7.9.Label">
+    </entry>
+    <entry name="#BasicHome.B8.Label">x</entry>
+    <entry name="#BasicHome.B8.Hyperlink">0</entry>
+    <entry name="#BasicHome.B8.HyperlinkParameter">
+    </entry>
+    <entry name="#BasicHome.B8.Background">hover_play disc.png</entry>
+    <entry name="#BasicHome.B8.c0r0">
+    </entry>
+    <entry name="#BasicHome.B8.c1r0">
+    </entry>
+    <entry name="#BasicHome.B8.c2r0">NPLAY</entry>
+    <entry name="#BasicHome.B8.c0r1">LMUSIC</entry>
+    <entry name="#BasicHome.B8.c1r1">LMOVIE</entry>
+    <entry name="#BasicHome.B8.c2r1">LREC</entry>
+    <entry name="#BasicHome.B8.c0r2">
+    </entry>
+    <entry name="#BasicHome.B8.c1r2">
+    </entry>
+    <entry name="#BasicHome.B8.c2r2">WW</entry>
+    <entry name="#BasicHome.B8.0.Label">
+    </entry>
+    <entry name="#BasicHome.B8.1.Label">
+    </entry>
+    <entry name="#BasicHome.B8.2.Label">
+    </entry>
+    <entry name="#BasicHome.B8.3.Label">
+    </entry>
+    <entry name="#BasicHome.B8.4.Label">
+    </entry>
+    <entry name="#BasicHome.B8.5.Label">
+    </entry>
+    <entry name="#BasicHome.B8.6.Label">
+    </entry>
+    <entry name="#BasicHome.B8.7.Label">
+    </entry>
+    <entry name="#BasicHome.B8.8.Label">
+    </entry>
+    <entry name="#BasicHome.B8.9.Label">
+    </entry>
+    <entry name="#BasicHome.B9.Label">Test Page Empty</entry>
+    <entry name="#BasicHome.B9.Hyperlink">0</entry>
+    <entry name="#BasicHome.B9.HyperlinkParameter">
+    </entry>
+    <entry name="#BasicHome.B9.Background">-</entry>
+    <entry name="#BasicHome.B9.c0r0">
+    </entry>
+    <entry name="#BasicHome.B9.c1r0">
+    </entry>
+    <entry name="#BasicHome.B9.c2r0">NPLAY</entry>
+    <entry name="#BasicHome.B9.c0r1">LMUSIC</entry>
+    <entry name="#BasicHome.B9.c1r1">LMOVIE</entry>
+    <entry name="#BasicHome.B9.c2r1">LREC</entry>
+    <entry name="#BasicHome.B9.c0r2">WW</entry>
+    <entry name="#BasicHome.B9.c1r2">
+    </entry>
+    <entry name="#BasicHome.B9.c2r2">WW</entry>
+    <entry name="#BasicHome.B9.0.Label">
+    </entry>
+    <entry name="#BasicHome.B9.1.Label">
+    </entry>
+    <entry name="#BasicHome.B9.2.Label">
+    </entry>
+    <entry name="#BasicHome.B9.3.Label">
+    </entry>
+    <entry name="#BasicHome.B9.4.Label">
+    </entry>
+    <entry name="#BasicHome.B9.5.Label">
+    </entry>
+    <entry name="#BasicHome.B9.6.Label">
+    </entry>
+    <entry name="#BasicHome.B9.7.Label">
+    </entry>
+    <entry name="#BasicHome.B9.8.Label">
+    </entry>
+    <entry name="#BasicHome.B9.9.Label">
+    </entry>
+    <entry name="#BasicHome.Current.Label">Music</entry>
+    <entry name="#BasicHome.Previous.ID">0</entry>
+    <entry name="#BasicHome.Current.Background">FA_MUSIC</entry>
+    <entry name="#BasicHome.Previous.Background">hover_play disc.png</entry>
+  </section>
+</profile>

@@ -1,0 +1,83 @@
+<fonts>
+
+    <font>
+        <name>backgroundFont</name>
+        <filename>Segoe UI</filename>
+        <height>96</height>
+        <start>0</start>
+        <end>1536</end>
+        <bold>no</bold>
+    </font>
+
+    <font>
+        <name>headerFont</name>
+        <filename>Segoe UI Light</filename>
+        <height>36</height>
+        <start>0</start>
+        <end>1536</end>
+        <bold>no</bold>
+    </font>
+
+    <font>
+        <name>menuFont</name>
+        <filename>Segoe UI Light</filename>
+        <height>24</height>
+        <start>0</start>
+        <end>1536</end>
+        <bold>no</bold>
+    </font>
+
+    <font>
+        <name>subHeaderFont</name>
+        <filename>Segoe UI Light</filename>
+        <height>18</height>
+        <start>0</start>
+        <end>1536</end>
+        <bold>no</bold>
+    </font>
+    
+    <font>
+        <name>largeFont</name>
+        <filename>Segoe UI Light</filename>
+        <height>14</height>
+        <start>0</start>
+        <end>1536</end>
+        <bold>no</bold>
+    </font>
+    
+    <font>
+        <name>largeBoldFont</name>
+        <filename>Segoe UI</filename>
+        <height>14</height>
+        <start>0</start>
+        <end>1536</end>
+        <bold>yes</bold>
+    </font>    
+    
+    <font>
+        <name>labelFont</name>
+        <filename>Segoe UI Light</filename>
+        <height>12</height>
+        <start>0</start>
+        <end>1536</end>
+        <bold>no</bold>
+    </font>
+    <font>
+        <name>labelBoldFont</name>
+        <filename>Segoe UI</filename>
+        <height>12</height>
+        <start>0</start>
+        <end>1536</end>
+        <bold>yes</bold>
+    </font>
+
+    <font>
+        <name>smallFont</name>
+        <filename>Segoe UI Light</filename>
+        <height>11</height>
+        <start>0</start>
+        <end>1536</end>
+        <bold>no</bold>
+    </font>
+
+</fonts>

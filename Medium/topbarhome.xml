@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>3004</id>
+<defaultcontrol>21</defaultcontrol>
+<allowoverlay>no</allowoverlay>
+<autohidetopbar>yes</autohidetopbar>
+
+
+<rememberLastFocusedControl>yes</rememberLastFocusedControl>
+
+        <define property="true" evaluateNow="true">#ref_ShutdownAction:#(cint(#BasicHome.Shutdown.Action))</define>
+
+<controls>	
+        <control>
+            <type>image</type>    
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1920</width>
+            <height>50</height>
+            <texture>header_background.png</texture>        
+            <animation effect="slide" time="200" start="0,-40" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
+            <animation effect="slide" time="200" end="0,-40" easing="inout">WindowClose</animation>
+            <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+            <animation effect="slide" time="200" start="0,-40" easing="inout">VisibleChange</animation>
+            <animation effect="fade" time="200" easing="inout">VisibleChange</animation>
+        </control>
+
+</controls>
+</window>
