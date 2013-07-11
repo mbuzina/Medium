@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>2011</id>
+    <defaultcontrol>1303</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <disabletopbar>no</disabletopbar>
+    <rememberLastFocusedControl>no</rememberLastFocusedControl>
+
+
+    <define>#useSelectedFanart:Yes</define>
+    <define>#selecteditem:</define>
+
+
+    <define>#header.label:#currentmodule</define>
+
+
+    <controls>
+        <control Style="dimScreenStyle">
+            <type>image</type>
+            <id>0</id>
+            <animation effect="fade" time="200" end="100">WindowOpen</animation>
+            <animation effect="fade" time="200" end="0">WindowClose</animation>
+        </control>
+        
+        <!-- Album info Overlay -->
+        <control>
+            <type>group</type>
+            <animation effect="fade" time="200" delay="200" end="100">VisibleChange</animation>
+            <animation effect="slide" time="200" delay="200" start="80,0" easing="inout">VisibleChange</animation>
+            <animation effect="fade" time="200" end="100">WindowOpen</animation>
+            <animation effect="slide" time="200" delay="200" start="-80,0" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" end="0">WindowClose</animation>
+            <animation effect="slide" time="200" start="0,0" end="-80,0" easing="inout">WindowClose</animation>
+            <control Style="overlayStyle">
+                <type>image</type>
+                <posX>0</posX>
+                <posY>130</posY>
+                <width>1240</width>
+                <height>660</height>
+                <texture>hiddenMenu_overlay.png</texture>
+            </control>
+            <control Style="labelStyle">
+                <type>fadelabel</type>
+                <font>subHeaderFont</font><animation effect="fade" time="200" end="100">VisibleChange</animation>
+                <label>#(switch(
+                    and(eq(#ArtistInfo.Born,''),eq(#ArtistInfo.YearsActive,'')),#ArtistInfo.Artist,
+                    and(neq(#ArtistInfo.Born,''),eq(#ArtistInfo.YearsActive,'')),string.format('{0} ({1})',#ArtistInfo.Artist,#ArtistInfo.Born),
+                    neq(#ArtistInfo.YearsActive,''),string.format('{0} ({1})',#ArtistInfo.Artist,#ArtistInfo.YearsActive),
+                    eq(1,1),string.format('{0} ({1}/{2})',#ArtistInfo.Artist,#ArtistInfo.Born,#ArtistInfo.YearsActive)
+                ))</label>
+                <posX>10</posX>
+                <posY>131</posY>
+                <width>1040</width>
+                <textcolor>FFB75700</textcolor>
+                <animation effect="slide" time="0" end="0,-8" condition="true">Conditional</animation>
+                <animation effect="fade" time="200" delay="200" end="100">VisibleChange</animation>
+                <animation effect="slide" time="200" delay="200" start="80,0" easing="inout">VisibleChange</animation>
+                <animation effect="fade" time="200" end="100">WindowOpen</animation>
+                <animation effect="slide" time="200" delay="200" start="-80,0" easing="inout">WindowOpen</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+                <animation effect="slide" time="200" delay="200" end="-80,0" easing="inout">WindowClose</animation>
+            </control>
+            <control Style="labelStyle">
+                <type>textboxscrollup</type>
+                <font>labelFont</font>
+                <posX>10</posX>
+                <posY>182</posY>
+                <width>490</width>
+                <height>602</height>
+                <label>#(string.format('{0}:
+                {1}
+                {2}
+                {3}
+                {4}
+                {5}
+                {6}
+                {7}',L(725),#ArtistInfo.Genres,L(688),#ArtistInfo.Instruments,L(176),#ArtistInfo.Styles,L(175),#ArtistInfo.Tones))</label>
+                <seperator>------------------</seperator>
+                <textcolor>FF007ACC</textcolor>
+            </control>
+            <control Style="labelStyle">
+                <id>1</id>
+                <type>textboxscrollup</type>
+                <font>labelFont</font>
+                <posX>520</posX>
+                <posY>182</posY>
+                <width>690</width>
+                <height>602</height>
+                <seperator>---------------------------------------------------------</seperator>
+                <label>#ArtistInfo.Bio</label>
+                <visible>!control.hasfocus(1302)</visible>
+            </control>
+            <control Style="labelStyle">
+                <id>1</id>
+                <type>textboxscrollup</type>
+                <font>labelFont</font>
+                <posX>590</posX>
+                <posY>182</posY>
+                <width>690</width>
+                <height>602</height>
+                <seperator>---------------------------------------------------------</seperator>
+                <label>#ArtistInfo.Albums</label>
+                <visible>control.hasfocus(1302)</visible>
+            </control>
+            <control Style="roundButtonStyle">
+                <description>Refresh</description>
+                <id>6</id>
+                <type>button</type>
+                <posX>1040</posX>
+                <posY>135</posY>
+                <onleft>1303</onleft>
+                <onright>1301</onright>
+                <onup>1303</onup>
+                <ondown>1303</ondown>
+                <textureNoFocus>refresh.png</textureNoFocus>
+                <textureFocus>refresh_focus.png</textureFocus>
+            </control>
+            <control Style="roundButtonStyle">
+                <description>Show Bio/Review</description>
+                <id>1301</id>
+                <type>button</type>
+                <posX>1090</posX>
+                <posY>135</posY>
+                <action>10</action>
+                <onleft>6</onleft>
+                <onright>1302</onright>
+                <onup>1303</onup>
+                <ondown>1303</ondown>
+                <textureNoFocus>review.png</textureNoFocus>
+                <textureFocus>review_focus.png</textureFocus>
+            </control>
+            <control Style="roundButtonStyle">
+                <description>Show Tracklist/Album list</description>
+                <id>1302</id>
+                <type>button</type>
+                <posX>1140</posX>
+                <posY>135</posY>
+                <action>10</action>
+                <onleft>1301</onleft>
+                <onright>1303</onright>
+                <onup>1303</onup>
+                <ondown>1303</ondown>
+                <textureNoFocus>tracklist.png</textureNoFocus>
+                <textureFocus>tracklist_focus.png</textureFocus>
+            </control>
+            <control Style="roundButtonStyle">
+                <description>Close dialog</description>
+                <id>1303</id>
+                <type>button</type>
+                <posX>1190</posX>
+                <posY>135</posY>
+                <action>10</action>
+                <onleft>1302</onleft>
+                <onright>6</onright>
+                <onup>1303</onup>
+                <ondown>1303</ondown>
+                <textureNoFocus>topbar_close.png</textureNoFocus>
+                <textureFocus>topbar_close_focus.png</textureFocus>
+            </control>
+        </control>
+    </controls>
+</window>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>8888</id>
+  <defaultcontrol>3</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>no</disabletopbar>
+  <controls>
+  
+  </controls>
+</window>

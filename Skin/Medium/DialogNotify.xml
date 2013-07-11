@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>2016</id>
+    <defaultcontrol>4</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <controls>
+        <control Style="dimScreenStyle">
+            <type>image</type>
+            <id>0</id>
+            <visible>!window.ismedia</visible>
+        </control>
+        <control>
+            <type>group</type>
+            <dimColor>FFFFFFFF</dimColor>
+            <control Style="overlayStyle">
+                <type>image</type>
+                <id>0</id>
+                <posX>1120</posX>
+                <posY>130</posY>
+                <width>800</width>
+                <height>330</height>
+                <texture>hiddenMenu_overlay.png</texture>
+                <animation effect="slide" time="200" delay="0" start="40,0" easing="inout">WindowOpen</animation>
+                <animation effect="fade" time="200" delay="0" end="100">WindowOpen</animation>
+                <animation effect="slide" time="200" delay="0" end="40,0" easing="inout">WindowClose</animation>
+                <animation effect="fade" time="200" delay="0" end="0">WindowClose</animation>
+            </control>
+            <control Style="subHeaderStyle">
+                <description>dialog Heading</description>
+                <type>label</type>
+                <id>3</id>
+                <posX>1170</posX>
+                <posY>130</posY>
+                <width>580</width>
+                <label>0</label>
+                <animation effect="slide" time="200" delay="10" start="40,0" easing="inout">WindowOpen</animation>
+                <animation effect="fade" time="200" delay="10" end="100">WindowOpen</animation>
+                <animation effect="slide" time="200" delay="10" end="40,0" easing="inout">WindowClose</animation>
+                <animation effect="fade" time="200" delay="10" end="0">WindowClose</animation>
+            </control>
+            <control Style="labelStyle">
+                <description>textarea</description>
+                <type>textbox</type>
+                <id>6</id>
+                <posX>1130</posX>
+                <posY>180</posY>
+                <width>640</width>
+                <height>200</height>
+                <lineSpacing>0.8</lineSpacing>
+                <spinPosX>1500</spinPosX>
+                <spinPosY>380</spinPosY>
+                <onleft>4</onleft>
+                <onright>4</onright>
+                <onup>10</onup>
+                <ondown>4</ondown>
+                <label>-</label>
+                <font>labelFont</font>
+                <animation effect="slide" time="200" delay="20" start="40,0" easing="inout">WindowOpen</animation>
+                <animation effect="fade" time="200" delay="20" end="100">WindowOpen</animation>
+                <animation effect="slide" time="200" delay="20" end="40,0" easing="inout">WindowClose</animation>
+                <animation effect="fade" time="200" delay="20" end="0">WindowClose</animation>
+            </control>
+            <control Style="thumbStyle">
+                <description>logo</description>
+                <type>image</type>
+                <id>5</id>
+                <posX>1780</posX>
+                <posY>210</posY>
+                <width>130</width>
+                <height>130</height>
+                <texture>#thumb</texture>
+                <animation effect="slide" time="200" delay="20" start="40,0" easing="inout">WindowOpen</animation>
+                <animation effect="fade" time="200" delay="20" end="100">WindowOpen</animation>
+                <animation effect="slide" time="200" delay="20" end="40,0" easing="inout">WindowClose</animation>
+                <animation effect="fade" time="200" delay="20" end="0">WindowClose</animation>
+            </control>
+            <control>
+                <description>Close button</description>
+                <type>button</type>
+                <id>10</id>
+                <posX>1125</posX>
+                <posY>142</posY>
+                <textYOff>8</textYOff>
+                <width>40</width>
+                <height>40</height>
+                <textureFocus>topbar_close_focus.png</textureFocus>
+                <textureNoFocus>topbar_close.png</textureNoFocus>
+                <label></label>
+                <onleft>4</onleft>
+                <onright>4</onright>
+                <onup>4</onup>
+                <ondown>6</ondown>
+                <animation effect="slide" time="200" delay="10" start="40,0" easing="inout">WindowOpen</animation>
+                <animation effect="fade" time="200" delay="10" end="100">WindowOpen</animation>
+                <animation effect="slide" time="200" delay="10" end="40,0" easing="inout">WindowClose</animation>
+                <animation effect="fade" time="200" delay="10" end="0">WindowClose</animation>
+            </control>
+            <control Style="buttonStyle">
+                <description>OK Button</description>
+                <type>button</type>
+                <id>4</id>
+                <posX>1125</posX>
+                <posY>390</posY>
+                <label>#(L(186))</label>
+                <textalign>center</textalign>
+                <textYOff>-2</textYOff>
+                <onleft>10</onleft>
+                <onright>10</onright>
+                <onup>6</onup>
+                <ondown>10</ondown>
+                <animation effect="slide" time="200" delay="40" start="40,0" easing="inout">WindowOpen</animation>
+                <animation effect="fade" time="200" delay="40" end="100">WindowOpen</animation>
+                <animation effect="slide" time="200" delay="40" end="40,0" easing="inout">WindowClose</animation>
+                <animation effect="fade" time="200" delay="40" end="0">WindowClose</animation>
+            </control>
+        </control>
+    </controls>
+</window>

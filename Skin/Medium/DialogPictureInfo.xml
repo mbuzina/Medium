@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>2014</id>
+    <defaultcontrol>1303</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <disabletopbar>no</disabletopbar>
+    <rememberLastFocusedControl>no</rememberLastFocusedControl>
+
+    <define>#header.label:#currentmodule</define>
+    
+    <controls>
+        <control Style="dimScreenStyle">
+            <type>image</type>
+            <id>0</id>
+            <animation effect="fade" time="200" end="100">WindowOpen</animation>
+            <animation effect="fade" time="200" end="0">WindowClose</animation>
+        </control>
+        
+        <!-- EXIF Info Overlay -->
+        <control>
+            <type>group</type>
+            <animation effect="fade" time="200" delay="200" end="100">VisibleChange</animation>
+            <animation effect="slide" time="200" delay="200" start="80,0" easing="inout">VisibleChange</animation>
+            <animation effect="fade" time="200" end="100">WindowOpen</animation>
+            <animation effect="slide" time="200" delay="200" start="-80,0" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" end="0">WindowClose</animation>
+            <animation effect="slide" time="200" start="0,0" end="-80,0" easing="inout">WindowClose</animation>
+            <control Style="overlayStyle">
+                <type>image</type>
+                <posX>0</posX>
+                <posY>130</posY>
+                <width>1240</width>
+                <height>660</height>
+                <texture>hiddenMenu_overlay.png</texture>
+            </control>
+            <control Style="labelStyle">
+                <type>label</type>
+                <id>2</id>
+                <font>subHeaderFont</font><animation effect="fade" time="200" end="100">VisibleChange</animation>
+                <label>#selecteditem</label>
+                <posX>10</posX>
+                <posY>131</posY>
+                <width>1090</width>
+                <textcolor>FFB75700</textcolor>
+                <animation effect="slide" time="0" end="0,-8" condition="true">Conditional</animation>
+                <animation effect="fade" time="200" delay="200" end="100">VisibleChange</animation>
+                <animation effect="slide" time="200" delay="200" start="80,0" easing="inout">VisibleChange</animation>
+                <animation effect="fade" time="200" end="100">WindowOpen</animation>
+                <animation effect="slide" time="200" delay="200" start="-80,0" easing="inout">WindowOpen</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+                <animation effect="slide" time="200" delay="200" end="-80,0" easing="inout">WindowClose</animation>
+            </control>
+            <control>
+                <type>group</type>
+                <layout>TableLayout(1220,2,10,10)</layout>
+                <posX>10</posX>
+                <posY>180</posY>
+                <control Style="labelStyle">
+                    <description>Title Text</description>
+                    <type>label</type>
+                    <textcolor>FF007ACC</textcolor>
+                    <label>#(L(268)):</label>
+                    <width>300</width>
+                    <height>23</height>
+                </control>
+                <control Style="labelStyle">
+                    <description>Title value</description>
+                    <id>20</id>
+                    <type>label</type>
+                    <width>900</width>
+                    <label>-</label>
+                </control>
+                <control Style="labelStyle">
+                    <description>Date Taken Text</description>
+                    <type>label</type>
+                    <textcolor>FF007ACC</textcolor>
+                    <label>#(L(9006))</label>
+                    <width>300</width>
+                    <height>23</height>
+                </control>
+                <control Style="labelStyle">
+                    <description>Date Taken value</description>
+                    <id>27</id>
+                    <type>label</type>
+                    <width>900</width>
+                    <label>-</label>
+                </control>
+                <control>
+                    <type>label</type>
+                    <height>2</height>
+                    <label></label>
+                </control>
+                <control>
+                    <type>label</type>
+                    <height>2</height>
+                    <label></label>
+                </control>
+                <control Style="labelStyle">
+                    <description>Shutter Speed Text</description>
+                    <type>label</type>
+                    <textcolor>FF007ACC</textcolor>
+                    <label>#(L(9005))</label>
+                    <width>300</width>
+                    <height>23</height>
+                </control>
+                <control Style="labelStyle">
+                    <description>Shutter Speed value</description>
+                    <id>26</id>
+                    <type>fadelabel</type>
+                    <width>900</width>
+                    <label>-</label>
+                </control>
+                <control Style="labelStyle">
+                    <description>Exposure Time Text</description>
+                    <type>label</type>
+                    <textcolor>FF007ACC</textcolor>
+                    <label>#(L(9008))</label>
+                    <width>300</width>
+                    <height>23</height>
+                </control>
+                <control Style="labelStyle">
+                    <description>Exposure Time value</description>
+                    <id>29</id>
+                    <type>label</type>
+                    <width>900</width>
+                    <label>-</label>
+                </control>
+                <control Style="labelStyle">
+                    <description>Fstop Text</description>
+                    <type>label</type>
+                    <textcolor>FF007ACC</textcolor>
+                    <label>#(L(9007))</label>
+                    <width>300</width>
+                    <height>23</height>
+                </control>
+                <control Style="labelStyle">
+                    <description>Fstop value</description>
+                    <id>28</id>
+                    <type>label</type>
+                    <width>900</width>
+                    <label>-</label>
+                </control>
+                <control Style="labelStyle">
+                    <description>Exposure Compensation Text</description>
+                    <type>label</type>
+                    <textcolor>FF007ACC</textcolor>
+                    <label>#(L(9004))</label>
+                    <width>300</width>
+                    <height>23</height>
+                </control>
+                <control Style="labelStyle">
+                    <description>Exposure Compensation value</description>
+                    <id>25</id>
+                    <type>fadelabel</type>
+                    <width>900</width>
+                    <label>-</label>
+                </control>
+                <control>
+                    <type>label</type>
+                    <height>2</height>
+                    <label></label>
+                </control>
+                <control>
+                    <type>label</type>
+                    <height>2</height>
+                    <label></label>
+                </control>
+                <control Style="labelStyle">
+                    <description>Metering Mode Text</description>
+                    <type>label</type>
+                    <textcolor>FF007ACC</textcolor>
+                    <label>#(L(9003))</label>
+                    <width>300</width>
+                    <height>23</height>
+                </control>
+                <control Style="labelStyle">
+                    <description>Metering Mode value</description>
+                    <id>24</id>
+                    <type>fadelabel</type>
+                    <width>900</width>
+                    <label>-</label>
+                </control>
+                <control Style="labelStyle">
+                    <description>Flash Text</description>
+                    <type>label</type>
+                    <textcolor>FF007ACC</textcolor>
+                    <label>#(L(9002))</label>
+                    <width>300</width>
+                    <height>23</height>
+                </control>
+                <control Style="labelStyle">
+                    <description>Flash value</description>
+                    <id>23</id>
+                    <type>fadelabel</type>
+                    <width>900</width>
+                    <label>-</label>
+                </control>
+                <control>
+                    <type>label</type>
+                    <height>2</height>
+                    <label></label>
+                </control>
+                <control>
+                    <type>label</type>
+                    <height>2</height>
+                    <label></label>
+                </control>
+                <control Style="labelStyle">
+                    <description>Image Dimensions Text</description>
+                    <type>label</type>
+                    <textcolor>FF007ACC</textcolor>
+                    <label>#(L(9000))</label>
+                    <width>300</width>
+                    <height>23</height>
+                </control>
+                <control Style="labelStyle">
+                    <description>Image Dimensions value</description>
+                    <id>21</id>
+                    <type>label</type>
+                    <width>900</width>
+                    <label>-</label>
+                </control>
+                <control Style="labelStyle">
+                    <description>Image Resolution Text</description>
+                    <type>label</type>
+                    <textcolor>FF007ACC</textcolor>
+                    <label>#(L(9001))</label>
+                    <width>300</width>
+                    <height>23</height>
+                </control>
+                <control Style="labelStyle">
+                    <description>Image Resolution value</description>
+                    <id>22</id>
+                    <type>label</type>
+                    <width>900</width>
+                    <label>-</label>
+                </control>
+                <control>
+                    <type>label</type>
+                    <height>2</height>
+                    <label></label>
+                </control>
+                <control>
+                    <type>label</type>
+                    <height>2</height>
+                    <label></label>
+                </control>
+                <control Style="labelStyle">
+                    <description>Equipment Make Text</description>
+                    <type>label</type>
+                    <textcolor>FF007ACC</textcolor>
+                    <label>#(L(9010))</label>
+                    <width>300</width>
+                    <height>23</height>
+                </control>
+                <control Style="labelStyle">
+                    <description>Equipment Make value</description>
+                    <id>31</id>
+                    <type>fadelabel</type>
+                    <width>900</width>
+                    <label>-</label>
+                </control>
+                <control Style="labelStyle">
+                    <description>Camera Model Text</description>
+                    <type>label</type>
+                    <textcolor>FF007ACC</textcolor>
+                    <label>#(L(9009))</label>
+                    <width>300</width>
+                    <height>23</height>
+                </control>
+                <control Style="labelStyle">
+                    <description>Camera Model value</description>
+                    <id>30</id>
+                    <type>fadelabel</type>
+                    <width>900</width>
+                    <label>-</label>
+                </control>
+                <control>
+                    <type>label</type>
+                    <height>2</height>
+                    <label></label>
+                </control>
+                <control>
+                    <type>label</type>
+                    <height>2</height>
+                    <label></label>
+                </control>
+                <control Style="labelStyle">
+                    <description>View Comment Text</description>
+                    <type>label</type>
+                    <textcolor>FF007ACC</textcolor>
+                    <label>#(L(9011))</label>
+                    <width>300</width>
+                    <height>23</height>
+                </control>
+                <control Style="labelStyle">
+                    <description>View Comment value</description>
+                    <id>32</id>
+                    <type>label</type>
+                    <width>900</width>
+                    <label>-</label>
+                </control>
+            </control>
+            <control Style="thumbStyle">
+                <type>image</type>
+                <id>3</id>
+                <posX>2000</posX>
+                <visible>false</visible>
+            </control>
+            <control Style="roundButtonStyle">
+                <description>Close dialog</description>
+                <id>1303</id>
+                <type>button</type>
+                <posX>1190</posX>
+                <posY>135</posY>
+                <action>10</action>
+                <onleft>1302</onleft>
+                <onright>6</onright>
+                <onup>1303</onup>
+                <ondown>1303</ondown>
+                <textureNoFocus>topbar_close.png</textureNoFocus>
+                <textureFocus>topbar_close_focus.png</textureFocus>
+            </control>
+        </control>
+    </controls>
+</window>

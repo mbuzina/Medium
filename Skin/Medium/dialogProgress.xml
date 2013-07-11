@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>101</id>
+    <defaultcontrol>10</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <controls>
+        <import>common.dialog.xml</import>
+
+        <control>
+            <description>Progress Bar</description>
+            <type>progress</type>
+            <id>20</id>
+            <posX>1130</posX>
+            <posY>380</posY>
+            <width>780</width>
+            <height>20</height>
+            <label>#percentage</label>
+            <texturebg>hiddenMenu_background.png</texturebg>
+            <onlymidtexture>yes</onlymidtexture>
+            <midwidth>778</midwidth>
+            <midheight>18</midheight>
+            <midoffsetX>1</midoffsetX>
+            <midoffsetY>1</midoffsetY>
+            <midtexture>highlight2.png</midtexture>
+            <animation effect="slide" time="200" delay="10" start="40,0" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" delay="10" end="100">WindowOpen</animation>
+            <animation effect="slide" time="200" delay="10" end="40,0" easing="inout">WindowClose</animation>
+            <animation effect="fade" time="200" delay="10" end="0">WindowClose</animation>
+        </control>
+        <control>
+            <description>Close button</description>
+            <type>button</type>
+            <id>10</id>
+            <posX>1125</posX>
+            <posY>142</posY>
+            <textYOff>8</textYOff>
+            <width>40</width>
+            <height>40</height>
+            <textureFocus>topbar_close_focus.png</textureFocus>
+            <textureNoFocus>topbar_close.png</textureNoFocus>
+            <label></label>
+            <onleft>11</onleft>
+            <onright>11</onright>
+            <onup>11</onup>
+            <ondown>11</ondown>
+            <animation effect="slide" time="200" delay="10" start="40,0" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" delay="10" end="100">WindowOpen</animation>
+            <animation effect="slide" time="200" delay="10" end="40,0" easing="inout">WindowClose</animation>
+            <animation effect="fade" time="200" delay="10" end="0">WindowClose</animation>
+        </control>
+
+    </controls>
+</window>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <controls>
+        <control>
+            <description>group element</description>
+            <type>group</type>
+
+            <control>
+                <description>composite control consisting of a list control and a thumbnail panel</description>
+                <type>facadeview</type>
+                <id>50</id>
+                <animation effect="slide" time="200" end="-40,0" easing="inout">WindowClose</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+                
+                <!-- Standard List Control -->
+                <control>
+                    <description>listcontrol</description>
+		            <id>50</id>
+                    <type>listcontrol</type>
+                    
+                    <height>920</height>
+                    <spinPosY>998</spinPosY>
+                    
+                    <onright>2</onright>
+                    <onleft>2</onleft>
+                </control>
+                
+                <!-- Album View List Control -->
+                <control>
+                    <description>album view listcontrol</description>
+                    <id>50</id>
+                    <type>listcontrol</type>
+                    <subtype>album</subtype>
+                    
+                    <height>920</height>
+                    <spinPosY>998</spinPosY>
+                   
+                    <IconYOff>3</IconYOff>
+                    <itemWidth>80</itemWidth>
+                    <itemHeight>80</itemHeight>
+                    <textureHeight>85</textureHeight>
+                    
+                    <onright>2</onright>
+                    <onleft>2</onleft>
+                </control>
+                
+                <!-- Thumbnail Panel for Small/Big Icon View -->
+                <control>
+                    <description>Thumbnail Panel</description>
+                    <type>thumbnailpanel</type>
+                    <id>50</id>
+                    
+                    <height>920</height>
+                    <spinPosY>998</spinPosY>
+                    
+                    <onright>2</onright>
+                    <onleft>2</onleft>
+                    <onup>2</onup>
+                    <ondown>2</ondown>
+                </control>
+                
+                <!-- Filmstrip for Cover View -->
+                <control>
+                    <description>Filmstrip View</description>
+                    <type>filmstrip</type>
+                    <id>50</id>
+                    
+                    <posY>825</posY>
+                    <backgroundy>790</backgroundy>
+                    
+                    <onup>2</onup>
+                    <ondown>2</ondown>
+                </control>
+                
+                <!-- Coverflow View -->
+                <control>
+                    <description>Coverflow View</description>
+                    <type>coverflow</type>
+                    <id>50</id>
+                    <spinspeed>8</spinspeed>
+                    
+                    <posY>620</posY>
+                    <camera xpos="0" ypos="270">No</camera> <!-- Seems to be broken -->
+                    <offsetY>140</offsetY>
+                    
+                    <subitems>
+                        <subitem>
+                           <![CDATA[
+                            <controls>
+                                <control>
+                                    <description>Background</description>
+                                    <id>50500</id>
+                                    <type>image</type>
+                                    <posX>0</posX>
+                                    <posY>0</posY>
+                                    <width>400</width>
+                                    <height>400</height>
+                                    <texture>header_background.png</texture>
+                                </control>
+                                <control Style="thumbStyle">
+                                    <description>Frontside Image</description>
+                                    <id>50501</id>
+                                    <type>image</type>
+                                    <posX>0</posX>
+                                    <posY>0</posY>
+                                    <width>400</width>
+                                    <height>400</height>
+                                    <texture>#selectedthumb</texture>
+                                </control>
+                                <control>
+                                    <description>Background</description>
+                                    <id>50500</id>
+                                    <type>image</type>
+                                    <posX>0</posX>
+                                    <posY>330</posY>
+                                    <width>400</width>
+                                    <height>70</height>
+                                    <texture>header_background.png</texture>
+                                </control>
+                                <control>
+                                    <description>Folder Label</description>
+                                    <type>label</type>
+                                    <posX>1</posX>
+                                    <posY>340</posY>
+                                    <width>398</width>
+                                    <height>30</height>
+                                    <font>subHeaderFont</font>
+                                    <textcolor>FFFFFFFF</textcolor>
+                                    <dimColor>FFFFFFFF</dimColor>
+                                    <label>#selecteditem</label>
+                                </control>
+                            </controls>]]>
+                        </subitem>
+                    </subitems>       
+                    
+                    <onup>2</onup>
+                    <ondown>2</ondown>
+                </control>
+   
+            </control>
+        </control>
+    </controls>
+</window>

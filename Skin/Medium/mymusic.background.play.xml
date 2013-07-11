@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>  
+    <controls>      
+        <control Style="hiddenGroupStyle">
+            <type>group</type>  
+            <!--<posX>200</posX>
+            <posY>200</posY>-->
+            <control Style="hiddenStyle">
+                <description>DUMMY CONTROL FOR RANDOM FANART 1 VISIBILITY CONDITION</description>
+                <type>label</type>
+                <id>91919297</id>
+                <label>Random FA 1 Visible (#fanarthandler.music.scraper.backdrop1.any)</label>
+                <width>600</width>
+            </control>
+            <control Style="hiddenStyle">
+                <description>DUMMY CONTROL FOR RANDOM FANART 2 VISIBILITY CONDITION</description>
+                <type>label</type>
+                <id>91919298</id>
+                <label>Random FA 2 Visible (#fanarthandler.music.scraper.backdrop1.any)</label>
+                <width>600</width>
+            </control>
+            <control Style="hiddenStyle">
+                <description>DUMMY CONTROL FOR PLAYING FANART 1 VISIBILITY CONDITION</description>
+                <type>label</type>
+                <id>91919295</id>
+                <label>1#fanarthandler.music.backdrop1.play1</label>
+            </control>
+            <control Style="hiddenStyle">
+                <description>DUMMY CONTROL FOR PLAYING FANART 2 VISIBILITY CONDITION</description>
+                <type>label</type>
+                <id>91919296</id>
+                <width>300</width>
+                <height>30</height>
+                <font>labelFont</font>
+                <textcolor>FFFF3333</textcolor>
+                <label>2#fanarthandler.music.backdrop2.play2</label>
+                <visible>true</visible>
+            </control>
+            <control Style="hiddenStyle">
+                <description>DUMMY CONTROL FOR PLAYING FANART AVAILABILITY CONDITION</description>
+                <type>label</type>
+                <id>91919297</id>
+                <label>Playing is Available</label>
+            </control>
+        </control>
+        
+        <control Style="backdropStyle">
+            <description>Default Background</description>
+            <type>image</type>
+            <texture>hover_my music.png</texture>
+            <!--<texture>white.png</texture>-->
+            <visible>true</visible>    
+        </control>
+        <control Style="backdropStyle">
+            <description>Selected Background 1</description>
+            <type>image</type>
+            <texture>#fanarthandler.music.backdrop1.play</texture>
+            <visible>control.isvisible(91919291)+control.isivisble(91919297)</visible>    
+        </control>
+        <control Style="backdropStyle">
+            <description>Selected Background 2</description>
+            <type>image</type>
+            <texture>#fanarthandler.music.backdrop2.play</texture>
+            <visible>control.isvisible(91919295)+control.isivisble(91919297)</visible>    
+        </control>
+    </controls>
+</window>

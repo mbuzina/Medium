@@ -74,29 +74,36 @@
             <type>group</type>
             <id>20000</id>
             <dimColor>FFFFFFFF</dimColor>
-            <animation effect="slide" time="0" delay="11" start="0,0" end="0,0" condition="control.isvisible(20001)">conditional</animation>
-            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(20001)">conditional</animation>
-            <animation effect="slide" time="0" delay="11" start="0,0" end="0,142" condition="control.isvisible(20002)">conditional</animation>
-            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(20002)">conditional</animation>
-            <animation effect="slide" time="0" delay="11" start="0,0" end="0,285" condition="control.isvisible(20003)">conditional</animation>
-            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(20003)">conditional</animation>
-
-            <animation effect="slide" time="0" delay="11" start="0,0" end="420,0" condition="control.isvisible(20004)">conditional</animation>
-            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(20004)">conditional</animation>
-            <animation effect="slide" time="0" delay="11" start="0,0" end="420,142" condition="control.isvisible(20005)">conditional</animation>
-            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(20005)">conditional</animation>
-            <animation effect="slide" time="0" delay="11" start="0,0" end="420,285" condition="control.isvisible(20006)">conditional</animation>
-            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(20006)">conditional</animation>
-
-            <animation effect="slide" time="0" delay="11" start="0,0" end="840,0" condition="control.isvisible(20007)">conditional</animation>
-            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(20007)">conditional</animation>
-            <animation effect="slide" time="0" delay="11" start="0,0" end="840,142" condition="control.isvisible(20008)">conditional</animation>
-            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(20008)">conditional</animation>
-            <animation effect="slide" time="0" delay="11" start="0,0" end="840,285" condition="control.isvisible(20009)">conditional</animation>
-            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(20009)">conditional</animation>
             
-            <animation effect="fade" time="200" delay="20" easing="inout" condition="true">Visible</animation>
-            <animation effect="fade" time="200" easing="inout" condition="true">Hidden</animation>
+            <animation effect="fade" delay="300" start="0" end="100" time="200" easing="out" tween="cubic" reversible="false" condition="Control.IsVisible(1113)">Conditional</animation>
+            <animation effect="fade" delay="300" start="0" end="100" time="200" easing="out" tween="cubic" reversible="false" condition="!Control.IsVisible(1113)">Conditional</animation>
+            
+            <animation effect="slide" delay="200" time="000" start="0,0" end="0,0" condition="control.isvisible(20001)">conditional</animation>
+            <animation effect="fade"  delay="300" time="200" start="0" end="100" reversible="false" condition="control.isvisible(20001)">conditional</animation>
+            <animation effect="slide" delay="200" time="000" start="0,0" end="0,142" condition="control.isvisible(20002)">conditional</animation>
+            <animation effect="fade"  delay="300" time="200" start="0" end="100" reversible="false" condition="control.isvisible(20002)">conditional</animation>
+            <animation effect="slide" delay="200" time="000" start="0,0" end="0,285" condition="control.isvisible(20003)">conditional</animation>
+            <animation effect="fade"  delay="300" time="200" start="0" end="100" reversible="false" condition="control.isvisible(20003)">conditional</animation>            
+            
+            <animation effect="slide" delay="200" time="000" start="0,0" end="420,0" condition="control.isvisible(20004)">conditional</animation>
+            <animation effect="fade"  delay="300" time="200" start="0" end="100" reversible="false" condition="control.isvisible(20004)">conditional</animation>
+            <animation effect="slide" delay="200" time="000" start="0,0" end="420,142" condition="control.isvisible(20005)">conditional</animation>
+            <animation effect="fade"  delay="300" time="200" start="0" end="100" reversible="false" condition="control.isvisible(20005)">conditional</animation>
+            <animation effect="slide" delay="200" time="000" start="0,0" end="420,285" condition="control.isvisible(20006)">conditional</animation>
+            <animation effect="fade"  delay="300" time="200" start="0" end="100" reversible="false" condition="control.isvisible(20006)">conditional</animation>
+
+            <animation effect="slide" delay="200" time="000" start="0,0" end="840,0" condition="control.isvisible(20007)">conditional</animation>
+            <animation effect="fade"  delay="300" time="200" start="0" end="100" reversible="false" condition="control.isvisible(20007)">conditional</animation>
+            <animation effect="slide" delay="200" time="000" start="0,0" end="840,142" condition="control.isvisible(20008)">conditional</animation>
+            <animation effect="fade"  delay="300" time="200" start="0" end="100" reversible="false" condition="control.isvisible(20008)">conditional</animation>
+            <animation effect="slide" delay="200" time="000" start="0,0" end="840,285" condition="control.isvisible(20009)">conditional</animation>
+            <animation effect="fade"  delay="300" time="200" start="0" end="100" reversible="false" condition="control.isvisible(20009)">conditional</animation>
+            
+            <animation effect="slide" delay="000" time="000" start="0,0" end="1920,1080" condition="!control.isvisible(20001)+!control.isvisible(20002)+!control.isvisible(20003)+!control.isvisible(20004)+!control.isvisible(20005)+!control.isvisible(20006)+!control.isvisible(20007)+!control.isvisible(20008)+!control.isvisible(20009)">conditional</animation>
+
+            <animation effect="fade" delay="200" time="200" easing="inout" condition="true">Visible</animation>
+            <animation effect="fade" delay="200" time="200" easing="inout" condition="true">Hidden</animation>
+            
             <posX>0</posX>
             <posY>0</posY>
             <visible>control.isvisible(20001)|control.isvisible(20002)|control.isvisible(20003)|control.isvisible(20004)|control.isvisible(20005)|control.isvisible(20006)|control.isvisible(20007)|control.isvisible(20008)|control.isvisible(20009)</visible>
@@ -111,64 +118,33 @@
             </control>
             <control Style="subHeaderStyle">
                 <description>Latest Music</description>
-                <type>label</type>
+                <type>fadelabel</type>
                 <id>0</id>
                 <posX>10</posX>
                 <posY>190</posY>
-                <label>Latest Music</label>
+                <width>780</width>
+                <label>#(iif(eq(#latestMediaHandler.music.selected.album,''),L(249),#latestMediaHandler.music.selected.album))</label>
             </control>
             <!-- Filmstrip -->
 		    <control Style="overlayStyle">
-			    <animation effect="fade" start="100" end="0" time="200" reversible="true">Hidden</animation>
-			    <animation effect="fade" start="0" end="100" delay="150" time="400" reversible="true">Visible</animation>
-			    <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-			    <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+			    
 			    <type>facadeview</type>
 			    <id>919199970</id>		
+                <visible>true</visible>
 			    <control>
 				    <description>Filmstrip view</description>
 				    <type>filmstrip</type>
-				    <dimColor>90ffffff</dimColor>
 				    <id>919199970</id>
-				    <scrollOffset>3</scrollOffset>
-				    <folderPrefix/>
-				    <folderSuffix/>
-				    <posX>5</posX>
-				    <posY>260</posY>
+				    <scrollOffset>1</scrollOffset>
+				    <posX>0</posX>
+				    <posY>250</posY>
 				    <width>630</width>
-				    <height>400</height>
+				    <height>210</height>
 				    <onup>919199970</onup>
 				    <ondown>919199970</ondown>
 				    <onleft>919199970</onleft>
 				    <onright>919199970</onright>				
-				    <thumbWidth>175</thumbWidth>
-				    <thumbHeight>175</thumbHeight>
-				    <thumbPosX>20</thumbPosX>
-				    <thumbPosY>20</thumbPosY>
-				    <itemWidth>207</itemWidth>
-				    <itemHeight>215</itemHeight>
-				    <textureWidth>214</textureWidth>
-				    <textureHeight>215</textureHeight>
-				    <textYOff>-2000</textYOff>
-				    <imageFolderFocus>-</imageFolderFocus>
-				    <frame>basichome_music_frame1.png</frame> 
-				    <frameFocus>basichome_music_frame1_focus.png</frameFocus> 
-				    <background>-</background>
-				    <scrollOffset>2</scrollOffset>
-				    <thumbs flipY="true" diffuse="Thumb_Mask.png" mask="basichome_music_mask.png"/>
-				    <showFrame>yes</showFrame>
-				    <showFolder>no</showFolder>
-				    <showBackGround>no</showBackGround>
-				    <showInfoImage>no</showInfoImage>
-				    <scrollbarBackground>-</scrollbarBackground>				
-				    <scrollbarLeft>scrollbar_left_hor.png</scrollbarLeft>
-				    <scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
-				    <scrollbarWidth>630</scrollbarWidth>
-				    <scrollbarHeight>5</scrollbarHeight>
-				    <scrollbarYOff>458</scrollbarYOff>
-				    <spinPosY>755</spinPosY>				
-				    <thumbAnimation effect="zoom" start="100,100" reversible="false" end="115,115" center="0,460" time="200">focus</thumbAnimation>
-				    <thumbAnimation effect="zoom" start="115,115"  reversible="false" end="100,100" center="0,460" time="100">unfocus</thumbAnimation>		  
+				    
                     <visible>true</visible>
 			    </control>
 		    </control>

@@ -4,22 +4,42 @@
          <!-- For List, Album, Small & Large Icon View, Infos in a box on the right -->
          <control>
             <type>group</type>
-            <visible>facadeview.list|facadeview.album|facadeview.smallicons|facadeview.largeicons</visible>
+            <visible>facadeview.list|facadeview.album|facadeview.smallicons|facadeview.largeicons|facadeview.playlist</visible>
             <control Style="overlayStyle">
-                <description>Overlay for List, Album, Small and Large Icon View</description>
+                <description>Overlay for List, Album, Small and Large Icon View and Playlist</description>
                 <type>image</type>
                 <posX>0</posX>
                 <posY>130</posY>
                 <width>1240</width>
                 <height>614</height>
+                <visible>skin.hassetting(#skin.Music.ShowNowPlaying)</visible>
             </control>
             <control Style="overlayStyle">
                 <description>Small Overlay for spin controls</description>
                 <type>image</type>
-                <posX>1080</posX>
+                <posX>1060</posX>
                 <posY>743</posY>
-                <width>160</width>
+                <width>180</width>
                 <height>50</height>
+                <visible>skin.hassetting(#skin.Music.ShowNowPlaying)</visible>
+            </control>
+             <control Style="overlayStyle">
+                <description>Overlay for List, Album, Small and Large Icon View</description>
+                <type>image</type>
+                <posX>0</posX>
+                <posY>130</posY>
+                <width>1240</width>
+                <height>862</height>
+                <visible>!skin.hassetting(#skin.Music.ShowNowPlaying)</visible>
+            </control>
+            <control Style="overlayStyle">
+                <description>Small Overlay for spin controls</description>
+                <type>image</type>
+                <posX>1060</posX>
+                <posY>991</posY>
+                <width>180</width>
+                <height>49</height>
+                <visible>!skin.hassetting(#skin.Music.ShowNowPlaying)</visible>
             </control>
 
             <control Style="overlayStyle">
@@ -40,8 +60,8 @@
                 <height>600</height>
                 <texture>#skin.DefaultCDArt</texture>
                 <visible>skin.hassetting(#skin.ShowCDArt)+control.hasthumb(30014)+!control.hasthumb(10011)</visible>
-                <animation effect="slide" delay="500" start="0,0" end="0,290" time="500" easing="out" tween="cubic" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
-                <animation effect="slide" delay="500" start="0,0" end="0,290" time="500" easing="out" tween="cubic" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
+                <animation effect="slide" delay="500" start="0,0" end="0,280" time="500" easing="out" tween="cubic" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
+                <animation effect="slide" delay="500" start="0,0" end="0,280" time="500" easing="out" tween="cubic" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
                 <animation effect="rotate" end="-360" time="8000" loop="true" condition="True">Conditional</animation>
                 <animation effect="fade" time="200" end="0">WindowClose</animation>
             </control>
@@ -55,8 +75,8 @@
                 <height>600</height>
                 <texture mask="cd_mask.png">#selectedthumb</texture>
                 <visible>skin.hassetting(#skin.ShowCDArt)+control.hasthumb(30014)+!control.hasthumb(10011)</visible>
-                <animation effect="slide" delay="500" start="0,0" end="0,290" time="500" easing="out" tween="cubic" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
-                <animation effect="slide" delay="500" start="0,0" end="0,290" time="500" easing="out" tween="cubic" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
+                <animation effect="slide" delay="500" start="0,0" end="0,280" time="500" easing="out" tween="cubic" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
+                <animation effect="slide" delay="500" start="0,0" end="0,280" time="500" easing="out" tween="cubic" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
                 <animation effect="rotate" end="-360" time="8000" loop="true" condition="True">Conditional</animation>
                 <animation effect="fade" time="200" end="0">WindowClose</animation>
             </control>
@@ -70,8 +90,8 @@
                 <height>600</height>
                 <texture>..\..\..\Thumbs\CDArt\Music\#(iif(eq(#music.albumartist,''),#music.artist,#music.albumartist)) - #music.album.png</texture>
                 <visible>skin.hassetting(#skin.ShowCDArt)</visible>
-                <animation effect="slide" delay="500" start="0,0" end="0,290" time="500" easing="out" tween="cubic" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
-                <animation effect="slide" delay="500" start="0,0" end="0,290" time="500" easing="out" tween="cubic" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
+                <animation effect="slide" delay="500" start="0,0" end="0,280" time="500" easing="out" tween="cubic" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
+                <animation effect="slide" delay="500" start="0,0" end="0,280" time="500" easing="out" tween="cubic" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
                 <animation effect="rotate" end="-360" time="8000" loop="true" condition="True">Conditional</animation>
                 <animation effect="fade" time="200" end="0">WindowClose</animation>
             </control>
@@ -86,6 +106,7 @@
                 <texture>..\..\..\Thumbs\ClearArt\Music\#(iif(eq(#music.artist,''),#music.albumartist,#music.artist)).png</texture>
                 <animation effect="fade" delay="600" time="200" start="0" end="100" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
                 <animation effect="fade" delay="600" time="200" start="0" end="100" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
             </control>
 
             <control Style="thumbStyle">
@@ -169,12 +190,11 @@
                 <label>#music.duration</label>
                 <visible>!string.equals(#music.title,)</visible>
             </control>
-            <!--Keep for when MP supports showing ratings for music...
             <control Style="ratingHighlight2Style">
                 <type>imagelist</type>
                 <id>1</id>
-                <posX>1715</posX>            
-                <posY>710</posY>
+                <posX>1800</posX>            
+                <posY>665</posY>
                 <percentage>#(mul(cint(iif(eq(#music.rating,''),0,#music.rating)),2))</percentage>
                 <align>left</align>
                 <subitems>
@@ -182,7 +202,11 @@
                     <subitem>star_closed_highlight2.png</subitem>
                 </subitems>
                 <visible>!string.equals(#music.title,)</visible>
-            </control>-->
+                <animation effect="slide" end="18,0" time="0" condition="true">Conditional</animation>
+                <animation effect="rotate" end="90" time="0" condition="true">Conditional</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+                <animation effect="fade" time="200" end="100">WindowOpen</animation>
+            </control>
              <control>
                 <type>image</type>
                 <posX>1280</posX>
@@ -223,7 +247,7 @@
         
         <!-- For filmstrip view infos are top left, like now playing -->
          <control>
-            <type>group</type>
+            <type>group</type>             
             <visible>facadeview.filmstrip</visible>
 
             <control Style="overlayStyle">
@@ -233,6 +257,7 @@
                 <posY>130</posY>
                 <width>370</width>
                 <height>370</height>
+                <animation effect="slide" time="0" end="0,270" condition="!skin.hassetting(#skin.Music.ShowNowPlaying)">Conditional</animation>
             </control>
             
             <control Style="thumbStyle">
@@ -244,6 +269,7 @@
                 <height>350</height>
                 <texture>#skin.DefaultCDArt</texture>
                 <visible>skin.hassetting(#skin.ShowCDArt)+control.hasthumb(30034)+!control.hasthumb(10031)</visible>
+                <animation effect="slide" time="0" end="0,270" condition="!skin.hassetting(#skin.Music.ShowNowPlaying)">Conditional</animation>
                 <animation effect="slide" delay="500" start="0,0" end="175,0" time="500" easing="out" tween="cubic" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
                 <animation effect="slide" delay="500" start="0,0" end="175,0" time="500" easing="out" tween="cubic" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
                 <animation effect="fade" delay="500" start="0" end="100" time="20" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
@@ -261,6 +287,7 @@
                 <height>350</height>
                 <texture mask="cd_mask.png">#selectedthumb</texture>
                 <visible>skin.hassetting(#skin.ShowCDArt)+control.hasthumb(30034)+!control.hasthumb(10031)</visible>
+                <animation effect="slide" time="0" end="0,270" condition="!skin.hassetting(#skin.Music.ShowNowPlaying)">Conditional</animation>
                 <animation effect="slide" delay="500" start="0,0" end="175,0" time="500" easing="out" tween="cubic" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
                 <animation effect="slide" delay="500" start="0,0" end="175,0" time="500" easing="out" tween="cubic" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
                 <animation effect="fade" delay="500" start="0" end="100" time="20" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
@@ -278,6 +305,7 @@
                 <height>350</height>
                 <texture>..\..\..\Thumbs\CDArt\Music\#(iif(eq(#music.albumartist,''),#music.artist,#music.albumartist)) - #music.album.png</texture>
                 <visible>skin.hassetting(#skin.ShowCDArt)</visible>
+                <animation effect="slide" time="0" end="0,270" condition="!skin.hassetting(#skin.Music.ShowNowPlaying)">Conditional</animation>
                 <animation effect="slide" delay="500" start="0,0" end="175,0" time="500" easing="out" tween="cubic" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
                 <animation effect="slide" delay="500" start="0,0" end="175,0" time="500" easing="out" tween="cubic" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
                 <animation effect="fade" delay="500" start="0" end="100" time="20" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
@@ -291,10 +319,11 @@
                 <type>image</type>
                 <id>30033</id>
                 <posX>760</posX>
-                <posY>355</posY>
+                <posY>360</posY>
                 <width>400</width>
                 <height>155</height>
                 <texture>..\..\..\Thumbs\ClearArt\Music\#(iif(eq(#music.artist,''),#music.albumartist,#music.artist)).png</texture>
+                <animation effect="slide" time="0" end="0,270" condition="!skin.hassetting(#skin.Music.ShowNowPlaying)">Conditional</animation>
                 <animation effect="fade" delay="600" time="200" start="0" end="100" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
                 <animation effect="fade" delay="600" time="200" start="0" end="100" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
                 <animation effect="slide" delay="600" time="200" start="0,40" end="0,0" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
@@ -310,6 +339,7 @@
                 <posY>130</posY>
                 <width>370</width>
                 <height>370</height>
+                <animation effect="slide" time="0" end="0,270" condition="!skin.hassetting(#skin.Music.ShowNowPlaying)">Conditional</animation>
                 <animation effect="fade" delay="300" time="200" start="0" end="100" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
                 <animation effect="fade" delay="300" time="200" start="0" end="100" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
                 <animation effect="slide" delay="300" time="200" start="-40,0" end="0,0" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
@@ -324,6 +354,7 @@
                 <posY>130</posY>
                 <width>370</width>
                 <height>370</height>
+                <animation effect="slide" time="0" end="0,270" condition="!skin.hassetting(#skin.Music.ShowNowPlaying)">Conditional</animation>
                 <texture>..\..\..\Thumbs\Backsides\Music\#(iif(eq(#music.albumartist,''),#music.artist,#music.albumartist)) - #music.album.png</texture>
                 <animation effect="fade" delay="300" time="200" start="0" end="100" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
                 <animation effect="fade" delay="300" time="200" start="0" end="100" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
@@ -341,6 +372,7 @@
                  <align>center</align>
                  <label>..</label>
                  <visible>string.equals(#selectedindex,)</visible>
+                <animation effect="slide" time="0" end="0,270" condition="!skin.hassetting(#skin.Music.ShowNowPlaying)">Conditional</animation>
              </control>
              
              <!-- Thumb/Details View for Music Files -->
@@ -351,6 +383,7 @@
                 <width>370</width>
                 <height>130</height>
                 <visible>control.hasthumb(30034)+!string.equals(#music.title,)</visible>
+                <animation effect="slide" time="0" end="0,270" condition="!skin.hassetting(#skin.Music.ShowNowPlaying)">Conditional</animation>
             </control>
             <control Style="subHeaderStyle">
                 <description>Song Title</description>
@@ -361,6 +394,7 @@
                 <font>largeFont</font>
                 <label>#music.track. #music.title</label>
                 <visible>!string.equals(#music.title,)</visible>
+                <animation effect="slide" time="0" end="0,270" condition="!skin.hassetting(#skin.Music.ShowNowPlaying)">Conditional</animation>
                 <animation effect="slide" time="0" end="-30,0" condition="true">Conditional</animation>
                 <animation effect="fade" time="200" end="0">WindowClose</animation>
             </control>
@@ -372,6 +406,7 @@
                 <width>370</width>
                 <label>#music.artist</label>
                 <visible>!string.equals(#music.title,)</visible>
+                <animation effect="slide" time="0" end="0,270" condition="!skin.hassetting(#skin.Music.ShowNowPlaying)">Conditional</animation>
                 <animation effect="slide" time="0" end="-30,0" condition="true">Conditional</animation>
                 <animation effect="fade" time="200" end="0">WindowClose</animation>
             </control>
@@ -384,6 +419,7 @@
                 <textcolor>FFB75700</textcolor>
                 <label>#(iif(or(eq(#music.albumartist,''),eq(#music.albumartist,'Various Artists'),eq(#music.albumartist,#music.artist)),#music.album,string.format('{0} ({1})',#music.album,#music.albumartist)))</label>
                 <visible>!string.equals(#music.title,)</visible>
+                <animation effect="slide" time="0" end="0,270" condition="!skin.hassetting(#skin.Music.ShowNowPlaying)">Conditional</animation>
                 <animation effect="slide" time="0" end="-30,0" condition="true">Conditional</animation>
                 <animation effect="fade" time="200" end="0">WindowClose</animation>
             </control>
@@ -396,6 +432,7 @@
                 <textcolor>FF007ACC</textcolor>
                 <label>#music.year</label>
                 <visible>!string.equals(#music.title,)</visible>
+                <animation effect="slide" time="0" end="0,270" condition="!skin.hassetting(#skin.Music.ShowNowPlaying)">Conditional</animation>
                 <animation effect="fade" time="200" end="0">WindowClose</animation>
             </control>
             <control Style="labelStyle">
@@ -407,6 +444,7 @@
                 <textcolor>FF007ACC</textcolor>
                 <label>#music.genre</label>
                 <visible>!string.equals(#music.title,)</visible>
+                <animation effect="slide" time="0" end="0,270" condition="!skin.hassetting(#skin.Music.ShowNowPlaying)">Conditional</animation>
                 <animation effect="slide" time="0" end="-30,0" condition="true">Conditional</animation>
                 <animation effect="fade" time="200" end="0">WindowClose</animation>
             </control>
@@ -419,6 +457,7 @@
                 <textcolor>FF007ACC</textcolor>
                 <label>#music.duration</label>
                 <visible>!string.equals(#music.title,)</visible>
+                <animation effect="slide" time="0" end="0,270" condition="!skin.hassetting(#skin.Music.ShowNowPlaying)">Conditional</animation>
             </control>
             <!--Keep for when MP supports showing ratings for music...
             <control Style="ratingHighlight2Style">
@@ -433,6 +472,7 @@
                     <subitem>star_closed_highlight2.png</subitem>
                 </subitems>
                 <visible>!string.equals(#music.title,)</visible>
+                <animation effect="slide" time="0" end="0,270" condition="!skin.hassetting(#skin.Music.ShowNowPlaying)">Conditional</animation>
             </control>-->
              <control>
                 <type>image</type>
@@ -442,6 +482,7 @@
                 <height>40</height>
                 <texture>isplaying.png</texture>
                 <visible>false</visible>
+                <animation effect="slide" time="0" end="0,270" condition="!skin.hassetting(#skin.Music.ShowNowPlaying)">Conditional</animation>
             </control>
              <control>
                 <type>image</type>
@@ -451,6 +492,7 @@
                 <height>40</height>
                 <texture>ispaused.png</texture>
                 <visible>false</visible>
+                <animation effect="slide" time="0" end="0,270" condition="!skin.hassetting(#skin.Music.ShowNowPlaying)">Conditional</animation>
             </control>
 
             <!-- Thumb/Details View for Folders -->
@@ -461,6 +503,7 @@
                 <width>370</width>
                 <height>70</height>
                 <visible>!string.equals(#selectedthumb,)+string.equals(#music.title,)</visible>
+                <animation effect="slide" time="0" end="0,270" condition="!skin.hassetting(#skin.Music.ShowNowPlaying)">Conditional</animation>
             </control> 
             <control Style="subHeaderStyle">
                 <type>fadelabel</type>
@@ -472,6 +515,7 @@
                 <visible>string.equals(#music.title,)</visible>
                 <animation effect="slide" time="0" end="-30,0" condition="true">Conditional</animation>
                 <animation effect="fade" time="200" end="0">WindowClose</animation>
+                <animation effect="slide" time="0" end="0,270" condition="!skin.hassetting(#skin.Music.ShowNowPlaying)">Conditional</animation>
             </control>
         </control>
         
@@ -486,6 +530,7 @@
                 <posY>350</posY>
                 <width>1920</width>
                 <height>400</height>
+                <animation effect="slide" time="0" end="0,270" condition="!skin.hassetting(#skin.Music.ShowNowPlaying)">Conditional</animation>
             </control>
             
             <control Style="thumbStyle">
@@ -497,6 +542,7 @@
                 <height>380</height>
                 <texture>#skin.DefaultCDArt</texture>
                 <visible>skin.hassetting(#skin.ShowCDArt)+!control.hasthumb(10021)+!string.equals(#selectedindex,)</visible>
+                <animation effect="slide" time="0" end="0,270" condition="!skin.hassetting(#skin.Music.ShowNowPlaying)">Conditional</animation>
                 <animation effect="slide" delay="500" start="0,0" end="0,-180" time="500" easing="out" tween="cubic" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
                 <animation effect="slide" delay="500" start="0,0" end="0,-180" time="500" easing="out" tween="cubic" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
                 <animation effect="fade" delay="600" time="0" start="0" end="100" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
@@ -515,6 +561,7 @@
                 <height>380</height>
                 <texture mask="cd_mask.png">#selectedthumb</texture>
                 <visible>skin.hassetting(#skin.ShowCDArt)+!control.hasthumb(10021)+!string.equals(#selectedindex,)</visible>
+                <animation effect="slide" time="0" end="0,270" condition="!skin.hassetting(#skin.Music.ShowNowPlaying)">Conditional</animation>
                 <animation effect="slide" delay="500" start="0,0" end="0,-180" time="500" easing="out" tween="cubic" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
                 <animation effect="slide" delay="500" start="0,0" end="0,-180" time="500" easing="out" tween="cubic" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
                 <animation effect="fade" delay="600" time="0" start="0" end="100" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
@@ -533,6 +580,7 @@
                 <height>380</height>
                 <texture>..\..\..\Thumbs\CDArt\Music\#(iif(eq(#music.albumartist,''),#music.artist,#music.albumartist)) - #music.album.png</texture>
                 <visible>!string.equals(#music.title,)+skin.hassetting(#skin.ShowCDArt)</visible>
+                <animation effect="slide" time="0" end="0,270" condition="!skin.hassetting(#skin.Music.ShowNowPlaying)">Conditional</animation>
                 <animation effect="slide" delay="600" start="0,0" end="0,-180" time="500" easing="out" tween="cubic" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
                 <animation effect="slide" delay="600" start="0,0" end="0,-180" time="500" easing="out" tween="cubic" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
                 <animation effect="fade" delay="600" time="0" start="0" end="100" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
@@ -549,6 +597,7 @@
                 <width>400</width>
                 <height>155</height>
                 <texture>..\..\..\Thumbs\ClearArt\Music\#(iif(eq(#music.artist,''),#music.albumartist,#music.artist)).png</texture>
+                <animation effect="slide" time="0" end="0,270" condition="!skin.hassetting(#skin.Music.ShowNowPlaying)">Conditional</animation>
                 <animation effect="fade" delay="600" time="200" start="0" end="100" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
                 <animation effect="fade" delay="600" time="200" start="0" end="100" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
                 <animation effect="fade" time="200" end="0">WindowClose</animation>

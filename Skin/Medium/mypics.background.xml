@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>  
+    <controls>            
+        <control Style="backdropStyle">
+            <description>Default Background</description>
+            <type>image</type>
+            <texture>hover_my pictures.png</texture>
+            <!--<texture>white.png</texture>-->
+            <visible>true</visible>    
+        </control>
+        <control Style="backdropStyle">
+            <description>Selected Background 2</description>
+            <type>image</type>
+            <keepaspectratio>true</keepaspectratio>
+            <zoom>true</zoom>
+            <zoomfromtop>true</zoomfromtop>
+            <fixedheight>true</fixedheight>
+            <texture>#fanarthandler.picture.backdrop.selected</texture>
+        </control>
+        <control Style="overlayStyle">
+            <type>image</type>
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1920</width>
+            <height>1080</height>
+            <colordiffuse>7FFFFFFF</colordiffuse>
+        </control>
+    </controls>
+</window>

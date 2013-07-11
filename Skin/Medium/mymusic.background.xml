@@ -1,103 +1,42 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<window>
-    <define>#useRandomGamesUserFanart:No</define>
-    <define>#useRandomMoviesUserFanart:No</define>
-    <define>#useRandomMoviesScraperFanart:No</define>
-    <define>#useRandomMovingPicturesFanart:No</define>
-    <define>#useRandomMusicUserFanart:Yes</define>
-    <define>#useRandomMusicScraperFanart:Yes</define>
-    <define>#useRandomPicturesUserFanart:No</define>
-    <define>#useRandomPluginsUserFanart:No</define>
-    <define>#useRandomScoreCenterUserFanart:No</define>
-    <define>#useRandomTVUserFanart:No</define>
-    <define>#useRandomTVSeriesFanart:No</define>
-  
-    <define>#usePlayFanart:Yes</define>
-    <define>#useSelectedFanart:Yes</define>
-    
-    <controls> 
-        <control Style="hiddenGroupStyle">
-            <type>group</type>    
+<window>  
+   
+    <controls>      
+        <!--<control Style="hiddenGroupStyle">
+            <type>group</type>  
+            <posX>800</posX>
+            <posY>200</posY>
             <control Style="hiddenStyle">
-                <description>DUMMY CONTROL FOR RANDOM FANART 1 VISIBILITY CONDITION</description>
-                <type>label</type>
-                <id>91919297</id>
-                <width>1</width>
-            </control>
-            <control Style="hiddenStyle">
-                <description>DUMMY CONTROL FOR RANDOM FANART 2 VISIBILITY CONDITION</description>
-                <type>label</type>
-                <id>91919298</id>
-                <width>1</width>
-            </control>
-            <control Style="hiddenStyle">
-                <description>DUMMY CONTROL FOR PLAYING FANART 1 VISIBILITY CONDITION</description>
-                <type>label</type>
-                <id>91919295</id>
-                <width>1</width>
-            </control>
-            <control Style="hiddenStyle">
-                <description>DUMMY CONTROL FOR PLAYING FANART 2 VISIBILITY CONDITION</description>
-                <type>label</type>
-                <id>91919296</id>
-                <width>1</width>
-            </control>
-            <control>
                 <description>DUMMY CONTROL FOR SELECTED FANART 1 VISIBILITY CONDITION</description>
                 <type>label</type>
                 <id>91919291</id>
-                <width>1</width>
+                <label>1#fanarthandler.music.backdrop1.selected1</label>
             </control>
-            <control>
+            <control Style="hiddenStyle">
                 <description>DUMMY CONTROL FOR SELECTED FANART 2 VISIBILITY CONDITION</description>
                 <type>label</type>
                 <id>91919292</id>
-                <width>1</width>
+                <width>300</width>
+                <height>30</height>
+                <font>labelFont</font>
+                <textcolor>FFFF3333</textcolor>
+                <label>2#fanarthandler.music.backdrop2.selected2</label>
+                <visible>true</visible>
             </control>
-            <control>
+            <control Style="hiddenStyle">
                 <description>DUMMY CONTROL FOR SELECTED FANART AVAILABILITY CONDITION</description>
                 <type>label</type>
                 <id>91919293</id>
-                <width>1</width>
+                <label>#useSelectedFanart</label>
             </control>
-            <control>
-                <description>DUMMY CONTROL FOR PLAYING FANART AVAILABILITY CONDITION</description>
-                <type>label</type>
-                <id>91919294</id>
-                <width>1</width>
-            </control>
-        </control>
+        </control>-->
         
         <control Style="backdropStyle">
             <description>Default Background</description>
             <type>image</type>
             <texture>hover_my music.png</texture>
-            <!--<texture>white.png</texture>^-->
+            <!--<texture>white.png</texture>-->
             <visible>true</visible>    
-        </control>
-        <control Style="backdropStyle">
-            <description>Random Background 1</description>
-            <type>image</type>
-            <texture>#fanarthandler.music.scraper.backdrop1.any</texture>
-            <visible>control.isvisible(91919297)+!control.isivisble(91919293)+!control.isvisible(91919294)</visible>    
-        </control>
-        <control Style="backdropStyle">
-            <description>Random Background 2</description>
-            <type>image</type>
-            <texture>#fanarthandler.music.scraper.backdrop2.any</texture>
-            <visible>control.isvisible(91919298)+!control.isivisble(91919293)+!control.isvisible(91919294)</visible>    
-        </control>
-        <control Style="backdropStyle">
-            <description>Now Playing Background 1</description>
-            <type>image</type>
-            <texture>#fanarthandler.music.backdrop1.play</texture>
-            <visible>control.isvisible(91919295)+control.isvisible(91919294)+!control.isivisble(91919293)</visible>    
-        </control>
-        <control Style="backdropStyle">
-            <description>Now Playing Background 2</description>
-            <type>image</type>
-            <texture>#fanarthandler.music.backdrop2.play</texture>
-            <visible>control.isvisible(91919296)+control.isvisible(91919294)+!control.isivisble(91919293)</visible>    
         </control>
         <control Style="backdropStyle">
             <description>Selected Background 1</description>

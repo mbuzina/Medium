@@ -10,6 +10,97 @@
             <width>1920</width>
             <height>40</height>
             <texture>header_background.png</texture>
-        </control>        
+        </control>
+
+        <control>
+            <type>group</type>
+            <visible>player.hasmedia+!control.isvisible(11001)+!control.isvisible(11002)+!control.isvisible(11003)+!control.isvisible(11004)+!control.isvisible(11005)+!control.isvisible(11006)+!control.isvisible(11008)+!control.isvisible(11009)</visible>
+            <control Style="footerStyle">
+                <description>Progress Bar</description>
+                <type>progress</type>
+                <id>1</id>
+                <posX>0</posX>
+                <posY>1040</posY>
+                <width>100</width>
+                <height>40</height>
+                <label>#percentage</label>
+                <texturebg></texturebg>
+                <onlymidtexture>yes</onlymidtexture>
+                <midwidth>100</midwidth>
+                <midheight>40</midheight>
+                <midoffsetX>0</midoffsetX>
+                <midoffsetY>0</midoffsetY>
+                <midtexture>highlight2_transparent.png</midtexture>
+                <!--<midtexture>header_background.png</midtexture>-->
+                <animation effect="fade" time="400" start="100" end="70" pulse="true" easing="inout" condition="player.paused">conditional</animation>
+                <animation effect="slide" time="200" start="0,40" easing="inout">WindowOpen</animation>
+                <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
+                <animation effect="slide" time="200" end="0,40" easing="inout">WindowClose</animation>
+                <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+                <animation effect="slide" time="200" start="0,40" easing="inout">VisibleChange</animation>
+                <animation effect="fade" time="200" easing="inout">VisibleChange</animation>
+            </control>
+            <control Style="footerStyle">
+                <type>image</type>
+                <posX>30</posX>
+                <posY>1040</posY>
+                <width>40</width>
+                <height>40</height>
+                <texture>isplaying.png</texture>
+                <visible>!player.paused</visible>
+                <animation effect="slide" time="200" start="0,40" easing="inout">WindowOpen</animation>
+                <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
+                <animation effect="slide" time="200" end="0,40" easing="inout">WindowClose</animation>
+                <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+                <animation effect="slide" time="200" start="0,40" easing="inout">VisibleChange</animation>
+                <animation effect="fade" time="200" easing="inout">VisibleChange</animation>
+            </control>
+            <control Style="footerStyle">
+                <type>image</type>
+                <posX>30</posX>
+                <posY>1040</posY>
+                <width>40</width>
+                <height>40</height>
+                <texture>ispaused.png</texture>
+                <visible>player.paused</visible>
+                <animation effect="slide" time="200" start="0,40" easing="inout">WindowOpen</animation>
+                <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
+                <animation effect="slide" time="200" end="0,40" easing="inout">WindowClose</animation>
+                <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+                <animation effect="slide" time="200" start="0,40" easing="inout">VisibleChange</animation>
+                <animation effect="fade" time="200" easing="inout">VisibleChange</animation>
+            </control>
+            <control Style="footerStyle">
+                <type>label</type>
+                <posX>1</posX>
+                <posY>1040</posY>
+                <width>99</width>
+                <height>40</height>
+                <align>center</align>
+                <label>#(switch(
+                        eq(#skin.MainTimeShown,'playtime'),#currentplaytime,
+                        eq(#skin.MainTimeShown,'remaining'),#currentremaining,
+                        eq(1,1),''
+                    ))</label>
+                <animation effect="fade" time="200" easing="inout">VisibleChange</animation>
+                <animation effect="slide" time="200" start="0,40" easing="inout">WindowOpen</animation>
+                <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
+                <animation effect="slide" time="200" end="0,40" easing="inout">WindowClose</animation>
+                <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+            </control>
+        </control>
+        
+        <control Style="footerStyle">
+            <description>Selected Information</description>
+            <type>fadelabel</type>
+            <posX>160</posX>
+            <width>100</width>
+            <align>center</align>
+            <label>#(iif(eq(#selectedindex,''),iif(eq(#itemcount,''),'',string.format('{0} {1}',#itemcount,#itemtype)),string.format('{0} / {1}',#selectedindex,#itemcount)))</label>
+            <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
+            <animation effect="slide" time="200" end="0,40" easing="inout">WindowClose</animation>
+            <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+            <animation effect="slide" time="0" end="-29,0" condition="true">conditional</animation>
+        </control>
     </controls>
 </window>

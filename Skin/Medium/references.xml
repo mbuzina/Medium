@@ -42,7 +42,7 @@
         <animation effect="fade" time="200">VisibleChange</animation>
     </style>
     <style Name="footerStyle">
-        <id>1</id>
+        <id>0</id>
         <posX>450</posX>
         <posY>1040</posY>
         <width>1470</width>
@@ -177,8 +177,16 @@
         <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
         <animation effect="fade" time="200" easing="inout">WindowClose</animation>
     </style>
+    <style Name="miniButtonStyle">
+        <textureNoFocus>mini_button.png</textureNoFocus>
+        <textureFocus>mini_button_focus.png</textureFocus>
+        <posX>1430</posX>
+        <posY>685</posY>
+        <width>21</width>
+        <height>21</height>
+    </style>
     <style Name="overlayStyle">
-        <id>1</id>
+        <id>0</id>
         <posX>0</posX>
         <posY>0</posY>
         <width>800</width>
@@ -188,7 +196,7 @@
         <animation effect="fade" time="200" easing="inout">WindowClose</animation>
     </style>
     <style Name="ratingHighlight2Style">
-        <id>1</id>
+        <id>0</id>
         <width>120</width>
         <height>21</height>
         <orientation>horizontal</orientation>
@@ -197,6 +205,12 @@
         <textureHeight>21</textureHeight>
         <imagesToDraw>5</imagesToDraw>
         <dimColor>FFFFFFFF</dimColor>
+    </style>
+    <style Name="roundButtonStyle">
+        <width>40</width>
+        <height>40</height>
+        <textureNoFocus>checkbutton_uncheck.png</textureNoFocus>
+        <textureFocus>checkbutton_uncheck_focus.png</textureFocus>
     </style>
     <style Name="scrollStyle">
         <posX>0</posX>
@@ -227,6 +241,17 @@
         <shadowDistance>3</shadowDistance>
         <shadowColor>20202020</shadowColor>
     </style>
+    <style Name="smallListStyle">
+        <font>labelFont</font>
+        <textureHeight>34</textureHeight>
+        <textcolor>FFB75700</textcolor>
+        <textcolorNoFocus>AAAAAAAA</textcolorNoFocus>
+        <playedColor>AA007ACC</playedColor>
+        <textXOff2>490</textXOff2>
+                
+        <textXOff>-48</textXOff>
+        <textYOff>-7</textYOff>
+    </style>
     <style Name="subHeaderStyle">
         <width>490</width>
         <height>20</height>
@@ -237,12 +262,13 @@
         <animation effect="fade" time="200" easing="inout">WindowClose</animation>
     </style>
     <style Name="subMenuStyle">
-        <width>780</width>
+        <width>800</width>
         <height>50</height>
         <font>subHeaderFont</font>
         <textcolor>FFB75700</textcolor>
         <textcolorNoFocus>FFFFFFFF</textcolorNoFocus>
         <dimColor>FFFFFFFF</dimColor>
+        <textYOff>-7</textYOff>
         <animation effect="slide" time="200" start="0,-40" easing="inout">WindowOpen</animation>
         <animation effect="fade" time="200" easing="inout">WindowClose</animation>
     </style>
@@ -254,6 +280,7 @@
         <texture>#selectedthumb</texture>
         <keepaspectratio>true</keepaspectratio>
         <zoom>true</zoom>
+        <zoomfromtop>true</zoomfromtop>
         <visible>!string.equals(#selectedthumb,)</visible>
         <animation effect="slide" time="200" start="0,-40" easing="inout">WindowOpen</animation>
         <animation effect="fade" time="200" easing="inout">WindowClose</animation>
@@ -274,7 +301,7 @@
     </style>
     <style Name="touchControlStyle">
         <description>Touch Left</description>
-        <id>1</id>
+        <id>0</id>
         <type>button</type>
         <width>20</width>
         <height>70</height>
@@ -288,7 +315,7 @@
 
     </style>
     <style Name="weatherLabelStyle">
-        <id>1</id>
+        <id>0</id>
         <font>labelFont</font>
         <textcolor>FFFFFFFF</textcolor>
         <align>center</align>
@@ -299,7 +326,7 @@
         <animation effect="fade" time="200" easing="inout">WindowClose</animation>
     </style>
     <style Name="weatherBoldLabelStyle">
-        <id>1</id>
+        <id>0</id>
         <font>labelBoldFont</font>
         <textcolor>FFFFFFFF</textcolor>
         <align>center</align>
@@ -309,11 +336,10 @@
         <animation effect="slide" time="200" start="0,-40" easing="inout">WindowOpen</animation>
         <animation effect="fade" time="200" easing="inout">WindowClose</animation>
     </style>
-
     <style Name="debugGroupStyle">
         <!-- Stuff set to visible for checking labels & stuff, remove for release -->
         <visible>false</visible>
-        <id>1</id>
+        <id>0</id>
         <posX>20</posX>
         <posY>400</posY>
         <width>1600</width>
@@ -322,7 +348,7 @@
     </style>
     <style Name="debugControlStyle">
         <visible>false</visible>
-        <id>1</id>
+        <id>0</id>
         <width>1600</width>
         <height>36</height>
         <align>left</align>
@@ -332,30 +358,33 @@
         <dimColor>FFFFFFFF</dimColor>
     </style>
 
+    <!-- default image -->
     <control>
         <description>default image</description>
         <type>image</type>
-        <id>1</id>
+        <id>0</id>
         <posX>0</posX>
         <posY>0</posY>
         <texture>background.png</texture>
         <visible>yes</visible>
         <dimColor>ffffffff</dimColor>
     </control>
+    <!-- default label-->
     <control>
         <description>default label</description>
         <type>label</type>
-        <id>1</id>
+        <id>0</id>
         <posX>10</posX>
         <posY>270</posY>
         <label>6</label>
         <font>labelFont</font>
         <textcolor>FFFFFF</textcolor>
     </control>
+    <!-- default button-->
     <control>
         <description>default button</description>
         <type>button</type>
-        <id>1</id>
+        <id>0</id>
         <posX>650</posX>
         <posY>236</posY>
         <width>385</width>
@@ -370,6 +399,7 @@
         <textcolorNoFocus>ff393939</textcolorNoFocus>
         <dimColor>FFFFFFFF</dimColor>
     </control>
+    <!-- default menubutton-->
     <control>
         <description>default menubutton</description>
         <type>menubutton</type>
@@ -396,10 +426,11 @@
         <spinWidth>32</spinWidth>
         <spinHeight>32</spinHeight>
     </control>
+    <!-- default up/down button -->
     <control>
         <description>default updownbutton</description>
         <type>updownbutton</type>
-        <id>1</id>
+        <id>0</id>
         <posX>533</posX>
         <posY>250</posY>
         <width>260</width>
@@ -417,6 +448,7 @@
         <colordiffuse>white</colordiffuse>
         <disabledcolor>AAAAAAAA</disabledcolor>
     </control>
+    <!-- default playlist item button -->
     <control>
         <description>playlist item button</description>
         <type>playlistbutton</type>
@@ -450,10 +482,11 @@
         <font>labelFont</font>
         <textcolor>FFB75700</textcolor>
         <textcolorNoFocus>FFFFFFFF</textcolorNoFocus>
-        <colordiffuse>white</colordiffuse>
+        <colordiffuse>FFFFFFFF</colordiffuse>
         <disabledcolor>AAAAAAAA</disabledcolor>
         <dimColor>FFFFFFFF</dimColor>
     </control>
+    <!-- default sort button -->
     <control>
         <description>sort button</description>
         <type>sortbutton</type>
@@ -480,10 +513,11 @@
         <label>103</label>
         <dimColor>FFFFFFFF</dimColor>
     </control>
+    <!-- default listcontrol -->
     <control>
         <description>default listcontrol</description>
         <type>listcontrol</type>
-        <id>0</id>
+        <id>50</id>
         <posX>0</posX>
         <posY>130</posY>
         <width>1240</width>
@@ -512,11 +546,11 @@
         <selectedColor3>AAAAAAAA</selectedColor3>
 
         <textXOff>15</textXOff>
-        <textYOff>2</textYOff>
+        <textYOff>1</textYOff>
         <textXOff2>1210</textXOff2>
-        <textYOff2>2</textYOff2>
+        <textYOff2>1</textYOff2>
         <textXOff3>1240</textXOff3>
-        <textYOff3>2</textYOff3>
+        <textYOff3>1</textYOff3>
         <textalign>left</textalign>
         <textalign2>right</textalign2>
         <textalign3>right</textalign3>
@@ -557,6 +591,7 @@
         <onleft>2</onleft>
         <onright>2</onright>
     </control>
+    <!-- default checklistcontrol -->
     <control>
         <description>default checklistcontrol</description>
         <type>checklistcontrol</type>
@@ -602,6 +637,7 @@
         <IconYOff>10</IconYOff>
         <suffix>|</suffix>
     </control>
+    <!-- default up/down listcontrol -->
     <control>
         <description>default up/downlistcontrol</description>
         <type>updownlistcontrol</type>
@@ -642,64 +678,98 @@
         <IconYOff>10</IconYOff>
         <suffix>|</suffix>
     </control>
+    <!-- default playlistcontrol -->
     <control>
         <description>default playlist item listcontrol</description>
         <type>playlistcontrol</type>
-        <id>10</id>
-        <posX>906</posX>
-        <posY>153</posY>
-        <width>924</width>
-        <height>750</height>
-        <spinWidth>46</spinWidth>
-        <spinHeight>33</spinHeight>
-        <spinPosX>312</spinPosX>
-        <spinPosY>104</spinPosY>
-        <spinAlign>right</spinAlign>
-        <spinColor>FF000000</spinColor>
-        <textureHeight>54</textureHeight>
-        <image>-</image>
-        <font>labelFont</font>
-        <shadedColor>ffffffff</shadedColor>
-        <selectedColor>FF00B7FF</selectedColor>
-        <textcolor>ffffffff</textcolor>
-        <textcolor2>ffffffff</textcolor2>
-        <textcolor3>ffffffff</textcolor3>
-        <colordiffuse>ffffffff</colordiffuse>
-        <remoteColor>FFFC7B19</remoteColor>
-        <downloadColor>fffc7b19</downloadColor>
-        <spaceBetweenItems>2</spaceBetweenItems>
-        <textXOff>80</textXOff>
-        <textYOff>8</textYOff>
-        <textXOff2>1070</textXOff2>
-        <textYOff2>8</textYOff2>
-        <itemWidth>0</itemWidth>
-        <itemHeight>0</itemHeight>
-        <IconXOff>1000</IconXOff>
-        <IconYOff>1000</IconYOff>
-        <suffix>|</suffix>
-        <upBtnWidth>19</upBtnWidth>
-        <downBtnWidth>19</downBtnWidth>
-        <deleteBtnWidth>19</deleteBtnWidth>
-        <upBtnHeight>19</upBtnHeight>
-        <downBtnHeight>19</downBtnHeight>
-        <deleteBtnHeight>19</deleteBtnHeight>
-        <upBtnXOffset>1000</upBtnXOffset>
-        <downBtnXOffset>1031</downBtnXOffset>
-        <deleteBtnXOffset>1064</deleteBtnXOffset>
-        <upBtnYOffset>16</upBtnYOffset>
-        <downBtnYOffset>16</downBtnYOffset>
-        <deleteBtnYOffset>16</deleteBtnYOffset>
-        <textureFocus>hiddenMenu_background.png</textureFocus>
-        <textureNoFocus></textureNoFocus>
+        <id>50</id>
+        <posX>0</posX>
+        <posY>130</posY>
+        <width>1240</width>
+        <height>672</height>
+            
+        <!-- These are hardcoded anyway - so no use but for future compatability -->
+        <textureFocus>playlist_sub_focus.png</textureFocus>
+        <textureNoFocus>playlist_sub_nofocus.png</textureNoFocus>
+        <textureHeight>52</textureHeight>
+
+        <upBtnXOffset>1100</upBtnXOffset>
+        <upBtnYOffset>7</upBtnYOffset>      
+        <upBtnWidth>40</upBtnWidth>
+        <upBtnHeight>40</upBtnHeight>
         <textureMoveUp>spin_up.png</textureMoveUp>
         <textureMoveUpFocused>spin_up_focus.png</textureMoveUpFocused>
+        
+        <downBtnXOffset>1145</downBtnXOffset>
+        <downBtnYOffset>7</downBtnYOffset>
+        <downBtnWidth>40</downBtnWidth>
+        <downBtnHeight>40</downBtnHeight>
         <textureMoveDown>spin_down.png</textureMoveDown>
         <textureMoveDownFocused>spin_down_focus.png</textureMoveDownFocused>
-        <textureDelete>topbar_close.png</textureDelete>
-        <textureDeleteFocused>topbar_close_focus.png</textureDeleteFocused>
+        
+        <deleteBtnXOffset>1190</deleteBtnXOffset>
+        <deleteBtnYOffset>7</deleteBtnYOffset>
+        <deleteBtnWidth>40</deleteBtnWidth>
+        <deleteBtnHeight>40</deleteBtnHeight>
+        <textureDelete>round_delete.png</textureDelete>
+        <textureDeleteFocused>round_delete_focus.png</textureDeleteFocused>
+        
+        <IconXOff>10</IconXOff>
+        <IconYOff>6</IconYOff>
+        <itemWidth>40</itemWidth>
+        <itemHeight>40</itemHeight>
         <spaceBetweenItems>2</spaceBetweenItems>
+        
+        <spinCanFocus>False</spinCanFocus>
+        <textureUp>spin_up.png</textureUp>
+        <textureDown>spin_down.png</textureDown>
+        <textureUpFocus>spin_up_focus.png</textureUpFocus>
+        <textureDownFocus>spin_down_focus.png</textureDownFocus>
+        <spinWidth>40</spinWidth>
+        <spinHeight>40</spinHeight>
+        <spinPosX>1150</spinPosX>
+        <spinPosY>750</spinPosY>
+        <spinAlign>right</spinAlign>
+        <spinColor>FFFFFFFF</spinColor>
+        
+        <font>largeFont</font>
+        <font2>largeFont</font2>
+        <font3>labelFont</font3>
+        <textcolor>FFFFFFFF</textcolor>
+        <textcolor2>FF007ACC</textcolor2>
+        <textcolor3>FFFFFFFF</textcolor3>
+        <textcolorNoFocus>AAAAAAAA</textcolorNoFocus>
+        <textcolorNoFocus2>AAAAAAAA</textcolorNoFocus2>
+        <textcolorNoFocus3>AAAAAAAA</textcolorNoFocus3>
+        <selectedColor>FFB75700</selectedColor>
+        <selectedColor2>FFB75700</selectedColor2>
+        <selectedColor3>FFB75700</selectedColor3>
+        <shadedColor>AAffffff</shadedColor>
+        <remoteColor>AAffffff</remoteColor>
+        <downloadColor></downloadColor>
+        <playedColor></playedColor>
+   
+        <textXOff>15</textXOff>
+        <textYOff>1</textYOff>
+        <textXOff2>1060</textXOff2>
+        <textYOff2>1</textYOff2>
+        <textXOff3>200</textXOff3>
+        <textYOff3>30</textYOff3>
+        <textalign>left</textalign>
+        <textalign2>right</textalign2>
+        <textalign3>right</textalign3>
+
+        <textvisible1>True</textvisible1>
+        <textvisible2>True</textvisible2>
+        <textvisible3>False</textvisible3>
+
+        <suffix>|</suffix>
+        <folderPrefix />
+        <folderSuffix />        
+        <dimColor>FFFFFFFF</dimColor>
         <unfocusedAlpha>255</unfocusedAlpha>
     </control>
+    <!-- default thumbnail panel -->
     <control>
         <description>default thumbnail panel</description>
         <type>thumbnailpanel</type>
@@ -767,6 +837,7 @@
         <spinAlign>right</spinAlign>
         <spinColor>FFFFFFFF</spinColor>
     </control>
+    <!-- default filmstrip -->
     <control>
         <description>default filmstrip</description>
         <type>filmstrip</type>
@@ -835,6 +906,7 @@
         <thumbAnimation effect="zoom" start="150,150" end="100,100" time="200" ease="inout" tween="cubic">unfocus</thumbAnimation>
 
     </control>
+    <!-- default coverflow-->
     <control>
         <description>Default Coverflow Control</description>
         <type>coverflow</type>
@@ -901,6 +973,7 @@
         <spinAlign>right</spinAlign>
         <spinCanFocus>no</spinCanFocus>
     </control>
+    <!-- default fadelabel -->
     <control>
         <description>default fadelabel</description>
         <type>fadelabel</type>
@@ -915,6 +988,7 @@
         <allowFadeIn>no</allowFadeIn>
         <wrapString> | </wrapString>
     </control>
+    <!-- default textarea -->
     <control>
         <description>default textarea</description>
         <type>textbox</type>
@@ -937,6 +1011,7 @@
         <textcolor>white</textcolor>
         <colordiffuse>ffffffff</colordiffuse>
     </control>
+    <!-- default textboxscrollup -->
     <control>
         <description>default textboxscrollup</description>
         <type>textboxscrollup</type>
@@ -948,6 +1023,7 @@
         <scrollStartDelaySec>10</scrollStartDelaySec>
         <lineSpacing>0.98</lineSpacing>
     </control>
+    <!-- default progress control -->
     <control>
         <description>default progress control</description>
         <type>progress</type>
@@ -961,6 +1037,7 @@
         <righttexture>osd_progress_right.png</righttexture>
         <visible>no</visible>
     </control>
+    <!-- default horizontal scrollbar -->
     <control>
         <description>default horizontal scrollbar control</description>
         <type>hscrollbar</type>
@@ -972,6 +1049,7 @@
         <righttexture>mouse_right_horizontal.png</righttexture>
         <visible>no</visible>
     </control>
+    <!-- default vertical scrollbar -->
     <control>
         <description>default vertical scrollbar control</description>
         <type>vscrollbar</type>
@@ -983,6 +1061,7 @@
         <scrollbarbottom>mouse_right_vertical.png</scrollbarbottom>
         <visible>no</visible>
     </control>
+    <!-- default spin control -->
     <control>
         <description>default spin control</description>
         <type>spincontrol</type>
@@ -1003,6 +1082,7 @@
         <spinColor>FFFFFFFF</spinColor>
         <spintype>text</spintype>
     </control>
+    <!-- default checkmark -->
     <control>
         <description>default checkmark</description>
         <type>checkmark</type>
@@ -1018,6 +1098,7 @@
         <align>left</align>
         <shadow>no</shadow>
     </control>
+    <!-- default select button -->
     <control>
         <description>default select button</description>
         <type>selectbutton</type>
@@ -1043,31 +1124,33 @@
         <textcolorNoFocus>FFFFFFFF</textcolorNoFocus>
         <disabledcolor>AAAAAAAA</disabledcolor>
     </control>
+    <!-- default checkbutton -->
     <control>
         <description>default check button</description>
         <type>checkbutton</type>
         <id>0</id>
         <width>385</width>
-        <height>58</height>
+        <height>54</height>
         <textXOff>32</textXOff>
         <textYOff>12</textYOff>
         <textureFocus>hiddenMenu_background.png</textureFocus>
         <textureNoFocus></textureNoFocus>
-        <font>labelFont</font>
-        <markWidth>43</markWidth>
-        <markHeight>26</markHeight>
-        <markXOff>30</markXOff>
-        <markYOff>10</markYOff>
+        <font>largeFont</font>
+        <markXOff>62</markXOff>
+        <markYOff>10</markYOff>   
+        <markWidth>40</markWidth>
+        <markHeight>40</markHeight>
         <markalign>right</markalign>
         <markvalign>middle</markvalign>
-        <textureCheckmark>settings_checkmark_checked.png</textureCheckmark>
-        <textureCheckmarkNoFocus>settings_checkmark_unchecked.png</textureCheckmarkNoFocus>
+        <textureCheckmark>checkbutton_check.png</textureCheckmark>
+        <textureCheckmarkNoFocus>checkbutton_uncheck.png</textureCheckmarkNoFocus>
         <textcolor>FFB75700</textcolor>
         <colordiffuse>white</colordiffuse>
         <disabledcolor>AAAAAAAA</disabledcolor>
         <textcolorNoFocus>ffffffff</textcolorNoFocus>
         <dimColor>ffFFFFFF</dimColor>
     </control>
+    <!-- default group control -->
     <control>
         <description>default group control</description>
         <type>group</type>

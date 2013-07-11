@@ -1,5 +1,105 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
+    <define property="true" evaluateNow="true">#ref_B0.0.Hyperlink:#(cint(#BasicHome.B0.0.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B0.1.Hyperlink:#(cint(#BasicHome.B0.1.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B0.2.Hyperlink:#(cint(#BasicHome.B0.2.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B0.3.Hyperlink:#(cint(#BasicHome.B0.3.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B0.4.Hyperlink:#(cint(#BasicHome.B0.4.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B0.5.Hyperlink:#(cint(#BasicHome.B0.5.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B0.6.Hyperlink:#(cint(#BasicHome.B0.6.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B0.7.Hyperlink:#(cint(#BasicHome.B0.7.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B0.8.Hyperlink:#(cint(#BasicHome.B0.8.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B0.9.Hyperlink:#(cint(#BasicHome.B0.9.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B1.0.Hyperlink:#(cint(#BasicHome.B1.0.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B1.1.Hyperlink:#(cint(#BasicHome.B1.1.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B1.2.Hyperlink:#(cint(#BasicHome.B1.2.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B1.3.Hyperlink:#(cint(#BasicHome.B1.3.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B1.4.Hyperlink:#(cint(#BasicHome.B1.4.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B1.5.Hyperlink:#(cint(#BasicHome.B1.5.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B1.6.Hyperlink:#(cint(#BasicHome.B1.6.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B1.7.Hyperlink:#(cint(#BasicHome.B1.7.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B1.8.Hyperlink:#(cint(#BasicHome.B1.8.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B1.9.Hyperlink:#(cint(#BasicHome.B1.9.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B2.0.Hyperlink:#(cint(#BasicHome.B2.0.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B2.1.Hyperlink:#(cint(#BasicHome.B2.1.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B2.2.Hyperlink:#(cint(#BasicHome.B2.2.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B2.3.Hyperlink:#(cint(#BasicHome.B2.3.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B2.4.Hyperlink:#(cint(#BasicHome.B2.4.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B2.5.Hyperlink:#(cint(#BasicHome.B2.5.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B2.6.Hyperlink:#(cint(#BasicHome.B2.6.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B2.7.Hyperlink:#(cint(#BasicHome.B2.7.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B2.8.Hyperlink:#(cint(#BasicHome.B2.8.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B2.9.Hyperlink:#(cint(#BasicHome.B2.9.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B3.0.Hyperlink:#(cint(#BasicHome.B3.0.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B3.1.Hyperlink:#(cint(#BasicHome.B3.1.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B3.2.Hyperlink:#(cint(#BasicHome.B3.2.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B3.3.Hyperlink:#(cint(#BasicHome.B3.3.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B3.4.Hyperlink:#(cint(#BasicHome.B3.4.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B3.5.Hyperlink:#(cint(#BasicHome.B3.5.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B3.6.Hyperlink:#(cint(#BasicHome.B3.6.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B3.7.Hyperlink:#(cint(#BasicHome.B3.7.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B3.8.Hyperlink:#(cint(#BasicHome.B3.8.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B3.9.Hyperlink:#(cint(#BasicHome.B3.9.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B4.0.Hyperlink:#(cint(#BasicHome.B4.0.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B4.1.Hyperlink:#(cint(#BasicHome.B4.1.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B4.2.Hyperlink:#(cint(#BasicHome.B4.2.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B4.3.Hyperlink:#(cint(#BasicHome.B4.3.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B4.4.Hyperlink:#(cint(#BasicHome.B4.4.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B4.5.Hyperlink:#(cint(#BasicHome.B4.5.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B4.6.Hyperlink:#(cint(#BasicHome.B4.6.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B4.7.Hyperlink:#(cint(#BasicHome.B4.7.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B4.8.Hyperlink:#(cint(#BasicHome.B4.8.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B4.9.Hyperlink:#(cint(#BasicHome.B4.9.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B5.0.Hyperlink:#(cint(#BasicHome.B5.0.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B5.1.Hyperlink:#(cint(#BasicHome.B5.1.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B5.2.Hyperlink:#(cint(#BasicHome.B5.2.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B5.3.Hyperlink:#(cint(#BasicHome.B5.3.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B5.4.Hyperlink:#(cint(#BasicHome.B5.4.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B5.5.Hyperlink:#(cint(#BasicHome.B5.5.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B5.6.Hyperlink:#(cint(#BasicHome.B5.6.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B5.7.Hyperlink:#(cint(#BasicHome.B5.7.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B5.8.Hyperlink:#(cint(#BasicHome.B5.8.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B5.9.Hyperlink:#(cint(#BasicHome.B5.9.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B6.0.Hyperlink:#(cint(#BasicHome.B6.0.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B6.1.Hyperlink:#(cint(#BasicHome.B6.1.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B6.2.Hyperlink:#(cint(#BasicHome.B6.2.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B6.3.Hyperlink:#(cint(#BasicHome.B6.3.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B6.4.Hyperlink:#(cint(#BasicHome.B6.4.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B6.5.Hyperlink:#(cint(#BasicHome.B6.5.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B6.6.Hyperlink:#(cint(#BasicHome.B6.6.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B6.7.Hyperlink:#(cint(#BasicHome.B6.7.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B6.8.Hyperlink:#(cint(#BasicHome.B6.8.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B6.9.Hyperlink:#(cint(#BasicHome.B6.9.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B7.0.Hyperlink:#(cint(#BasicHome.B7.0.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B7.1.Hyperlink:#(cint(#BasicHome.B7.1.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B7.2.Hyperlink:#(cint(#BasicHome.B7.2.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B7.3.Hyperlink:#(cint(#BasicHome.B7.3.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B7.4.Hyperlink:#(cint(#BasicHome.B7.4.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B7.5.Hyperlink:#(cint(#BasicHome.B7.5.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B7.6.Hyperlink:#(cint(#BasicHome.B7.6.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B7.7.Hyperlink:#(cint(#BasicHome.B7.7.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B7.8.Hyperlink:#(cint(#BasicHome.B7.8.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B7.9.Hyperlink:#(cint(#BasicHome.B7.9.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B8.0.Hyperlink:#(cint(#BasicHome.B8.0.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B8.1.Hyperlink:#(cint(#BasicHome.B8.1.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B8.2.Hyperlink:#(cint(#BasicHome.B8.2.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B8.3.Hyperlink:#(cint(#BasicHome.B8.3.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B8.4.Hyperlink:#(cint(#BasicHome.B8.4.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B8.5.Hyperlink:#(cint(#BasicHome.B8.5.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B8.6.Hyperlink:#(cint(#BasicHome.B8.6.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B8.7.Hyperlink:#(cint(#BasicHome.B8.7.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B8.8.Hyperlink:#(cint(#BasicHome.B8.8.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B8.9.Hyperlink:#(cint(#BasicHome.B8.9.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B9.0.Hyperlink:#(cint(#BasicHome.B9.0.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B9.1.Hyperlink:#(cint(#BasicHome.B9.1.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B9.2.Hyperlink:#(cint(#BasicHome.B9.2.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B9.3.Hyperlink:#(cint(#BasicHome.B9.3.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B9.4.Hyperlink:#(cint(#BasicHome.B9.4.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B9.5.Hyperlink:#(cint(#BasicHome.B9.5.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B9.6.Hyperlink:#(cint(#BasicHome.B9.6.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B9.7.Hyperlink:#(cint(#BasicHome.B9.7.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B9.8.Hyperlink:#(cint(#BasicHome.B9.8.Hyperlink))</define>
+    <define property="true" evaluateNow="true">#ref_B9.9.Hyperlink:#(cint(#BasicHome.B9.9.Hyperlink))</define>
     <controls>
         <!-- Positional Controls -->
         <control Style="hiddenGroupStyle">
@@ -11,8 +111,42 @@
                 <label>#BasicHome.Current.c0r0</label>
                 <visible>string.equals(#BasicHome.Current.c0r0,SUB)</visible>
             </control>
+            <control Style="hiddenStyle">
+                <!-- Up Focus -->
+                <type>button</type>
+                <id>10220</id>
+                <label>Move Focus?</label>
+                <onfocus>#(skin.setfocus(35,choose(
+                    cint(#BasicHome.Current.ID),
+                    1000,1001,1002,1003,1004,1005,1006,1007,1008,1009)))</onfocus>
+            </control>
+            <control Style="hiddenStyle">
+                <!-- Down Focus -->
+                <type>button</type>
+                <id>10221</id>
+                <label>Move Focus?</label>
+                <onfocus>#(skin.setfocus(35,10120))</onfocus>
+            </control>
+            <control Style="hiddenStyle">
+                <!-- Left Focus -->
+                <type>button</type>
+                <id>10222</id>
+                <label>Move Focus?</label>
+                <onfocus>#(skin.setfocus(35,choose(
+                    cint(#BasicHome.Current.ID),
+                    1000,1000,1001,1002,1003,1004,1005,1006,1007,1008)))</onfocus>
+            </control>
+            <control Style="hiddenStyle">
+                <!-- Right Focus -->
+                <type>button</type>
+                <id>10223</id>
+                <label>Move Focus?</label>
+                <onfocus>#(skin.setfocus(35,choose(
+                    cint(#BasicHome.Current.ID),
+                    1001,1002,1003,1004,1005,1006,1007,1008,1009,1010)))</onfocus>
+            </control>
         </control>
-
+        
         <control Style="overlayStyle">
             <description>Viewport</description>
             <type>image</type>
@@ -22,125 +156,1810 @@
             <height>542</height>
             <visible>control.isvisible(10001)</visible>
             <texture>header_background.png</texture>
+            <animation effect="slide" delay="200" time="200" start="-40,0" easing="inout">Visible</animation>
+            <animation effect="slide" delay="100" time="200" end="-40,0" easing="inout">Hidden</animation>
+            <animation effect="fade"  delay="200" time="200" end="100" easing="inout">Visible</animation>
+            <animation effect="fade"  delay="100" time="200" end="0" easing="inout">Hidden</animation>
         </control>
-
+       
         <control>
+            <description>Sub Menu 1</description>
             <type>group</type>
             <layout>StackLayout(Vertical,10,false)</layout>
-            <posX>10</posX>
-            <posY>185</posY>
+            <posX>0</posX>
+            <posY>200</posY>
             <width>780</width>
             <height>530</height>
-            <visible>control.isvisible(10001)</visible>
+            <visible>control.isvisible(10001)+string.equals(#BasicHome.Current.ID,0)</visible>
             <control Style="subMenuStyle">
                 <type>button</type>
                 <id>10100</id>
-                <label>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.0.Label,#BasicHome.B1.0.Label,#BasicHome.B2.0.Label,#BasicHome.B3.0.Label,#BasicHome.B4.0.Label,#BasicHome.B5.0.Label,#BasicHome.B6.0.Label,#BasicHome.7.0.Label,#BasicHome.B8.0.Label,#BasicHome.B9.0.Label))</label>
-                <!--    <hyperlink>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.0.Hyperlink,#BasicHome.B1.0.Hyperlink,#BasicHome.B2.0.Hyperlink,#BasicHome.B3.0.Hyperlink,#BasicHome.B4.0.Hyperlink,#BasicHome.B5.0.Hyperlink,#BasicHome.B6.0.Hyperlink,#BasicHome.7.0.Hyperlink,#BasicHome.B8.0.Hyperlink,#BasicHome.B9.0.Hyperlink))</hyperlink>
-            <hyperlinkParameter>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.0.HyperlinkParameter,#BasicHome.B1.0.HyperlinkParameter,#BasicHome.B2.0.HyperlinkParameter,#BasicHome.B3.0.HyperlinkParameter,#BasicHome.B4.0.HyperlinkParameter,#BasicHome.B5.0.HyperlinkParameter,#BasicHome.B6.0.HyperlinkParameter,#BasicHome.7.0.HyperlinkParameter,#BasicHome.B8.0.HyperlinkParameter,#BasicHome.B9.0.HyperlinkParameter))</hyperlinkParameter>
-        -->
-                <visible>control.isvisible(10001)+[[control.isvisible(1100)+!string.equals(#BasicHome.B0.0.Label,)]|[control.isvisible(1101)+!string.equals(#BasicHome.B1.0.Label,)]|[control.isvisible(1102)+!string.equals(#BasicHome.B2.0.Label,)]|[control.isvisible(1103)+!string.equals(#BasicHome.B3.0.Label,)]|[control.isvisible(1104)+!string.equals(#BasicHome.B4.0.Label,)]|[control.isvisible(1105)+!string.equals(#BasicHome.B5.0.Label,)]|[control.isvisible(1106)+!string.equals(#BasicHome.B6.0.Label,)]|[control.isvisible(1107)+!string.equals(#BasicHome.B7.0.Label,)]|[control.isvisible(1108)+!string.equals(#BasicHome.B8.0.Label,)]|[control.isvisible(1109)+!string.equals(#BasicHome.B9.0.Label,)]]</visible>
-                <onup>951100</onup>
+                <label>#BasicHome.B0.0.Label</label>
+                <hyperlink>#ref_B0.0.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B0.0.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B0.0.Label,)</visible>
+                <onup>1000</onup>
                 <ondown>10101</ondown>
+                <onleft>1000</onleft>
+                <onright>1001</onright>
+                <animation effect="slide" delay="100" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="000" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="100" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="000" time="200" end="0" easing="inout">Hidden</animation>
             </control>
             <control Style="subMenuStyle">
                 <type>button</type>
                 <id>10101</id>
-                <label>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.1.Label,#BasicHome.B1.1.Label,#BasicHome.B2.1.Label,#BasicHome.B3.1.Label,#BasicHome.B4.1.Label,#BasicHome.B5.1.Label,#BasicHome.B6.1.Label,#BasicHome.7.1.Label,#BasicHome.B8.1.Label,#BasicHome.B9.1.Label))</label>
-                <!--    <hyperlink>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.1.Hyperlink,#BasicHome.B1.1.Hyperlink,#BasicHome.B2.1.Hyperlink,#BasicHome.B3.1.Hyperlink,#BasicHome.B4.1.Hyperlink,#BasicHome.B5.1.Hyperlink,#BasicHome.B6.1.Hyperlink,#BasicHome.7.1.Hyperlink,#BasicHome.B8.1.Hyperlink,#BasicHome.B9.1.Hyperlink))</hyperlink>
-            <hyperlinkParameter>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.1.HyperlinkParameter,#BasicHome.B1.1.HyperlinkParameter,#BasicHome.B2.1.HyperlinkParameter,#BasicHome.B3.1.HyperlinkParameter,#BasicHome.B4.1.HyperlinkParameter,#BasicHome.B5.1.HyperlinkParameter,#BasicHome.B6.1.HyperlinkParameter,#BasicHome.7.1.HyperlinkParameter,#BasicHome.B8.1.HyperlinkParameter,#BasicHome.B9.1.HyperlinkParameter))</hyperlinkParameter>
-        -->
-                <visible>control.isvisible(10001)+[[control.isvisible(1100)+!string.equals(#BasicHome.B0.1.Label,)]|[control.isvisible(1101)+!string.equals(#BasicHome.B1.1.Label,)]|[control.isvisible(1102)+!string.equals(#BasicHome.B2.1.Label,)]|[control.isvisible(1103)+!string.equals(#BasicHome.B3.1.Label,)]|[control.isvisible(1104)+!string.equals(#BasicHome.B4.1.Label,)]|[control.isvisible(1105)+!string.equals(#BasicHome.B5.1.Label,)]|[control.isvisible(1106)+!string.equals(#BasicHome.B6.1.Label,)]|[control.isvisible(1107)+!string.equals(#BasicHome.B7.1.Label,)]|[control.isvisible(1108)+!string.equals(#BasicHome.B8.1.Label,)]|[control.isvisible(1109)+!string.equals(#BasicHome.B9.1.Label,)]]</visible>
+                <label>#BasicHome.B0.1.Label</label>
+                <hyperlink>#ref_B0.1.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B0.1.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B0.1.Label,)</visible>
                 <onup>10100</onup>
                 <ondown>10102</ondown>
+                <onleft>1000</onleft>
+                <onright>1001</onright>
+                <animation effect="slide" delay="120" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="020" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="120" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="020" time="200" end="0" easing="inout">Hidden</animation>
             </control>
             <control Style="subMenuStyle">
                 <type>button</type>
                 <id>10102</id>
-                <label>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.2.Label,#BasicHome.B1.2.Label,#BasicHome.B2.2.Label,#BasicHome.B3.2.Label,#BasicHome.B4.2.Label,#BasicHome.B5.2.Label,#BasicHome.B6.2.Label,#BasicHome.7.2.Label,#BasicHome.B8.2.Label,#BasicHome.B9.2.Label))</label>
-                <!--    <hyperlink>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.2.Hyperlink,#BasicHome.B1.2.Hyperlink,#BasicHome.B2.2.Hyperlink,#BasicHome.B3.2.Hyperlink,#BasicHome.B4.2.Hyperlink,#BasicHome.B5.2.Hyperlink,#BasicHome.B6.2.Hyperlink,#BasicHome.7.2.Hyperlink,#BasicHome.B8.2.Hyperlink,#BasicHome.B9.2.Hyperlink))</hyperlink>
-            <hyperlinkParameter>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.2.HyperlinkParameter,#BasicHome.B1.2.HyperlinkParameter,#BasicHome.B2.2.HyperlinkParameter,#BasicHome.B3.2.HyperlinkParameter,#BasicHome.B4.2.HyperlinkParameter,#BasicHome.B5.2.HyperlinkParameter,#BasicHome.B6.2.HyperlinkParameter,#BasicHome.7.2.HyperlinkParameter,#BasicHome.B8.2.HyperlinkParameter,#BasicHome.B9.2.HyperlinkParameter))</hyperlinkParameter>
-        -->
-                <visible>control.isvisible(10001)+[[control.isvisible(1100)+!string.equals(#BasicHome.B0.2.Label,)]|[control.isvisible(1101)+!string.equals(#BasicHome.B1.2.Label,)]|[control.isvisible(1102)+!string.equals(#BasicHome.B2.2.Label,)]|[control.isvisible(1103)+!string.equals(#BasicHome.B3.2.Label,)]|[control.isvisible(1104)+!string.equals(#BasicHome.B4.2.Label,)]|[control.isvisible(1105)+!string.equals(#BasicHome.B5.2.Label,)]|[control.isvisible(1106)+!string.equals(#BasicHome.B6.2.Label,)]|[control.isvisible(1107)+!string.equals(#BasicHome.B7.2.Label,)]|[control.isvisible(1108)+!string.equals(#BasicHome.B8.2.Label,)]|[control.isvisible(1109)+!string.equals(#BasicHome.B9.2.Label,)]]</visible>
+                <label>#BasicHome.B0.2.Label</label>
+                <hyperlink>#ref_B0.2.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B0.2.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B0.2.Label,)</visible>
                 <onup>10101</onup>
                 <ondown>10103</ondown>
+                <onleft>1000</onleft>
+                <onright>1001</onright>
+                <animation effect="slide" delay="140" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="040" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="140" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="040" time="200" end="0" easing="inout">Hidden</animation>
             </control>
             <control Style="subMenuStyle">
                 <type>button</type>
                 <id>10103</id>
-                <label>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.3.Label,#BasicHome.B1.3.Label,#BasicHome.B2.3.Label,#BasicHome.B3.3.Label,#BasicHome.B4.3.Label,#BasicHome.B5.3.Label,#BasicHome.B6.3.Label,#BasicHome.7.3.Label,#BasicHome.B8.3.Label,#BasicHome.B9.3.Label))</label>
-                <!--    <hyperlink>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.3.Hyperlink,#BasicHome.B1.3.Hyperlink,#BasicHome.B2.3.Hyperlink,#BasicHome.B3.3.Hyperlink,#BasicHome.B4.3.Hyperlink,#BasicHome.B5.3.Hyperlink,#BasicHome.B6.3.Hyperlink,#BasicHome.7.3.Hyperlink,#BasicHome.B8.3.Hyperlink,#BasicHome.B9.3.Hyperlink))</hyperlink>
-            <hyperlinkParameter>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.3.HyperlinkParameter,#BasicHome.B1.3.HyperlinkParameter,#BasicHome.B2.3.HyperlinkParameter,#BasicHome.B3.3.HyperlinkParameter,#BasicHome.B4.3.HyperlinkParameter,#BasicHome.B5.3.HyperlinkParameter,#BasicHome.B6.3.HyperlinkParameter,#BasicHome.7.3.HyperlinkParameter,#BasicHome.B8.3.HyperlinkParameter,#BasicHome.B9.3.HyperlinkParameter))</hyperlinkParameter>
-        -->
-                <visible>control.isvisible(10001)+[[control.isvisible(1100)+!string.equals(#BasicHome.B0.3.Label,)]|[control.isvisible(1101)+!string.equals(#BasicHome.B1.3.Label,)]|[control.isvisible(1102)+!string.equals(#BasicHome.B2.3.Label,)]|[control.isvisible(1103)+!string.equals(#BasicHome.B3.3.Label,)]|[control.isvisible(1104)+!string.equals(#BasicHome.B4.3.Label,)]|[control.isvisible(1105)+!string.equals(#BasicHome.B5.3.Label,)]|[control.isvisible(1106)+!string.equals(#BasicHome.B6.3.Label,)]|[control.isvisible(1107)+!string.equals(#BasicHome.B7.3.Label,)]|[control.isvisible(1108)+!string.equals(#BasicHome.B8.3.Label,)]|[control.isvisible(1109)+!string.equals(#BasicHome.B9.3.Label,)]]</visible>
+                <label>#BasicHome.B0.3.Label</label>
+                <hyperlink>#ref_B0.3.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B0.3.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B0.3.Label,)</visible>
                 <onup>10102</onup>
                 <ondown>10104</ondown>
+                <onleft>1000</onleft>
+                <onright>1001</onright>
+                <animation effect="slide" delay="160" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="060" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="160" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="060" time="200" end="0" easing="inout">Hidden</animation>
             </control>
             <control Style="subMenuStyle">
                 <type>button</type>
                 <id>10104</id>
-                <label>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.4.Label,#BasicHome.B1.4.Label,#BasicHome.B2.4.Label,#BasicHome.B3.4.Label,#BasicHome.B4.4.Label,#BasicHome.B5.4.Label,#BasicHome.B6.4.Label,#BasicHome.7.4.Label,#BasicHome.B8.4.Label,#BasicHome.B9.4.Label))</label>
-                <!--    <hyperlink>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.4.Hyperlink,#BasicHome.B1.4.Hyperlink,#BasicHome.B2.4.Hyperlink,#BasicHome.B3.4.Hyperlink,#BasicHome.B4.4.Hyperlink,#BasicHome.B5.4.Hyperlink,#BasicHome.B6.4.Hyperlink,#BasicHome.7.4.Hyperlink,#BasicHome.B8.4.Hyperlink,#BasicHome.B9.4.Hyperlink))</hyperlink>
-            <hyperlinkParameter>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.4.HyperlinkParameter,#BasicHome.B1.4.HyperlinkParameter,#BasicHome.B2.4.HyperlinkParameter,#BasicHome.B3.4.HyperlinkParameter,#BasicHome.B4.4.HyperlinkParameter,#BasicHome.B5.4.HyperlinkParameter,#BasicHome.B6.4.HyperlinkParameter,#BasicHome.7.4.HyperlinkParameter,#BasicHome.B8.4.HyperlinkParameter,#BasicHome.B9.4.HyperlinkParameter))</hyperlinkParameter>
-        -->
-                <visible>control.isvisible(10001)+[[control.isvisible(1100)+!string.equals(#BasicHome.B0.4.Label,)]|[control.isvisible(1101)+!string.equals(#BasicHome.B1.4.Label,)]|[control.isvisible(1102)+!string.equals(#BasicHome.B2.4.Label,)]|[control.isvisible(1103)+!string.equals(#BasicHome.B3.4.Label,)]|[control.isvisible(1104)+!string.equals(#BasicHome.B4.4.Label,)]|[control.isvisible(1105)+!string.equals(#BasicHome.B5.4.Label,)]|[control.isvisible(1106)+!string.equals(#BasicHome.B6.4.Label,)]|[control.isvisible(1107)+!string.equals(#BasicHome.B7.4.Label,)]|[control.isvisible(1108)+!string.equals(#BasicHome.B8.4.Label,)]|[control.isvisible(1109)+!string.equals(#BasicHome.B9.4.Label,)]]</visible>
+                <label>#BasicHome.B0.4.Label</label>
+                <hyperlink>#ref_B0.4.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B0.4.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B0.4.Label,)</visible>
                 <onup>10103</onup>
                 <ondown>10105</ondown>
+                <onleft>1000</onleft>
+                <onright>1001</onright>
+                <animation effect="slide" delay="180" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="080" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="180" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="080" time="200" end="0" easing="inout">Hidden</animation>
             </control>
             <control Style="subMenuStyle">
                 <type>button</type>
                 <id>10105</id>
-                <label>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.5.Label,#BasicHome.B1.5.Label,#BasicHome.B2.5.Label,#BasicHome.B3.5.Label,#BasicHome.B4.5.Label,#BasicHome.B5.5.Label,#BasicHome.B6.5.Label,#BasicHome.7.5.Label,#BasicHome.B8.5.Label,#BasicHome.B9.5.Label))</label>
-                <!--    <hyperlink>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.5.Hyperlink,#BasicHome.B1.5.Hyperlink,#BasicHome.B2.5.Hyperlink,#BasicHome.B3.5.Hyperlink,#BasicHome.B4.5.Hyperlink,#BasicHome.B5.5.Hyperlink,#BasicHome.B6.5.Hyperlink,#BasicHome.7.5.Hyperlink,#BasicHome.B8.5.Hyperlink,#BasicHome.B9.5.Hyperlink))</hyperlink>
-            <hyperlinkParameter>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.5.HyperlinkParameter,#BasicHome.B1.5.HyperlinkParameter,#BasicHome.B2.5.HyperlinkParameter,#BasicHome.B3.5.HyperlinkParameter,#BasicHome.B4.5.HyperlinkParameter,#BasicHome.B5.5.HyperlinkParameter,#BasicHome.B6.5.HyperlinkParameter,#BasicHome.7.5.HyperlinkParameter,#BasicHome.B8.5.HyperlinkParameter,#BasicHome.B9.5.HyperlinkParameter))</hyperlinkParameter>
-        -->
-                <visible>control.isvisible(10001)+[[control.isvisible(1100)+!string.equals(#BasicHome.B0.5.Label,)]|[control.isvisible(1101)+!string.equals(#BasicHome.B1.5.Label,)]|[control.isvisible(1102)+!string.equals(#BasicHome.B2.5.Label,)]|[control.isvisible(1103)+!string.equals(#BasicHome.B3.5.Label,)]|[control.isvisible(1104)+!string.equals(#BasicHome.B4.5.Label,)]|[control.isvisible(1105)+!string.equals(#BasicHome.B5.5.Label,)]|[control.isvisible(1106)+!string.equals(#BasicHome.B6.5.Label,)]|[control.isvisible(1107)+!string.equals(#BasicHome.B7.5.Label,)]|[control.isvisible(1108)+!string.equals(#BasicHome.B8.5.Label,)]|[control.isvisible(1109)+!string.equals(#BasicHome.B9.5.Label,)]]</visible>
+                <label>#BasicHome.B0.5.Label</label>
+                <hyperlink>#ref_B0.5.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B0.5.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B0.5.Label,)</visible>
                 <onup>10104</onup>
                 <ondown>10106</ondown>
+                <onleft>1000</onleft>
+                <onright>1001</onright>
+                <animation effect="slide" delay="200" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="100" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="200" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="100" time="200" end="0" easing="inout">Hidden</animation>
             </control>
             <control Style="subMenuStyle">
                 <type>button</type>
                 <id>10106</id>
-                <label>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.6.Label,#BasicHome.B1.6.Label,#BasicHome.B2.6.Label,#BasicHome.B3.6.Label,#BasicHome.B4.6.Label,#BasicHome.B5.6.Label,#BasicHome.B6.6.Label,#BasicHome.7.6.Label,#BasicHome.B8.6.Label,#BasicHome.B9.6.Label))</label>
-                <!--    <hyperlink>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.6.Hyperlink,#BasicHome.B1.6.Hyperlink,#BasicHome.B2.6.Hyperlink,#BasicHome.B3.6.Hyperlink,#BasicHome.B4.6.Hyperlink,#BasicHome.B5.6.Hyperlink,#BasicHome.B6.6.Hyperlink,#BasicHome.7.6.Hyperlink,#BasicHome.B8.6.Hyperlink,#BasicHome.B9.6.Hyperlink))</hyperlink>
-            <hyperlinkParameter>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.6.HyperlinkParameter,#BasicHome.B1.6.HyperlinkParameter,#BasicHome.B2.6.HyperlinkParameter,#BasicHome.B3.6.HyperlinkParameter,#BasicHome.B4.6.HyperlinkParameter,#BasicHome.B5.6.HyperlinkParameter,#BasicHome.B6.6.HyperlinkParameter,#BasicHome.7.6.HyperlinkParameter,#BasicHome.B8.6.HyperlinkParameter,#BasicHome.B9.6.HyperlinkParameter))</hyperlinkParameter>
-        -->
-                <visible>control.isvisible(10001)+[[control.isvisible(1100)+!string.equals(#BasicHome.B0.6.Label,)]|[control.isvisible(1101)+!string.equals(#BasicHome.B1.6.Label,)]|[control.isvisible(1102)+!string.equals(#BasicHome.B2.6.Label,)]|[control.isvisible(1103)+!string.equals(#BasicHome.B3.6.Label,)]|[control.isvisible(1104)+!string.equals(#BasicHome.B4.6.Label,)]|[control.isvisible(1105)+!string.equals(#BasicHome.B5.6.Label,)]|[control.isvisible(1106)+!string.equals(#BasicHome.B6.6.Label,)]|[control.isvisible(1107)+!string.equals(#BasicHome.B7.6.Label,)]|[control.isvisible(1108)+!string.equals(#BasicHome.B8.6.Label,)]|[control.isvisible(1109)+!string.equals(#BasicHome.B9.6.Label,)]]</visible>
+                <label>#BasicHome.B0.6.Label</label>
+                <hyperlink>#ref_B0.6.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B0.6.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B0.6.Label,)</visible>
                 <onup>10105</onup>
                 <ondown>10107</ondown>
+                <onleft>1000</onleft>
+                <onright>1001</onright>
+                <animation effect="slide" delay="220" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="120" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="220" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="120" time="200" end="0" easing="inout">Hidden</animation>
             </control>
             <control Style="subMenuStyle">
                 <type>button</type>
                 <id>10107</id>
-                <label>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.7.Label,#BasicHome.B1.7.Label,#BasicHome.B2.7.Label,#BasicHome.B3.7.Label,#BasicHome.B4.7.Label,#BasicHome.B5.7.Label,#BasicHome.B6.7.Label,#BasicHome.7.7.Label,#BasicHome.B8.7.Label,#BasicHome.B9.7.Label))</label>
-                <!--    <hyperlink>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.7.Hyperlink,#BasicHome.B1.7.Hyperlink,#BasicHome.B2.7.Hyperlink,#BasicHome.B3.7.Hyperlink,#BasicHome.B4.7.Hyperlink,#BasicHome.B5.7.Hyperlink,#BasicHome.B6.7.Hyperlink,#BasicHome.7.7.Hyperlink,#BasicHome.B8.7.Hyperlink,#BasicHome.B9.7.Hyperlink))</hyperlink>
-            <hyperlinkParameter>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.7.HyperlinkParameter,#BasicHome.B1.7.HyperlinkParameter,#BasicHome.B2.7.HyperlinkParameter,#BasicHome.B3.7.HyperlinkParameter,#BasicHome.B4.7.HyperlinkParameter,#BasicHome.B5.7.HyperlinkParameter,#BasicHome.B6.7.HyperlinkParameter,#BasicHome.7.7.HyperlinkParameter,#BasicHome.B8.7.HyperlinkParameter,#BasicHome.B9.7.HyperlinkParameter))</hyperlinkParameter>
-        -->
-                <visible>control.isvisible(10001)+[[control.isvisible(1100)+!string.equals(#BasicHome.B0.7.Label,)]|[control.isvisible(1101)+!string.equals(#BasicHome.B1.7.Label,)]|[control.isvisible(1102)+!string.equals(#BasicHome.B2.7.Label,)]|[control.isvisible(1103)+!string.equals(#BasicHome.B3.7.Label,)]|[control.isvisible(1104)+!string.equals(#BasicHome.B4.7.Label,)]|[control.isvisible(1105)+!string.equals(#BasicHome.B5.7.Label,)]|[control.isvisible(1106)+!string.equals(#BasicHome.B6.7.Label,)]|[control.isvisible(1107)+!string.equals(#BasicHome.B7.7.Label,)]|[control.isvisible(1108)+!string.equals(#BasicHome.B8.7.Label,)]|[control.isvisible(1109)+!string.equals(#BasicHome.B9.7.Label,)]]</visible>
+                <label>#BasicHome.B0.7.Label</label>
+                <hyperlink>#ref_B0.7.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B0.7.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B0.7.Label,)</visible>
                 <onup>10106</onup>
                 <ondown>10108</ondown>
+                <onleft>1000</onleft>
+                <onright>1001</onright>
+                <animation effect="slide" delay="240" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="140" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="240" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="140" time="200" end="0" easing="inout">Hidden</animation>
             </control>
             <control Style="subMenuStyle">
                 <type>button</type>
                 <id>10108</id>
-                <label>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.8.Label,#BasicHome.B1.8.Label,#BasicHome.B2.8.Label,#BasicHome.B3.8.Label,#BasicHome.B4.8.Label,#BasicHome.B5.8.Label,#BasicHome.B6.8.Label,#BasicHome.7.8.Label,#BasicHome.B8.8.Label,#BasicHome.B9.8.Label))</label>
-                <!--    <hyperlink>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.8.Hyperlink,#BasicHome.B1.8.Hyperlink,#BasicHome.B2.8.Hyperlink,#BasicHome.B3.8.Hyperlink,#BasicHome.B4.8.Hyperlink,#BasicHome.B5.8.Hyperlink,#BasicHome.B6.8.Hyperlink,#BasicHome.7.8.Hyperlink,#BasicHome.B8.8.Hyperlink,#BasicHome.B9.8.Hyperlink))</hyperlink>
-            <hyperlinkParameter>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.8.HyperlinkParameter,#BasicHome.B1.8.HyperlinkParameter,#BasicHome.B2.8.HyperlinkParameter,#BasicHome.B3.8.HyperlinkParameter,#BasicHome.B4.8.HyperlinkParameter,#BasicHome.B5.8.HyperlinkParameter,#BasicHome.B6.8.HyperlinkParameter,#BasicHome.7.8.HyperlinkParameter,#BasicHome.B8.8.HyperlinkParameter,#BasicHome.B9.8.HyperlinkParameter))</hyperlinkParameter>
-        -->
-                <visible>control.isvisible(10001)+[[control.isvisible(1100)+!string.equals(#BasicHome.B0.8.Label,)]|[control.isvisible(1101)+!string.equals(#BasicHome.B1.8.Label,)]|[control.isvisible(1102)+!string.equals(#BasicHome.B2.8.Label,)]|[control.isvisible(1103)+!string.equals(#BasicHome.B3.8.Label,)]|[control.isvisible(1104)+!string.equals(#BasicHome.B4.8.Label,)]|[control.isvisible(1105)+!string.equals(#BasicHome.B5.8.Label,)]|[control.isvisible(1106)+!string.equals(#BasicHome.B6.8.Label,)]|[control.isvisible(1107)+!string.equals(#BasicHome.B7.8.Label,)]|[control.isvisible(1108)+!string.equals(#BasicHome.B8.8.Label,)]|[control.isvisible(1109)+!string.equals(#BasicHome.B9.8.Label,)]]</visible>
+                <label>#BasicHome.B0.8.Label</label>
+                <hyperlink>#ref_B0.8.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B0.8.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B0.8.Label,)</visible>
                 <onup>10107</onup>
                 <ondown>10109</ondown>
+                <onleft>1000</onleft>
+                <onright>1001</onright>
+                <animation effect="slide" delay="260" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="160" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="260" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="160" time="200" end="0" easing="inout">Hidden</animation>
             </control>
             <control Style="subMenuStyle">
                 <type>button</type>
                 <id>10109</id>
-                <label>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.9.Label,#BasicHome.B1.9.Label,#BasicHome.B2.9.Label,#BasicHome.B3.9.Label,#BasicHome.B4.9.Label,#BasicHome.B5.9.Label,#BasicHome.B6.9.Label,#BasicHome.7.9.Label,#BasicHome.B8.9.Label,#BasicHome.B9.9.Label))</label>
-                <!--    <hyperlink>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.9.Hyperlink,#BasicHome.B1.9.Hyperlink,#BasicHome.B2.9.Hyperlink,#BasicHome.B3.9.Hyperlink,#BasicHome.B4.9.Hyperlink,#BasicHome.B5.9.Hyperlink,#BasicHome.B6.9.Hyperlink,#BasicHome.7.9.Hyperlink,#BasicHome.B8.9.Hyperlink,#BasicHome.B9.9.Hyperlink))</hyperlink>
-            <hyperlinkParameter>#(choose(cint(#BasicHome.Current.ID),#BasicHome.B0.9.HyperlinkParameter,#BasicHome.B1.9.HyperlinkParameter,#BasicHome.B2.9.HyperlinkParameter,#BasicHome.B3.9.HyperlinkParameter,#BasicHome.B4.9.HyperlinkParameter,#BasicHome.B5.9.HyperlinkParameter,#BasicHome.B6.9.HyperlinkParameter,#BasicHome.7.9.HyperlinkParameter,#BasicHome.B8.9.HyperlinkParameter,#BasicHome.B9.9.HyperlinkParameter))</hyperlinkParameter>
-        -->
-                <visible>control.isvisible(10001)+[[control.isvisible(1100)+!string.equals(#BasicHome.B0.9.Label,)]|[control.isvisible(1101)+!string.equals(#BasicHome.B1.9.Label,)]|[control.isvisible(1102)+!string.equals(#BasicHome.B2.9.Label,)]|[control.isvisible(1103)+!string.equals(#BasicHome.B3.9.Label,)]|[control.isvisible(1104)+!string.equals(#BasicHome.B4.9.Label,)]|[control.isvisible(1105)+!string.equals(#BasicHome.B5.9.Label,)]|[control.isvisible(1106)+!string.equals(#BasicHome.B6.9.Label,)]|[control.isvisible(1107)+!string.equals(#BasicHome.B7.9.Label,)]|[control.isvisible(1108)+!string.equals(#BasicHome.B8.9.Label,)]|[control.isvisible(1109)+!string.equals(#BasicHome.B9.9.Label,)]]</visible>
+                <label>#BasicHome.B0.9.Label</label>
+                <hyperlink>#ref_B0.9.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B0.9.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B0.9.Label,)</visible>
                 <onup>10108</onup>
-                <ondown>10000</ondown>
+                <ondown>1000</ondown>
+                <onleft>1000</onleft>
+                <onright>1001</onright>
+                <animation effect="slide" delay="280" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="180" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="280" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="180" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+        </control>
+        <control>
+            <description>Sub Menu 2</description>
+            <type>group</type>
+            <layout>StackLayout(Vertical,10,false)</layout>
+            <posX>0</posX>
+            <posY>200</posY>
+            <width>780</width>
+            <height>530</height>
+            <visible>control.isvisible(10001)+string.equals(#BasicHome.Current.ID,1)</visible>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10110</id>
+                <label>#BasicHome.B1.0.Label</label>
+                <hyperlink>#ref_B1.0.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B1.0.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B1.0.Label,)</visible>
+                <onup>1001</onup>
+                <ondown>10111</ondown>
+                <onleft>1000</onleft>
+                <onright>1002</onright>
+                <animation effect="slide" delay="100" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="000" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="100" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="000" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10111</id>
+                <label>#BasicHome.B1.1.Label</label>
+                <hyperlink>#ref_B1.1.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B1.1.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B1.1.Label,)</visible>
+                <onup>10110</onup>
+                <ondown>10112</ondown>
+                <onleft>1000</onleft>
+                <onright>1002</onright>
+                <animation effect="slide" delay="120" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="020" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="120" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="020" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10112</id>
+                <label>#BasicHome.B1.2.Label</label>
+                <hyperlink>#ref_B1.2.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B1.2.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B1.2.Label,)</visible>
+                <onup>10111</onup>
+                <ondown>10113</ondown>
+                <onleft>1000</onleft>
+                <onright>1002</onright>
+                <animation effect="slide" delay="140" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="020" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="140" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="040" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10113</id>
+                <label>#BasicHome.B1.3.Label</label>
+                <hyperlink>#ref_B1.3.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B1.3.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B1.3.Label,)</visible>
+                <onup>10112</onup>
+                <ondown>10114</ondown>
+                <onleft>1000</onleft>
+                <onright>1002</onright>
+                <animation effect="slide" delay="160" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="060" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="160" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="060" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10114</id>
+                <label>#BasicHome.B1.4.Label</label>
+                <hyperlink>#ref_B1.4.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B1.4.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B1.4.Label,)</visible>
+                <onup>10113</onup>
+                <ondown>10115</ondown>
+                <onleft>1000</onleft>
+                <onright>1002</onright>
+                <animation effect="slide" delay="180" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="080" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="180" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="080" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10115</id>
+                <label>#BasicHome.B1.5.Label</label>
+                <hyperlink>#ref_B1.5.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B1.5.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B1.5.Label,)</visible>
+                <onup>10114</onup>
+                <ondown>10116</ondown>
+                <onleft>1000</onleft>
+                <onright>1002</onright>
+                <animation effect="slide" delay="200" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="100" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="200" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="100" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10116</id>
+                <label>#BasicHome.B1.6.Label</label>
+                <hyperlink>#ref_B1.6.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B1.6.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B1.6.Label,)</visible>
+                <onup>10115</onup>
+                <ondown>10117</ondown>
+                <onleft>1000</onleft>
+                <onright>1002</onright>
+                <animation effect="slide" delay="220" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="120" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="220" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="120" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10117</id>
+                <label>#BasicHome.B1.7.Label</label>
+                <hyperlink>#ref_B1.7.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B1.7.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B1.7.Label,)</visible>
+                <onup>10116</onup>
+                <ondown>10118</ondown>
+                <onleft>1000</onleft>
+                <onright>1002</onright>
+                <animation effect="slide" delay="240" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="140" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="240" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="140" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10118</id>
+                <label>#BasicHome.B1.8.Label</label>
+                <hyperlink>#ref_B1.8.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B1.8.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B1.8.Label,)</visible>
+                <onup>10117</onup>
+                <ondown>10119</ondown>
+                <onleft>1000</onleft>
+                <onright>1002</onright>
+                <animation effect="slide" delay="260" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="160" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="260" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="160" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10119</id>
+                <label>#BasicHome.B1.9.Label</label>
+                <hyperlink>#ref_B1.9.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B1.9.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B1.9.Label,)</visible>
+                <onup>10118</onup>
+                <ondown>1001</ondown>
+                <onleft>1000</onleft>
+                <onright>1002</onright>
+                <animation effect="slide" delay="280" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="180" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="280" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="180" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+        </control>
+        <control>
+            <description>Sub Menu 3</description>
+            <type>group</type>
+            <layout>StackLayout(Vertical,10,false)</layout>
+            <posX>0</posX>
+            <posY>200</posY>
+            <width>800</width>
+            <height>530</height>
+            <visible>control.isvisible(10001)+string.equals(#BasicHome.Current.ID,2)</visible>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10120</id>
+                <label>#BasicHome.B2.0.Label</label>
+                <hyperlink>#ref_B2.0.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B2.0.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B2.0.Label,)</visible>
+                <onup>1002</onup>
+                <ondown>10121</ondown>
+                <onleft>1001</onleft>
+                <onright>1003</onright>
+                <animation effect="slide" delay="100" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="000" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="100" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="000" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10121</id>
+                <label>#BasicHome.B2.1.Label</label>
+                <hyperlink>#ref_B2.1.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B2.1.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B2.1.Label,)</visible>
+                <onup>10120</onup>
+                <ondown>10122</ondown>
+                <onleft>1001</onleft>
+                <onright>1003</onright>
+                <animation effect="slide" delay="120" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="020" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="120" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="020" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10122</id>
+                <label>#BasicHome.B2.2.Label</label>
+                <hyperlink>#ref_B2.2.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B2.2.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B2.2.Label,)</visible>
+                <onup>10121</onup>
+                <ondown>10123</ondown>
+                <onleft>1001</onleft>
+                <onright>1003</onright>
+                <animation effect="slide" delay="140" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="020" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="140" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="040" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10123</id>
+                <label>#BasicHome.B2.3.Label</label>
+                <hyperlink>#ref_B2.3.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B2.3.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B2.3.Label,)</visible>
+                <onup>10122</onup>
+                <ondown>10124</ondown>
+                <onleft>1001</onleft>
+                <onright>1003</onright>
+                <animation effect="slide" delay="160" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="060" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="160" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="060" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10124</id>
+                <label>#BasicHome.B2.4.Label</label>
+                <hyperlink>#ref_B2.4.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B2.4.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B2.4.Label,)</visible>
+                <onup>10123</onup>
+                <ondown>10125</ondown>
+                <onleft>1001</onleft>
+                <onright>1003</onright>
+                <animation effect="slide" delay="180" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="080" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="180" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="080" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10125</id>
+                <label>#BasicHome.B2.5.Label</label>
+                <hyperlink>#ref_B2.5.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B2.5.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B2.5.Label,)</visible>
+                <onup>10124</onup>
+                <ondown>10126</ondown>
+                <onleft>1001</onleft>
+                <onright>1003</onright>
+                <animation effect="slide" delay="200" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="100" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="200" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="100" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10126</id>
+                <label>#BasicHome.B2.6.Label</label>
+                <hyperlink>#ref_B2.6.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B2.6.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B2.6.Label,)</visible>
+                <onup>10125</onup>
+                <ondown>10127</ondown>
+                <onleft>1001</onleft>
+                <onright>1003</onright>
+                <animation effect="slide" delay="220" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="120" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="220" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="120" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10127</id>
+                <label>#BasicHome.B2.7.Label</label>
+                <hyperlink>#ref_B2.7.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B2.7.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B2.7.Label,)</visible>
+                <onup>10126</onup>
+                <ondown>10128</ondown>
+                <onleft>1001</onleft>
+                <onright>1003</onright>
+                <animation effect="slide" delay="240" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="140" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="240" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="140" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10128</id>
+                <label>#BasicHome.B2.8.Label</label>
+                <hyperlink>#ref_B2.8.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B2.8.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B2.8.Label,)</visible>
+                <onup>10127</onup>
+                <ondown>10129</ondown>
+                <onleft>1001</onleft>
+                <onright>1003</onright>
+                <animation effect="slide" delay="260" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="160" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="260" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="160" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10129</id>
+                <label>#BasicHome.B2.9.Label</label>
+                <hyperlink>#ref_B2.9.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B2.9.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B2.9.Label,)</visible>
+                <onup>10128</onup>
+                <ondown>1002</ondown>
+                <onleft>1001</onleft>
+                <onright>1003</onright>
+                <animation effect="slide" delay="280" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="180" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="280" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="180" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+        </control>
+                <control>
+            <description>Sub Menu 4</description>
+            <type>group</type>
+            <layout>StackLayout(Vertical,10,false)</layout>
+            <posX>0</posX>
+            <posY>200</posY>
+            <width>780</width>
+            <height>530</height>
+            <visible>control.isvisible(10001)+string.equals(#BasicHome.Current.ID,3)</visible>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10130</id>
+                <label>#BasicHome.B3.0.Label</label>
+                <hyperlink>#ref_B3.0.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B3.0.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B3.0.Label,)</visible>
+                <onup>1003</onup>
+                <ondown>10131</ondown>
+                <onleft>1002</onleft>
+                <onright>1004</onright>
+                <animation effect="slide" delay="100" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="000" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="100" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="000" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10131</id>
+                <label>#BasicHome.B3.1.Label</label>
+                <hyperlink>#ref_B3.1.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B3.1.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B3.1.Label,)</visible>
+                <onup>10130</onup>
+                <ondown>10132</ondown>
+                <onleft>1002</onleft>
+                <onright>1004</onright>
+                <animation effect="slide" delay="120" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="020" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="120" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="020" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10132</id>
+                <label>#BasicHome.B3.2.Label</label>
+                <hyperlink>#ref_B3.2.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B3.2.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B3.2.Label,)</visible>
+                <onup>10131</onup>
+                <ondown>10133</ondown>
+                <onleft>1002</onleft>
+                <onright>1004</onright>
+                <animation effect="slide" delay="140" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="020" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="140" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="040" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10133</id>
+                <label>#BasicHome.B3.3.Label</label>
+                <hyperlink>#ref_B3.3.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B3.3.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B3.3.Label,)</visible>
+                <onup>10132</onup>
+                <ondown>10134</ondown>
+                <onleft>1002</onleft>
+                <onright>1004</onright>
+                <animation effect="slide" delay="160" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="060" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="160" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="060" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10134</id>
+                <label>#BasicHome.B3.4.Label</label>
+                <hyperlink>#ref_B3.4.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B3.4.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B3.4.Label,)</visible>
+                <onup>10133</onup>
+                <ondown>10135</ondown>
+                <onleft>1002</onleft>
+                <onright>1004</onright>
+                <animation effect="slide" delay="180" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="080" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="180" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="080" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10135</id>
+                <label>#BasicHome.B3.5.Label</label>
+                <hyperlink>#ref_B3.5.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B3.5.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B3.5.Label,)</visible>
+                <onup>10134</onup>
+                <ondown>10136</ondown>
+                <onleft>1002</onleft>
+                <onright>1004</onright>
+                <animation effect="slide" delay="200" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="100" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="200" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="100" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10136</id>
+                <label>#BasicHome.B3.6.Label</label>
+                <hyperlink>#ref_B3.6.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B3.6.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B3.6.Label,)</visible>
+                <onup>10135</onup>
+                <ondown>10137</ondown>
+                <onleft>1002</onleft>
+                <onright>1004</onright>
+                <animation effect="slide" delay="220" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="120" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="220" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="120" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10137</id>
+                <label>#BasicHome.B3.7.Label</label>
+                <hyperlink>#ref_B3.7.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B3.7.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B3.7.Label,)</visible>
+                <onup>10136</onup>
+                <ondown>10138</ondown>
+                <onleft>1002</onleft>
+                <onright>1004</onright>
+                <animation effect="slide" delay="240" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="140" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="240" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="140" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10138</id>
+                <label>#BasicHome.B3.8.Label</label>
+                <hyperlink>#ref_B3.8.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B3.8.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B3.8.Label,)</visible>
+                <onup>10137</onup>
+                <ondown>10139</ondown>
+                <onleft>1002</onleft>
+                <onright>1004</onright>
+                <animation effect="slide" delay="260" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="160" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="260" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="160" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10139</id>
+                <label>#BasicHome.B3.9.Label</label>
+                <hyperlink>#ref_B3.9.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B3.9.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B3.9.Label,)</visible>
+                <onup>10138</onup>
+                <ondown>1003</ondown>
+                <onleft>1002</onleft>
+                <onright>1004</onright>
+                <animation effect="slide" delay="280" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="180" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="280" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="180" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+        </control>
+                <control>
+            <description>Sub Menu 5</description>
+            <type>group</type>
+            <layout>StackLayout(Vertical,10,false)</layout>
+            <posX>0</posX>
+            <posY>200</posY>
+            <width>780</width>
+            <height>530</height>
+            <visible>control.isvisible(10001)+string.equals(#BasicHome.Current.ID,4)</visible>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10140</id>
+                <label>#BasicHome.B4.0.Label</label>
+                <hyperlink>#ref_B4.0.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B4.0.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B4.0.Label,)</visible>
+                <onup>1004</onup>
+                <ondown>10141</ondown>
+                <onleft>1003</onleft>
+                <onright>1005</onright>
+                <animation effect="slide" delay="100" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="000" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="100" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="000" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10141</id>
+                <label>#BasicHome.B4.1.Label</label>
+                <hyperlink>#ref_B4.1.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B4.1.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B4.1.Label,)</visible>
+                <onup>10140</onup>
+                <ondown>10142</ondown>
+                <onleft>1003</onleft>
+                <onright>1005</onright>
+                <animation effect="slide" delay="120" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="020" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="120" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="020" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10142</id>
+                <label>#BasicHome.B4.2.Label</label>
+                <hyperlink>#ref_B4.2.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B4.2.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B4.2.Label,)</visible>
+                <onup>10141</onup>
+                <ondown>10143</ondown>
+                <onleft>1003</onleft>
+                <onright>1005</onright>
+                <animation effect="slide" delay="140" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="020" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="140" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="040" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10143</id>
+                <label>#BasicHome.B4.3.Label</label>
+                <hyperlink>#ref_B4.3.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B4.3.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B4.3.Label,)</visible>
+                <onup>10142</onup>
+                <ondown>10144</ondown>
+                <onleft>1003</onleft>
+                <onright>1005</onright>
+                <animation effect="slide" delay="160" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="060" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="160" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="060" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10144</id>
+                <label>#BasicHome.B4.4.Label</label>
+                <hyperlink>#ref_B4.4.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B4.4.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B4.4.Label,)</visible>
+                <onup>10143</onup>
+                <ondown>10145</ondown>
+                <onleft>1003</onleft>
+                <onright>1005</onright>
+                <animation effect="slide" delay="180" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="080" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="180" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="080" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10145</id>
+                <label>#BasicHome.B4.5.Label</label>
+                <hyperlink>#ref_B4.5.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B4.5.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B4.5.Label,)</visible>
+                <onup>10144</onup>
+                <ondown>10146</ondown>
+                <onleft>1003</onleft>
+                <onright>1005</onright>
+                <animation effect="slide" delay="200" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="100" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="200" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="100" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10146</id>
+                <label>#BasicHome.B4.6.Label</label>
+                <hyperlink>#ref_B4.6.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B4.6.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B4.6.Label,)</visible>
+                <onup>10145</onup>
+                <ondown>10147</ondown>
+                <onleft>1003</onleft>
+                <onright>1005</onright>
+                <animation effect="slide" delay="220" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="120" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="220" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="120" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10147</id>
+                <label>#BasicHome.B4.7.Label</label>
+                <hyperlink>#ref_B4.7.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B4.7.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B4.7.Label,)</visible>
+                <onup>10146</onup>
+                <ondown>10148</ondown>
+                <onleft>1003</onleft>
+                <onright>1005</onright>
+                <animation effect="slide" delay="240" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="140" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="240" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="140" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10148</id>
+                <label>#BasicHome.B4.8.Label</label>
+                <hyperlink>#ref_B4.8.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B4.8.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B4.8.Label,)</visible>
+                <onup>10147</onup>
+                <ondown>10149</ondown>
+                <onleft>1003</onleft>
+                <onright>1005</onright>
+                <animation effect="slide" delay="260" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="160" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="260" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="160" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10149</id>
+                <label>#BasicHome.B4.9.Label</label>
+                <hyperlink>#ref_B4.9.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B4.9.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B4.9.Label,)</visible>
+                <onup>10148</onup>
+                <ondown>1004</ondown>
+                <onleft>1003</onleft>
+                <onright>1005</onright>
+                <animation effect="slide" delay="280" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="180" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="280" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="180" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+        </control>
+                <control>
+            <description>Sub Menu 6</description>
+            <type>group</type>
+            <layout>StackLayout(Vertical,10,false)</layout>
+            <posX>0</posX>
+            <posY>200</posY>
+            <width>780</width>
+            <height>530</height>
+            <visible>control.isvisible(10001)+string.equals(#BasicHome.Current.ID,5)</visible>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10150</id>
+                <label>#BasicHome.B5.0.Label</label>
+                <hyperlink>#ref_B5.0.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B5.0.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B5.0.Label,)</visible>
+                <onup>1005</onup>
+                <ondown>10151</ondown>
+                <onleft>1004</onleft>
+                <onright>1006</onright>
+                <animation effect="slide" delay="100" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="000" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="100" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="000" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10151</id>
+                <label>#BasicHome.B5.1.Label</label>
+                <hyperlink>#ref_B5.1.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B5.1.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B5.1.Label,)</visible>
+                <onup>10150</onup>
+                <ondown>10152</ondown>
+                <onleft>1004</onleft>
+                <onright>1006</onright>
+                <animation effect="slide" delay="120" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="020" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="120" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="020" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10152</id>
+                <label>#BasicHome.B5.2.Label</label>
+                <hyperlink>#ref_B5.2.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B5.2.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B5.2.Label,)</visible>
+                <onup>10151</onup>
+                <ondown>10153</ondown>
+                <onleft>1004</onleft>
+                <onright>1006</onright>
+                <animation effect="slide" delay="140" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="020" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="140" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="040" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10153</id>
+                <label>#BasicHome.B5.3.Label</label>
+                <hyperlink>#ref_B5.3.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B5.3.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B5.3.Label,)</visible>
+                <onup>10152</onup>
+                <ondown>10154</ondown>
+                <onleft>1004</onleft>
+                <onright>1006</onright>
+                <animation effect="slide" delay="160" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="060" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="160" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="060" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10154</id>
+                <label>#BasicHome.B5.4.Label</label>
+                <hyperlink>#ref_B5.4.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B5.4.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B5.4.Label,)</visible>
+                <onup>10153</onup>
+                <ondown>10155</ondown>
+                <onleft>1004</onleft>
+                <onright>1006</onright>
+                <animation effect="slide" delay="180" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="080" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="180" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="080" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10155</id>
+                <label>#BasicHome.B5.5.Label</label>
+                <hyperlink>#ref_B5.5.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B5.5.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B5.5.Label,)</visible>
+                <onup>10154</onup>
+                <ondown>10156</ondown>
+                <onleft>1004</onleft>
+                <onright>1006</onright>
+                <animation effect="slide" delay="200" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="100" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="200" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="100" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10156</id>
+                <label>#BasicHome.B5.6.Label</label>
+                <hyperlink>#ref_B5.6.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B5.6.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B5.6.Label,)</visible>
+                <onup>10155</onup>
+                <ondown>10157</ondown>
+                <onleft>1004</onleft>
+                <onright>1006</onright>
+                <animation effect="slide" delay="220" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="120" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="220" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="120" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10157</id>
+                <label>#BasicHome.B5.7.Label</label>
+                <hyperlink>#ref_B5.7.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B5.7.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B5.7.Label,)</visible>
+                <onup>10156</onup>
+                <ondown>10158</ondown>
+                <onleft>1004</onleft>
+                <onright>1006</onright>
+                <animation effect="slide" delay="240" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="140" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="240" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="140" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10158</id>
+                <label>#BasicHome.B5.8.Label</label>
+                <hyperlink>#ref_B5.8.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B5.8.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B5.8.Label,)</visible>
+                <onup>10157</onup>
+                <ondown>10159</ondown>
+                <onleft>1004</onleft>
+                <onright>1006</onright>
+                <animation effect="slide" delay="260" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="160" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="260" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="160" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10159</id>
+                <label>#BasicHome.B5.9.Label</label>
+                <hyperlink>#ref_B5.9.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B5.9.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B5.9.Label,)</visible>
+                <onup>10158</onup>
+                <ondown>1005</ondown>
+                <onleft>1004</onleft>
+                <onright>1006</onright>
+                <animation effect="slide" delay="280" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="180" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="280" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="180" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+        </control>
+                <control>
+            <description>Sub Menu 7</description>
+            <type>group</type>
+            <layout>StackLayout(Vertical,10,false)</layout>
+            <posX>0</posX>
+            <posY>200</posY>
+            <width>780</width>
+            <height>530</height>
+            <visible>control.isvisible(10001)+string.equals(#BasicHome.Current.ID,6)</visible>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10160</id>
+                <label>#BasicHome.B6.0.Label</label>
+                <hyperlink>#ref_B6.0.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B6.0.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B6.0.Label,)</visible>
+                <onup>1006</onup>
+                <ondown>10161</ondown>
+                <onleft>1005</onleft>
+                <onright>1007</onright>
+                <animation effect="slide" delay="100" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="000" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="100" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="000" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10161</id>
+                <label>#BasicHome.B6.1.Label</label>
+                <hyperlink>#ref_B6.1.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B6.1.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B6.1.Label,)</visible>
+                <onup>10160</onup>
+                <ondown>10162</ondown>
+                <onleft>1005</onleft>
+                <onright>1007</onright>
+                <animation effect="slide" delay="120" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="020" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="120" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="020" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10162</id>
+                <label>#BasicHome.B6.2.Label</label>
+                <hyperlink>#ref_B6.2.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B6.2.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B6.2.Label,)</visible>
+                <onup>10161</onup>
+                <ondown>10163</ondown>
+                <onleft>1005</onleft>
+                <onright>1007</onright>
+                <animation effect="slide" delay="140" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="020" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="140" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="040" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10163</id>
+                <label>#BasicHome.B6.3.Label</label>
+                <hyperlink>#ref_B6.3.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B6.3.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B6.3.Label,)</visible>
+                <onup>10162</onup>
+                <ondown>10164</ondown>
+                <onleft>1005</onleft>
+                <onright>1007</onright>
+                <animation effect="slide" delay="160" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="060" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="160" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="060" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10164</id>
+                <label>#BasicHome.B6.4.Label</label>
+                <hyperlink>#ref_B6.4.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B6.4.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B6.4.Label,)</visible>
+                <onup>10163</onup>
+                <ondown>10165</ondown>
+                <onleft>1005</onleft>
+                <onright>1007</onright>
+                <animation effect="slide" delay="180" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="080" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="180" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="080" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10165</id>
+                <label>#BasicHome.B6.5.Label</label>
+                <hyperlink>#ref_B6.5.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B6.5.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B6.5.Label,)</visible>
+                <onup>10164</onup>
+                <ondown>10166</ondown>
+                <onleft>1005</onleft>
+                <onright>1007</onright>
+                <animation effect="slide" delay="200" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="100" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="200" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="100" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10166</id>
+                <label>#BasicHome.B6.6.Label</label>
+                <hyperlink>#ref_B6.6.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B6.6.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B6.6.Label,)</visible>
+                <onup>10165</onup>
+                <ondown>10167</ondown>
+                <onleft>1005</onleft>
+                <onright>1007</onright>
+                <animation effect="slide" delay="220" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="120" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="220" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="120" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10167</id>
+                <label>#BasicHome.B6.7.Label</label>
+                <hyperlink>#ref_B6.7.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B6.7.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B6.7.Label,)</visible>
+                <onup>10166</onup>
+                <ondown>10168</ondown>
+                <onleft>1005</onleft>
+                <onright>1007</onright>
+                <animation effect="slide" delay="240" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="140" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="240" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="140" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10168</id>
+                <label>#BasicHome.B6.8.Label</label>
+                <hyperlink>#ref_B6.8.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B6.8.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B6.8.Label,)</visible>
+                <onup>10167</onup>
+                <ondown>10169</ondown>
+                <onleft>1005</onleft>
+                <onright>1007</onright>
+                <animation effect="slide" delay="260" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="160" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="260" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="160" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10169</id>
+                <label>#BasicHome.B6.9.Label</label>
+                <hyperlink>#ref_B6.9.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B6.9.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B6.9.Label,)</visible>
+                <onup>10168</onup>
+                <ondown>1006</ondown>
+                <onleft>1005</onleft>
+                <onright>1007</onright>
+                <animation effect="slide" delay="280" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="180" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="280" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="180" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+        </control>
+                <control>
+            <description>Sub Menu 8</description>
+            <type>group</type>
+            <layout>StackLayout(Vertical,10,false)</layout>
+            <posX>0</posX>
+            <posY>200</posY>
+            <width>780</width>
+            <height>530</height>
+            <visible>control.isvisible(10001)+string.equals(#BasicHome.Current.ID,7)</visible>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10170</id>
+                <label>#BasicHome.B7.0.Label</label>
+                <hyperlink>#ref_B7.0.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B7.0.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B7.0.Label,)</visible>
+                <onup>1007</onup>
+                <ondown>10171</ondown>
+                <onleft>1006</onleft>
+                <onright>1008</onright>
+                <animation effect="slide" delay="100" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="000" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="100" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="000" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10171</id>
+                <label>#BasicHome.B7.1.Label</label>
+                <hyperlink>#ref_B7.1.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B7.1.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B7.1.Label,)</visible>
+                <onup>10170</onup>
+                <ondown>10172</ondown>
+                <onleft>1006</onleft>
+                <onright>1008</onright>
+                <animation effect="slide" delay="120" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="020" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="120" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="020" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10172</id>
+                <label>#BasicHome.B7.2.Label</label>
+                <hyperlink>#ref_B7.2.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B7.2.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B7.2.Label,)</visible>
+                <onup>10171</onup>
+                <ondown>10173</ondown>
+                <onleft>1006</onleft>
+                <onright>1008</onright>
+                <animation effect="slide" delay="140" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="020" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="140" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="040" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10173</id>
+                <label>#BasicHome.B7.3.Label</label>
+                <hyperlink>#ref_B7.3.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B7.3.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B7.3.Label,)</visible>
+                <onup>10172</onup>
+                <ondown>10174</ondown>
+                <onleft>1006</onleft>
+                <onright>1008</onright>
+                <animation effect="slide" delay="160" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="060" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="160" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="060" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10174</id>
+                <label>#BasicHome.B7.4.Label</label>
+                <hyperlink>#ref_B7.4.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B7.4.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B7.4.Label,)</visible>
+                <onup>10173</onup>
+                <ondown>10175</ondown>
+                <onleft>1006</onleft>
+                <onright>1008</onright>
+                <animation effect="slide" delay="180" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="080" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="180" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="080" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10175</id>
+                <label>#BasicHome.B7.5.Label</label>
+                <hyperlink>#ref_B7.5.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B7.5.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B7.5.Label,)</visible>
+                <onup>10174</onup>
+                <ondown>10176</ondown>
+                <onleft>1006</onleft>
+                <onright>1008</onright>
+                <animation effect="slide" delay="200" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="100" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="200" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="100" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10176</id>
+                <label>#BasicHome.B7.6.Label</label>
+                <hyperlink>#ref_B7.6.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B7.6.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B7.6.Label,)</visible>
+                <onup>10175</onup>
+                <ondown>10177</ondown>
+                <onleft>1006</onleft>
+                <onright>1008</onright>
+                <animation effect="slide" delay="220" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="120" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="220" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="120" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10177</id>
+                <label>#BasicHome.B7.7.Label</label>
+                <hyperlink>#ref_B7.7.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B7.7.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B7.7.Label,)</visible>
+                <onup>10176</onup>
+                <ondown>10178</ondown>
+                <onleft>1006</onleft>
+                <onright>1008</onright>
+                <animation effect="slide" delay="240" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="140" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="240" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="140" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10178</id>
+                <label>#BasicHome.B7.8.Label</label>
+                <hyperlink>#ref_B7.8.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B7.8.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B7.8.Label,)</visible>
+                <onup>10177</onup>
+                <ondown>10179</ondown>
+                <onleft>1006</onleft>
+                <onright>1008</onright>
+                <animation effect="slide" delay="260" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="160" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="260" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="160" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10179</id>
+                <label>#BasicHome.B7.9.Label</label>
+                <hyperlink>#ref_B7.9.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B7.9.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B7.9.Label,)</visible>
+                <onup>10178</onup>
+                <ondown>1007</ondown>
+                <onleft>1006</onleft>
+                <onright>1008</onright>
+                <animation effect="slide" delay="280" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="180" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="280" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="180" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+        </control>
+                <control>
+            <description>Sub Menu 9</description>
+            <type>group</type>
+            <layout>StackLayout(Vertical,10,false)</layout>
+            <posX>0</posX>
+            <posY>200</posY>
+            <width>780</width>
+            <height>530</height>
+            <visible>control.isvisible(10001)+string.equals(#BasicHome.Current.ID,8)</visible>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10180</id>
+                <label>#BasicHome.B8.0.Label</label>
+                <hyperlink>#ref_B8.0.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B8.0.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B8.0.Label,)</visible>
+                <onup>1008</onup>
+                <ondown>10181</ondown>
+                <onleft>1007</onleft>
+                <onright>1009</onright>
+                <animation effect="slide" delay="100" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="000" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="100" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="000" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10181</id>
+                <label>#BasicHome.B8.1.Label</label>
+                <hyperlink>#ref_B8.1.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B8.1.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B8.1.Label,)</visible>
+                <onup>10180</onup>
+                <ondown>10182</ondown>
+                <onleft>1007</onleft>
+                <onright>1009</onright>
+                <animation effect="slide" delay="120" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="020" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="120" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="020" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10182</id>
+                <label>#BasicHome.B8.2.Label</label>
+                <hyperlink>#ref_B8.2.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B8.2.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B8.2.Label,)</visible>
+                <onup>10181</onup>
+                <ondown>10183</ondown>
+                <onleft>1007</onleft>
+                <onright>1009</onright>
+                <animation effect="slide" delay="140" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="020" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="140" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="040" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10183</id>
+                <label>#BasicHome.B8.3.Label</label>
+                <hyperlink>#ref_B8.3.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B8.3.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B8.3.Label,)</visible>
+                <onup>10182</onup>
+                <ondown>10184</ondown>
+                <onleft>1007</onleft>
+                <onright>1009</onright>
+                <animation effect="slide" delay="160" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="060" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="160" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="060" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10184</id>
+                <label>#BasicHome.B8.4.Label</label>
+                <hyperlink>#ref_B8.4.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B8.4.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B8.4.Label,)</visible>
+                <onup>10183</onup>
+                <ondown>10185</ondown>
+                <onleft>1007</onleft>
+                <onright>1009</onright>
+                <animation effect="slide" delay="180" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="080" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="180" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="080" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10185</id>
+                <label>#BasicHome.B8.5.Label</label>
+                <hyperlink>#ref_B8.5.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B8.5.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B8.5.Label,)</visible>
+                <onup>10184</onup>
+                <ondown>10186</ondown>
+                <onleft>1007</onleft>
+                <onright>1009</onright>
+                <animation effect="slide" delay="200" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="100" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="200" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="100" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10186</id>
+                <label>#BasicHome.B8.6.Label</label>
+                <hyperlink>#ref_B8.6.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B8.6.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B8.6.Label,)</visible>
+                <onup>10185</onup>
+                <ondown>10187</ondown>
+                <onleft>1007</onleft>
+                <onright>1009</onright>
+                <animation effect="slide" delay="220" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="120" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="220" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="120" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10187</id>
+                <label>#BasicHome.B8.7.Label</label>
+                <hyperlink>#ref_B8.7.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B8.7.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B8.7.Label,)</visible>
+                <onup>10186</onup>
+                <ondown>10188</ondown>
+                <onleft>1007</onleft>
+                <onright>1009</onright>
+                <animation effect="slide" delay="240" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="140" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="240" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="140" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10188</id>
+                <label>#BasicHome.B8.8.Label</label>
+                <hyperlink>#ref_B8.8.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B8.8.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B8.8.Label,)</visible>
+                <onup>10187</onup>
+                <ondown>10189</ondown>
+                <onleft>1007</onleft>
+                <onright>1009</onright>
+                <animation effect="slide" delay="260" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="160" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="260" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="160" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10189</id>
+                <label>#BasicHome.B8.9.Label</label>
+                <hyperlink>#ref_B8.9.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B8.9.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B8.9.Label,)</visible>
+                <onup>10188</onup>
+                <ondown>1008</ondown>
+                <onleft>1007</onleft>
+                <onright>1009</onright>
+                <animation effect="slide" delay="280" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="180" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="280" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="180" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+        </control>
+                <control>
+            <description>Sub Menu 10</description>
+            <type>group</type>
+            <layout>StackLayout(Vertical,10,false)</layout>
+            <posX>0</posX>
+            <posY>200</posY>
+            <width>780</width>
+            <height>530</height>
+            <visible>control.isvisible(10001)+string.equals(#BasicHome.Current.ID,9)</visible>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10190</id>
+                <label>#BasicHome.B9.0.Label</label>
+                <hyperlink>#ref_B9.0.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B9.0.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B9.0.Label,)</visible>
+                <onup>1009</onup>
+                <ondown>10191</ondown>
+                <onleft>1008</onleft>
+                <onright>1010</onright>
+                <animation effect="slide" delay="100" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="000" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="100" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="000" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10191</id>
+                <label>#BasicHome.B9.1.Label</label>
+                <hyperlink>#ref_B9.1.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B9.1.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B9.1.Label,)</visible>
+                <onup>10190</onup>
+                <ondown>10192</ondown>
+                <onleft>1008</onleft>
+                <onright>1010</onright>
+                <animation effect="slide" delay="120" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="020" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="120" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="020" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10192</id>
+                <label>#BasicHome.B9.2.Label</label>
+                <hyperlink>#ref_B9.2.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B9.2.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B9.2.Label,)</visible>
+                <onup>10191</onup>
+                <ondown>10193</ondown>
+                <onleft>1008</onleft>
+                <onright>1010</onright>
+                <animation effect="slide" delay="140" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="020" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="140" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="040" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10193</id>
+                <label>#BasicHome.B9.3.Label</label>
+                <hyperlink>#ref_B9.3.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B9.3.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B9.3.Label,)</visible>
+                <onup>10192</onup>
+                <ondown>10194</ondown>
+                <onleft>1008</onleft>
+                <onright>1010</onright>
+                <animation effect="slide" delay="160" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="060" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="160" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="060" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10194</id>
+                <label>#BasicHome.B9.4.Label</label>
+                <hyperlink>#ref_B9.4.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B9.4.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B9.4.Label,)</visible>
+                <onup>10193</onup>
+                <ondown>10195</ondown>
+                <onleft>1008</onleft>
+                <onright>1010</onright>
+                <animation effect="slide" delay="180" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="080" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="180" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="080" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10195</id>
+                <label>#BasicHome.B9.5.Label</label>
+                <hyperlink>#ref_B9.5.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B9.5.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B9.5.Label,)</visible>
+                <onup>10194</onup>
+                <ondown>10196</ondown>
+                <onleft>1008</onleft>
+                <onright>1010</onright>
+                <animation effect="slide" delay="200" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="100" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="200" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="100" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10196</id>
+                <label>#BasicHome.B9.6.Label</label>
+                <hyperlink>#ref_B9.6.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B9.6.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B9.6.Label,)</visible>
+                <onup>10195</onup>
+                <ondown>10197</ondown>
+                <onleft>1008</onleft>
+                <onright>1010</onright>
+                <animation effect="slide" delay="220" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="120" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="220" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="120" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10197</id>
+                <label>#BasicHome.B9.7.Label</label>
+                <hyperlink>#ref_B9.7.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B9.7.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B9.7.Label,)</visible>
+                <onup>10196</onup>
+                <ondown>10198</ondown>
+                <onleft>1008</onleft>
+                <onright>1010</onright>
+                <animation effect="slide" delay="240" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="140" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="240" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="140" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10198</id>
+                <label>#BasicHome.B9.8.Label</label>
+                <hyperlink>#ref_B9.8.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B9.8.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B9.8.Label,)</visible>
+                <onup>10197</onup>
+                <ondown>10199</ondown>
+                <onleft>1008</onleft>
+                <onright>1010</onright>
+                <animation effect="slide" delay="260" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="160" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="260" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="160" time="200" end="0" easing="inout">Hidden</animation>
+            </control>
+            <control Style="subMenuStyle">
+                <type>button</type>
+                <id>10199</id>
+                <label>#BasicHome.B9.9.Label</label>
+                <hyperlink>#ref_B9.9.Hyperlink</hyperlink>
+                <hyperlinkParameter>#BasicHome.B9.9.HyperlinkParameter</hyperlinkParameter>
+           
+                <visible>control.isvisible(10001)+!string.equals(#BasicHome.B9.9.Label,)</visible>
+                <onup>10198</onup>
+                <ondown>1009</ondown>
+                <onleft>1008</onleft>
+                <onright>1010</onright>
+                <animation effect="slide" delay="280" time="200" start="-40,0" easing="inout">Visible</animation>
+                <animation effect="slide" delay="180" time="200" end="-40,0" easing="inout">Hidden</animation>
+                <animation effect="fade"  delay="280" time="200" end="100" easing="inout">Visible</animation>
+                <animation effect="fade"  delay="180" time="200" end="0" easing="inout">Hidden</animation>
             </control>
         </control>
     </controls>

@@ -108,10 +108,10 @@
 
         <control Style="hiddenStyle">
             <type>label</type>
+            <posX>2000</posX>
             <id>5545</id>
             <label>#(switch(
                 eq(#currentplaytime,'0:00'),'Yes',
-                eq(#currentremaining,'0:05'),'Yes',
                 eq(#currentremaining,'0:04'),'Yes',
                 eq(#currentremaining,'0:03'),'Yes',
                 eq(#currentremaining,'0:02'),'Yes',
@@ -240,7 +240,7 @@
             <posY>205</posY>
             <width>250</width>
             <height>250</height>
-            <texture>..\..\..\Thumbs\CDArt\Music\#Play.Current.Artist - #Play.Current.Album.png</texture>
+            <texture>..\..\..\Thumbs\CDArt\Music\#(iif(eq(#Play.Current.AlbumArtist,''),#Play.Current.Artist,#Play.Current.AlbumArtist)) - #Play.Current.Album.png</texture>
             <visible>player.hasmedia+skin.hassetting(#skin.ShowCDArt)+[control.isvisible(11001)|control.isvisible(11002)|control.isvisible(11003)|control.isvisible(11004)|control.isvisible(11005)|control.isvisible(11006)|control.isvisible(11007)|control.isvisible(11008)|control.isvisible(11009)]</visible>
             <!-- animations to place the overlay on BasicHome -->
             <animation effect="slide" time="0" delay="11" start="0,0" end="0,0" condition="control.isvisible(11001)">conditional</animation>
@@ -418,6 +418,7 @@
             <posY>0</posY>
             <visible>player.hasmedia+[control.isvisible(11001)|control.isvisible(11002)|control.isvisible(11003)|control.isvisible(11004)|control.isvisible(11005)|control.isvisible(11006)|control.isvisible(11007)|control.isvisible(11008)|control.isvisible(11009)]</visible>
             
+            
             <control Style="shadowTextStyle">
                 <type>label</type>
                 <label>#(switch(
@@ -425,7 +426,7 @@
                     eq(#skin.MainTimeShown,'remaining'),#currentremaining,
                     eq(1,1),''
                 ))</label>
-                <posX>360</posX>
+                <posX>365</posX>
                 <posY>180</posY>
                 <width>450</width>
                 <animation effect="fade" time="800" start="100" end="70" pulse="true" easing="inout" condition="player.paused">conditional</animation>
@@ -440,7 +441,7 @@
                 <posX>390</posX>
                 <posY>190</posY>
                 <width>410</width>
-                <label>#Play.Current.Track. #Play.Current.Title</label>
+                <label>#(iif(eq(#Play.Current.Track,''),#Play.Current.Title,string.format('{0}. {1}',#Play.Current.Track,#Play.Current.Title)))</label>
             </control>
             <control Style="labelStyle">
                 <description>Artist</description>
@@ -449,7 +450,7 @@
                 <posX>390</posX>
                 <posY>245</posY>
                 <width>410</width>
-                <label>#Play.Current.Artist</label>
+                <label>#(string.ltrim(string.format('{0}{1}{2}',#Play.Current.Artist,iif(eq(#Play.Current.Conductor,''),'',string.format(' / {0}',#Play.Current.Conductor)),iif(eq(#Play.Current.Composer,''),'',string.format(' {0} {1}','by',#Play.Current.Composer))),' /'))</label>
             </control>
             <control Style="labelStyle">
                 <description>Album</description>
@@ -459,8 +460,14 @@
                 <posY>280</posY>
                 <textcolor>FFB75700</textcolor>
                 <width>310</width>
-                <!--<label>#(iif(or(eq(#Play.Current.AlbumArtist,''),eq(#Play.Current.AlbumArtist,'Various Artists'),eq(#Play.Current.AlbumArtist,#Play.Current.Artist)),#Play.Current.Album,string.format('{0} ({1})',#Play.Current.Album,#Play.Current.AlbumArtist)))</label>-->
-                <label>#Play.Current.Album</label>
+                <label>#(switch(
+                    and(or(eq(#Play.Current.AlbumArtist,''),eq(#Play.Current.AlbumArtist,'Various Artists'),eq(#Play.Current.AlbumArtist,#Play.Current.Artist)),eq(#Play.Current.DiscID,'')),#Play.Current.Album,
+                    and(or(eq(#Play.Current.AlbumArtist,''),eq(#Play.Current.AlbumArtist,'Various Artists'),eq(#Play.Current.AlbumArtist,#Play.Current.Artist)),neq(#Play.Current.DiscID,''),eq(#Play.Current.DiscTotal,'')),string.format('{0} (CD {1})',#Play.Current.Album,#Play.Current.DiscID),
+                    or(eq(#Play.Current.AlbumArtist,''),eq(#Play.Current.AlbumArtist,'Various Artists'),eq(#Play.Current.AlbumArtist,#Play.Current.Artist)),string.format('{0} (CD {1}/{2})',#Play.Current.Album,#Play.Current.DiscID,#Play.Current.DiscTotal),
+                    eq(#Play.Current.DiscID,''),string.format('{0} {1} {2}',#Play.Current.Album,'by',#Play.Current.AlbumArtist),
+                    and(neq(#Play.Current.DiscID,''),eq(#Play.Current.DiskTotal,'')),string.format('{0} (CD {1}) {2} {3}',#Play.Current.Album,#Play.Current.DiscID,'by',#Play.Current.AlbumArtist),
+                    eq(1,1),string.format('{0} (CD {1}/{2}) {3} {4}',#Play.Current.Album,#Play.Current.DiscID,#Play.Current.DiscTotal,'by',#Play.Current.AlbumArtist)
+                ))</label>
             </control>
             <control Style="labelStyle">
                 <description>Year</description>
@@ -508,9 +515,9 @@
             <control Style="labelStyle">
                 <description>Next Up</description>
                 <type>fadelabel</type>
-                <posX>370</posX>
+                <posX>375</posX>
                 <posY>385</posY>
-                <width>380</width>
+                <width>375</width>
                 <font>smallFont</font>
                 <textcolor>AAAAAAAA</textcolor>
                 <label>#(L(209))</label>
@@ -519,9 +526,9 @@
             <control Style="labelStyle">
                 <description>Next Up</description>
                 <type>fadelabel</type>
-                <posX>370</posX>
+                <posX>375</posX>
                 <posY>413</posY>
-                <width>380</width>
+                <width>375</width>
                 <font>labelFont</font>
                 <textcolor>AAAAAAAA</textcolor>
                 <label>#(iif(eq(#Play.Next.Album,#Play.Current.Album),string.format('{0}. {1}',#Play.Next.Track,#Play.Next.Title),string.format('{0} - {1}. {2}',#Play.Next.Album,#Play.Next.Track,#Play.Next.Title)))</label>
@@ -538,6 +545,27 @@
                 <height>40</height>
                 <onup>1000</onup>
             </control>
+            <control Style="topBarStyle">
+                <description>Progress Bar</description>
+                <type>progress</type>
+                <id>1</id>
+                <posX>375</posX>
+                <posY>200</posY>
+                <width>425</width>
+                <height>260</height>
+                <label>#percentage</label>
+                <texturebg></texturebg>
+                <onlymidtexture>yes</onlymidtexture>
+                <midwidth>425</midwidth>
+                <midheight>260</midheight>
+                <midoffsetX>0</midoffsetX>
+                <midoffsetY>0</midoffsetY>
+                <midtexture>highlight2_taint.png</midtexture>
+                <!--<midtexture>header_background.png</midtexture>-->
+                <visible>player.hasmedia</visible>
+                <animation effect="fade" time="400" start="100" end="70" pulse="true" easing="inout" condition="player.paused">conditional</animation>
+            </control>
+            
         </control>
         <control>
             <type>image</type>

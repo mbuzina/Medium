@@ -15,6 +15,8 @@
     <entry name="#skin.ShowTouchControls">False</entry>
     <entry name="#HideOverlay">False</entry>
     <entry name="#skin.ShowCDArt">True</entry>
+    <entry name="#skin.Music.ShowNowPlaying">False</entry>
+    <entry name="#skin.Pics.ShowNowPlaying">False</entry>
   </section>
   <section name="tvguidecolors">
     <entry name="guidecolorchannelbutton">FF122F3F</entry>
@@ -50,16 +52,12 @@
     <entry name="#BasicHome.B0.c1r0">NOWPLAY</entry>
     <entry name="#BasicHome.B0.c2r0">
     </entry>
-    <entry name="#BasicHome.B0.c0r1">
-    </entry>
-    <entry name="#BasicHome.B0.c1r1">
-    </entry>
+    <entry name="#BasicHome.B0.c0r1">LMUSIC</entry>
+    <entry name="#BasicHome.B0.c1r1">LVIDEO</entry>
     <entry name="#BasicHome.B0.c2r1">
     </entry>
-    <entry name="#BasicHome.B0.c0r2">
-    </entry>
-    <entry name="#BasicHome.B0.c1r2">
-    </entry>
+    <entry name="#BasicHome.B0.c0r2">LPICS</entry>
+    <entry name="#BasicHome.B0.c1r2">LRECORD</entry>
     <entry name="#BasicHome.B0.c2r2">
     </entry>
     <entry name="#BasicHome.B0.0.Label">
@@ -138,7 +136,8 @@
     <entry name="#BasicHome.B2.c1r2">NOWPLAY</entry>
     <entry name="#BasicHome.B2.c2r2">
     </entry>
-    <entry name="#BasicHome.B2.0.Label">Test 1</entry>
+    <entry name="#BasicHome.B2.0.Label">my Videos</entry>
+    <entry name="#BasicHome.B2.0.Hyperlink">6</entry>
     <entry name="#BasicHome.B2.1.Label">Test 2</entry>
     <entry name="#BasicHome.B2.2.Label">Test 3</entry>
     <entry name="#BasicHome.B2.3.Label">Test 4</entry>
@@ -231,7 +230,7 @@
     <entry name="#BasicHome.B4.9.Label">
     </entry>
     <entry name="#BasicHome.B5.Label">Pictures</entry>
-    <entry name="#BasicHome.B5.Hyperlink">0</entry>
+    <entry name="#BasicHome.B5.Hyperlink">2</entry>
     <entry name="#BasicHome.B5.HyperlinkParameter">
     </entry>
     <entry name="#BasicHome.B5.Background">hover_my pictures.png</entry>
@@ -421,9 +420,25 @@
     </entry>
     <entry name="#BasicHome.B9.9.Label">
     </entry>
-    <entry name="#BasicHome.Current.Label">TV</entry>
-    <entry name="#BasicHome.Previous.ID">0</entry>
-    <entry name="#BasicHome.Current.Background">hover_my tv.png</entry>
-    <entry name="#BasicHome.Previous.Background">hover_play disc.png</entry>
+    <entry name="#BasicHome.Current.Label">Moving Pictures</entry>
+    <entry name="#BasicHome.Previous.ID">1</entry>
+    <entry name="#BasicHome.Current.Background">hover_movingpictures.jpg</entry>
+    <entry name="#BasicHome.Previous.Background">hover_my tv.png</entry>
+    <entry name="#BasicHome.Current.c0r0">SUB</entry>
+    <entry name="#BasicHome.Current.c1r0">
+    </entry>
+    <entry name="#BasicHome.Current.c2r0">WW</entry>
+    <entry name="#BasicHome.Current.c0r1">
+    </entry>
+    <entry name="#BasicHome.Current.c1r1">
+    </entry>
+    <entry name="#BasicHome.Current.c2r1">
+    </entry>
+    <entry name="#BasicHome.Current.c0r2">
+    </entry>
+    <entry name="#BasicHome.Current.c1r2">NOWPLAY</entry>
+    <entry name="#BasicHome.Current.c2r2">
+    </entry>
+    <entry name="#BasicHome.Current.ID">2</entry>
   </section>
 </profile>

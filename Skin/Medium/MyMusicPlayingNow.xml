@@ -1,0 +1,1169 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>510</id>
+    <defaultcontrol>418</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <disabletopbar>no</disabletopbar>
+    <rememberLastFocusedControl>no</rememberLastFocusedControl>
+
+
+    <define>#usePlayFanart:Yes</define>
+    <define>#selecteditem:</define>
+    <!--<define>#useRandomMusicScraperFanart:Yes</define>-->
+
+    <define>#header.label:#currentmodule</define>
+
+
+    <controls>
+        <import>mymusic.background.play.xml</import>
+        <control Style="hiddenGroupStyle">
+            <type>group</type>
+            <control Style="hiddenStyle">
+                <type>label</type>
+                <id>5549</id>
+                <label>#(switch(
+                    eq(#currentremaining,'0:04'),'',
+                    eq(#currentremaining,'0:03'),'',
+                    eq(#currentremaining,'0:02'),'',
+                    eq(#currentremaining,'0:01'),'',
+                    eq(#currentremaining,'0:00'),'',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'10'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'11'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'12'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'13'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'14'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'15'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'16'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'17'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'18'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'19'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'20'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'21'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'22'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'23'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'24'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'25'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'26'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'27'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'28'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'29'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'30'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'31'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'32'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'33'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'34'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'35'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'36'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'37'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'38'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'39'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'10'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'11'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'12'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'13'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'14'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'15'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'16'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'17'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'18'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'19'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'10'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'21'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'22'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'23'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'24'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'25'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'26'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'27'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'28'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'29'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'30'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'31'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'32'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'33'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'34'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'35'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'36'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'37'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'38'),'BACKSIDE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'39'),'BACKSIDE',
+                    eq(1,1),''
+                ))</label>
+            </control>
+            <control Style="hiddenStyle">
+                <type>label</type>
+                <id>5545</id>
+                <label>#(switch(
+                    eq(#currentplaytime,'0:00'),'TRACKCHANGE',
+                    eq(#currentremaining,'0:05'),'TRACKCHANGE',
+                    eq(#currentremaining,'0:04'),'TRACKCHANGE',
+                    eq(#currentremaining,'0:03'),'TRACKCHANGE',
+                    eq(#currentremaining,'0:02'),'TRACKCHANGE',
+                    eq(#currentremaining,'0:01'),'TRACKCHANGE',
+                    eq(#currentremaining,'0:00'),'TRACKCHANGE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'10'),'ROTATE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'11'),'ROTATE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'40'),'ROTATE',
+                    eq(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'41'),'ROTATE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'10'),'ROTATE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'11'),'ROTATE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'40'),'ROTATE',
+                    eq(string.ltrim(string.ltrim(string.ltrim(string.ltrim(#currentplaytime,'1234567890'),':'),'1234567890'),':'),'41'),'ROTATE',
+                    eq(1,1),''
+                ))</label>
+            </control>
+            <control Style="hiddenStyle">
+                <type>image</type>
+                <id>112</id>
+            </control>
+        </control>
+        
+        <control Style="overlayStyle">
+            <type>image</type>
+            <posX>0</posX>
+            <posY>680</posY>
+            <width>1920</width>
+            <height>400</height>
+            <animation effect="fade" time="200" end="100">WindowOpen</animation>
+            <animation effect="slide" time="200" start="0,100" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" end="0">WindowClose</animation>
+            <animation effect="slide" time="200" end="0,100" easing="inout">WindowClose</animation>
+        </control>
+
+        <control>
+            <type>image</type>
+            <id>0</id>
+            <posX>0</posX>
+            <posY>525</posY>
+            <width>400</width>
+            <height>155</height>
+            <texture>..\..\..\Thumbs\ClearArt\Music\#Play.Current.Artist.png</texture>
+            <animation effect="fade" delay="200" time="200" end="100">WindowOpen</animation>
+            <animation effect="slide" delay="200" time="200" start="0,80" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" end="0">WindowClose</animation>
+            <animation effect="slide" time="200" end="0,80" easing="inout">WindowClose</animation>
+        </control>
+
+        <control Style="thumbStyle">
+            <type>image</type>
+            <id>0</id>
+            <posX>205</posX>
+            <posY>685</posY>
+            <width>390</width>
+            <height>390</height>
+            <texture>#skin.DefaultCDArt</texture>
+            <visible>player.hasmedia+!control.hasthumb(5546)+skin.hassetting(#skin.ShowCDArt)</visible>
+            
+            <!-- stop / hide visibility -->
+            <animation effect="slide" time="200" delay="0" start="0,0" end="-120,0" easing="out" tween="cubic" reversible="false">Hidden</animation>
+            <animation effect="fade" time="200" delay="100" end="0">Hidden</animation>
+
+            <!-- Slide the CD in view & fade on window open / out of view on window close -->
+            <animation effect="slide" time="200" delay="1800" start="-120,0" end="0,0" easing="out" tween="cubic" reversible="false">WindowOpen</animation>
+            <animation effect="fade" time="200" delay="1800" end="100">WindowOpen</animation>
+            <animation effect="slide" time="200" delay="0" start="0,0" end="-120,0" easing="out" tween="cubic" reversible="false">WindowClose</animation>
+            <animation effect="fade" time="200" delay="100" end="0">WindowClose</animation>
+
+            <!-- Slide the CD partly into the sleave on pause -->
+            <animation effect="slide" time="200" delay="0" start="0,0" end="-50,0" easing="out" tween="cubic" condition="player.paused">Conditional</animation>
+
+            <!-- On Track Change slide the CD into the sleave completly, works best if on leftmost column, needs fade -->
+            <animation effect="slide" delay="0" time="900" start="0,0" end="-385,0" easing="out" tween="cubic" reversible="false" condition="control.HasText(5545)">Conditional</animation>
+            <animation effect="fade" delay="700" time="200" start="100" end="0" reversible="false" condition="control.HasText(5545)">Conditional</animation>
+            <animation effect="slide" delay="0" time="900" start="-385,0" end="0,0" easing="out" tween="cubic" reversible="false" condition="!control.HasText(5545)">Conditional</animation>
+            <animation effect="fade" delay="0" time="200" start="0" end="100" reversible="false" condition="!control.HasText(5545)">Conditional</animation>
+            
+            <!-- Rotate the CD. Stop on pause, speedup on forwarding, reverse speed up on rewinding -->
+            <animation effect="rotate" delay="0" end="-359" time="8000" loop="true" condition="player.playing+!player.paused+!player.rewinding+!player.forwarding">Conditional</animation>
+            <animation effect="rotate" delay="0" end="-359" time="2000" loop="true" condition="player.playing+!player.paused+player.forwarding">Conditional</animation>
+            <animation effect="rotate" delay="0" end="359" time="2000" loop="true" condition="player.playing+!player.paused+player.rewinding">Conditional</animation>
+        </control>
+        
+        <control Style="thumbStyle">
+            <type>image</type>
+            <id>5548</id>
+            <posX>205</posX>
+            <posY>685</posY>
+            <width>390</width>
+            <height>390</height>
+            <texture mask="cd_mask.png">#Play.Current.Thumb</texture>
+            <visible>player.hasmedia+!control.hasthumb(5546)+control.hasthumb(5547)+skin.hassetting(#skin.ShowCDArt)</visible>
+            
+            <!-- stop / hide visibility -->
+            <animation effect="slide" time="200" delay="0" start="0,0" end="-120,0" easing="out" tween="cubic" reversible="false">Hidden</animation>
+            <animation effect="fade" time="200" delay="100" end="0">Hidden</animation>
+
+            <!-- Slide the CD in view & fade on window open / out of view on window close -->
+            <animation effect="slide" time="200" delay="1800" start="-120,0" end="0,0" easing="out" tween="cubic" reversible="false">WindowOpen</animation>
+            <animation effect="fade" time="200" delay="1800" end="100">WindowOpen</animation>
+            <animation effect="slide" time="200" delay="0" start="0,0" end="-120,0" easing="out" tween="cubic" reversible="false">WindowClose</animation>
+            <animation effect="fade" time="200" delay="100" end="0">WindowClose</animation>
+
+            <!-- Slide the CD partly into the sleave on pause -->
+            <animation effect="slide" time="200" delay="0" start="0,0" end="-50,0" easing="out" tween="cubic" condition="player.paused">Conditional</animation>
+
+            <!-- On Track Change slide the CD into the sleave completly, works best if on leftmost column, needs fade -->
+            <animation effect="slide" delay="0" time="900" start="0,0" end="-385,0" easing="out" tween="cubic" reversible="false" condition="control.HasText(5545)">Conditional</animation>
+            <animation effect="fade" delay="700" time="200" start="100" end="0" reversible="false" condition="control.HasText(5545)">Conditional</animation>
+            <animation effect="slide" delay="0" time="900" start="-385,0" end="0,0" easing="out" tween="cubic" reversible="false" condition="!control.HasText(5545)">Conditional</animation>
+            <animation effect="fade" delay="0" time="200" start="0" end="100" reversible="false" condition="!control.HasText(5545)">Conditional</animation>
+            
+            <!-- Rotate the CD. Stop on pause, speedup on forwarding, reverse speed up on rewinding -->
+            <animation effect="rotate" delay="0" end="-359" time="8000" loop="true" condition="player.playing+!player.paused+!player.rewinding+!player.forwarding">Conditional</animation>
+            <animation effect="rotate" delay="0" end="-359" time="2000" loop="true" condition="player.playing+!player.paused+player.forwarding">Conditional</animation>
+            <animation effect="rotate" delay="0" end="359" time="2000" loop="true" condition="player.playing+!player.paused+player.rewinding">Conditional</animation>
+        </control>
+        
+        <control Style="thumbStyle">
+            <type>image</type>
+            <id>5546</id>
+            <posX>205</posX>
+            <posY>685</posY>
+            <width>390</width>
+            <height>390</height>
+            <texture>..\..\..\Thumbs\CDArt\Music\#(iif(eq(#Play.Current.AlbumArtist,''),#Play.Current.Artist,#Play.Current.AlbumArtist)) - #Play.Current.Album.png</texture>
+            <visible>player.hasmedia+skin.hassetting(#skin.ShowCDArt)</visible>
+
+            <!-- stop / hide visibility -->
+            <animation effect="slide" time="200" delay="0" start="0,0" end="-120,0" easing="out" tween="cubic" reversible="false">Hidden</animation>
+            <animation effect="fade" time="200" delay="100" end="0">Hidden</animation>
+
+            <!-- Slide the CD in view & fade on window open / out of view on window close -->
+            <animation effect="slide" time="200" delay="1800" start="-120,0" end="0,0" easing="out" tween="cubic" reversible="false">WindowOpen</animation>
+            <animation effect="fade" time="200" delay="1800" end="100">WindowOpen</animation>
+            <animation effect="slide" time="200" delay="0" start="0,0" end="-120,0" easing="out" tween="cubic" reversible="false">WindowClose</animation>
+            <animation effect="fade" time="200" delay="100" end="0">WindowClose</animation>
+
+            <!-- Slide the CD partly into the sleave on pause -->
+            <animation effect="slide" time="200" delay="0" start="0,0" end="-50,0" easing="out" tween="cubic" condition="player.paused">Conditional</animation>
+
+            <!-- On Track Change slide the CD into the sleave completly, works best if on leftmost column, needs fade -->
+            <animation effect="slide" delay="0" time="900" start="0,0" end="-385,0" easing="out" tween="cubic" reversible="false" condition="control.HasText(5545)">Conditional</animation>
+            <animation effect="fade" delay="700" time="200" start="100" end="0" reversible="false" condition="control.HasText(5545)">Conditional</animation>
+            <animation effect="slide" delay="0" time="900" start="-385,0" end="0,0" easing="out" tween="cubic" reversible="false" condition="!control.HasText(5545)">Conditional</animation>
+            <animation effect="fade" delay="0" time="200" start="0" end="100" reversible="false" condition="!control.HasText(5545)">Conditional</animation>
+            
+            <!-- Rotate the CD. Stop on pause, speedup on forwarding, reverse speed up on rewinding -->
+            <animation effect="rotate" delay="0" end="-359" time="8000" loop="true" condition="player.playing+!player.paused+!player.rewinding+!player.forwarding">Conditional</animation>
+            <animation effect="rotate" delay="0" end="-359" time="2000" loop="true" condition="player.playing+!player.paused+player.forwarding">Conditional</animation>
+            <animation effect="rotate" delay="0" end="359" time="2000" loop="true" condition="player.playing+!player.paused+player.rewinding">Conditional</animation>
+        </control>
+        
+        <control Style="thumbStyle">
+            <id>5550</id>
+            <type>image</type>
+             <texture>..\..\..\Thumbs\Backsides\Music\#(iif(eq(#Play.Current.AlbumArtist,''),#Play.Current.Artist,#Play.Current.AlbumArtist)) - #Play.Current.Album.png</texture>
+            <posX>0</posX>
+            <posY>680</posY>
+            <width>400</width>
+            <height>400</height>
+            <visible>true</visible>
+            <!-- Window Open/Close -->
+            <animation effect="fade" time="200" delay="200" end="100">WindowOpen</animation>
+            <animation effect="slide" time="200" delay="200" start="-60,0" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" delay="200" end="0">WindowClose</animation>
+            <animation effect="slide" time="200" delay="200" end="-60,0" easing="inout">WindowClose</animation>
+            
+            <animation effect="rotatey" center="200,0" delay="800" time="1000" start="360" end="180" reversible="false" easing="inout" tween="back" condition="!control.hastext(5549)">Conditional</animation>
+            <animation effect="rotatey" center="200,0" delay="800" time="1000" start="180" end="360" reversible="false" easing="inout" tween="back" condition="control.hastext(5549)">Conditional</animation>
+            <animation effect="fade" start="100" end="0" delay="1300" time="10" reversible="false" condition="!control.hastext(5549)">Conditional</animation>
+            <animation effect="fade" start="0" end="100" delay="1300" time="10" reversible="false" condition="control.hastext(5549)">Conditional</animation>
+            
+        </control>
+        <control Style="thumbStyle">
+            <id>5551</id>
+            <type>image</type>
+            <texture>..\..\..\Thumbs\Music\Artists\#Play.Current.ArtistL.jpg</texture>
+            <posX>0</posX>
+            <posY>680</posY>
+            <width>400</width>
+            <height>400</height>
+            <visible>!control.HasThumb(5550)</visible>
+            
+            <!-- Window Open/Close -->
+            <animation effect="fade" time="200" delay="200" end="100">WindowOpen</animation>
+            <animation effect="slide" time="200" delay="200" start="-60,0" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" delay="200" end="0">WindowClose</animation>
+            <animation effect="slide" time="200" delay="200" end="-60,0" easing="inout">WindowClose</animation>
+            
+            <animation effect="rotatey" center="200,0" delay="800" time="1000" start="360" end="180" reversible="false" easing="inout" tween="back" condition="!control.hastext(5549)">Conditional</animation>
+            <animation effect="rotatey" center="200,0" delay="800" time="1000" start="180" end="360" reversible="false" easing="inout" tween="back" condition="control.hastext(5549)">Conditional</animation>
+            <animation effect="fade" start="100" end="0" delay="1300" time="10" reversible="false" condition="!control.hastext(5549)">Conditional</animation>
+            <animation effect="fade" start="0" end="100" delay="1300" time="10" reversible="false" condition="control.hastext(5549)">Conditional</animation>
+            
+        </control>
+        <control Style="thumbStyle">
+            <id>0</id>
+            <type>image</type>
+             <texture>#Play.Current.Thumb</texture>
+            <posX>0</posX>
+            <posY>680</posY>
+            <width>400</width>
+            <height>400</height>
+            <visible>!control.HasThumb(5550)+!control.HasThumb(5551)</visible>
+            
+            <!-- Window Open/Close -->
+            <animation effect="fade" time="200" delay="200" end="100">WindowOpen</animation>
+            <animation effect="slide" time="200" delay="200" start="-60,0" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" delay="200" end="0">WindowClose</animation>
+            <animation effect="slide" time="200" delay="200" end="-60,0" easing="inout">WindowClose</animation>
+            
+            <animation effect="rotatey" center="200,0" delay="800" time="1000" start="180" end="0" reversible="false" easing="inout" tween="back" condition="!control.hastext(5549)">Conditional</animation>
+            <animation effect="rotatey" center="200,0" delay="800" time="1000" start="0" end="180" reversible="false" easing="inout" tween="back" condition="control.hastext(5549)">Conditional</animation>
+            <animation effect="fade" start="100" end="0" delay="1300" time="10" reversible="false" condition="!control.hastext(5549)">Conditional</animation>
+            <animation effect="fade" start="0" end="100" delay="1300" time="10" reversible="false" condition="control.hastext(5549)">Conditional</animation>
+            
+        </control>
+        <control Style="thumbStyle">
+            <id>5547</id>
+            <type>image</type>
+            <texture>#Play.Current.Thumb</texture>
+            <posX>0</posX>
+            <posY>680</posY>
+            <width>400</width>
+            <height>400</height>
+            <visible>True</visible>
+            
+            <!-- Window Open/Close -->
+            <animation effect="fade" time="200" delay="200" end="100">WindowOpen</animation>
+            <animation effect="slide" time="200" delay="200" start="-60,0" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" delay="200" end="0">WindowClose</animation>
+            <animation effect="slide" time="200" delay="200" end="-60,0" easing="inout">WindowClose</animation>
+            
+            <animation effect="rotatey" center="200,0" delay="800" time="1000" start="0" end="180" reversible="false" easing="inout" tween="back" condition="control.hastext(5549)">Conditional</animation>
+            <animation effect="rotatey" center="200,0" delay="800" time="1000" start="180" end="0" reversible="false" easing="inout" tween="back" condition="!control.hastext(5549)">Conditional</animation>
+            <animation effect="fade" start="100" end="0" delay="1306" time="20" reversible="false" condition="control.hastext(5549)">Conditional</animation>
+            <animation effect="fade" start="0" end="100" delay="1290" time="20" reversible="false" condition="!control.hastext(5549)">Conditional</animation>
+        </control>
+        
+        <control Style="shadowTextStyle">
+            <type>textbox</type>
+            <label>#(switch(
+                eq(#skin.MainTimeShown,'playtime'),#currentplaytime,
+                eq(#skin.MainTimeShown,'remaining'),#currentremaining,
+                eq(1,1),''
+            ))</label>
+            <posX>0</posX>
+            <posY>805</posY>
+            <width>1920</width>
+            <height>380</height>
+            <textalign>right</textalign>
+            <animation effect="fade" time="800" start="100" end="70" pulse="true" easing="inout" condition="player.paused">conditional</animation>
+            <animation effect="fade" time="200" end="100">WindowOpen</animation>
+            <animation effect="slide" time="200" start="0,40" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" end="0">WindowClose</animation>
+            <animation effect="slide" time="200" end="0,40" easing="inout">WindowClose</animation>
+        </control>
+        <control Style="shadowTextStyle">
+            <type>textbox</type>
+            <label>#(switch(
+                eq(#skin.MainTimeShown,'playtime'),#currentremaining,
+                eq(#skin.MainTimeShown,'remaining'),#currentplaytime,
+                eq(1,1),''
+            ))</label>
+            <posX>0</posX>
+            <posY>1017</posY>
+            <width>1900</width>
+            <height>380</height>
+            <textcolor>AAAAAAAA</textcolor>
+            <font>subHeaderFont</font>
+            <textalign>right</textalign>
+            <animation effect="fade" time="800" start="100" end="70" pulse="true" easing="inout" condition="player.paused">conditional</animation>
+            <animation effect="fade" time="200" end="100">WindowOpen</animation>
+            <animation effect="slide" time="200" start="0,40" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" end="0">WindowClose</animation>
+            <animation effect="slide" time="200" end="0,40" easing="inout">WindowClose</animation>
+        </control>
+       
+        <control Style="subHeaderStyle">
+            <type>fadelabel</type>
+            <posX>690</posX>
+            <posY>880</posY>
+            <width>750</width>
+            <label>#(iif(eq(#Play.Current.Track,''),#Play.Current.Title,string.format('{0}. {1}',#Play.Current.Track,#Play.Current.Title)))</label>
+            <animation effect="fade" time="200" end="100">WindowOpen</animation>
+            <animation effect="fade" time="200" end="0">WindowClose</animation>
+        </control>
+        
+        <control Style="labelStyle">
+            <description>Artist</description>
+            <type>fadelabel</type>
+            <posX>690</posX>
+            <posY>940</posY>
+            <width>750</width>
+            <label>#Play.Current.ArtistThumb #(string.ltrim(string.format('{0}{1}{2}',#Play.Current.Artist,iif(eq(#Play.Current.Conductor,''),'',string.format(' / {0}',#Play.Current.Conductor)),iif(eq(#Play.Current.Composer,''),'',string.format(' {0} {1}','by',#Play.Current.Composer))),' /'))</label>
+        </control>
+        <control Style="labelStyle">
+            <description>Album</description>
+            <type>fadelabel</type>
+            <posX>690</posX>
+            <posY>975</posY>
+            <width>750</width>
+            <textcolor>FFB75700</textcolor>
+            <label>#(switch(
+                and(or(eq(#Play.Current.AlbumArtist,''),eq(#Play.Current.AlbumArtist,'Various Artists'),eq(#Play.Current.AlbumArtist,#Play.Current.Artist)),eq(#Play.Current.DiscID,'')),#Play.Current.Album,
+                and(or(eq(#Play.Current.AlbumArtist,''),eq(#Play.Current.AlbumArtist,'Various Artists'),eq(#Play.Current.AlbumArtist,#Play.Current.Artist)),neq(#Play.Current.DiscID,''),eq(#Play.Current.DiscTotal,'')),string.format('{0} (CD {1})',#Play.Current.Album,#Play.Current.DiscID),
+                or(eq(#Play.Current.AlbumArtist,''),eq(#Play.Current.AlbumArtist,'Various Artists'),eq(#Play.Current.AlbumArtist,#Play.Current.Artist)),string.format('{0} (CD {1}/{2})',#Play.Current.Album,#Play.Current.DiscID,#Play.Current.DiscTotal),
+                eq(#Play.Current.DiscID,''),string.format('{0} {1} {2}',#Play.Current.Album,'by',#Play.Current.AlbumArtist),
+                and(neq(#Play.Current.DiscID,''),eq(#Play.Current.DiskTotal,'')),string.format('{0} (CD {1}) {2} {3}',#Play.Current.Album,#Play.Current.DiscID,'by',#Play.Current.AlbumArtist),
+                eq(1,1),string.format('{0} (CD {1}/{2}) {3} {4}',#Play.Current.Album,#Play.Current.DiscID,#Play.Current.DiscTotal,'by',#Play.Current.AlbumArtist)
+            ))</label>
+        </control>
+        <control Style="labelStyle">
+            <description>Genre/Year</description>
+            <type>fadelabel</type>
+            <posX>690</posX>
+            <posY>1012</posY>
+            <width>500</width>
+            <textcolor>FF007ACC</textcolor>
+            <label>#(switch(
+                eq(#Play.Current.Genre,''),#Play.Current.Year,
+                eq(#Play.Current.Year,''),#Play.Current.Genre,
+                eq(1,1),string.format('{0} / {1}',#Play.Current.Genre,#Play.Current.Year)
+            ))</label>
+        </control>
+        <control Style="labelStyle">
+            <description>Duration</description>
+            <type>fadelabel</type>
+            <posX>1430</posX>
+            <posY>1012</posY>
+            <width>250</width>
+            <align>right</align>
+            <textcolor>FF007ACC</textcolor>
+            <label>#Play.Current.Duration</label>
+        </control>
+        <control Style="ratingHighlight2Style">
+            <type>imagelist</type>
+            <id>0</id>
+            <posX>1390</posX>            
+            <posY>982</posY>
+            <percentage>#(mul(cint(iif(eq(#Play.Current.Rating,''),0,#Play.Current.Rating)),2))</percentage>
+            <align>left</align>
+            <subitems>
+                <subitem>star_open_highlight2.png</subitem>
+                <subitem>star_closed_highlight2.png</subitem>
+            </subitems>
+            <animation effect="rotate" end="90" time="0" condition="true">Conditional</animation>
+            <animation effect="fade" time="200" end="0">WindowClose</animation>
+            <animation effect="fade" time="200" end="100">WindowOpen</animation>
+        </control>
+        <control Style="labelStyle">
+            <description>Next Up</description>
+            <type>fadelabel</type>
+            <posX>1480</posX>
+            <posY>815</posY>
+            <width>375</width>
+            <textcolor>AAAAAAAA</textcolor>
+            <label>#(L(209))</label>
+            <visible>!string.equals(#Play.Next.Title,)</visible>
+        </control>
+        <control Style="labelStyle">
+            <description>Next Up</description>
+            <id>0</id>
+            <type>fadelabel</type>
+            <posX>1480</posX>
+            <posY>850</posY>
+            <width>500</width>
+            <font>largeFont</font>
+            <textcolor>AAAAAAAA</textcolor>
+            <font>labelFont</font>
+            <label>#(switch(
+                and(eq(#Play.Next.Album,#Play.Current.Album),eq(#Play.Next.Artist,#Play.Current.Artist)),string.format('{0}. {1}',#Play.Next.Track,#Play.Next.Title),
+                and(eq(#Play.Next.Album,#Play.Current.Album),neq(#Play.Next.Artist,#Play.Current.Artist)),string.format('{0}. {1} {2} {3}',#Play.Next.Track,#Play.Next.Title,'by',#Play.Next.Artist),
+                and(neq(#Play.Next.Album,#Play.Current.Album),neq(#Play.Next.Artist,#Play.Current.Artist)),string.format('{0}. {1} {2} {3}',#Play.Next.Track,#Play.Next.Title,'by',#Play.Next.Artist),
+                eq(1,1),string.format('{0}. {1} {2} {3} {4} {5}',#Play.Next.Track,#Play.Next.Title,'by',#Play.Next.Artist,'-',#Play.Next.Album)
+            ))</label>
+            <visible>!string.equals(#Play.Next.Title,)</visible>
+        </control>
+        
+        <control Style="footerStyle">
+            <description>Progress Bar</description>
+            <type>progress</type>
+            <id>0</id>
+            <posX>1480</posX>
+            <posY>885</posY>
+            <width>500</width>
+            <height>200</height>
+            <label>#percentage</label>
+            <texturebg></texturebg>
+            <onlymidtexture>yes</onlymidtexture>
+            <midwidth>500</midwidth>
+            <midheight>200</midheight>
+            <midoffsetX>0</midoffsetX>
+            <midoffsetY>0</midoffsetY>
+            <midtexture>highlight2_taint.png</midtexture>
+            <!--<midtexture>header_background.png</midtexture>-->
+            <visible>player.hasmedia</visible>
+            <animation effect="fade" time="400" start="100" end="70" pulse="true" easing="inout" condition="player.paused">conditional</animation>
+            <animation effect="fade" time="200" end="100">WindowOpen</animation>
+            <animation effect="slide" time="200" start="0,40" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" end="0">WindowClose</animation>
+            <animation effect="slide" time="200" end="0,40" easing="inout">WindowClose</animation>
+        </control>
+        
+        <!-- Top / Related Tracks -->
+        <control>
+            <type>group</type>
+            <id>412</id>
+            <description>group element</description>
+            <visible>control.isvisible(413)</visible>
+            <!--<animation effect="slide" end="100,0" time="0" condition="true">Conditional</animation>-->
+            <animation effect="fade" time="200" end="100">WindowOpen</animation>
+            <animation effect="fade" time="200" end="0">WindowClose</animation>
+            <animation effect="fade" time="200" end="100">VisibleChange</animation>
+            <control Style="labelStyle">
+                <type>fadelabel</type>
+                <description>best album tracks label</description>
+                <id>29</id>
+                <posX>690</posX>
+                <posY>675</posY>
+                <width>610</width>
+                <label>33030</label>
+                <font>labelFont</font>
+            </control>
+            <control Style="labelStyle">
+                <type>fadelabel</type>
+                <description>best tag tracks label</description>
+                <id>28</id>
+                <posX>1300</posX>
+                <posY>675</posY>
+                <width>610</width>
+                <label>Top tracks for tag</label>
+                <font>labelFont</font>
+            </control>
+            <control Style="smallListStyle">
+                <type>listcontrol</type>
+                <description>list of best album tracks</description>
+                <id>166</id>
+                <posX>690</posX>
+                <posY>712</posY>
+                <width>610</width>
+                <height>230</height>
+                <onright>155</onright>
+                <onleft>413</onleft>
+                <ondown>413</ondown>
+                <onup>413</onup>
+                <visible>control.isvisible(29)</visible>
+            </control>
+            <control Style="ratingHighlight2Style">
+                <type>imagelist</type>
+                <id>87</id>
+                <posX>1185</posX>            
+                <posY>715</posY>
+                <percentage>#Lastfm.Rating.AlbumTrack1</percentage>
+                <align>left</align>
+                <subitems>
+                    <subitem>star_open_highlight2.png</subitem>
+                    <subitem>star_closed_highlight2.png</subitem>
+                </subitems>
+                <visible>control.isvisible(29)</visible>
+            </control>
+            <control Style="ratingHighlight2Style">
+                <type>imagelist</type>
+                <id>88</id>
+                <posX>1185</posX>            
+                <posY>752</posY>
+                <percentage>#Lastfm.Rating.AlbumTrack2</percentage>
+                <align>left</align>
+                <subitems>
+                    <subitem>star_open_highlight2.png</subitem>
+                    <subitem>star_closed_highlight2.png</subitem>
+                </subitems>
+                <visible>control.isvisible(29)</visible>
+            </control>
+            <control Style="ratingHighlight2Style">
+                <type>imagelist</type>
+                <id>89</id>
+                <posX>1185</posX>            
+                <posY>788</posY>
+                <percentage>#Lastfm.Rating.AlbumTrack3</percentage>
+                <align>left</align>
+                <subitems>
+                    <subitem>star_open_highlight2.png</subitem>
+                    <subitem>star_closed_highlight2.png</subitem>
+                </subitems>
+                <visible>control.isvisible(29)</visible>
+            </control>
+            <control Style="smallListStyle">
+                <type>listcontrol</type>
+                <description>list of best tag tracks</description>
+                <id>155</id>
+                <posX>1300</posX>
+                <posY>712</posY>
+                <width>610</width>
+                <height>230</height>
+                <onleft>166</onleft>
+                <onright>413</onright>
+                <onup>413</onup>
+                <ondown>413</ondown>
+            </control>
+        </control>
+        
+        <!-- Mini Buttons to select visible info, Top/Related,Lyrics,Artist Info,Album Info,Technical Details -->
+        <control>
+            <type>group</type>
+            <control Style="miniButtonStyle">
+                <type>button</type>
+                <id>418</id>
+                <posX>660</posX>
+                <posY>685</posY>
+                <onup>417</onup>
+                <ondown>413</ondown>
+                <onleft>155</onleft>
+                <onright>166</onright>
+                <onclick>#(skin.setfocus(413))</onclick>
+                <textureFocus>mini_down_button_focus.png</textureFocus>
+                <textureNoFocus>mini_down_button.png</textureNoFocus>
+                <animation effect="fade" time="200" end="100">WindowOpen</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+                <visible allowhiddenfocus="true">!control.isvisible(413)</visible>
+            </control>
+            <control Style="miniButtonStyle">
+                <type>button</type>
+                <id>413</id>
+                <posX>660</posX>
+                <posY>685</posY>
+                <onup>418</onup>
+                <ondown>30</ondown>
+                <onleft>155</onleft>
+                <onright>166</onright>
+                <animation effect="fade" time="200" end="100">WindowOpen</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+                <visible allowhiddenfocus="true">control.hasfocus(413)|control.hasfocus(30)|control.hasfocus(31)|control.hasfocus(155)|control.hasfocus(166)</visible>
+            </control>
+            <control Style="miniButtonStyle">
+                <type>button</type>
+                <id>30</id>
+                <posX>660</posX>
+                <posY>715</posY>
+                <onup>413</onup>
+                <ondown>31</ondown>
+                <onleft>155</onleft>
+                <onright>166</onright>
+                <textureFocus>love_focus.png</textureFocus>
+                <textureNoFocus>love.png</textureNoFocus>
+                <animation effect="fade" time="200" end="100">WindowOpen</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+                <visible allowhiddenfocus="true">control.isvisible(413)</visible>
+            </control>
+            <control Style="miniButtonStyle">
+                <type>button</type>
+                <id>31</id>
+                <posX>660</posX>
+                <posY>745</posY>
+                <onup>30</onup>
+                <ondown>414</ondown>
+                <onleft>155</onleft>
+                <onright>166</onright>
+                <textureFocus>ban_focus.png</textureFocus>
+                <textureNoFocus>ban.png</textureNoFocus>
+                <animation effect="fade" time="200" end="100">WindowOpen</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+                <visible allowhiddenfocus="true">control.isvisible(413)</visible>
+            </control>
+            <control Style="miniButtonStyle">
+                <type>button</type>
+                <id>414</id>
+                <posX>660</posX>
+                <posY>900</posY>
+                <onup>31</onup>
+                <ondown>415</ondown>
+                <onleft>155</onleft>
+                <onright>166</onright>
+                <animation effect="fade" time="200" end="100">WindowOpen</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+                <visible>!string.equals(#Play.Current.Lyrics,)</visible>
+            </control>
+            <control Style="miniButtonStyle">
+                <type>button</type>
+                <id>415</id>
+                <posX>660</posX>
+                <posY>954</posY>
+                <onup>414</onup>
+                <ondown>416</ondown>
+                <onleft>155</onleft>
+                <onright>166</onright>
+                <animation effect="fade" time="200" end="100">WindowOpen</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+                <visible>!string.equals(#Play.ArtistInfo.Bio,)</visible>
+            </control>
+            <control Style="miniButtonStyle">
+                <type>button</type>
+                <id>416</id>
+                <posX>660</posX>
+                <posY>988</posY>
+                <onup>415</onup>
+                <ondown>417</ondown>
+                <onleft>155</onleft>
+                <onright>166</onright>
+                <animation effect="fade" time="200" end="100">WindowOpen</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+                <visible>!string.equals(#Play.AlbumInfo.Review,)</visible>
+            </control>
+            <control Style="miniButtonStyle">
+                <type>button</type>
+                <id>417</id>
+                <posX>660</posX>
+                <posY>1025</posY>
+                <onup>416</onup>
+                <ondown>418</ondown>
+                <onleft>155</onleft>
+                <onright>166</onright>
+                <animation effect="fade" time="200" end="100">WindowOpen</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+            </control>
+        </control>
+        
+        <!-- Lyrics Overlay -->
+        <control>
+            <type>group</type>
+            <visible>control.hasfocus(414)+!string.equals(#Play.Current.Lyrics,)</visible>
+            <animation effect="fade" time="200" delay="200" end="100">VisibleChange</animation>
+            <animation effect="slide" time="200" delay="200" start="80,0" easing="inout">VisibleChange</animation>
+            <animation effect="fade" time="200" end="100">WindowOpen</animation>
+            <animation effect="fade" time="200" end="0">WindowClose</animation>
+            <control Style="overlayStyle">
+                <type>image</type>
+                <posX>1080</posX>
+                <posY>0</posY>
+                <width>900</width>
+                <height>660</height>
+            </control>
+            <control Style="labelStyle">
+                <type>label</type>
+                <font>subHeaderFont</font><animation effect="fade" time="200" end="100">VisibleChange</animation>
+                <label>Lyrics</label>
+                <posX>1090</posX>
+                <posY>1</posY>
+                <width>890</width>
+                <textcolor>FFB75700</textcolor>
+                <animation effect="slide" time="0" end="0,-8" condition="true">Conditional</animation>
+                <animation effect="fade" time="200" delay="200" end="100">VisibleChange</animation>
+                <animation effect="slide" time="200" delay="200" start="80,0" easing="inout">VisibleChange</animation>
+                <animation effect="fade" time="200" end="100">WindowOpen</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+            </control>
+            <control Style="labelStyle">
+                <id>418</id>
+                <type>textboxscrollup</type>
+                <posX>1090</posX>
+                <posY>58</posY>
+                <width>830</width>
+                <height>600</height>
+                <seperator>---------------------------------------------------------</seperator>
+                <label>#Play.Current.Lyrics</label>
+            </control>
+        </control>
+        
+        <!-- Artist info Overlay -->
+        <control>
+            <type>group</type>
+            <visible>control.hasfocus(415)+!string.equals(#Play.ArtistInfo.Bio,)</visible>
+            <animation effect="fade" time="200" delay="200" end="100">VisibleChange</animation>
+            <animation effect="slide" time="200" delay="200" start="80,0" easing="inout">VisibleChange</animation>
+            <animation effect="fade" time="200" end="100">WindowOpen</animation>
+            <animation effect="fade" time="200" end="0">WindowClose</animation>
+            <control Style="overlayStyle">
+                <type>image</type>
+                <posX>780</posX>
+                <posY>0</posY>
+                <width>1200</width>
+                <height>660</height>
+            </control>
+            <control Style="labelStyle">
+                <type>fadelabel</type>
+                <font>subHeaderFont</font>
+                <label>#(switch(
+                    and(eq(#Current.ArtistInfo.Born,''),eq(#Current.ArtistInfo.YearsActive,'')),#Play.Current.Artist,
+                    and(neq(#Current.ArtistInfo.Born,''),eq(#Current.ArtistInfo.YearsActive,'')),string.format('{0} ({1})',#Play.Current.Artist,#Play.ArtistInfo.Born),
+                    neq(#Current.ArtistInfo.YearsActive,''),string.format('{0} ({1})',#Play.Current.Artist,#Play.ArtistInfo.YearsActive),
+                    eq(1,1),string.format('{0} ({1}/{2})',#Play.Current.Artist,#Play.ArtistInfo.Born,#Play.ArtistInfo.YearsActive)
+                ))</label>
+                <posX>790</posX>
+                <posY>1</posY>
+                <width>890</width>
+                <textcolor>FFB75700</textcolor>
+                <animation effect="slide" time="0" end="0,-8" condition="true">Conditional</animation>
+                <animation effect="fade" time="200" delay="200" end="100">VisibleChange</animation>
+                <animation effect="slide" time="200" delay="200" start="80,0" easing="inout">VisibleChange</animation>
+                <animation effect="fade" time="200" end="100">WindowOpen</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+            </control>
+            <control Style="labelStyle">
+                <id>0</id>
+                <type>textboxscrollup</type>
+                <posX>1290</posX>
+                <posY>52</posY>
+                <width>630</width>
+                <height>606</height>
+                <font>labelFont</font>
+                <seperator>---------------------------------------------------------</seperator>
+                <label>#Play.ArtistInfo.Bio</label>
+            </control>
+            <control Style="labelStyle">
+                <type>textboxscrollup</type>
+                <font>labelFont</font>
+                <posX>790</posX>
+                <posY>52</posY>
+                <width>490</width>
+                <height>606</height>
+                <label>#(string.format('{0}:
+                {1}
+                {2}
+                {3}
+                {4}
+                {5}
+                {6}
+                {7}',L(725),iif(eq(#Play.ArtistInfo.Genres,''),#Play.Current.Genre,#Play.ArtistInfo.Genres),L(688),#Play.ArtistInfo.Instruments,L(176),#Play.ArtistInfo.Styles,L(175),#Play.ArtistInfo.Tones))</label>
+                <seperator>------------------</seperator>
+                <textcolor>FF007ACC</textcolor>
+            </control>
+        </control>
+        
+        <!-- Album info Overlay -->
+        <control>
+            <type>group</type>
+            <visible>control.hasfocus(416)+!string.equals(#Play.AlbumInfo.Review,)</visible>
+            <animation effect="fade" time="200" delay="200" end="100">VisibleChange</animation>
+            <animation effect="slide" time="200" delay="200" start="80,0" easing="inout">VisibleChange</animation>
+            <animation effect="fade" time="200" end="100">WindowOpen</animation>
+            <animation effect="fade" time="200" end="0">WindowClose</animation>
+            <control Style="overlayStyle">
+                <type>image</type>
+                <posX>780</posX>
+                <posY>0</posY>
+                <width>1200</width>
+                <height>660</height>
+            </control>
+            <control Style="labelStyle">
+                <type>fadelabel</type>
+                <font>subHeaderFont</font><animation effect="fade" time="200" end="100">VisibleChange</animation>
+                <label>#(iif(eq(#Play.AlbumInfo.Year,''),#Play.Current.Album,string.format('{0} ({1})',#Play.Current.Album,#Play.AlbumInfo.Year)))</label>
+                <posX>790</posX>
+                <posY>1</posY>
+                <width>1190</width>
+                <textcolor>FFB75700</textcolor>
+                <animation effect="slide" time="0" end="0,-8" condition="true">Conditional</animation>
+                <animation effect="fade" time="200" delay="200" end="100">VisibleChange</animation>
+                <animation effect="slide" time="200" delay="200" start="80,0" easing="inout">VisibleChange</animation>
+                <animation effect="fade" time="200" end="100">WindowOpen</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+            </control>
+            <control Style="ratingHighlight2Style">
+                <type>imagelist</type>
+                <id>88</id>
+                <posX>790</posX>            
+                <posY>55</posY>
+                <percentage>#Play.AlbumInfo.Rating</percentage>
+                <align>left</align>
+                <subitems>
+                    <subitem>star_open_highlight2.png</subitem>
+                    <subitem>star_closed_highlight2.png</subitem>
+                </subitems>
+                <animation effect="fade" time="200" delay="200" end="100">VisibleChange</animation>
+                <animation effect="slide" time="200" delay="200" start="80,0" easing="inout">VisibleChange</animation>
+                <animation effect="fade" time="200" end="100">WindowOpen</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+            </control>
+            <control Style="labelStyle">
+                <type>textboxscrollup</type>
+                <font>labelFont</font>
+                <posX>790</posX>
+                <posY>75</posY>
+                <width>490</width>
+                <height>585</height>
+                <label>#(string.format('{0}
+                {1}
+                {2}
+                {3}
+                {4}
+                {5}',L(174),iif(eq(#Play.AlbumInfo.Genre,''),#Play.Current.Genre,#Play.AlbumInfo.Genre),L(176),#Play.AlbumInfo.Styles,L(175),#Play.AlbumInfo.Tones))</label>
+                <seperator>------------------</seperator>
+                <textcolor>FF007ACC</textcolor>
+            </control>
+            <control Style="labelStyle">
+                <id>0</id>
+                <type>textboxscrollup</type>
+                <font>labelFont</font>
+                <posX>1290</posX>
+                <posY>52</posY>
+                <width>630</width>
+                <height>606</height>
+                <seperator>---------------------------------------------------------</seperator>
+                <label>#Play.AlbumInfo.Review</label>
+            </control>
+        </control>
+        
+        <!-- Details Overlay -->
+        <control>
+            <type>group</type>
+            <visible>control.hasfocus(417)</visible>
+            <animation effect="fade" time="200" delay="200" end="100">VisibleChange</animation>
+            <animation effect="slide" time="200" delay="200" start="80,0" easing="inout">VisibleChange</animation>
+            <animation effect="fade" time="200" end="100">WindowOpen</animation>
+            <animation effect="fade" time="200" end="0">WindowClose</animation>
+            <control Style="overlayStyle">
+                <type>image</type>
+                <posX>1080</posX>
+                <posY>0</posY>
+                <width>900</width>
+                <height>660</height>
+            </control>
+            <control Style="labelStyle">
+                <type>label</type>
+                <font>subHeaderFont</font><animation effect="fade" time="200" end="100">VisibleChange</animation>
+                <label>#(iif(eq(#Play.Current.Track,''),#Play.Current.Title,string.format('{0}. {1}',#Play.Current.Track,#Play.Current.Title)))</label>
+                <posX>1090</posX>
+                <posY>1</posY>
+                <width>680</width>
+                <textcolor>FFB75700</textcolor>
+                <animation effect="slide" time="0" end="0,-8" condition="true">Conditional</animation>
+                <animation effect="fade" time="200" delay="200" end="100">VisibleChange</animation>
+                <animation effect="slide" time="200" delay="200" start="80,0" easing="inout">VisibleChange</animation>
+                <animation effect="fade" time="200" end="100">WindowOpen</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+            </control>
+            <control>
+                <type>image</type>
+                <posX>1850</posX>
+                <posY>1</posY>
+                <width>76</width>
+                <height>50</height>
+                <texture>logos\audio\#Play.Current.Channels.png</texture>
+            </control>
+            <control>
+                <type>image</type>
+                <posX>1770</posX>
+                <posY>1</posY>
+                <width>76</width>
+                <height>50</height>
+                <texture>logos\audio\#Play.Current.FileType.png</texture>
+            </control>
+            <control>
+                <type>group</type>
+                <posX>1090</posX>
+                <posY>60</posY>
+                <layout>TableLayout(680,2,10,10)</layout>
+                <control Style="labelStyle">
+                    <type>label</type>
+                    <textcolor>FF007ACC</textcolor>
+                    <label>#(L(266)):</label>
+                    <width>250</width>
+                    <height>23</height>
+                </control>
+                <control Style="labelStyle">
+                    <type>fadelabel</type>
+                    <width>560</width>
+                    <label>#(switch(
+                        eq(#Play.Current.Track,''),'-',
+                        eq(#Play.Current.TrackTotal,''),#Play.Current.Track,
+                        eq(1,1),string.format('{0} {1} {2}',#Play.Current.Track,L(1973),#Play.Current.TrackTotal)))#(switch(
+                        eq(#Play.Current.DiscID,''),'',
+                        eq(#Play.Current.DiscTotal,''),string.format(' / CD {0}',#Play.Current.DiscID),
+                        eq(1,1),string.format(' / CD {0} {1} {2}',#Play.Current.DiscID,L(1973),#Play.Current.DiscTotal)
+                    ))</label>
+                </control>
+                <control Style="labelStyle">
+                    <type>label</type>
+                    <textcolor>FF007ACC</textcolor>
+                    <label>#(L(180)):</label>
+                    <width>250</width>
+                    <height>23</height>
+                </control>
+                <control Style="labelStyle">
+                    <type>fadelabel</type>
+                    <width>560</width>
+                    <label>#Play.Current.Duration</label>
+                </control>
+                <control Style="labelStyle">
+                    <type>label</type>
+                    <textcolor>FF007ACC</textcolor>
+                    <label>#(L(270)) #(L(269)):</label>
+                    <width>250</width>
+                    <height>23</height>
+                </control>
+                <control Style="labelStyle">
+                    <type>fadelabel</type>
+                    <width>560</width>
+                    <label>#Play.Current.AlbumArtist</label>
+                </control>
+                <control Style="labelStyle">
+                    <type>label</type>
+                    <textcolor>FF007ACC</textcolor>
+                    <label>Composer:</label>
+                    <width>250</width>
+                    <height>23</height>
+                </control>
+                <control Style="labelStyle">
+                    <type>fadelabel</type>
+                    <width>560</width>
+                    <label>#Play.Current.Composer</label>
+                </control>
+                <control Style="labelStyle">
+                    <type>label</type>
+                    <textcolor>FF007ACC</textcolor>
+                    <label>#(L(1215)):</label>
+                    <width>250</width>
+                    <height>23</height>
+                </control>
+                <control Style="labelStyle">
+                    <type>fadelabel</type>
+                    <width>560</width>
+                    <label>#Play.Current.Conductor</label>
+                </control>
+                <control Style="labelStyle">
+                    <type>label</type>
+                    <textcolor>FF007ACC</textcolor>
+                    <label>#(L(270)):</label>
+                    <width>250</width>
+                    <height>23</height>
+                </control>
+                <control Style="labelStyle">
+                    <type>fadelabel</type>
+                    <width>560</width>
+                    <label>#Play.Current.Album</label>
+                </control>
+                <control Style="labelStyle">
+                    <type>label</type>
+                    <textcolor>FF007ACC</textcolor>
+                    <label>#(L(669)):</label>
+                    <width>250</width>
+                    <height>23</height>
+                </control>
+                <control Style="labelStyle">
+                    <type>fadelabel</type>
+                    <width>560</width>
+                    <label>#Play.Current.Genre</label>
+                </control>
+                <control Style="labelStyle">
+                    <type>label</type>
+                    <textcolor>FF007ACC</textcolor>
+                    <label>#(L(345)):</label>
+                    <width>250</width>
+                    <height>23</height>
+                </control>
+                <control Style="labelStyle">
+                    <type>fadelabel</type>
+                    <width>560</width>
+                    <label>#Play.Current.Year</label>
+                </control>
+                <control Style="labelStyle">
+                    <type>label</type>
+                    <textcolor>FF007ACC</textcolor>
+                    <label>BPM:</label>
+                    <width>250</width>
+                    <height>23</height>
+                </control>
+                <control Style="labelStyle">
+                    <type>fadelabel</type>
+                    <width>560</width>
+                    <label>#Play.Current.BPM</label>
+                </control>
+                <control Style="labelStyle">
+                    <type>label</type>
+                    <textcolor>FF007ACC</textcolor>
+                    <label>Comment:</label>
+                    <width>250</width>
+                    <height>23</height>
+                </control>
+                <control Style="labelStyle">
+                    <type>fadelabel</type>
+                    <width>560</width>
+                    <label>#Play.Current.Comment</label>
+                </control>
+                <control>
+                    <type>label</type>
+                    <height>2</height>
+                    <label></label>
+                </control>
+                <control>
+                    <type>label</type>
+                    <height>2</height>
+                    <label></label>
+                </control>
+                <control Style="labelStyle">
+                    <type>label</type>
+                    <textcolor>FF007ACC</textcolor>
+                    <label>#(L(1209)):</label>
+                    <width>250</width>
+                    <height>23</height>
+                </control>
+                <control Style="labelStyle">
+                    <type>fadelabel</type>
+                    <width>560</width>
+                    <label>#Play.Current.TimesPlayed</label>
+                </control>
+                <control Style="labelStyle">
+                    <type>label</type>
+                    <textcolor>FF007ACC</textcolor>
+                    <label>1231</label>
+                    <width>250</width>
+                    <height>23</height>
+                </control>
+                <control Style="labelStyle">
+                    <type>fadelabel</type>
+                    <width>560</width>
+                    <label>#Play.Current.DateLastPlayed</label>
+                </control>
+                <control Style="labelStyle">
+                    <type>label</type>
+                    <textcolor>FF007ACC</textcolor>
+                    <label>1230</label>
+                    <width>250</width>
+                    <height>23</height>
+                </control>
+                <control Style="labelStyle">
+                    <type>fadelabel</type>
+                    <width>560</width>
+                    <label>#Play.Current.DateAdded</label>
+                </control>
+                <control>
+                    <type>label</type>
+                    <height>2</height>
+                    <label></label>
+                </control>
+                <control>
+                    <type>label</type>
+                    <height>2</height>
+                    <label></label>
+                </control>
+                <control Style="labelStyle">
+                    <type>label</type>
+                    <textcolor>FF007ACC</textcolor>
+                    <label>#(L(6001)):</label>
+                    <width>250</width>
+                    <height>23</height>
+                </control>
+                <control Style="labelStyle">
+                    <type>fadelabel</type>
+                    <width>560</width>
+                    <label>#Play.Current.Codec</label>
+                </control>
+                <control Style="labelStyle">
+                    <type>label</type>
+                    <textcolor>FF007ACC</textcolor>
+                    <label>467</label>
+                    <width>250</width>
+                    <height>23</height>
+                </control>
+                <control Style="labelStyle">
+                    <type>fadelabel</type>
+                    <width>560</width>
+                    <label>#Play.Current.FileType (#Play.Current.Channels)</label>
+                </control>
+                <control Style="labelStyle">
+                    <type>label</type>
+                    <textcolor>FF007ACC</textcolor>
+                    <label>#(L(670)):</label>
+                    <width>250</width>
+                    <height>23</height>
+                </control>
+                <control Style="labelStyle">
+                    <type>fadelabel</type>
+                    <width>560</width>
+                    <label>#Play.Current.BitRate #Play.Current.BitRateMode</label>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

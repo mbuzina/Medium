@@ -1,20 +1,49 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
     <id>504</id>
-    <defaultcontrol>1000</defaultcontrol>
+    <defaultcontrol>50</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <disabletopbar>no</disabletopbar>
-
     <rememberLastFocusedControl>yes</rememberLastFocusedControl>
 
-
+    <define>#useSelectedFanart:yes</define>
     <define>#header.label:#currentmodule</define>
-
-<controls>
+    
+    <controls>
         <include>common.background.default.xml</include>
         <include>mymusic.background.xml</include>
         <include>mymusic.common.hiddenMenu.xml</include>
-
+        
+            <control Style="hiddenStyle">
+                <description>DUMMY CONTROL FOR SELECTED FANART 1 VISIBILITY CONDITION</description>
+                <type>label</type>
+            <posX>800</posX>
+            <posY>200</posY>
+                <id>91919291</id>
+                <label>1#fanarthandler.music.backdrop1.selected1</label>
+            </control>
+            <control Style="hiddenStyle">
+                <description>DUMMY CONTROL FOR SELECTED FANART 2 VISIBILITY CONDITION</description>
+                <type>label</type>
+                <id>91919292</id>
+                <width>300</width>
+                <height>30</height>
+            <posX>800</posX>
+            <posY>240</posY>
+                <font>labelFont</font>
+                <textcolor>FFFF3333</textcolor>
+                <label>2#fanarthandler.music.backdrop2.selected2</label>
+                <visible>true</visible>
+            </control>
+            <control Style="hiddenStyle">
+                <description>DUMMY CONTROL FOR SELECTED FANART AVAILABILITY CONDITION</description>
+                <type>label</type>
+                  <posX>800</posX>
+            <posY>280</posY>
+          <id>91919293</id>
+                <label>#useSelectedFanart</label>
+            </control>
+        
         <control Style="hiddenStyle">
             <description>View Control - Selected Toggle, has text for every other item</description>
             <type>label</type>
@@ -33,23 +62,10 @@
 
         <include>mymusic.common.overlays.xml</include>
         
-        <include>common.Overlay.NowPlaying.xml</include>
-        <include>mymusic.common.facade.xml</include>
+        <include condition="#skin.Music.ShowNowPlaying">common.Overlay.NowPlaying.xml</include>
+        <include condition="#skin.Music.ShowNowPlaying">mymusic.common.facade.xml</include>
+        <include condition="#(not(#skin.Music.ShowNowPlaying))">mymusic.common.facade.long.xml</include>
         <include>common.footer.xml</include>
-        
-        <control Style="footerStyle">
-            <description>Selected Information</description>
-            <type>fadelabel</type>
-            <posX>30</posX>
-            <width>260</width>
-            <align>center</align>
-            <label>#(iif(eq(#selectedindex,''),string.format('{0} {1}',#itemcount,#itemtype),string.format('{0} / {1}',#selectedindex,#itemcount)))</label>
-            <animation effect="slide" time="200" start="0,40" easing="inout">WindowOpen</animation>
-            <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
-            <animation effect="slide" time="200" end="0,40" easing="inout">WindowClose</animation>
-            <animation effect="fade" time="200" easing="inout">WindowClose</animation>
-            <animation effect="slide" time="0" end="-29,0" condition="true">conditional</animation>
-        </control>
         
         <control Style="footerStyle">
             <description>Selected Information</description>
@@ -70,6 +86,5 @@
             <animation effect="slide" time="200" end="0,40" easing="inout">WindowClose</animation>
             <animation effect="fade" time="200" easing="inout">WindowClose</animation>
         </control>
-        
     </controls>
 </window>

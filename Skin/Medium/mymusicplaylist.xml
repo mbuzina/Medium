@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
     <id>500</id>
-    <defaultcontrol>1000</defaultcontrol>
+    <defaultcontrol>50</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <disabletopbar>no</disabletopbar>
+    <rememberLastFocusedControl>no</rememberLastFocusedControl>
 
-    <rememberLastFocusedControl>yes</rememberLastFocusedControl>
-
-
+    <define>#useSelectedFanart:Yes</define>
+    
     <define>#header.label:#currentmodule</define>
 
     <controls>
         <include>common.background.default.xml</include>
         <include>mymusic.background.xml</include>
-        <include>mymusic.common.hiddenMenu.xml</include>
+        <include>mymusic.playlist.hiddenMenu.xml</include>
 
         <control Style="hiddenStyle">
             <description>View Control - Selected Toggle, has text for every other item</description>
@@ -33,23 +33,10 @@
 
         <include>mymusic.common.overlays.xml</include>
         
-        <include>common.Overlay.NowPlaying.xml</include>
-        <include>mymusic.common.facade.xml</include>
+        <include condition="#skin.Music.ShowNowPlaying">common.Overlay.NowPlaying.xml</include>
+        <include condition="#skin.Music.ShowNowPlaying">mymusic.common.facade.xml</include>
+        <include condition="#(not(#skin.Music.ShowNowPlaying))">mymusic.common.facade.long.xml</include>
         <include>common.footer.xml</include>
-        
-        <control Style="footerStyle">
-            <description>Selected Information</description>
-            <type>fadelabel</type>
-            <posX>30</posX>
-            <width>260</width>
-            <align>center</align>
-            <label>#(iif(eq(#selectedindex,''),string.format('{0} {1}',#itemcount,#itemtype),string.format('{0} / {1}',#selectedindex,#itemcount)))</label>
-            <animation effect="slide" time="200" start="0,40" easing="inout">WindowOpen</animation>
-            <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
-            <animation effect="slide" time="200" end="0,40" easing="inout">WindowClose</animation>
-            <animation effect="fade" time="200" easing="inout">WindowClose</animation>
-            <animation effect="slide" time="0" end="-29,0" condition="true">conditional</animation>
-        </control>
         
         <control Style="footerStyle">
             <description>Selected Information</description>
@@ -71,5 +58,25 @@
             <animation effect="fade" time="200" easing="inout">WindowClose</animation>
         </control>
         
+        <control Style="hiddenStyle">
+            <type>button</type>
+            <id>3</id>
+        </control>
+        <control Style="hiddenStyle">
+            <type>button</type>
+            <id>8</id>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>50</onup>
+            <ondown>50</ondown>
+        </control>
+        <control Style="hiddenStyle">
+            <type>button</type>
+            <id>12</id>
+        </control>
+        <control Style="hiddenStyle">
+            <type>button</type>
+            <id>29</id>
+        </control>
     </controls>
 </window>

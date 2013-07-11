@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>2</id>
+    <defaultcontrol>50</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <disabletopbar>no</disabletopbar>
+    <rememberLastFocusedControl>yes</rememberLastFocusedControl>
+    
+    <define>#header.label:#currentmodule</define>
+
+    <controls>
+        <include>common.background.default.xml</include>
+        <include>mypics.background.xml</include>
+        <include>mypics.common.hiddenMenu.xml</include>
+
+        <control Style="hiddenStyle">
+            <description>View Control - Selected Toggle, has text for every other item</description>
+            <type>label</type>
+            <id>5544</id>
+            <label>#(iif(neq(string.rtrim(#selectedindex,'1,3,5,7,9'),#selectedindex),'',' '))</label>
+        </control>
+        
+        <control Style="shadowTextStyle">
+            <description>Selected Item</description>
+            <type>textbox</type>
+            <label>#(iif(eq(#selecteditem,''),#currentmodule,#selecteditem))</label>
+            <lineSpacing>0.6</lineSpacing>
+        </control>
+        
+        <include>common.header.xml</include>
+
+        <include>mypics.common.overlays.xml</include>
+        
+        <include condition="#skin.Pics.ShowNowPlaying">common.Overlay.NowPlaying.xml</include>
+        <include condition="#skin.Pics.ShowNowPlaying">mypics.common.facade.xml</include>
+        <include condition="#(not(#skin.Pics.ShowNowPlaying))">mypics.common.facade.long.xml</include>
+        <include>common.footer.xml</include>
+        
+        <control Style="footerStyle">
+            <description>Selected Information</description>
+            <type>fadelabel</type>
+            <posX>260</posX>
+            <width>1690</width>
+            <label>#selecteditem #selecteditem2</label>
+            <animation effect="slide" time="200" start="0,40" easing="inout">WindowOpen</animation>
+            <animation effect="fade" time="200" easing="inout">WindowOpen</animation>
+            <animation effect="slide" time="200" end="0,40" easing="inout">WindowClose</animation>
+            <animation effect="fade" time="200" easing="inout">WindowClose</animation>
+        </control>
+    </controls>
+</window>

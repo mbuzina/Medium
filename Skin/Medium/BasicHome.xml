@@ -7,7 +7,21 @@
 
     <rememberLastFocusedControl>yes</rememberLastFocusedControl>
 
-
+    <define>#useSelectedFanart:yes</define>
+    
+    <!--<define>#useRandomGamesUserFanart:Yes</define>
+    <define>#useRandomMoviesUserFanart:Yes</define>
+    <define>#useRandomMoviesScraperFanart:Yes</define>
+    <define>#useRandomMovingPicturesFanart:Yes</define>
+    <define>#useRandomMusicUserFanart:Yes</define>
+    <define>#useRandomMusicScraperFanart:Yes</define>
+    <define>#useRandomPicturesUserFanart:Yes</define>
+    <define>#useRandomPluginsUserFanart:Yes</define>
+    <define>#useRandomScoreCenterUserFanart:Yes</define>
+    <define>#useRandomTVUserFanart:Yes</define>
+    <define>#useRandomTVSeriesFanart:Yes</define>
+    <define>#useSelectedFanart:Yes</define>-->
+    
     <define>#header.label:#(L(2143))</define>
     <define>#BasicHome.MainMenu:#(add(cint(1000),cint(#BasicHome.Current.ID)))</define>
     <define property="true" evaluateNow="true">#ref_ShutdownAction:#(cint(#BasicHome.Shutdown.Action))</define>
@@ -108,6 +122,18 @@
                 <visible>string.equals(#BasicHome.Current.ID,12)</visible>
                 <label>H12 (1112)</label>
             </control>
+            <control Style="hiddenStyle">
+                <id>1113</id>
+                <type>button</type>
+                <visible>string.equals(#BasicHome.Current.ID,0)|string.equals(#BasicHome.Current.ID,2)|string.equals(#BasicHome.Current.ID,4)|string.equals(#BasicHome.Current.ID,6)|string.equals(#BasicHome.Current.ID,8)</visible>
+                <label>Flip Even (1113)</label>
+            </control>
+            <control Style="hiddenStyle">
+                <id>1114</id>
+                <type>button</type>
+                <visible>string.equals(#BasicHome.Current.ID,1)|string.equals(#BasicHome.Current.ID,3)|string.equals(#BasicHome.Current.ID,5)|string.equals(#BasicHome.Current.ID,7)|string.equals(#BasicHome.Current.ID,9)</visible>
+                <label>Flip Odd (1114)</label>
+            </control>
         </control>
         
         <control Style="shadowTextStyle">
@@ -182,7 +208,7 @@
             <hyperlinkParameter>#BasicHome.B1.HyperlinkParameter</hyperlinkParameter>
             <onright>1001</onright>
             <onleft>1012</onleft>
-            <ondown>77654</ondown>
+            <ondown>10100</ondown>
             <visible>!string.equals(#BasicHome.B0.Label,X)+!string.equals(#BasicHome.B0.Label,)</visible>
             <onfocus>#(skin.setstring('#BasicHome.Current.Label',#BasicHome.B0.Label))|
                      #(skin.setstring('#BasicHome.Previous.ID',#BasicHome.Current.ID))|
@@ -222,6 +248,7 @@
             <hyperlinkParameter>#BasicHome.B1.HyperlinkParameter</hyperlinkParameter>
             <onright>1002</onright>
             <onleft>1000</onleft>
+            <ondown>10110</ondown>
             <visible>!string.equals(#BasicHome.B1.Label,x)+!string.equals(#BasicHome.B1.Label,)</visible>
             <onfocus>#(skin.setstring('#BasicHome.Current.Label',#BasicHome.B1.Label))|
                      #(skin.setstring('#BasicHome.Previous.ID',#BasicHome.Current.ID))|
@@ -261,6 +288,7 @@
             <hyperlinkParameter>#BasicHome.B2.HyperlinkParameter</hyperlinkParameter>
             <onright>1003</onright>
             <onleft>1001</onleft>
+            <ondown>10120</ondown>
             <visible>!string.equals(#BasicHome.B2.Label,X)+!string.equals(#BasicHome.B2.Label,)</visible>
             <onfocus>#(skin.setstring('#BasicHome.Current.Label',#BasicHome.B2.Label))|
                      #(skin.setstring('#BasicHome.Previous.ID',#BasicHome.Current.ID))|
@@ -300,6 +328,7 @@
             <hyperlinkParameter>#BasicHome.B3.HyperlinkParameter</hyperlinkParameter>
             <onright>1004</onright>
             <onleft>1002</onleft>
+            <ondown>10130</ondown>
             <visible>!string.equals(#BasicHome.B3.Label,X)+!string.equals(#BasicHome.B3.Label,)</visible>
             <onfocus>#(skin.setstring('#BasicHome.Current.Label',#BasicHome.B3.Label))|
                      #(skin.setstring('#BasicHome.Previous.ID',#BasicHome.Current.ID))|
@@ -339,6 +368,7 @@
             <hyperlinkParameter>#BasicHome.B4.HyperlinkParameter</hyperlinkParameter>
             <onright>1005</onright>
             <onleft>1003</onleft>
+            <ondown>10140</ondown>
             <visible>!string.equals(#BasicHome.B4.Label,X)+!string.equals(#BasicHome.B4.Label,)</visible>
             <onfocus>#(skin.setstring('#BasicHome.Current.Label',#BasicHome.B4.Label))|
                      #(skin.setstring('#BasicHome.Previous.ID',#BasicHome.Current.ID))|
@@ -378,6 +408,7 @@
             <hyperlinkParameter>#BasicHome.B5.HyperlinkParameter</hyperlinkParameter>
             <onright>1006</onright>
             <onleft>1004</onleft>
+            <ondown>10150</ondown>
             <visible>!string.equals(#BasicHome.B5.Label,X)+!string.equals(#BasicHome.B5.Label,)</visible>
             <onfocus>#(skin.setstring('#BasicHome.Current.Label',#BasicHome.B5.Label))|
                      #(skin.setstring('#BasicHome.Previous.ID',#BasicHome.Current.ID))|
@@ -417,6 +448,7 @@
             <hyperlinkParameter>#BasicHome.B6.HyperlinkParameter</hyperlinkParameter>
             <onright>1007</onright>
             <onleft>1005</onleft>
+            <ondown>10160</ondown>
             <visible>!string.equals(#BasicHome.B6.Label,X)+!string.equals(#BasicHome.B6.Label,)</visible>
             <onfocus>#(skin.setstring('#BasicHome.Current.Label',#BasicHome.B6.Label))|
                      #(skin.setstring('#BasicHome.Previous.ID',#BasicHome.Current.ID))|
@@ -456,6 +488,7 @@
             <hyperlinkParameter>#BasicHome.B7.HyperlinkParameter</hyperlinkParameter>
             <onright>1008</onright>
             <onleft>1006</onleft>
+            <ondown>10170</ondown>
             <visible>!string.equals(#BasicHome.B7.Label,X)+!string.equals(#BasicHome.B7.Label,)</visible>
             <onfocus>#(skin.setstring('#BasicHome.Current.Label',#BasicHome.B7.Label))|
                      #(skin.setstring('#BasicHome.Previous.ID',#BasicHome.Current.ID))|
@@ -495,6 +528,7 @@
             <hyperlinkParameter>#BasicHome.B8.HyperlinkParameter</hyperlinkParameter>
             <onright>1009</onright>
             <onleft>1007</onleft>
+            <ondown>10180</ondown>
             <visible>!string.equals(#BasicHome.B8.Label,X)+!string.equals(#BasicHome.B8.Label,)</visible>
             <onfocus>#(skin.setstring('#BasicHome.Current.Label',#BasicHome.B8.Label))|
                      #(skin.setstring('#BasicHome.Previous.ID',#BasicHome.Current.ID))|
@@ -534,6 +568,7 @@
             <hyperlinkParameter>#BasicHome.B9.HyperlinkParameter</hyperlinkParameter>
             <onright>1010</onright>
             <onleft>1008</onleft>
+            <ondown>10190</ondown>
             <visible>!string.equals(#BasicHome.B9.Label,X)+!string.equals(#BasicHome.B9.Label,)</visible>
             <onfocus>#(skin.setstring('#BasicHome.Current.Label',#BasicHome.B9.Label))|
                      #(skin.setstring('#BasicHome.Previous.ID',#BasicHome.Current.ID))|
@@ -572,6 +607,8 @@
             <label>#(L(1057))</label>
             <onright>1011</onright>
             <onleft>1009</onleft>
+            <ondown>1010</ondown>
+            <onup>1010</onup>
             <visible>#BasicHome.ShowExit</visible>
             <action>97</action>
             <onfocus>#(skin.setstring('#BasicHome.Current.Label',L(1057)))|
@@ -613,6 +650,8 @@
             <label>#(L(1030))</label>
             <onright>1012</onright>
             <onleft>1010</onleft>
+            <ondown>1011</ondown>
+            <onup>1011</onup>
             <visible>#BasicHome.ShowShutdown</visible>
             <action>#ref_ShutdownAction</action>
             <onfocus>#(skin.setstring('#BasicHome.Current.Label',L(1030)))|
@@ -654,6 +693,8 @@
             <label>#(L(1031))</label>
             <onright>1000</onright>
             <onleft>1011</onleft>
+            <ondown>1012</ondown>
+            <onup>1012</onup>
             <visible>#BasicHome.ShowRestart</visible>
             <action>98</action>
             <onfocus>#(skin.setstring('#BasicHome.Current.Label',L(1031)))|
@@ -694,6 +735,7 @@
         <include>common.Overlay.NowPlaying.xml</include>
         <include>BasicHome.Overlay.WorldWeather.5.xml</include>
         <include>BasicHome.Overlay.LatestMusic.xml</include>
+        <include>BasicHome.Overlay.LatestPictures.xml</include>
         <include>common.footer.xml</include>
         
         <control Style="footerStyle">

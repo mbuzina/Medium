@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <controls>
+         <!-- For List, Album, Small & Large Icon View, Infos in a box on the right -->
+         <control>
+            <type>group</type>
+            <visible>facadeview.list|facadeview.album|facadeview.smallicons|facadeview.largeicons|facadeview.playlist</visible>
+            <control Style="overlayStyle">
+                <description>Overlay for List, Album, Small and Large Icon View and Playlist</description>
+                <type>image</type>
+                <posX>0</posX>
+                <posY>130</posY>
+                <width>1240</width>
+                <height>614</height>
+                <visible>skin.hassetting(#skin.Pics.ShowNowPlaying)</visible>
+            </control>
+            <control Style="overlayStyle">
+                <description>Small Overlay for spin controls</description>
+                <type>image</type>
+                <posX>1060</posX>
+                <posY>743</posY>
+                <width>180</width>
+                <height>50</height>
+                <visible>skin.hassetting(#skin.Pics.ShowNowPlaying)</visible>
+            </control>
+             <control Style="overlayStyle">
+                <description>Overlay for List, Album, Small and Large Icon View</description>
+                <type>image</type>
+                <posX>0</posX>
+                <posY>130</posY>
+                <width>1240</width>
+                <height>862</height>
+                <visible>!skin.hassetting(#skin.Pics.ShowNowPlaying)</visible>
+            </control>
+            <control Style="overlayStyle">
+                <description>Small Overlay for spin controls</description>
+                <type>image</type>
+                <posX>1060</posX>
+                <posY>991</posY>
+                <width>180</width>
+                <height>49</height>
+                <visible>!skin.hassetting(#skin.Pics.ShowNowPlaying)</visible>
+            </control>
+
+            <control Style="overlayStyle">
+                <description>Overlay for Details in List, Album, Small and Large Icon View</description>
+                <type>image</type>
+                <posX>1280</posX>
+                <posY>130</posY>
+                <width>614</width>
+                <height>614</height>
+            </control>
+        
+            <control Style="thumbStyle">
+                <type>image</type>
+                <id>30014</id>
+            </control>
+             
+             <control Style="labelStyle">
+                 <type>label</type>
+                 <posX>1287</posX>
+                 <posY>320</posY>
+                 <width>600</width>
+                 <height>50</height>
+                 <font>backgroundFont</font>
+                 <align>center</align>
+                 <label>..</label>
+                 <visible>string.equals(#selectedindex,)</visible>
+             </control>
+             
+            <!-- Thumb/Details View for Folders -->
+            <control Style="overlayStyle">
+                <type>image</type>
+                <posX>1280</posX>
+                <posY>674</posY>
+                <width>614</width>
+                <height>70</height>
+                <visible>!string.equals(#selectedthumb,)+!window.isvisible(2014)</visible>
+            </control> 
+            <control Style="subHeaderStyle">
+                <type>fadelabel</type>
+                <posX>1285</posX>
+                <posY>675</posY>
+                <width>614</width>
+                <label>#selecteditem</label>
+                <visible>true</visible>
+            </control>
+        </control>
+        
+        <!-- For filmstrip view infos are top left, like now playing -->
+         <control>
+            <type>group</type>             
+            <visible>facadeview.filmstrip</visible>
+
+            <control Style="overlayStyle">
+                <description>Overlay for Details in filmstrip View</description>
+                <type>image</type>
+                <posX>0</posX>
+                <posY>130</posY>
+                <width>370</width>
+                <height>370</height>
+                <animation effect="slide" time="0" end="0,270" condition="!skin.hassetting(#skin.Pics.ShowNowPlaying)">Conditional</animation>
+            </control>
+            
+            <control Style="thumbStyle">
+                <description>Frontside Image</description>
+                <type>image</type>
+                <id>30034</id>
+                <posX>0</posX>
+                <posY>130</posY>
+                <width>370</width>
+                <height>370</height>
+                <animation effect="slide" time="0" end="0,270" condition="!skin.hassetting(#skin.Pics.ShowNowPlaying)">Conditional</animation>
+                <animation effect="fade" delay="300" time="200" start="0" end="100" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
+                <animation effect="fade" delay="300" time="200" start="0" end="100" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
+                <animation effect="slide" delay="300" time="200" start="-40,0" end="0,0" reversible="false" condition="Control.HasText(5544)">Conditional</animation>
+                <animation effect="slide" delay="300" time="200" start="-40,0" end="0,0" reversible="false" condition="!Control.HasText(5544)">Conditional</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+            </control>
+            
+             <control Style="labelStyle">
+                 <type>label</type>
+                 <posX>0</posX>
+                 <posY>310</posY>
+                 <width>370</width>
+                 <height>50</height>
+                 <font>backgroundFont</font>
+                 <align>center</align>
+                 <label>..</label>
+                 <visible>string.equals(#selectedindex,)</visible>
+                <animation effect="slide" time="0" end="0,270" condition="!skin.hassetting(#skin.Pics.ShowNowPlaying)">Conditional</animation>
+             </control>
+
+            <!-- Thumb/Details View for Folders -->
+            <control Style="overlayStyle">
+                <type>image</type>
+                <posX>0</posX>
+                <posY>430</posY>
+                <width>370</width>
+                <height>70</height>
+                <visible>!string.equals(#selectedthumb,)</visible>
+                <animation effect="slide" time="0" end="0,270" condition="!skin.hassetting(#skin.Pics.ShowNowPlaying)">Conditional</animation>
+            </control> 
+            <control Style="subHeaderStyle">
+                <type>fadelabel</type>
+                <posX>30</posX>
+                <posY>430</posY>
+                <width>370</width>
+                <label>#selecteditem</label>
+                <visible>true</visible>
+                <animation effect="slide" time="0" end="-30,0" condition="true">Conditional</animation>
+                <animation effect="fade" time="200" end="0">WindowClose</animation>
+                <animation effect="slide" time="0" end="0,270" condition="!skin.hassetting(#skin.Pics.ShowNowPlaying)">Conditional</animation>
+            </control>
+        </control>
+        
+        <!-- For coverflow infos are on backside, CD pops out on top -->
+        <control>
+            <type>group</type>
+            <visible>facadeview.coverflow</visible>
+            
+            <control Style="overlayStyle">
+                <type>image</type>
+                <posX>0</posX>
+                <posY>350</posY>
+                <width>1920</width>
+                <height>400</height>
+                <animation effect="slide" time="0" end="0,270" condition="!skin.hassetting(#skin.Pics.ShowNowPlaying)">Conditional</animation>
+            </control>
+        </control>
+    </controls>
+</window>

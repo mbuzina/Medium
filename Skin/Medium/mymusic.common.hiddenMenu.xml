@@ -6,19 +6,13 @@
             <type>actiongroup</type>
             <id>31001</id>
             <dimColor>FFFFFFFF</dimColor>
+            <description>action menu</description>
+            <defaultcontrol>2</defaultcontrol>
+            <onexit>50</onexit>
             <visible>!control.hasfocus(50)</visible>
             <control Style="dimScreenStyle">
                 <type>image</type>
                 <id>0</id>
-            </control>
-            <control Style="overlayStyle">
-                <type>image</type>
-                <posX>0</posX>
-                <posY>0</posY>
-                <width>1920</width>
-                <height>1080</height>
-                <colordiffues>30AAAAAA</colordiffues>
-                <visible>skin.hassetting(#HideOverlay)</visible>
             </control>
             <control>
                 <type>image</type>
@@ -28,9 +22,11 @@
                 <height>1080</height>
                 <texture>hiddenMenu_overlay.png</texture>
                 <dimColor>FFFFFFFF</dimColor>
+                <unfocusedAlpha>255</unfocusedAlpha>
                 <animtation effect="slide" time="400" start="40,0" end="0,0" easing="inout" reversible="false">visible</animtation>
                 <animtation effect="slide" time="400" end="40,0" start="0,0" easing="inout" reversible="false">hidden</animtation>
-                <animation effect="fade" time="200">VisibleChange</animation>
+                <animation effect="fade" time="200" reversible="false">Visible</animation>
+                <animation effect="fade" time="100" delay="200" reversible="false">Hidden</animation>
                 <animtation effect="slide" time="400" end="40,0" start="0,0" easing="inout" reversible="false">WindowClose</animtation>
                 <animation effect="fade" time="200">WindowClose</animation>
             </control>
@@ -55,7 +51,7 @@
                     <label></label>
                     <onright>50</onright>
                     <onleft>50</onleft>
-                    <onup>17</onup>
+                    <onup>9878</onup>
                     <ondown>5</ondown>
                     <mode>dialoglist</mode>                    
                     <dialogTitle>792</dialogTitle>
@@ -89,7 +85,7 @@
                     <onleft>50</onleft>
                     <onup>5</onup>
                     <ondown>12</ondown>
-                    
+                    <visible>!window.isvisible(500)</visible>
                     <animation effect="fade" time="100" delay="30">VisibleChange</animation>
                     <animation effect="slide" time="100" start="40,0" end="0,0" delay="30">VisibleChange</animation>
                 </control>
@@ -107,9 +103,28 @@
                     <onright>50</onright>
                     <onleft>50</onleft>
                     <onup>3</onup>
-                    <ondown>11</ondown>
+                    <ondown>10</ondown>
+                    <visible>!window.isvisible(500)</visible>
                     <animation effect="fade" time="100" delay="50">VisibleChange</animation>
                     <animation effect="slide" time="100" start="40,0" end="0,0" delay="50">VisibleChange</animation>
+                </control>
+                <control Style="hiddenMenuItemStyle">
+                    <description>My Playlists</description>
+                    <type>button</type>
+                    <id>10</id>
+                    <label>983</label>
+                    <onright>50</onright>
+                    <onleft>50</onleft>
+                    <onup>12</onup>
+                    <ondown>11</ondown>
+                    <animation effect="fade" time="100" delay="60">VisibleChange</animation>
+                    <animation effect="slide" time="100" start="40,0" end="0,0" delay="60">VisibleChange</animation>
+                </control>
+                <control Style="hiddenMenuHeaderStyle">
+                    <type>label</type>
+                    <label> #(L(1065))</label>
+                    <animation effect="fade" time="100" delay="70">VisibleChange</animation>
+                    <animation effect="slide" time="100" start="40,0" end="0,0" delay="70">VisibleChange</animation>
                 </control>
                 <control Style="hiddenMenuItemStyle">
                     <description>Now playing</description>
@@ -119,10 +134,10 @@
                     <hyperlink>510</hyperlink>
                     <onright>50</onright>
                     <onleft>50</onleft>
-                    <onup>12</onup>
+                    <onup>10</onup>
                     <ondown>9</ondown>
-                    <animation effect="fade" time="100" delay="60">VisibleChange</animation>
-                    <animation effect="slide" time="100" start="40,0" end="0,0" delay="60">VisibleChange</animation>
+                    <animation effect="fade" time="100" delay="80">VisibleChange</animation>
+                    <animation effect="slide" time="100" start="40,0" end="0,0" delay="80">VisibleChange</animation>
                 </control>
                 <control Style="hiddenMenuItemStyle">
                     <description>Current Playlist</description>
@@ -133,38 +148,21 @@
                     <onright>50</onright>
                     <onleft>50</onleft>
                     <onup>11</onup>
-                    <ondown>10</ondown>
-                    <animation effect="fade" time="100" delay="70">VisibleChange</animation>
-                    <animation effect="slide" time="100" start="40,0" end="0,0" delay="70">VisibleChange</animation>
-                </control>
-                <control Style="hiddenMenuItemStyle">
-                    <description>My Playlists</description>
-                    <type>button</type>
-                    <id>10</id>
-                    <label>983</label>
-                    <onright>50</onright>
-                    <onleft>50</onleft>
-                    <onup>9</onup>
-                    <ondown>8</ondown>
-                    <animation effect="fade" time="100" delay="80">VisibleChange</animation>
-                    <animation effect="slide" time="100" start="40,0" end="0,0" delay="80">VisibleChange</animation>
-                </control>
-                <control Style="hiddenMenuHeaderStyle">
-                    <type>label</type>
-                    <label> Go To</label>
+                    <ondown>9876</ondown>
                     <animation effect="fade" time="100" delay="90">VisibleChange</animation>
                     <animation effect="slide" time="100" start="40,0" end="0,0" delay="90">VisibleChange</animation>
                 </control>
                 <control Style="hiddenMenuItemStyle">
-                    <description>Search</description>
+                    <description>Search Music normal push button</description>
                     <type>button</type>
-                    <id>8</id>
-                    <label>#(L(137))</label>
-                    <hyperlink>30</hyperlink>
+                    <id>9876</id>
+                    <hyperlink>30885</hyperlink>
+                    <label>#GlobalSearch.Translation.SearchMusic.Label</label>
+                    <onup>9</onup>
+                    <ondown>105</ondown>
                     <onright>50</onright>
                     <onleft>50</onleft>
-                    <onup>10</onup>
-                    <ondown>105</ondown>
+                    <visible>plugin.isenabled(Search music)</visible>
                     <animation effect="fade" time="100" delay="100">VisibleChange</animation>
                     <animation effect="slide" time="100" start="40,0" end="0,0" delay="100">VisibleChange</animation>
                 </control>
@@ -176,10 +174,12 @@
                     <hyperlink>30</hyperlink>
                     <onright>50</onright>
                     <onleft>50</onleft>
-                    <onup>8</onup>
+                    <onup>9876</onup>
                     <ondown>106</ondown>
-                    <animation effect="fade" time="100" delay="100">VisibleChange</animation>
-                    <animation effect="slide" time="100" start="40,0" end="0,0" delay="100">VisibleChange</animation>
+                    <visible>plugin.isenabled(Radio)</visible>
+                    <animation effect="fade" time="100" delay="110">VisibleChange</animation>
+                    <animation effect="slide" time="100" start="40,0" end="0,0" delay="110">VisibleChange</animation>
+                    <animation effect="slide" time="0" end="0,-52" condition="!control.isvisible(9876)">Conditional</animation>
                 </control>
                 <control Style="hiddenMenuItemStyle">
                     <description>Lastfmbutton</description>
@@ -190,24 +190,12 @@
                     <onright>50</onright>
                     <onleft>50</onleft>
                     <onup>105</onup>
-                    <ondown>9876</ondown>
-                    <visible>plugin.isenabled(Last.fm Radio)</visible>
-                    <animation effect="fade" time="100" delay="110">VisibleChange</animation>
-                    <animation effect="slide" time="100" start="40,0" end="0,0" delay="110">VisibleChange</animation>
-                </control>
-                <control Style="hiddenMenuItemStyle">
-                    <description>Search Music normal push button</description>
-                    <type>button</type>
-                    <id>9876</id>
-                    <hyperlink>30885</hyperlink>
-                    <label>#GlobalSearch.Translation.SearchMusic.Label</label>
-                    <onup>106</onup>
                     <ondown>9875</ondown>
-                    <onright>50</onright>
-                    <onleft>50</onleft>
-                    <visible>plugin.isenabled(Search music)</visible>
+                    <visible>plugin.isenabled(Last.fm Radio)</visible>
                     <animation effect="fade" time="100" delay="120">VisibleChange</animation>
                     <animation effect="slide" time="100" start="40,0" end="0,0" delay="120">VisibleChange</animation>
+                    <animation effect="slide" time="0" end="0,-52" condition="!control.isvisible(9876)">Conditional</animation>
+                    <animation effect="slide" time="0" end="0,-52" condition="!control.isvisible(105)">Conditional</animation>
                 </control>
                 <control Style="hiddenMenuItemStyle">
                     <description>Lyrics normal push button</description>
@@ -215,19 +203,26 @@
                     <id>9875</id>
                     <hyperlink>90478</hyperlink>
                     <label>Lyrics</label>
-                    <onup>9876</onup>
+                    <onup>106</onup>
                     <ondown>9877</ondown>
                     <onright>50</onright>
                     <onleft>50</onleft>
                     <visible>plugin.isenabled(My Lyrics)</visible>
                     <animation effect="fade" time="100" delay="130">VisibleChange</animation>
                     <animation effect="slide" time="100" start="40,0" end="0,0" delay="130">VisibleChange</animation>
+                    <animation effect="slide" time="0" end="0,-52" condition="!control.isvisible(9876)">Conditional</animation>
+                    <animation effect="slide" time="0" end="0,-52" condition="!control.isvisible(105)">Conditional</animation>
+                    <animation effect="slide" time="0" end="0,-52" condition="!control.isvisible(106)">Conditional</animation>
                 </control>
                 <control Style="hiddenMenuHeaderStyle">
                     <type>label</type>
                     <label> #(L(897))</label>
                     <animation effect="fade" time="100" delay="140">VisibleChange</animation>
                     <animation effect="slide" time="100" start="40,0" end="0,0" delay="140">VisibleChange</animation>
+                    <animation effect="slide" time="0" end="0,-52" condition="!control.isvisible(9876)">Conditional</animation>
+                    <animation effect="slide" time="0" end="0,-52" condition="!control.isvisible(105)">Conditional</animation>
+                    <animation effect="slide" time="0" end="0,-52" condition="!control.isvisible(106)">Conditional</animation>
+                    <animation effect="slide" time="0" end="0,-52" condition="!control.isvisible(9875)">Conditional</animation>
                 </control>
                 <control Style="hiddenMenuItemStyle">
                     <description>Music Settings</description>
@@ -241,6 +236,10 @@
                     <onleft>50</onleft>
                     <animation effect="fade" time="100" delay="150">VisibleChange</animation>
                     <animation effect="slide" time="100" start="40,0" end="0,0" delay="150">VisibleChange</animation>
+                    <animation effect="slide" time="0" end="0,-52" condition="!control.isvisible(9876)">Conditional</animation>
+                    <animation effect="slide" time="0" end="0,-52" condition="!control.isvisible(105)">Conditional</animation>
+                    <animation effect="slide" time="0" end="0,-52" condition="!control.isvisible(106)">Conditional</animation>
+                    <animation effect="slide" time="0" end="0,-52" condition="!control.isvisible(9875)">Conditional</animation>
                 </control>
                 <control Style="hiddenMenuItemStyle">
                     <description>Skin Settings</description>
@@ -254,6 +253,10 @@
                     <onleft>50</onleft>
                     <animation effect="fade" time="100" delay="160">VisibleChange</animation>
                     <animation effect="slide" time="100" start="40,0" end="0,0" delay="160">VisibleChange</animation>
+                    <animation effect="slide" time="0" end="0,-52" condition="!control.isvisible(9876)">Conditional</animation>
+                    <animation effect="slide" time="0" end="0,-52" condition="!control.isvisible(105)">Conditional</animation>
+                    <animation effect="slide" time="0" end="0,-52" condition="!control.isvisible(106)">Conditional</animation>
+                    <animation effect="slide" time="0" end="0,-52" condition="!control.isvisible(9875)">Conditional</animation>
                 </control>
             </control>
         </control>

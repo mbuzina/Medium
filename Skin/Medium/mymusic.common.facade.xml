@@ -18,8 +18,6 @@
                     
                     <onright>2</onright>
                     <onleft>2</onleft>
-                    <onup>2</onup>
-                    <ondown>2</ondown>
                 </control>
                 
                <control>
@@ -35,8 +33,6 @@
                     
                     <onright>2</onright>
                     <onleft>2</onleft>
-                    <onup>2</onup>
-                    <ondown>2</ondown>
                 </control>
                 
                 <control>
@@ -79,7 +75,18 @@
                                     <height>400</height>
                                     <texture>header_background.png</texture>
                                 </control>
-                                <control>
+                                <control Style="thumbStyle">
+                                    <description>Frontside Image</description>
+                                    <id>50501</id>
+                                    <type>image</type>
+                                    <posX>0</posX>
+                                    <posY>0</posY>
+                                    <width>400</width>
+                                    <height>400</height>
+                                    <texture>#selectedthumb</texture>
+                                    <visible>!control.hasthumb(50501)</visible>
+                                </control>
+                                <control Style="thumbStyle">
                                     <description>Backside Image</description>
                                     <id>50501</id>
                                     <type>image</type>
@@ -187,12 +194,12 @@
                     <onup>2</onup>
                     <ondown>2</ondown>
                 </control>
-            </control>
-            
-            <control>
-                <description>playlist listcontrol</description>
-                <type>playlistcontrol</type>
-                <id>50</id>
+                
+                <control>
+                    <description>playlist listcontrol</description>
+                    <type>playlistcontrol</type>
+                    <id>50</id>
+                </control>
             </control>
         </control>
     </controls>

@@ -74,22 +74,29 @@
             <type>group</type>
             <id>15000</id>
             <dimColor>FFFFFFFF</dimColor>
-            <animation effect="slide" time="0" delay="11" start="0,0" end="0,0" condition="control.isvisible(15001)">conditional</animation>
-            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(15001)">conditional</animation>
-            <animation effect="slide" time="0" delay="11" start="0,0" end="0,142" condition="control.isvisible(15002)">conditional</animation>
-            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(15002)">conditional</animation>
-            <animation effect="slide" time="0" delay="11" start="0,0" end="0,285" condition="control.isvisible(15003)">conditional</animation>
-            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(15003)">conditional</animation>
+            
+            <animation effect="fade" delay="300" start="0" end="100" time="200" easing="out" tween="cubic" reversible="false" condition="Control.IsVisible(1113)">Conditional</animation>
+            <animation effect="fade" delay="300" start="0" end="100" time="200" easing="out" tween="cubic" reversible="false" condition="!Control.IsVisible(1113)">Conditional</animation>
+            
+            <animation effect="slide" delay="200" time="000" start="0,0" end="0,0" condition="control.isvisible(15001)">conditional</animation>
+            <animation effect="fade"  delay="300" time="200" start="0" end="100" reversible="false" condition="control.isvisible(15001)">conditional</animation>
+            <animation effect="slide" delay="200" time="000" start="0,0" end="0,142" condition="control.isvisible(15002)">conditional</animation>
+            <animation effect="fade"  delay="300" time="200" start="0" end="100" reversible="false" condition="control.isvisible(15002)">conditional</animation>
+            <animation effect="slide" delay="200" time="000" start="0,0" end="0,285" condition="control.isvisible(15003)">conditional</animation>
+            <animation effect="fade"  delay="300" time="200" start="0" end="100" reversible="false" condition="control.isvisible(15003)">conditional</animation>            
+            
+            <animation effect="slide" delay="200" time="000" start="0,0" end="420,0" condition="control.isvisible(15004)">conditional</animation>
+            <animation effect="fade"  delay="300" time="200" start="0" end="100" reversible="false" condition="control.isvisible(15004)">conditional</animation>
+            <animation effect="slide" delay="200" time="000" start="0,0" end="420,142" condition="control.isvisible(15005)">conditional</animation>
+            <animation effect="fade"  delay="300" time="200" start="0" end="100" reversible="false" condition="control.isvisible(15005)">conditional</animation>
+            <animation effect="slide" delay="200" time="000" start="0,0" end="420,285" condition="control.isvisible(15006)">conditional</animation>
+            <animation effect="fade"  delay="300" time="200" start="0" end="100" reversible="false" condition="control.isvisible(15006)">conditional</animation>
 
-            <animation effect="slide" time="0" delay="11" start="0,0" end="420,0" condition="control.isvisible(15004)">conditional</animation>
-            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(15004)">conditional</animation>
-            <animation effect="slide" time="0" delay="11" start="0,0" end="420,142" condition="control.isvisible(15005)">conditional</animation>
-            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(15005)">conditional</animation>
-            <animation effect="slide" time="0" delay="11" start="0,0" end="420,285" condition="control.isvisible(15006)">conditional</animation>
-            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(15006)">conditional</animation>
+            <animation effect="slide" delay="000" time="000" start="0,0" end="1920,1080" condition="!control.isvisible(15001)+!control.isvisible(15002)+!control.isvisible(15003)+!control.isvisible(15004)+!control.isvisible(15005)+!control.isvisible(15006)">conditional</animation>
 
-            <animation effect="fade" time="200" easing="inout" condition="true">Visible</animation>
-            <animation effect="fade" time="10" easing="inout" condition="true">Hidden</animation>
+            <animation effect="fade" delay="200" time="200" easing="inout" condition="true">Visible</animation>
+            <animation effect="fade" delay="200" time="200" easing="inout" condition="true">Hidden</animation>
+            
             <posX>0</posX>
             <posY>0</posY>
             <visible>[control.isvisible(15001)|control.isvisible(15002)|control.isvisible(15003)|control.isvisible(15004)|control.isvisible(15005)|control.isvisible(15006)]+!string.equals(#WorldWeather.TodayTemperature,)</visible>
@@ -317,15 +324,20 @@
             <type>group</type>
             <id>11010</id>
             <dimColor>FFFFFFFF</dimColor>
-            <animation effect="slide" time="0" delay="11" start="0,0" end="840,0" condition="control.isvisible(15007)">conditional</animation>
-            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(15007)">conditional</animation>
-            <animation effect="slide" time="0" delay="11" start="0,0" end="840,142" condition="control.isvisible(15008)">conditional</animation>
-            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(15008)">conditional</animation>
-            <animation effect="slide" time="0" delay="11" start="0,0" end="840,285" condition="control.isvisible(15009)">conditional</animation>
-            <animation effect="fade" time="180" delay="20" start="0" end="100" reversible="false" condition="control.isvisible(15009)">conditional</animation>
             
-            <animation effect="fade" time="200" easing="inout" condition="true">Visible</animation>
-            <animation effect="fade" time="10" easing="inout" condition="true">Hidden</animation>
+            <animation effect="fade" delay="300" start="0" end="100" time="200" easing="out" tween="cubic" reversible="false" condition="Control.IsVisible(1113)">Conditional</animation>
+            <animation effect="fade" delay="300" start="0" end="100" time="200" easing="out" tween="cubic" reversible="false" condition="!Control.IsVisible(1113)">Conditional</animation>
+            
+            <animation effect="slide" delay="200" time="000" start="0,0" end="840,0" condition="control.isvisible(15007)">conditional</animation>
+            <animation effect="fade"  delay="300" time="200" start="0" end="100" reversible="false" condition="control.isvisible(15007)">conditional</animation>
+            <animation effect="slide" delay="200" time="000" start="0,0" end="840,142" condition="control.isvisible(15008)">conditional</animation>
+            <animation effect="fade"  delay="300" time="200" start="0" end="100" reversible="false" condition="control.isvisible(15008)">conditional</animation>
+            <animation effect="slide" delay="200" time="000" start="0,0" end="840,285" condition="control.isvisible(15009)">conditional</animation>
+            <animation effect="fade"  delay="300" time="200" start="0" end="100" reversible="false" condition="control.isvisible(15009)">conditional</animation>
+            <animation effect="slide" delay="000" time="000" start="0,0" end="1920,1080" condition="!control.isvisible(15007)+!control.isvisible(15008)+!control.isvisible(15009)">conditional</animation>
+            
+            <animation effect="fade" delay="200" time="200" easing="inout" condition="true">Visible</animation>
+            <animation effect="fade" delay="200" time="200" easing="inout" condition="true">Hidden</animation>
             <posX>0</posX>
             <posY>0</posY>
             <visible>[control.isvisible(15007)|control.isvisible(15008)|control.isvisible(15009)]+!string.equals(#WorldWeather.TodayTemperature,)</visible>

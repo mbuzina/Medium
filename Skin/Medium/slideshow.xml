@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>2007</id>
+    <defaultcontrol>2</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+   
+    <controls>
+           
+        <control Style="overlayStyle">
+            <id>0</id>
+            <type>image</type>
+            <posX>0</posX>
+            <posY>950</posY>
+            <width>1920</width>
+            <height>130</height>
+        </control>
+        
+        <control Style="labelStyle">
+            <description>row 1 label</description>
+            <type>label</type>
+            <id>10</id>
+            <posX>120</posX>
+            <posY>970</posY>
+            <width>920</width>
+            <label>-</label>
+            <font>subHeaderFont</font>
+        </control>
+        <control Style="labelStyle">
+            <description>row 2 label</description>
+            <type>label</type>
+            <id>11</id>
+            <posX>1140</posX>
+            <posY>978</posY>
+            <width>300</width>
+            <label>-</label>
+            <textcolor>FF007ACC</textcolor>
+        </control>
+        <control>
+            <description>row 2 extra label</description>
+            <type>label</type>
+            <id>12</id>
+            <posX>120</posX>
+            <posY>1030</posY>
+            <label>-</label>
+            <align>left</align>
+            <textcolor>FFB75700</textcolor>
+        </control>
+        
+        <control Style="headerTimeStyle">
+            <id>0</id>
+            <type>label</type>
+            <description>Time label</description>
+            <posX>1520</posX>
+            <posY>960</posY>
+            <label>#time</label>
+        </control>
+
+        <control Style="headerDateStyle">
+            <id>0</id>
+            <type>textbox</type>
+            <description>Date box</description>
+            <posX>1730</posX>
+            <posY>981</posY>
+            <height>200</height>
+            <lineSpacing>0.9</lineSpacing>
+            <label>#date</label>
+        </control>
+
+        <control Style="headerDateStyle">
+            <id>0</id>
+            <type>image</type>
+            <description>Wheather Icon</description>
+            <posX>1444</posX>
+            <posY>978</posY>
+            <height>64</height>
+            <width>64</width>
+            <texture>weather\64x64\#WorldWeather.TodayIconNumber.png</texture>
+            <visible>[plugin.isenabled(World Weather Lite) | plugin.isenabled(World Weather)]</visible>
+        </control>
+
+        <control Style="headerDateStyle">
+            <id>0</id>
+            <type>label</type>
+            <description>Temprature</description>
+            <posX>1504</posX>
+            <posY>1026</posY>
+            <width>130</width>
+            <align>right</align>
+            <height>200</height>
+            <label>#WorldWeather.TodayTemperature</label>
+            <visible>[plugin.isenabled(World Weather Lite) | plugin.isenabled(World Weather)]</visible>
+        </control>
+    </controls>
+</window>
